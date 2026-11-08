@@ -4,6 +4,7 @@ import numpy as np, soundfile as sf
 
 engine, name = sys.argv[1], sys.argv[2]
 chunks = [l.strip() for l in open("bench/hook_chunks.txt", encoding="utf-8") if l.strip()]
+chunks = chunks[:int(os.environ.get("CHUNKS_LIMIT") or len(chunks))]
 os.makedirs("out", exist_ok=True)
 t0 = time.time()
 pieces, sr = [], None
