@@ -55,13 +55,15 @@ def caption(fig, text, y=0.08, size=54, color=WHITE, box=None):
 
 def chart(extent, old=True, title=None, grid=True):
     fig = canvas(PARCH if old else OCEAN)
+    if old:
+        bg = fig.add_axes([0, 0, 1, 1]); bg.axis("off"); bg.set_xlim(0, 1); bg.set_ylim(0, 1)
+        paper_texture(bg)
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree(central_longitude=180 if extent[0] > 100 or extent[1] < -100 else 0))
     ax.set_extent(extent, crs=ccrs.PlateCarree())
     if old:
-        ax.set_facecolor(PARCH)
+        ax.set_facecolor("none"); ax.patch.set_alpha(0)
         ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#D9C08A", edgecolor=INK, linewidth=1.2)
         ax.add_feature(cfeature.COASTLINE.with_scale("50m"), edgecolor=INK, linewidth=1.2)
-        paper_texture(ax)
         gl_color = "#7A6040"
     else:
         ax.set_facecolor(OCEAN)
