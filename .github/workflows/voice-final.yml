@@ -1,0 +1,37 @@
+name: Voice final comparison
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        voice: [v3-calm-low, v4-storyteller]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet -U qwen-tts soundfile
+          ffmpeg -loglevel error -y -i voices/${{ matrix.voice }}.mp3 -ar 24000 -ac 1 ref.wav
+      - env: {REF_AUDIO: ref.wav}
+        run: python bench/run_tts.py qwen-ref final-${{ matrix.voice }}
+      - run: mkdir -p final && ffmpeg -loglevel error -y -i out/final-${{ matrix.voice }}.wav -b:a 160k final/final-${{ matrix.voice }}.mp3 && cp out/*.json final/
+      - uses: actions/upload-artifact@v4
+        with: {name: "${{ matrix.voice }}", path: final/}
+  save:
+    needs: voice
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: casting/final, merge-multiple: true}
+      - run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add casting/final && git commit -m "Final voice comparison" && git push

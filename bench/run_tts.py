@@ -15,6 +15,15 @@ if engine.startswith("qwen"):
     torch.set_num_threads(os.cpu_count())
     instruct = os.environ.get("INSTRUCT", "")
     dtype = torch.float32
+    if engine == "qwen-ref":
+        # Clone a saved voice sample (voices/<file>) so the channel voice is identical in every video.
+        model = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cpu", dtype=dtype)
+        ref_text = " ".join(l.strip() for l in open("voices/ref_text.txt", encoding="utf-8") if l.strip())
+        prompt = model.create_voice_clone_prompt(ref_audio=os.environ["REF_AUDIO"], ref_text=ref_text)
+        load_s = time.time() - t0
+        for c in chunks:
+            wavs, sr = model.generate_voice_clone(text=c, language="Russian", voice_clone_prompt=prompt)
+            pieces.append(np.asarray(wavs[0], dtype=np.float32))
     if engine == "qwen-clone":
         # Design the voice once, then clone it for every chunk so the voice stays identical.
         design = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", device_map="cpu", dtype=dtype)
