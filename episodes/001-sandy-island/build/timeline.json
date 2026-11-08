@@ -1,0 +1,81 @@
+{
+ "duration": 511.34,
+ "scenes": [
+  {
+   "scene": "hook_map",
+   "start": 0.6
+  },
+  {
+   "scene": "coral_sea",
+   "start": 16.64
+  },
+  {
+   "scene": "locator",
+   "start": 43.05
+  },
+  {
+   "scene": "black_polygon",
+   "start": 59.54
+  },
+  {
+   "scene": "whaler",
+   "start": 87.14
+  },
+  {
+   "scene": "chart_1908",
+   "start": 118.42
+  },
+  {
+   "scene": "existence_doubtful",
+   "start": 150.88
+  },
+  {
+   "scene": "timeline_removed",
+   "start": 163.52
+  },
+  {
+   "scene": "digital",
+   "start": 193.02
+  },
+  {
+   "scene": "voyage",
+   "start": 228.42
+  },
+  {
+   "scene": "depth_profile",
+   "start": 260.05
+  },
+  {
+   "scene": "news",
+   "start": 276.36
+  },
+  {
+   "scene": "polygon_gone",
+   "start": 295.25
+  },
+  {
+   "scene": "agloe",
+   "start": 311.61
+  },
+  {
+   "scene": "bermeja",
+   "start": 346.8
+  },
+  {
+   "scene": "navigation",
+   "start": 365.78
+  },
+  {
+   "scene": "pumice",
+   "start": 415.31
+  },
+  {
+   "scene": "pumice_scale",
+   "start": 434.7
+  },
+  {
+   "scene": "finale",
+   "start": 472.31
+  }
+ ]
+}
