@@ -45,9 +45,19 @@ def paper_texture(ax, alpha=0.18):
     ax.imshow(noise, extent=[0, 1, 0, 1], transform=ax.transAxes, cmap="copper", alpha=alpha, zorder=0.5, aspect="auto")
 
 
+def sea(ax, light=False):
+    y = np.linspace(0, 1, 540)[:, None]
+    grad = (0.35 + 0.4 * y) * np.ones((540, 960))
+    ax.imshow(grad, extent=[0, 1, 0, 1], cmap="Blues", vmin=0, vmax=1.6 if not light else 1.1, aspect="auto", zorder=0)
+    xs = np.linspace(0, 1, 400)
+    for k in range(28):
+        yy = 0.03 + k * 0.035
+        ax.plot(xs, yy + 0.004 * np.sin(xs * 40 + k * 1.7), color="white", alpha=0.07, lw=1.2, zorder=0.1)
+
+
 def caption(fig, text, y=0.08, size=54, color=WHITE, box=None):
     t = fig.text(0.5, y, text, ha="center", va="center", fontsize=size, color=color, weight="bold",
-                 path_effects=[pe.withStroke(linewidth=6, foreground="#000000aa")])
+                 path_effects=[pe.withStroke(linewidth=6, foreground=PARCH if color == INK else "#000000aa")])
     if box:
         t.set_bbox(dict(facecolor=box, edgecolor="none", pad=18))
     return t
@@ -78,14 +88,8 @@ def chart(extent, old=True, title=None, grid=True):
 
 
 def island_shape(ax, lon, lat, color, edge, ls="-", lw=2.5, alpha=1.0, z=5):
-    t = np.linspace(0, 2 * np.pi, 80)
-    r = 1 + 0.08 * np.sin(5 * t) + 0.05 * np.cos(9 * t)
-    x = lon + 0.12 * r * np.cos(t)
-    y = lat + 0.025 * r * np.sin(t)
-    rot = math.radians(-35)
-    xr = lon + (x - lon) * math.cos(rot) - (y - lat) * math.sin(rot)
-    yr = lat + (x - lon) * math.sin(rot) + (y - lat) * math.cos(rot)
-    ax.fill(xr, yr, color=color, edgecolor=edge, linestyle=ls, linewidth=lw, alpha=alpha, transform=ccrs.PlateCarree(), zorder=z)
+    ax.add_patch(patches.Ellipse((lon, lat), 0.26, 0.07, angle=-30, facecolor=color, edgecolor=edge, linestyle=ls,
+                                 linewidth=lw, alpha=alpha, transform=ccrs.PlateCarree(), zorder=z))
 
 
 def label(ax, lon, lat, text, color=INK, size=26, dx=0.15, dy=0.08, serif=True, weight="normal"):
@@ -152,8 +156,7 @@ def s_black_polygon():
     for step in range(2):
         fig = canvas("#1b2a38")
         ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
-        img = np.random.normal(0.5, 0.08, (108, 192))
-        ax.imshow(img, extent=[0, 1, 0, 1], cmap="Blues_r", alpha=0.9, aspect="auto")
+        sea(ax)
         t = np.linspace(0, 2 * np.pi, 120)
         r = 1 + 0.07 * np.sin(6 * t)
         ax.fill(0.5 + 0.25 * r * np.cos(t) * np.cos(0.5) - 0.06 * r * np.sin(t) * np.sin(0.5),
@@ -231,10 +234,10 @@ def s_timeline_removed():
     fig = canvas(OCEAN)
     ax = fig.add_axes([0.05, 0.25, 0.9, 0.5]); ax.set_xlim(1860, 2020); ax.set_ylim(-1, 1); ax.axis("off")
     ax.plot([1865, 2015], [0, 0], color=WHITE, lw=4)
-    for yr, txt, c in [(1876, "замечен\nс китобоя", GOLD), (1908, "карта\nАдмиралтейства", GOLD), (1974, "Франция\nубрала", RED), (1985, "Австралия\nубрала", RED)]:
+    for yr, txt, c, dx in [(1876, "замечен\nс китобоя", GOLD, 0), (1908, "карта\nАдмиралтейства", GOLD, 0), (1974, "Франция\nубрала", RED, -9), (1985, "Австралия\nубрала", RED, 9)]:
         ax.plot(yr, 0, "o", ms=26, color=c)
-        ax.text(yr, 0.25, str(yr), ha="center", fontsize=40, color=c, weight="bold")
-        ax.text(yr, -0.35, txt, ha="center", va="top", fontsize=26, color=WHITE)
+        ax.text(yr + dx, 0.25, str(yr), ha="center", fontsize=40, color=c, weight="bold")
+        ax.text(yr + dx, -0.35, txt, ha="center", va="top", fontsize=26, color=WHITE)
     caption(fig, "Глубина: 1488–2353 м", y=0.12, size=46)
     save(fig, "timeline_removed")
 
@@ -302,7 +305,7 @@ def s_polygon_gone():
     for step in range(2):
         fig = canvas("#1b2a38")
         ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
-        ax.imshow(np.random.normal(0.5, 0.08, (108, 192)), extent=[0, 1, 0, 1], cmap="Blues_r", alpha=0.9, aspect="auto")
+        sea(ax)
         if step == 0:
             t = np.linspace(0, 2 * np.pi, 120)
             ax.fill(0.5 + 0.25 * np.cos(t), 0.5 + 0.06 * np.sin(t), color="black")
@@ -315,6 +318,9 @@ def s_polygon_gone():
 
 def s_agloe():
     fig, ax = chart([-76.5, -73, 41, 43.2], old=True, title="Штат Нью-Йорк · 1930-е")
+    ax.add_feature(cfeature.STATES.with_scale("10m"), edgecolor=INK, linewidth=1.5, linestyle=":")
+    ax.add_feature(cfeature.RIVERS.with_scale("10m"), edgecolor="#6B8CA8", linewidth=1.5)
+    ax.add_feature(cfeature.LAKES.with_scale("10m"), facecolor="#B9C9C9", edgecolor=INK, linewidth=0.8)
     ax.plot(-74.72, 42.1, "o", color=RED, ms=16, transform=ccrs.PlateCarree())
     label(ax, -74.72, 42.1, "Agloe", size=40)
     caption(fig, "Выдуманный городок-ловушка", y=0.1, size=44, color=INK)
@@ -363,7 +369,7 @@ def s_navigation():
 def s_pumice():
     fig = canvas("#20384F")
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
-    ax.imshow(np.random.normal(0.5, 0.06, (108, 192)), extent=[0, 1, 0, 1], cmap="Blues_r", alpha=0.8, aspect="auto")
+    sea(ax, light=True)
     n = 2500
     xs = np.random.normal(0.5, 0.22, n); ys = np.random.normal(0.5, 0.07, n) + 0.08 * np.sin(xs * 9)
     ax.scatter(xs, ys, s=np.random.uniform(8, 60, n), color="#BDB7A8", alpha=0.85)
@@ -379,9 +385,12 @@ def s_pumice_scale():
     ax.add_patch(patches.Ellipse((40, 15), 25, 5, color=RED))
     ax.text(70, 13, "«остров» Сэнди · 25 × 5 км", fontsize=30, color=WHITE)
     save(fig, "pumice_scale")
-    fig, ax = chart([170, 195, -35, -15], old=False)
+    fig, ax = chart([155, 195, -36, -14], old=False)
     ax.plot(*HAVRE, "^", ms=24, color=RED, transform=ccrs.PlateCarree())
     label(ax, HAVRE[0] - 6, HAVRE[1] - 1.5, "вулкан Гавр", color=WHITE, size=30, serif=False)
+    label(ax, 172.5, -34.3, "Новая Зеландия", color=WHITE, size=26, serif=False)
+    ax.plot(*SANDY, marker="o", ms=14, color=GOLD, transform=ccrs.PlateCarree())
+    label(ax, SANDY[0] + 0.3, SANDY[1] + 0.4, "Сэнди", color=GOLD, size=26, serif=False)
     save(fig, "pumice_scale")
     fig = canvas(OCEAN)
     caption(fig, "Каменный остров, который плавал", y=0.55, size=64, color=GOLD)
@@ -394,7 +403,7 @@ def s_finale():
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
     grad = np.linspace(0, 1, 540)[:, None] * np.ones((540, 960))
     ax.imshow(grad, extent=[0, 1, 0.45, 1], cmap="magma", aspect="auto", alpha=0.95)
-    ax.imshow(np.random.normal(0.4, 0.05, (200, 960)), extent=[0, 1, 0, 0.45], cmap="bone", aspect="auto")
+    ax.imshow(np.linspace(0.2, 0.55, 200)[:, None] * np.ones((200, 960)), extent=[0, 1, 0, 0.45], cmap="bone", aspect="auto")
     ax.add_patch(patches.Circle((0.5, 0.45), 0.07, color="#FFB347", alpha=0.9))
     caption(fig, "Карта — это рассказ о мире", y=0.8, size=56)
     save(fig, "finale")
