@@ -12,12 +12,27 @@ if engine.startswith("qwen"):
     import torch
     from qwen_tts import Qwen3TTSModel
     torch.set_num_threads(os.cpu_count())
-    repo = {"qwen-design": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
-            "qwen-custom": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"}[engine]
-    model = Qwen3TTSModel.from_pretrained(repo, device_map="cpu", dtype=torch.bfloat16 if "1.7B" in repo else torch.float32)
-    load_s = time.time() - t0
     instruct = os.environ.get("INSTRUCT", "")
-    for c in chunks:
+    dtype = torch.float32
+    if engine == "qwen-clone":
+        # Design the voice once, then clone it for every chunk so the voice stays identical.
+        design = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", device_map="cpu", dtype=dtype)
+        ref_text = "Добрый вечер. Сегодня я расскажу вам историю, которую долго никто не мог объяснить."
+        w, sr = design.generate_voice_design(text=ref_text, language="Russian", instruct=instruct)
+        sf.write(f"out/{name}-reference.wav", w[0], sr)
+        del design
+        model = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-1.7B-Base", device_map="cpu", dtype=dtype)
+        prompt = model.create_voice_clone_prompt(ref_audio=f"out/{name}-reference.wav", ref_text=ref_text)
+        load_s = time.time() - t0
+        for c in chunks:
+            wavs, sr = model.generate_voice_clone(text=c, language="Russian", voice_clone_prompt=prompt)
+            pieces.append(np.asarray(wavs[0], dtype=np.float32))
+    repo = {"qwen-design": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+            "qwen-custom": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"}.get(engine)
+    if repo:
+        model = Qwen3TTSModel.from_pretrained(repo, device_map="cpu", dtype=dtype)
+        load_s = time.time() - t0
+    for c in (chunks if repo else []):
         if engine == "qwen-design":
             wavs, sr = model.generate_voice_design(text=c, language="Russian", instruct=instruct)
         else:

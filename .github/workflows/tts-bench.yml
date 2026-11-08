@@ -27,6 +27,7 @@ jobs:
           - {engine: qwen-design, name: qwen-design-female, instruct: "Тёплый женский голос 40 лет, спокойная уверенная интонация ведущей документального фильма, чистое русское произношение без акцента"}
           - {engine: qwen-custom, name: qwen-custom-ryan, instruct: ""}
           - {engine: chatterbox, name: chatterbox-default, instruct: ""}
+          - {engine: qwen-clone, name: qwen-clone-male, instruct: "Спокойный мужской голос 50 лет, низкий тембр, неторопливый рассказчик документального фильма, чистое русское произношение без акцента"}
     steps:
       - name: Skip check
         id: skip
@@ -40,6 +41,7 @@ jobs:
       - name: Install
         if: steps.skip.outputs.run
         run: |
+          nproc; lscpu | grep -E "Model name|Flags" | cut -c1-120; free -g | head -2
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
           df -h / | tail -1
