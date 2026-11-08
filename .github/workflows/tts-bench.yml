@@ -1,9 +1,19 @@
 name: TTS benchmark
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      engines:
+        description: "Comma list of matrix names to run, or 'all' or 'none'"
+        default: all
+      qa_run_id:
+        description: "Also QA artifacts from this earlier run id (optional)"
+        default: ""
 permissions:
   contents: write
+  actions: read
 jobs:
   tts:
+    if: inputs.engines != 'none'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
@@ -15,19 +25,33 @@ jobs:
           - {engine: qwen-custom, name: qwen-custom-ryan, instruct: ""}
           - {engine: chatterbox, name: chatterbox-default, instruct: ""}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: {python-version: "3.12"}
-      - name: Install
+      - name: Skip check
+        id: skip
         run: |
-          nproc; free -g
-          pip install --quiet torch torchaudio --index-url https://download.pytorch.org/whl/cpu
-          if [[ "${{ matrix.engine }}" == qwen* ]]; then pip install --quiet -U qwen-tts soundfile; else pip install --quiet chatterbox-tts soundfile; fi
+          if [ "${{ inputs.engines }}" = all ] || echo ",${{ inputs.engines }}," | grep -q ",${{ matrix.name }},"; then echo run=1 >> $GITHUB_OUTPUT; fi
+      - uses: actions/checkout@v4
+        if: steps.skip.outputs.run
+      - uses: actions/setup-python@v5
+        if: steps.skip.outputs.run
+        with: {python-version: "3.11"}
+      - name: Install
+        if: steps.skip.outputs.run
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
+          df -h / | tail -1
+          if [[ "${{ matrix.engine }}" == qwen* ]]; then
+            pip install --quiet torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+            pip install --quiet -U qwen-tts soundfile
+          else
+            pip install --quiet torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+            pip install --quiet chatterbox-tts soundfile
+          fi
       - name: Generate
+        if: steps.skip.outputs.run
         env: {INSTRUCT: "${{ matrix.instruct }}"}
         run: python bench/run_tts.py ${{ matrix.engine }} ${{ matrix.name }}
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.skip.outputs.run
         with: {name: "${{ matrix.name }}", path: out/, if-no-files-found: ignore}
   qa:
     needs: tts
@@ -37,7 +61,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
+        if: inputs.engines != 'none'
         with: {path: out, merge-multiple: true}
+      - uses: actions/download-artifact@v4
+        if: inputs.qa_run_id != ''
+        with: {path: out, merge-multiple: true, run-id: "${{ inputs.qa_run_id }}", github-token: "${{ github.token }}"}
       - run: pip install --quiet faster-whisper
       - run: python bench/qa.py
       - name: Save results
@@ -46,4 +74,4 @@ jobs:
           for f in out/*.wav; do ffmpeg -loglevel error -y -i "$f" -b:a 128k "bench/results/$(basename "${f%.wav}").mp3"; done
           cp out/*.json bench/results/
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
-          git add bench/results && git commit -m "TTS benchmark results" && git push
+          git pull -q; git add bench/results && git commit -m "TTS benchmark results" && git push
