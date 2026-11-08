@@ -41,8 +41,9 @@ def canvas(bg=OCEAN):
 
 
 def paper_texture(ax, alpha=0.18):
-    noise = np.random.rand(270, 480)
-    ax.imshow(noise, extent=[0, 1, 0, 1], transform=ax.transAxes, cmap="copper", alpha=alpha, zorder=0.5, aspect="auto")
+    noise = np.random.rand(27, 48) * 0.6 + np.random.rand(27, 48).cumsum(axis=1) % 1 * 0.4
+    ax.imshow(noise, extent=[0, 1, 0, 1], transform=ax.transAxes, cmap="copper", alpha=alpha * 0.7, zorder=0.5,
+              aspect="auto", interpolation="bicubic")
 
 
 def sea(ax, light=False):
@@ -70,14 +71,17 @@ def chart(extent, old=True, title=None, grid=True):
         paper_texture(bg)
     ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree(central_longitude=180 if extent[0] > 100 or extent[1] < -100 else 0))
     ax.set_extent(extent, crs=ccrs.PlateCarree())
+    small = (extent[1] - extent[0]) < 6  # zoomed-in charts: skip real coastlines (Natural Earth still has a sliver there)
     if old:
         ax.set_facecolor("none"); ax.patch.set_alpha(0)
-        ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#D9C08A", edgecolor=INK, linewidth=1.2)
-        ax.add_feature(cfeature.COASTLINE.with_scale("50m"), edgecolor=INK, linewidth=1.2)
+        if not small:
+            ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#D9C08A", edgecolor=INK, linewidth=1.2)
+            ax.add_feature(cfeature.COASTLINE.with_scale("50m"), edgecolor=INK, linewidth=1.2)
         gl_color = "#7A6040"
     else:
         ax.set_facecolor(OCEAN)
-        ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#2E4A3A", edgecolor="#9FB7C9", linewidth=0.8)
+        if not small:
+            ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#2E4A3A", edgecolor="#9FB7C9", linewidth=0.8)
         gl_color = "#3D5A78"
     if grid:
         gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=False, color=gl_color, linestyle="--", linewidth=0.8, alpha=0.7)
