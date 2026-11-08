@@ -1,0 +1,46 @@
+name: Narrate episode
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "Episode folder", default: "episodes/001-sandy-island"}
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix: {shard: [0, 1, 2, 3]}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet -U qwen-tts soundfile faster-whisper num2words
+      - run: python scripts/narrate.py tts ${{ inputs.episode }} ${{ matrix.shard }} 4
+      - uses: actions/upload-artifact@v4
+        with: {name: "shard-${{ matrix.shard }}", path: out/}
+  merge:
+    needs: tts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - uses: actions/download-artifact@v4
+        with: {path: out, merge-multiple: true}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet soundfile numpy num2words
+          python scripts/narrate.py merge ${{ inputs.episode }}
+      - uses: actions/upload-artifact@v4
+        with: {name: narration, path: "out/narration.wav"}
+      - run: |
+          d=${{ inputs.episode }}/build; mkdir -p $d
+          cp out/timeline.json out/qa.json $d/
+          ffmpeg -loglevel error -y -i out/narration.wav -ac 1 -b:a 96k $d/narration-preview.mp3
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add $d && git commit -m "Narration for ${{ inputs.episode }}" && git push
