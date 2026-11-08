@@ -18,6 +18,7 @@ jobs:
           hook=re.sub(r'\[.*?\]|^#.*$','',hook,flags=re.M).strip()
           open('hook.txt','w',encoding='utf-8').write(hook)
           PY
+          mkdir -p samples
           for v in ru-RU-DmitryNeural ru-RU-SvetlanaNeural; do edge-tts --voice $v --rate=-8% -f hook.txt --write-media samples/edge-$v.mp3; done
           for m in ru_RU-dmitri-medium ru_RU-irina-medium ru_RU-denis-medium; do
             python3 -m piper.download_voices $m || true
