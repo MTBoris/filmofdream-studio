@@ -1,0 +1,49 @@
+name: TTS benchmark
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {engine: qwen-design, name: qwen-design-male, instruct: "Спокойный мужской голос 50 лет, низкий тембр, неторопливый рассказчик документального фильма, чистое русское произношение без акцента"}
+          - {engine: qwen-design, name: qwen-design-female, instruct: "Тёплый женский голос 40 лет, спокойная уверенная интонация ведущей документального фильма, чистое русское произношение без акцента"}
+          - {engine: qwen-custom, name: qwen-custom-ryan, instruct: ""}
+          - {engine: chatterbox, name: chatterbox-default, instruct: ""}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install
+        run: |
+          nproc; free -g
+          pip install --quiet torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          if [[ "${{ matrix.engine }}" == qwen* ]]; then pip install --quiet -U qwen-tts soundfile; else pip install --quiet chatterbox-tts soundfile; fi
+      - name: Generate
+        env: {INSTRUCT: "${{ matrix.instruct }}"}
+        run: python bench/run_tts.py ${{ matrix.engine }} ${{ matrix.name }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: "${{ matrix.name }}", path: out/, if-no-files-found: ignore}
+  qa:
+    needs: tts
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: out, merge-multiple: true}
+      - run: pip install --quiet faster-whisper
+      - run: python bench/qa.py
+      - name: Save results
+        run: |
+          mkdir -p bench/results
+          for f in out/*.wav; do ffmpeg -loglevel error -y -i "$f" -b:a 128k "bench/results/$(basename "${f%.wav}").mp3"; done
+          cp out/*.json bench/results/
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add bench/results && git commit -m "TTS benchmark results" && git push
