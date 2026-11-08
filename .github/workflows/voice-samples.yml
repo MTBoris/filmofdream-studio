@@ -1,0 +1,30 @@
+name: Voice samples
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install edge-tts piper-tts
+      - name: Generate
+        run: |
+          python3 - <<'PY'
+          import re
+          s=open('episodes/001-sandy-island/script.md',encoding='utf-8').read()
+          hook=s.split('## 0:00')[1].split('## 0:45')[0]
+          hook=re.sub(r'\[.*?\]|^#.*$','',hook,flags=re.M).strip()
+          open('hook.txt','w',encoding='utf-8').write(hook)
+          PY
+          for v in ru-RU-DmitryNeural ru-RU-SvetlanaNeural; do edge-tts --voice $v --rate=-8% -f hook.txt --write-media samples/edge-$v.mp3; done
+          for m in ru_RU-dmitri-medium ru_RU-irina-medium ru_RU-denis-medium; do
+            python3 -m piper.download_voices $m || true
+            python3 -m piper -m $m -f samples/piper-$m.wav < hook.txt || true
+          done
+          for f in samples/*.wav; do [ -f "$f" ] && ffmpeg -loglevel error -y -i "$f" -b:a 128k "${f%.wav}.mp3" && rm "$f"; done
+          ls -la samples
+      - run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add samples && git commit -m "Voice samples" && git push
