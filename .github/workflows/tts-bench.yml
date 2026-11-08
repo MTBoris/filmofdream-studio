@@ -8,6 +8,9 @@ on:
       qa_run_id:
         description: "Also QA artifacts from this earlier run id (optional)"
         default: ""
+      qa_run_id2:
+        description: "And from this run id (optional)"
+        default: ""
 permissions:
   contents: write
   actions: read
@@ -37,6 +40,7 @@ jobs:
       - name: Install
         if: steps.skip.outputs.run
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL || true
           df -h / | tail -1
           if [[ "${{ matrix.engine }}" == qwen* ]]; then
@@ -66,6 +70,10 @@ jobs:
       - uses: actions/download-artifact@v4
         if: inputs.qa_run_id != ''
         with: {path: out, merge-multiple: true, run-id: "${{ inputs.qa_run_id }}", github-token: "${{ github.token }}"}
+      - uses: actions/download-artifact@v4
+        if: inputs.qa_run_id2 != ''
+        with: {path: out, merge-multiple: true, run-id: "${{ inputs.qa_run_id2 }}", github-token: "${{ github.token }}"}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install --quiet faster-whisper
       - run: python bench/qa.py
       - name: Save results
