@@ -1,0 +1,22 @@
+name: Visuals preview
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  frames:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install --quiet matplotlib cartopy pillow numpy
+      - run: python scripts/visuals_sandy.py frames
+      - run: |
+          d=episodes/001-sandy-island/build; mkdir -p $d/frames-preview
+          python scripts/contact_sheet.py frames $d/contact-sheet.jpg
+          for f in frames/*.png; do python -c "from PIL import Image;import sys;Image.open(sys.argv[1]).convert('RGB').resize((960,540)).save(sys.argv[2],quality=80)" $f $d/frames-preview/$(basename ${f%.png}).jpg; done
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add $d && git commit -m "Visuals preview" && git push
+      - uses: actions/upload-artifact@v4
+        with: {name: frames, path: frames/}
