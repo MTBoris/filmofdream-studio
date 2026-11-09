@@ -1,4 +1,4 @@
-# HANDOFF — Film of Dream (state on 2026-11-09)
+# HANDOFF — Film of Dream (state on 2026-11-09, plan approved)
 
 ## Channel status (checked 2026-11-07)
 - Monetization was removed earlier (≈700 audiobooks without rights; deleted). Earn page: terms accepted, AdSense not linked, review not started.
@@ -14,6 +14,11 @@
 - Visuals: real stock video (Pixabay; Pexels API keys are paused) + code graphics only for maps/numbers. AI/fantasy/3D clips filtered out; every query word must be in clip tags.
 - Boris's verdict on pilot v1–v2: visuals made by Claude are weak → **ChatGPT owns visuals**, Claude Code owns engineering, Claude coordinates (decided 2026-11-09).
 - Budget: everything free except OpenAI images, max $10/month.
+- **Visual concept «ОКЕАН + НАЛОЖЕНИЯ» (Boris, 2026-11-09):** almost the whole video is real Pixabay ocean footage as background with animated graphics on top of what the narrator says (coordinates, depth, raft size, dates, scale, semi-transparent maps). Every shot is a different ocean clip (waves, horizon, aerial, sunset, storm, deep water); **no stock clip repeats within an episode**. Shots without ocean: only ChatGPT reconstruction images (1876, logbook, old charts) and real NASA photos. Must look good: dark gradient under text for legibility, smooth fade-in, number counters, slow motion. Style (palette, fonts PT Serif / IBM Plex Sans, margins 90/65 px, motion rules) comes from ChatGPT's visual direction v1 → `design/tokens.json`.
+- **Templates (drawn over the ocean video):** `ocean-fact` (big number with counter), `ocean-coords` (coordinates + dot), `ocean-map` (semi-transparent area map with marker and scale), `ocean-timeline` (dates), `ocean-compare` (size comparison, e.g. raft 463×55 km vs island 25×5 km), `lower-third` (caption/source), `title-card` (chapter/final title). Plus shot type `image` (ChatGPT picture, Ken Burns, label РЕКОНСТРУКЦИЯ). Build order: ocean-fact, ocean-map, ocean-timeline → preview for Boris (one full pilot scene) → the rest.
+- **Storyboard v2:** explicit `dur` per shot; the last shot of a scene may have `"dur": "rest"` (takes the remainder); sum tolerance ±1.5 s so that re-recording the narration does not break the build. Stock shot has optional `overlay`: template + data. Stock search returns 3 candidates per shot + a candidate sheet for ChatGPT to choose from; no pick → build stops. The ocean clip pool is cached; if there are not enough unique clips the build reports it instead of silently repeating.
+- **Hand-over from ChatGPT: variant A** (through Boris/Claude, no repo access for ChatGPT).
+- **QA rule (one hard rule at first):** no stock clip is used twice in an episode.
 
 ## Topics (approved, checked on YouTube 2026-11-07; RU best video views / EN best video views)
 1. Остров Сэнди — phantom island, 136 years on maps (pilot) — 1.4k / 3.2M
@@ -38,10 +43,18 @@
 3. `scripts/stock.py storyboard.json stock` → Pixabay clips (film only, tag match), `stock/stock.json` with sources.
 4. `scripts/render2.py ...` → shots (Ken Burns on stills, stock looped/cropped), 0.5 s cross-dissolves, music bed ducked under voice, storyboard sheet.
 5. `scripts/fill_meta.py` → chapters from timeline. `scripts/yt_upload.py` → unlisted upload + thumbnail (`containsSyntheticMedia: true`).
-- Workflow: **Produce episode v2** (`produce2.yml`, inputs: episode, visuals, upload yes/no). Others: `yt-check.yml`, `yt-delete.yml` (only with Boris's "да"), `azure-test.yml`, `azure-stress.yml`. Old experiments: `tts-bench`, `voice-*`, `narrate.yml` (Qwen) — can be removed.
+- Workflow: **Produce episode v2** (`produce2.yml`, inputs: episode, visuals, upload yes/no). Others: `frame-review.yml`, `visuals-preview.yml` (kept until templates exist), `yt-check.yml`, `yt-delete.yml` (only with Boris's "да"), `azure-test.yml`, `azure-stress.yml` (test texts and outputs in `voices/tests/`).
+- Old experiments removed in PR 1 (still in git history): `tts-bench`, `voice-*`, `narrate.yml`, `produce.yml`, `scripts/narrate.py` (Qwen), `scripts/render.py`, `bench/`, `casting/`, `samples/`. The narration.txt parser now lives in `scripts/narrate_azure.py`.
 
 ## Next steps
-1. Claude Code: plan for (a) frame-sheet QA every 2 s from the final video, (b) storyboard format with 3 candidate clips per shot for ChatGPT to choose + slots for ChatGPT's own images, (c) tests/CI, (d) graphics templates designed by ChatGPT; cleanup of old experiment workflows.
-2. ChatGPT: visual direction for the pilot (choose clips, make images for scenes without footage: 1876 whaler, logbook, Admiralty chart, E.D., pumice raft, maps).
-3. Claude: rebuild pilot with ChatGPT's visuals → frame review → link to Boris → publish date (avoid RESTHE Shorts times).
-4. Then episode 2 (Озеро Натрон), cadence every 2 days.
+Engineering plan (approved 2026-11-09), small PRs, each: plan → Boris «да» → PR → green CI → merge.
+1. **PR 1 — cleanup** (this PR).
+2. **PR 2 — minimal CI** (`ci.yml`: pytest + ruff, offline tests: stress marks, homograph guard, shot timing, fill_meta, storyboard validation, tiny render smoke test).
+3. **PR 3 — storyboard v2** (format above, converter for episode 001, 3-candidate stock search + candidate sheet, `docs/STORYBOARD.md` with the ChatGPT prompt).
+4. **PR 4 — templates** + `design/tokens.json` (order above; preview for Boris before the rest).
+5. **PR 5 — automatic QA** (frame sheet every 2 s as artifact, rule: no repeated stock clip; upload refused on failure).
+
+Other:
+- ChatGPT: visual direction for the pilot (choose clips from candidate sheet, images for scenes without footage: 1876 whaler, logbook, Admiralty chart, E.D., pumice raft, maps).
+- Claude: rebuild pilot with the new visuals → frame review → link to Boris → publish date (avoid RESTHE Shorts times).
+- Then episode 2 (Озеро Натрон), cadence every 2 days.
