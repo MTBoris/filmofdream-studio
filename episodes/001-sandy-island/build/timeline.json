@@ -1,5 +1,5 @@
 {
- "duration": 496.22,
+ "duration": 496.21,
  "scenes": [
   {
    "scene": "hook_map",
@@ -31,7 +31,7 @@
   },
   {
    "scene": "timeline_removed",
-   "start": 161.26
+   "start": 161.25
   },
   {
    "scene": "digital",
@@ -39,43 +39,43 @@
   },
   {
    "scene": "voyage",
-   "start": 224.79
+   "start": 224.78
   },
   {
    "scene": "depth_profile",
-   "start": 253.47
+   "start": 253.46
   },
   {
    "scene": "news",
-   "start": 268.99
+   "start": 268.98
   },
   {
    "scene": "polygon_gone",
-   "start": 285.46
+   "start": 285.45
   },
   {
    "scene": "agloe",
-   "start": 301.94
+   "start": 301.93
   },
   {
    "scene": "bermeja",
-   "start": 335.49
+   "start": 335.48
   },
   {
    "scene": "navigation",
-   "start": 354.9
+   "start": 354.89
   },
   {
    "scene": "pumice",
-   "start": 406.12
+   "start": 406.11
   },
   {
    "scene": "pumice_scale",
-   "start": 424.07
+   "start": 424.06
   },
   {
    "scene": "finale",
-   "start": 458.86
+   "start": 458.85
   }
  ]
 }

@@ -1,17 +1,10 @@
 {
- "hook_map_1": {
-  "query": "research vessel ocean",
-  "pixabay_id": 237249,
-  "page": "https://pixabay.com/videos/id-237249/",
-  "duration": 18,
-  "tags": "ship, vessel, sea, boat, ocean, water, port, transport, sunset, calm, silence, evening, bay, calmness, nature, landscape"
- },
  "coral_sea_0": {
   "query": "ocean waves aerial drone",
-  "pixabay_id": 338904,
-  "page": "https://pixabay.com/videos/id-338904/",
-  "duration": 23,
-  "tags": "beach, nature, sea, sand, ocean, water, seascape, seashore, coast, landscape, aerial, drone, outdoors, wave, coastline"
+  "pixabay_id": 184069,
+  "page": "https://pixabay.com/videos/id-184069/",
+  "duration": 26,
+  "tags": "sea, coast, waves, mallorca, spain, aerial view, drone footage, nature, ocean"
  },
  "locator_0": {
   "query": "coral reef aerial",
@@ -26,13 +19,6 @@
   "page": "https://pixabay.com/videos/id-2382/",
   "duration": 24,
   "tags": "sailing ship, old sailor, ship, port, entrance, water, coast, sea, rocky coast, santorin, caldera, cyclades, bay, vacations, island, vacation, sunny, outlook, sun, quiet, romantic, mood, beautiful, travel"
- },
- "whaler_1": {
-  "query": "stormy sea waves ship",
-  "pixabay_id": 275633,
-  "page": "https://pixabay.com/videos/id-275633/",
-  "duration": 54,
-  "tags": "sea, wave, beach, sunset, ocean, sunrise, sunlight, seascape, shore, coastline, island, cliff, coast, splashing, seacoast, light, coastal, splash, shining, stormy, rock, sun"
  },
  "whaler_3": {
   "query": "waves breaking reef",
@@ -50,24 +36,24 @@
  },
  "chart_1908_2": {
   "query": "old books library",
-  "pixabay_id": 107189,
-  "page": "https://pixabay.com/videos/id-107189/",
-  "duration": 60,
-  "tags": "writing, journal, book, vintage, letter, quill, feather, ink, historic, candle light, library, old"
+  "pixabay_id": 8852,
+  "page": "https://pixabay.com/videos/id-8852/",
+  "duration": 21,
+  "tags": "book, to read, education, books, reading, knowledge, library, reading room, school, science, font, old book, writing, words, teach, culture"
  },
  "existence_doubtful_0": {
-  "query": "antique map",
-  "pixabay_id": 106037,
-  "page": "https://pixabay.com/videos/id-106037/",
-  "duration": 14,
-  "tags": "book, candle flame, compass, 4k, crystals, pyramid, antique book, antique map, map"
+  "query": "compass",
+  "pixabay_id": 28446,
+  "page": "https://pixabay.com/videos/id-28446/",
+  "duration": 19,
+  "tags": "compass, arrow, pointer, cursor, indicator, navigation, direction, orientation, north, south, west, east, geography"
  },
  "timeline_removed_0": {
-  "query": "nautical chart",
-  "pixabay_id": 148596,
-  "page": "https://pixabay.com/videos/id-148596/",
-  "duration": 21,
-  "tags": "investment, money, wealth, writing, chart, profit, grow"
+  "query": "old map",
+  "pixabay_id": 30087,
+  "page": "https://pixabay.com/videos/id-30087/",
+  "duration": 17,
+  "tags": "arabia, middle, east, desert, map, geography, old, travel, city, jordan, muslim, saudi, egypt, africa, arabic, gulf, mosque, arabian, islam, minaret, islamic"
  },
  "digital_0": {
   "query": "computer data digital",
@@ -104,13 +90,6 @@
   "duration": 11,
   "tags": "offset, pressure, paper, environment, printing press, printer, printing machine, newspaper, print, magazine, flyer, brochure, press machine, machine, industry, heidelberg, craft, cmyk"
  },
- "polygon_gone_1": {
-  "query": "open ocean aerial calm",
-  "pixabay_id": 1890,
-  "page": "https://pixabay.com/videos/id-1890/",
-  "duration": 34,
-  "tags": "cliff, island, aerial view, nature, landscape, ocean, sea, waves"
- },
  "agloe_0": {
   "query": "country road autumn",
   "pixabay_id": 92373,
@@ -119,18 +98,11 @@
   "tags": "rice, field, country road, rural, autumn, wind, hometown"
  },
  "bermeja_0": {
-  "query": "oil platform sea",
-  "pixabay_id": 13100,
-  "page": "https://pixabay.com/videos/id-13100/",
-  "duration": 53,
-  "tags": "universe, jar, colourful, experiment, close-up, particles, oil, ink, water, abstract, galaxy, pouring"
- },
- "navigation_0": {
-  "query": "ship compass",
-  "pixabay_id": 10715,
-  "page": "https://pixabay.com/videos/id-10715/",
-  "duration": 58,
-  "tags": "ship, lake, clouds, heaven, shipping, cloud formation"
+  "query": "oil rig",
+  "pixabay_id": 33564,
+  "page": "https://pixabay.com/videos/id-33564/",
+  "duration": 31,
+  "tags": "usa, united states, america, california, aerial, drone, park, cars, traffic, city, satellites, trees, nature, outdoor, trail, people, walking, oil rig, airplane, skyline, clouds, bird, windy"
  },
  "navigation_1": {
   "query": "pocket watch ticking",
@@ -141,10 +113,10 @@
  },
  "navigation_3": {
   "query": "sailing ship ocean",
-  "pixabay_id": 33014,
-  "page": "https://pixabay.com/videos/id-33014/",
-  "duration": 18,
-  "tags": "port, yachts, water, sea, boat, marina, ship, regatta, sailboat, reflection, ships, sailing, summer, travel, drone, with drone, from above"
+  "pixabay_id": 3588,
+  "page": "https://pixabay.com/videos/id-3588/",
+  "duration": 29,
+  "tags": "boat, cruise ship, ship, waves, travel, ocean, sailing, nautical, vessel, voyage, transport, journey"
  },
  "pumice_0": {
   "query": "volcano lava",
@@ -162,10 +134,10 @@
  },
  "pumice_3": {
   "query": "waves breaking",
-  "pixabay_id": 283533,
-  "page": "https://pixabay.com/videos/id-283533/",
-  "duration": 40,
-  "tags": "wave, breaking, sea, ocean, water, coast, slow motion, slowmo"
+  "pixabay_id": 160767,
+  "page": "https://pixabay.com/videos/id-160767/",
+  "duration": 10,
+  "tags": "ocean, beach, waves, breaking waves, drone, urban, european architecture, europe, coastal nature, nature, portugal, aerial"
  },
  "pumice_scale_0": {
   "query": "volcano eruption smoke",
@@ -187,12 +159,5 @@
   "page": "https://pixabay.com/videos/id-21175/",
   "duration": 13,
   "tags": "ocean, horizon, yellow clouds, waves, sunset, sea, calm"
- },
- "finale_1": {
-  "query": "old map candle",
-  "pixabay_id": 143419,
-  "page": "https://pixabay.com/videos/id-143419/",
-  "duration": 30,
-  "tags": "candle, light, flame, burn, match, candlelight, christmas, advent"
  }
 }
