@@ -1,4 +1,11 @@
 {
+ "hook_map_1": {
+  "query": "ship ocean",
+  "pixabay_id": 2849,
+  "page": "https://pixabay.com/videos/id-2849/",
+  "duration": 76,
+  "tags": "hong kong, cruise, harbour, transport, aerial video, ocean, ship"
+ },
  "coral_sea_0": {
   "query": "ocean waves aerial drone",
   "pixabay_id": 184069,
@@ -19,6 +26,13 @@
   "page": "https://pixabay.com/videos/id-2382/",
   "duration": 24,
   "tags": "sailing ship, old sailor, ship, port, entrance, water, coast, sea, rocky coast, santorin, caldera, cyclades, bay, vacations, island, vacation, sunny, outlook, sun, quiet, romantic, mood, beautiful, travel"
+ },
+ "whaler_1": {
+  "query": "stormy sea",
+  "pixabay_id": 275633,
+  "page": "https://pixabay.com/videos/id-275633/",
+  "duration": 54,
+  "tags": "sea, wave, beach, sunset, ocean, sunrise, sunlight, seascape, shore, coastline, island, cliff, coast, splashing, seacoast, light, coastal, splash, shining, stormy, rock, sun"
  },
  "whaler_3": {
   "query": "waves breaking reef",
@@ -53,7 +67,7 @@
   "pixabay_id": 30087,
   "page": "https://pixabay.com/videos/id-30087/",
   "duration": 17,
-  "tags": "arabia, middle, east, desert, map, geography, old, travel, city, jordan, muslim, saudi, egypt, africa, arabic, gulf, mosque, arabian, islam, minaret, islamic"
+  "tags": "arabia, middle, east, desert, map, geography, old, travel, city, muslim, jordan, saudi, egypt, africa, arabic, gulf, mosque, arabian, islam, minaret, islamic"
  },
  "digital_0": {
   "query": "computer data digital",
@@ -90,6 +104,13 @@
   "duration": 11,
   "tags": "offset, pressure, paper, environment, printing press, printer, printing machine, newspaper, print, magazine, flyer, brochure, press machine, machine, industry, heidelberg, craft, cmyk"
  },
+ "polygon_gone_1": {
+  "query": "ocean aerial",
+  "pixabay_id": 1890,
+  "page": "https://pixabay.com/videos/id-1890/",
+  "duration": 34,
+  "tags": "cliff, island, aerial view, nature, landscape, ocean, sea, waves"
+ },
  "agloe_0": {
   "query": "country road autumn",
   "pixabay_id": 92373,
@@ -97,12 +118,12 @@
   "duration": 52,
   "tags": "rice, field, country road, rural, autumn, wind, hometown"
  },
- "bermeja_0": {
-  "query": "oil rig",
-  "pixabay_id": 33564,
-  "page": "https://pixabay.com/videos/id-33564/",
-  "duration": 31,
-  "tags": "usa, united states, america, california, aerial, drone, park, cars, traffic, city, satellites, trees, nature, outdoor, trail, people, walking, oil rig, airplane, skyline, clouds, bird, windy"
+ "navigation_0": {
+  "query": "antique compass",
+  "pixabay_id": 111279,
+  "page": "https://pixabay.com/videos/id-111279/",
+  "duration": 21,
+  "tags": "antique bible, antique books, candles, compass, dark, gold ring, light, page flipping, read, religious, rhinestones, spirituality, young"
  },
  "navigation_1": {
   "query": "pocket watch ticking",
@@ -159,5 +180,12 @@
   "page": "https://pixabay.com/videos/id-21175/",
   "duration": 13,
   "tags": "ocean, horizon, yellow clouds, waves, sunset, sea, calm"
+ },
+ "finale_1": {
+  "query": "old book candle",
+  "pixabay_id": 107189,
+  "page": "https://pixabay.com/videos/id-107189/",
+  "duration": 60,
+  "tags": "writing, journal, book, vintage, letter, quill, feather, ink, historic, candle light, library, old"
  }
 }

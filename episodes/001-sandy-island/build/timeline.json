@@ -31,7 +31,7 @@
   },
   {
    "scene": "timeline_removed",
-   "start": 161.25
+   "start": 161.26
   },
   {
    "scene": "digital",
@@ -59,11 +59,11 @@
   },
   {
    "scene": "bermeja",
-   "start": 335.48
+   "start": 335.49
   },
   {
    "scene": "navigation",
-   "start": 354.89
+   "start": 354.9
   },
   {
    "scene": "pumice",
@@ -71,11 +71,11 @@
   },
   {
    "scene": "pumice_scale",
-   "start": 424.06
+   "start": 424.07
   },
   {
    "scene": "finale",
-   "start": 458.85
+   "start": 458.86
   }
  ]
 }
