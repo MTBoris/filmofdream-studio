@@ -35,6 +35,8 @@ for scene, shots in sb.items():
         pick = None
         BAD = ("ai generated", "ai-generated", "fantasy", "3d", "render", "animation", "cgi", "futuristic", "sci-fi", "generated")
         hits = [h for h in hits if h.get("type", "film") == "film" and not any(b in h.get("tags", "").lower() for b in BAD)]
+        words = [w[:5] for w in shot["stock"].lower().split() if len(w) > 2 and w not in ("old", "the", "and", "with")]
+        hits = [h for h in hits if all(w in h.get("tags", "").lower() for w in words)]
         if shot.get("pixabay_id"):
             hits = [h for h in search_id(shot["pixabay_id"])] + hits
         for h in hits:

@@ -70,7 +70,7 @@
  ],
  "existence_doubtful": [
   {
-   "stock": "antique map"
+   "stock": "compass"
   },
   {
    "graphic": "existence_doubtful_01"
@@ -78,7 +78,7 @@
  ],
  "timeline_removed": [
   {
-   "stock": "nautical chart"
+   "stock": "old map"
   },
   {
    "graphic": "timeline_removed_00"
@@ -146,7 +146,7 @@
  ],
  "bermeja": [
   {
-   "stock": "oil platform sea"
+   "stock": "oil rig"
   },
   {
    "graphic": "bermeja_00"
