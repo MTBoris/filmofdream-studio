@@ -1,0 +1,23 @@
+name: Frame review sheets
+on:
+  workflow_dispatch:
+    inputs:
+      run_id: {description: "Run id of Produce episode v2 (artifact 'video')", required: true}
+      episode: {default: "episodes/001-sandy-island"}
+permissions:
+  contents: write
+  actions: read
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: video, run-id: "${{ inputs.run_id }}", github-token: "${{ github.token }}"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          d=${{ inputs.episode }}/build/frames-review; rm -rf $d; mkdir -p $d
+          ffmpeg -loglevel error -i video.mp4 -vf "fps=1/2,scale=320:180,drawtext=text='%{pts\:hms}':x=4:y=4:fontsize=16:fontcolor=yellow:box=1:boxcolor=black@0.6,tile=6x5" -q:v 4 $d/sheet-%02d.jpg
+          ls $d
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add $d && git commit -m "Frame review sheets" && git push
