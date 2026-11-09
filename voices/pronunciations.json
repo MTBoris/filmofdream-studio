@@ -1,0 +1,10 @@
+{
+  "_comment": "Forced stress for words Azure reads wrong. Key = word form (lowercase), value = the same word with + before the stressed vowel.",
+  "атлас": "+атлас",
+  "атласа": "+атласа",
+  "атласе": "+атласе",
+  "атласы": "+атласы",
+  "атласах": "+атласах",
+  "атласов": "+атласов",
+  "атласам": "+атласам"
+}

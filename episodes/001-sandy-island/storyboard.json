@@ -1,0 +1,22 @@
+{
+ "_comment": "Shots per scene, shown in order; scene time is split between its shots. stock = Pixabay video search (English query). graphic = frame from the visuals script. caption = text over a stock shot.",
+ "hook_map": [{"graphic": "hook_map_00"}, {"stock": "research vessel ocean"}, {"graphic": "hook_map_01"}],
+ "coral_sea": [{"stock": "aerial ocean deep blue", "caption": "Коралловое море · ноябрь 2012"}, {"graphic": "coral_sea_00"}, {"graphic": "coral_sea_01"}],
+ "locator": [{"stock": "coral reef aerial"}, {"graphic": "locator_00"}],
+ "black_polygon": [{"stock": "earth from space satellite"}, {"graphic": "black_polygon_00"}, {"graphic": "black_polygon_01"}],
+ "whaler": [{"stock": "old sailing ship sea"}, {"stock": "stormy sea waves ship", "caption": "1876 · китобой «Велосити»"}, {"graphic": "whaler_01"}, {"stock": "waves breaking reef"}],
+ "chart_1908": [{"stock": "old map"}, {"graphic": "chart_1908_00"}, {"stock": "old books library"}, {"graphic": "chart_1908_01"}],
+ "existence_doubtful": [{"stock": "compass map"}, {"graphic": "existence_doubtful_01"}],
+ "timeline_removed": [{"stock": "nautical chart"}, {"graphic": "timeline_removed_00"}],
+ "digital": [{"stock": "computer data digital"}, {"stock": "server room"}, {"graphic": "digital_01"}],
+ "voyage": [{"stock": "ship ocean sunrise"}, {"graphic": "voyage_00"}, {"graphic": "voyage_01"}],
+ "depth_profile": [{"stock": "deep ocean underwater dark"}, {"graphic": "depth_profile_00"}],
+ "news": [{"stock": "newspaper printing"}, {"graphic": "news_00"}],
+ "polygon_gone": [{"graphic": "polygon_gone_00"}, {"stock": "open ocean aerial calm"}, {"graphic": "polygon_gone_01"}],
+ "agloe": [{"stock": "country road autumn"}, {"graphic": "agloe_00"}, {"stock": "old general store"}, {"graphic": "agloe_01"}],
+ "bermeja": [{"stock": "oil platform sea"}, {"graphic": "bermeja_00"}],
+ "navigation": [{"stock": "sextant"}, {"stock": "pocket watch ticking"}, {"graphic": "navigation_00"}, {"stock": "sailing ship ocean"}, {"graphic": "navigation_01"}],
+ "pumice": [{"stock": "underwater volcano eruption"}, {"stock": "pumice stone"}, {"graphic": "pumice_00"}, {"stock": "waves breaking"}],
+ "pumice_scale": [{"stock": "volcano eruption smoke"}, {"graphic": "pumice_scale_00"}, {"graphic": "pumice_scale_01"}, {"stock": "floating stones water"}, {"graphic": "pumice_scale_02"}],
+ "finale": [{"stock": "sunset ocean horizon"}, {"stock": "old map candle"}, {"graphic": "finale_01"}]
+}

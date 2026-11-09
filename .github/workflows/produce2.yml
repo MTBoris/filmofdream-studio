@@ -1,0 +1,51 @@
+name: Produce episode v2 (Azure voice + stock footage)
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "Episode folder", default: "episodes/001-sandy-island"}
+      visuals: {description: "Visuals script", default: "scripts/visuals_sandy.py"}
+      upload: {description: "Upload to YouTube (unlisted): yes/no", default: "no"}
+permissions:
+  contents: write
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet matplotlib cartopy pillow numpy soundfile
+      - name: Narration (Azure, Dmitry)
+        run: python scripts/narrate_azure.py ${{ inputs.episode }}
+      - name: Graphics
+        run: python ${{ inputs.visuals }} frames
+      - name: Stock footage (Pixabay)
+        run: python scripts/stock.py ${{ inputs.episode }}/storyboard.json stock
+      - name: Render
+        run: python scripts/render2.py ${{ inputs.episode }}/storyboard.json frames stock out/narration.wav out/timeline.json video.mp4 --sheet storyboard-sheet.jpg
+      - run: python scripts/fill_meta.py ${{ inputs.episode }}/meta.json out/timeline.json meta.final.json
+      - uses: actions/upload-artifact@v4
+        with: {name: video, path: video.mp4}
+      - name: Upload to YouTube (unlisted)
+        if: inputs.upload == 'yes'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python scripts/yt_upload.py video.mp4 meta.final.json ${{ inputs.episode }}/thumbnail.jpg | tee upload.log
+      - name: Save build info
+        if: always()
+        run: |
+          d=${{ inputs.episode }}/build; mkdir -p $d
+          cp out/timeline.json out/ssml_log.txt stock/stock.json storyboard-sheet.jpg meta.final.json $d/ 2>/dev/null || true
+          ffmpeg -loglevel error -y -i out/narration.wav -ac 1 -b:a 96k $d/narration-preview.mp3 || true
+          [ -f upload.log ] && grep VIDEO_URL upload.log | cut -d' ' -f2 > $d/youtube_url.txt
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add $d && git commit -m "Build ${{ inputs.episode }}" && git push

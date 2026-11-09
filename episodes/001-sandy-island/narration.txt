@@ -1,9 +1,9 @@
 # Narration for TTS. One line = one TTS call (1-3 sentences).
-# "@scene name" starts a visual scene. Blank line = paragraph pause. Line ending with " //" = dramatic pause after it.
+# "+" before a vowel marks stress (converted to IPA for Azure). "@scene name" starts a visual scene. Blank line = paragraph pause. Line ending with " //" = dramatic pause after it.
 @scene hook_map
 На карте — остров длиной двадцать пять километров.
 Судно приходит в эту точку. Эхолот показывает: под килем — тысяча четыреста метров воды.
-Острова нет. //
++Острова нет. //
 И, похоже, никогда не было. //
 @scene coral_sea
 Это ноябрь две тысячи двенадцатого года. Коралловое море, между Австралией и Новой Каледонией.
