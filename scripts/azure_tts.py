@@ -5,7 +5,8 @@ from xml.sax.saxutils import escape
 voice, rate, textfile, out = sys.argv[1:5]
 text = open(textfile, encoding="utf-8").read().strip()
 paras = [p.strip() for p in text.split("\n\n") if p.strip()]
-body = "".join(f"<p>{escape(p)}</p>" for p in paras)
+raw = os.environ.get("RAW_SSML") == "1"  # text already contains SSML tags (phoneme etc.)
+body = "".join(f"<p>{p if raw else escape(p)}</p>" for p in paras)
 ssml = (f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="ru-RU">'
         f'<voice name="{voice}"><prosody rate="{rate}">{body}</prosody></voice></speak>')
 req = urllib.request.Request(

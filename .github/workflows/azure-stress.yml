@@ -1,0 +1,28 @@
+name: Azure stress test
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          mkdir -p casting/stress
+          for v in ru-RU-DmitryNeural ru-RU-SvetlanaNeural; do
+            parts=""
+            for t in a b c; do
+              if [ $t = c ]; then export RAW_SSML=1; else export RAW_SSML=0; fi
+              python3 scripts/azure_tts.py $v "-5%" bench/stress_$t.txt $t.wav || echo "FAILED $v $t"
+              [ -f $t.wav ] && parts="$parts -i $t.wav"
+            done
+            n=$(echo $parts | grep -o "\-i" | wc -l)
+            ffmpeg -loglevel error -y $parts -filter_complex "concat=n=$n:v=0:a=1" -b:a 128k casting/stress/$v.mp3
+            rm -f a.wav b.wav c.wav
+          done
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add casting/stress && git commit -m "Azure stress test" && git push
