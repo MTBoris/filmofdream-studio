@@ -5,7 +5,7 @@
    "graphic": "hook_map_00"
   },
   {
-   "stock": "research vessel ocean"
+   "stock": "ship ocean"
   },
   {
    "graphic": "hook_map_01"
@@ -44,7 +44,7 @@
    "stock": "old sailing ship sea"
   },
   {
-   "stock": "stormy sea waves ship",
+   "stock": "stormy sea",
    "caption": "1876 · китобой «Велосити»"
   },
   {
@@ -127,7 +127,7 @@
    "graphic": "polygon_gone_00"
   },
   {
-   "stock": "open ocean aerial calm"
+   "stock": "ocean aerial"
   },
   {
    "graphic": "polygon_gone_01"
@@ -146,7 +146,7 @@
  ],
  "bermeja": [
   {
-   "stock": "oil rig"
+   "stock": "offshore platform"
   },
   {
    "graphic": "bermeja_00"
@@ -154,7 +154,7 @@
  ],
  "navigation": [
   {
-   "stock": "ship compass"
+   "stock": "antique compass"
   },
   {
    "stock": "pocket watch ticking"
@@ -205,7 +205,7 @@
    "stock": "sunset ocean horizon"
   },
   {
-   "stock": "old map candle"
+   "stock": "old book candle"
   },
   {
    "graphic": "finale_01"
