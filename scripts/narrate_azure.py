@@ -98,9 +98,24 @@ def synth(inner_ssml):
             import time; time.sleep(3 * (attempt + 1))
 
 
+def check_homographs(lines):
+    """Stop the build if a meaning-dependent word is not stress-marked (and not in the pronunciation dictionary)."""
+    hom = set(json.load(open("voices/homographs.json", encoding="utf-8"))["words"])
+    bad = []
+    for l in lines:
+        for tok in re.findall(r"[+А-Яа-яЁё]+", l["text"]):
+            bare = tok.replace("+", "").lower()
+            if bare in hom and "+" not in tok and bare not in LEX:
+                bad.append(f"line {l['idx']}: {tok} — {l['text'][:70]}")
+    if bad:
+        print("UNMARKED HOMOGRAPHS (add + before the stressed vowel):\n" + "\n".join(bad))
+        sys.exit(1)
+
+
 def main(ep):
     import numpy as np
     items, lines = parse(ep)
+    check_homographs(lines)
     os.makedirs("out", exist_ok=True)
     sr = 48000
     gap = lambda ms: np.zeros(int(sr * ms / 1000), dtype=np.float32)
