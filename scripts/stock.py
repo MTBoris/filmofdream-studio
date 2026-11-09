@@ -18,6 +18,13 @@ def search(q):
         print("Pixabay search error", e.code, e.read()[:200]); raise
 
 
+def search_id(i):
+    url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": key, "id": i})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (filmofdream-studio)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r).get("hits", [])
+
+
 for scene, shots in sb.items():
     if scene.startswith("_"):
         continue
@@ -26,6 +33,10 @@ for scene, shots in sb.items():
             continue
         hits = search(shot["stock"]); time.sleep(0.7)
         pick = None
+        BAD = ("ai generated", "ai-generated", "fantasy", "3d", "render", "animation", "cgi", "futuristic", "sci-fi", "generated")
+        hits = [h for h in hits if h.get("type", "film") == "film" and not any(b in h.get("tags", "").lower() for b in BAD)]
+        if shot.get("pixabay_id"):
+            hits = [h for h in search_id(shot["pixabay_id"])] + hits
         for h in hits:
             v = h["videos"].get("large") or {}
             if h["id"] in used or not v.get("url") or v.get("width", 0) < 1920 or h.get("duration", 0) < 5:
