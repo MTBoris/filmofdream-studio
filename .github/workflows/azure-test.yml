@@ -1,0 +1,23 @@
+name: Azure voice test
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          mkdir -p casting/azure
+          for v in "ru-RU-DmitryNeural:-5%" "ru-RU-SvetlanaNeural:-5%" "ru-RU-DariyaNeural:-5%" "en-US-AndrewMultilingualNeural:-5%"; do
+            name=${v%%:*}; rate=${v##*:}
+            python3 scripts/azure_tts.py "$name" "$rate" bench/azure_test.txt out.wav || { echo "FAILED $name"; continue; }
+            ffmpeg -loglevel error -y -i out.wav -b:a 128k casting/azure/$name.mp3
+          done
+          ls -la casting/azure
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add casting/azure && git commit -m "Azure voice test" && git push
