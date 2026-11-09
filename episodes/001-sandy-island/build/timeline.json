@@ -1,5 +1,5 @@
 {
- "duration": 496.21,
+ "duration": 496.22,
  "scenes": [
   {
    "scene": "hook_map",
@@ -39,23 +39,23 @@
   },
   {
    "scene": "voyage",
-   "start": 224.78
+   "start": 224.79
   },
   {
    "scene": "depth_profile",
-   "start": 253.46
+   "start": 253.47
   },
   {
    "scene": "news",
-   "start": 268.98
+   "start": 268.99
   },
   {
    "scene": "polygon_gone",
-   "start": 285.45
+   "start": 285.46
   },
   {
    "scene": "agloe",
-   "start": 301.93
+   "start": 301.94
   },
   {
    "scene": "bermeja",
@@ -67,7 +67,7 @@
   },
   {
    "scene": "pumice",
-   "start": 406.11
+   "start": 406.12
   },
   {
    "scene": "pumice_scale",

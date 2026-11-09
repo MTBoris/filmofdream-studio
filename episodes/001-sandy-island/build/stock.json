@@ -67,7 +67,7 @@
   "pixabay_id": 30087,
   "page": "https://pixabay.com/videos/id-30087/",
   "duration": 17,
-  "tags": "arabia, middle, east, desert, map, geography, old, travel, city, muslim, jordan, saudi, egypt, africa, arabic, gulf, mosque, arabian, islam, minaret, islamic"
+  "tags": "arabia, middle, east, desert, muslim, map, geography, old, travel, city, jordan, saudi, egypt, africa, arabic, gulf, mosque, arabian, islam, minaret, islamic"
  },
  "digital_0": {
   "query": "computer data digital",
@@ -117,6 +117,13 @@
   "page": "https://pixabay.com/videos/id-92373/",
   "duration": 52,
   "tags": "rice, field, country road, rural, autumn, wind, hometown"
+ },
+ "bermeja_0": {
+  "query": "ocean waves aerial",
+  "pixabay_id": 111263,
+  "page": "https://pixabay.com/videos/id-111263/",
+  "duration": 22,
+  "tags": "beach, ocean, waves, water, sand, aerial, drone, landscape, nature, live wallpaper"
  },
  "navigation_0": {
   "query": "antique compass",
