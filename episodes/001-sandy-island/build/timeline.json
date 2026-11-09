@@ -1,5 +1,5 @@
 {
- "duration": 511.34,
+ "duration": 496.21,
  "scenes": [
   {
    "scene": "hook_map",
@@ -7,75 +7,75 @@
   },
   {
    "scene": "coral_sea",
-   "start": 16.64
+   "start": 16.54
   },
   {
    "scene": "locator",
-   "start": 43.05
+   "start": 42.71
   },
   {
    "scene": "black_polygon",
-   "start": 59.54
+   "start": 57.78
   },
   {
    "scene": "whaler",
-   "start": 87.14
+   "start": 84.98
   },
   {
    "scene": "chart_1908",
-   "start": 118.42
+   "start": 114.3
   },
   {
    "scene": "existence_doubtful",
-   "start": 150.88
+   "start": 147.48
   },
   {
    "scene": "timeline_removed",
-   "start": 163.52
+   "start": 161.25
   },
   {
    "scene": "digital",
-   "start": 193.02
+   "start": 190.93
   },
   {
    "scene": "voyage",
-   "start": 228.42
+   "start": 224.78
   },
   {
    "scene": "depth_profile",
-   "start": 260.05
+   "start": 253.46
   },
   {
    "scene": "news",
-   "start": 276.36
+   "start": 268.98
   },
   {
    "scene": "polygon_gone",
-   "start": 295.25
+   "start": 285.45
   },
   {
    "scene": "agloe",
-   "start": 311.61
+   "start": 301.93
   },
   {
    "scene": "bermeja",
-   "start": 346.8
+   "start": 335.48
   },
   {
    "scene": "navigation",
-   "start": 365.78
+   "start": 354.89
   },
   {
    "scene": "pumice",
-   "start": 415.31
+   "start": 406.11
   },
   {
    "scene": "pumice_scale",
-   "start": 434.7
+   "start": 424.06
   },
   {
    "scene": "finale",
-   "start": 472.31
+   "start": 458.85
   }
  ]
 }
