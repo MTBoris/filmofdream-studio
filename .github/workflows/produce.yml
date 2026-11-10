@@ -36,6 +36,11 @@ jobs:
       - name: Render
         run: python scripts/render3.py shots.json stock assets out/narration.wav out/timeline.json video.mp4 --sheet storyboard-sheet.jpg
       - run: python scripts/fill_meta.py ${{ inputs.episode }}/meta.json out/timeline.json meta.final.json assets/assets.json
+      - name: QA (frame sheets every 2 s + rule - no stock clip repeats)
+        run: python scripts/qa_video.py video.mp4 shots.json stock qa --timeline out/timeline.json | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: qa, path: "qa/*", if-no-files-found: ignore}
       - uses: actions/upload-artifact@v4
         with: {name: video, path: video.mp4}
       - name: Upload to YouTube (unlisted)
@@ -50,6 +55,7 @@ jobs:
         run: |
           d=${{ inputs.episode }}/build; mkdir -p $d
           cp out/timeline.json out/ssml_log.txt stock/stock.json assets/assets.json shots.json storyboard-sheet.jpg meta.final.json $d/ 2>/dev/null || true
+          rm -rf $d/frames-review $d/qa; [ -d qa ] && cp -r qa $d/qa || true
           ffmpeg -loglevel error -y -i out/narration.wav -ac 1 -b:a 96k $d/narration-preview.mp3 || true
           [ -f upload.log ] && grep VIDEO_URL upload.log | cut -d' ' -f2 > $d/youtube_url.txt
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
