@@ -22,7 +22,9 @@ def test_v2_pipeline_smoke(tmp_path, monkeypatch):
                     "-ar", "48000", "-ac", "1", "narr.wav"], check=True)
     sb = {"version": 2, "assets": {"whaler": {"label": "РЕКОНСТРУКЦИЯ"},
                                    "nasa": {"url": "https://eoimages.gsfc.nasa.gov/x.jpg", "credit": "NASA"}},
-          "scenes": [{"scene": "a", "shots": [{"id": "s1", "type": "stock", "query": "x", "pick": "pix:1", "dur": 3},
+          "scenes": [{"scene": "a", "shots": [{"id": "s1", "type": "stock", "query": "x", "pick": "pix:1", "dur": 3,
+                                               "overlay": {"template": "ocean-fact", "data": {"value": 1400, "unit": "м", "label": "глубина"},
+                                                           "at": 0.2, "dur": 1.5}},
                                               {"id": "w", "type": "image", "asset_id": "whaler", "dur": "rest", "motion": "pan-right"}]},
                      {"scene": "b", "shots": [{"id": "n", "type": "external-image", "asset_id": "nasa", "dur": "rest", "motion": "pull-out"}]}]}
     tl = {"duration": 9.0, "scenes": [{"scene": "a", "start": 0}, {"scene": "b", "start": 6.0}], "words": []}
@@ -35,3 +37,11 @@ def test_v2_pipeline_smoke(tmp_path, monkeypatch):
     assert sorted(s["codec_type"] for s in info["streams"]) == ["audio", "video"]
     assert float(info["format"]["duration"]) == pytest.approx(9.0, abs=1.0)
     assert os.path.exists("sheet.jpg")
+    assert len(os.listdir("clips/ov000")) == 45  # 1.5 s of overlay frames at 30 fps
+    # the overlay is really in the video: a frame at 1 s differs from the plain stock frame
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", "1.2", "-i", "clips/000.mp4", "-frames:v", "1", "a.png"], check=True)
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", "2.8", "-i", "clips/000.mp4", "-frames:v", "1", "b.png"], check=True)
+    from PIL import Image, ImageChops
+    diff = ImageChops.difference(Image.open("a.png").convert("L").crop((90, 780, 700, 1015)),
+                                 Image.open("b.png").convert("L").crop((90, 780, 700, 1015)))
+    assert diff.getbbox() is not None

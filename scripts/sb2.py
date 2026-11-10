@@ -13,6 +13,7 @@ Format (see docs/STORYBOARD.md):
 The scene time comes from the narration timeline, so re-recording the voice does not break the build:
 the sum of the shot durations may differ from the real scene length by TOL seconds (it is then stretched to fit).
 """
+import copy
 import json
 import re
 import sys
@@ -226,7 +227,18 @@ def resolve(sb, tl, require_picks=True):
                     else:
                         at = shot["start"] + float(ov.get("at", OVERLAY_DELAY))
                     oend = min(shot["end"], at + float(ov["dur"])) if ov.get("dur") else shot["end"]
-                    shot["overlay"] = dict(ov, start=round(at, 3), end=round(oend, 3))
+                    data = copy.deepcopy(ov.get("data") or {})
+                    for key in ("events", "items"):  # list entries may carry their own cue -> absolute time "t"
+                        for e in data.get(key) or []:
+                            if isinstance(e, dict) and e.get("cue"):
+                                if not words:
+                                    raise StoryboardError(f"scene {name}, shot {sid}: {key} cue but the timeline has no word times")
+                                te = find_cue(words, name, e["cue"], int(e.get("nth", 1)))
+                                if te < at - TOL or te > oend:
+                                    raise StoryboardError(f"scene {name}, shot {sid}: cue {e['cue']!r} is spoken at {te:.1f}s, "
+                                                          f"outside the overlay {at:.1f}–{oend:.1f}s")
+                                e["t"] = round(max(te, at), 3)
+                    shot["overlay"] = dict(ov, data=data, start=round(at, 3), end=round(oend, 3))
                 except StoryboardError as e:
                     errs.append(str(e))
             shots.append(shot)
