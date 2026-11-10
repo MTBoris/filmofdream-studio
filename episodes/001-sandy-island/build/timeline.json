@@ -35,11 +35,11 @@
   },
   {
    "scene": "digital",
-   "start": 190.97
+   "start": 190.96
   },
   {
    "scene": "voyage",
-   "start": 224.83
+   "start": 224.82
   },
   {
    "scene": "depth_profile",
@@ -59,11 +59,11 @@
   },
   {
    "scene": "bermeja",
-   "start": 335.58
+   "start": 335.57
   },
   {
    "scene": "navigation",
-   "start": 355.1
+   "start": 355.09
   },
   {
    "scene": "pumice",
@@ -75,7 +75,7 @@
   },
   {
    "scene": "finale",
-   "start": 459.04
+   "start": 459.03
   }
  ]
 }
