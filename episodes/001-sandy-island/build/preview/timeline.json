@@ -1,5 +1,5 @@
 {
- "duration": 46.85,
+ "duration": 47.13,
  "scenes": [
   {
    "scene": "locator",
@@ -7,7 +7,7 @@
   },
   {
    "scene": "timeline_removed",
-   "start": 15.66
+   "start": 15.94
   }
  ],
  "words": [
@@ -48,561 +48,568 @@
   },
   {
    "w": "лежал",
-   "start": 3.687,
-   "end": 4.029,
+   "start": 3.685,
+   "end": 4.067,
    "scene": "locator",
    "line": 9
   },
   {
-   "w": "примерно",
-   "start": 4.029,
-   "end": 4.437,
+   "w": "больше",
+   "start": 4.067,
+   "end": 4.409,
+   "scene": "locator",
+   "line": 9
+  },
+  {
+   "w": "чем",
+   "start": 4.409,
+   "end": 4.646,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "в",
-   "start": 4.437,
-   "end": 4.516,
+   "start": 4.646,
+   "end": 4.685,
    "scene": "locator",
    "line": 9
   },
   {
-   "w": "пятистах",
-   "start": 4.516,
-   "end": 5.056,
+   "w": "четырёхстах",
+   "start": 4.685,
+   "end": 5.37,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "километрах",
-   "start": 5.056,
-   "end": 5.661,
+   "start": 5.37,
+   "end": 5.962,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "к",
-   "start": 5.661,
-   "end": 5.713,
+   "start": 5.962,
+   "end": 6.014,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "северо-западу",
-   "start": 5.713,
-   "end": 6.477,
+   "start": 6.014,
+   "end": 6.764,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "от",
-   "start": 6.477,
-   "end": 6.7,
+   "start": 6.764,
+   "end": 6.988,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "Новой",
-   "start": 6.7,
-   "end": 6.95,
+   "start": 6.988,
+   "end": 7.238,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "Каледонии",
-   "start": 6.95,
-   "end": 7.477,
+   "start": 7.238,
+   "end": 7.764,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "между",
-   "start": 7.845,
-   "end": 8.135,
+   "start": 8.146,
+   "end": 8.435,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "островами",
-   "start": 8.135,
-   "end": 8.648,
+   "start": 8.435,
+   "end": 8.935,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "Честерфилд",
-   "start": 8.648,
-   "end": 9.411,
+   "start": 8.935,
+   "end": 9.699,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "и",
-   "start": 9.411,
-   "end": 9.503,
+   "start": 9.699,
+   "end": 9.791,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "рифом",
-   "start": 9.503,
-   "end": 9.858,
+   "start": 9.791,
+   "end": 10.133,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "Нереус",
-   "start": 9.858,
-   "end": 10.398,
+   "start": 10.133,
+   "end": 10.672,
    "scene": "locator",
    "line": 9
   },
   {
    "w": "Место",
-   "start": 10.726,
-   "end": 11.239,
+   "start": 11.007,
+   "end": 11.52,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "пустынное",
-   "start": 11.16,
-   "end": 11.805,
+   "start": 11.442,
+   "end": 12.087,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "океан",
-   "start": 11.989,
-   "end": 12.568,
+   "start": 12.271,
+   "end": 12.85,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "редкие",
-   "start": 12.858,
-   "end": 13.239,
+   "start": 13.139,
+   "end": 13.521,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "рифы",
-   "start": 13.239,
-   "end": 13.608,
+   "start": 13.521,
+   "end": 13.889,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "почти",
-   "start": 13.858,
-   "end": 14.279,
+   "start": 14.139,
+   "end": 14.56,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "никаких",
-   "start": 14.279,
-   "end": 14.805,
+   "start": 14.56,
+   "end": 15.087,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "судов",
-   "start": 14.805,
-   "end": 15.331,
+   "start": 15.087,
+   "end": 15.613,
    "scene": "locator",
    "line": 10
   },
   {
    "w": "Французская",
-   "start": 15.657,
-   "end": 16.407,
+   "start": 15.938,
+   "end": 16.688,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "гидрографическая",
-   "start": 16.328,
-   "end": 17.236,
+   "start": 16.61,
+   "end": 17.518,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "служба",
-   "start": 17.236,
-   "end": 17.684,
+   "start": 17.518,
+   "end": 17.965,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "убрала",
-   "start": 17.684,
-   "end": 18.157,
+   "start": 17.965,
+   "end": 18.439,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "Сэнди",
-   "start": 18.157,
-   "end": 18.605,
+   "start": 18.439,
+   "end": 18.886,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "со",
-   "start": 18.605,
-   "end": 18.763,
+   "start": 18.886,
+   "end": 19.044,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "своих",
-   "start": 18.763,
-   "end": 19.065,
+   "start": 19.044,
+   "end": 19.347,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "карт",
-   "start": 19.065,
-   "end": 19.394,
+   "start": 19.347,
+   "end": 19.676,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "в",
-   "start": 19.394,
-   "end": 19.513,
+   "start": 19.676,
+   "end": 19.794,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "тысяча",
-   "start": 19.513,
-   "end": 19.986,
+   "start": 19.794,
+   "end": 20.268,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "девятьсот",
-   "start": 19.986,
-   "end": 20.434,
+   "start": 20.268,
+   "end": 20.715,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "семьдесят",
-   "start": 20.434,
-   "end": 20.894,
+   "start": 20.715,
+   "end": 21.176,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "четвёртом",
-   "start": 20.894,
-   "end": 21.355,
+   "start": 21.176,
+   "end": 21.636,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "году",
-   "start": 21.355,
-   "end": 21.828,
+   "start": 21.636,
+   "end": 22.11,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "Австралийская",
-   "start": 22.789,
-   "end": 23.789,
+   "start": 23.07,
+   "end": 24.07,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "в",
-   "start": 24.105,
-   "end": 24.144,
+   "start": 24.386,
+   "end": 24.426,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "восемьдесят",
-   "start": 24.144,
-   "end": 24.881,
+   "start": 24.426,
+   "end": 25.162,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "пятом",
-   "start": 24.881,
-   "end": 25.355,
+   "start": 25.162,
+   "end": 25.636,
    "scene": "timeline_removed",
    "line": 26
   },
   {
    "w": "Её",
-   "start": 25.647,
-   "end": 26.121,
+   "start": 25.929,
+   "end": 26.402,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "промеры",
-   "start": 26.036,
-   "end": 26.509,
+   "start": 26.317,
+   "end": 26.791,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "показали",
-   "start": 26.509,
-   "end": 26.996,
+   "start": 26.791,
+   "end": 27.278,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "в",
-   "start": 26.996,
-   "end": 27.062,
+   "start": 27.278,
+   "end": 27.343,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "этом",
-   "start": 27.062,
-   "end": 27.259,
+   "start": 27.343,
+   "end": 27.541,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "районе",
-   "start": 27.259,
-   "end": 27.68,
+   "start": 27.541,
+   "end": 27.962,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "от",
-   "start": 27.68,
-   "end": 27.878,
+   "start": 27.962,
+   "end": 28.159,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "полутора",
-   "start": 27.878,
-   "end": 28.365,
+   "start": 28.159,
+   "end": 28.646,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "до",
-   "start": 28.365,
-   "end": 28.549,
+   "start": 28.646,
+   "end": 28.83,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "двух",
-   "start": 28.549,
-   "end": 28.878,
+   "start": 28.83,
+   "end": 29.159,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "с",
-   "start": 28.878,
-   "end": 28.957,
+   "start": 29.159,
+   "end": 29.238,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "лишним",
-   "start": 28.957,
-   "end": 29.43,
+   "start": 29.238,
+   "end": 29.712,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "тысяч",
-   "start": 29.43,
-   "end": 29.838,
+   "start": 29.712,
+   "end": 30.12,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "метров",
-   "start": 29.838,
-   "end": 30.194,
+   "start": 30.12,
+   "end": 30.475,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "глубины",
-   "start": 30.194,
-   "end": 30.786,
+   "start": 30.475,
+   "end": 31.067,
    "scene": "timeline_removed",
    "line": 27
   },
   {
    "w": "Профессиональные",
-   "start": 31.407,
-   "end": 32.315,
+   "start": 31.689,
+   "end": 32.597,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "гидрографы",
-   "start": 32.243,
-   "end": 32.967,
+   "start": 32.524,
+   "end": 33.248,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "остров",
-   "start": 32.967,
-   "end": 33.532,
+   "start": 33.248,
+   "end": 33.814,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "вычеркнули",
-   "start": 33.533,
-   "end": 34.454,
+   "start": 33.814,
+   "end": 34.735,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "Казалось",
-   "start": 35.361,
-   "end": 35.927,
+   "start": 35.643,
+   "end": 36.209,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "бы",
-   "start": 35.927,
-   "end": 36.151,
+   "start": 36.209,
+   "end": 36.432,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "история",
-   "start": 36.375,
-   "end": 36.98,
+   "start": 36.656,
+   "end": 37.261,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "закончена",
-   "start": 36.98,
-   "end": 37.782,
+   "start": 37.261,
+   "end": 38.064,
    "scene": "timeline_removed",
    "line": 28
   },
   {
    "w": "Но",
-   "start": 38.088,
-   "end": 38.378,
+   "start": 38.37,
+   "end": 38.659,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "остров",
-   "start": 38.3,
-   "end": 38.827,
+   "start": 38.582,
+   "end": 39.108,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "уже",
-   "start": 38.827,
-   "end": 39.116,
+   "start": 39.108,
+   "end": 39.398,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "жил",
-   "start": 39.116,
-   "end": 39.379,
+   "start": 39.398,
+   "end": 39.661,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "своей",
-   "start": 39.379,
-   "end": 39.708,
+   "start": 39.661,
+   "end": 39.99,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "жизнью",
-   "start": 39.708,
-   "end": 40.208,
+   "start": 39.99,
+   "end": 40.49,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "в",
-   "start": 40.471,
-   "end": 40.537,
+   "start": 40.753,
+   "end": 40.819,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "другом",
-   "start": 40.537,
-   "end": 40.945,
+   "start": 40.819,
+   "end": 41.226,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "месте",
-   "start": 40.945,
-   "end": 41.485,
+   "start": 41.226,
+   "end": 41.766,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "И",
-   "start": 42.432,
-   "end": 42.695,
+   "start": 42.713,
+   "end": 42.976,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "там",
-   "start": 42.695,
-   "end": 42.919,
+   "start": 42.976,
+   "end": 43.2,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "его",
-   "start": 42.919,
-   "end": 43.182,
+   "start": 43.2,
+   "end": 43.463,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "никто",
-   "start": 43.182,
-   "end": 43.577,
+   "start": 43.463,
+   "end": 43.858,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "не",
-   "start": 43.577,
-   "end": 43.682,
+   "start": 43.858,
+   "end": 43.963,
    "scene": "timeline_removed",
    "line": 29
   },
   {
    "w": "вычёркивал",
-   "start": 43.682,
-   "end": 44.419,
+   "start": 43.963,
+   "end": 44.7,
    "scene": "timeline_removed",
    "line": 29
   }

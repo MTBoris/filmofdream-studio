@@ -1,34 +1,34 @@
 {
  "loc-1": {
   "query": "ocean waves",
-  "pixabay_id": 1890,
-  "page": "https://pixabay.com/videos/id-1890/",
-  "duration": 34,
-  "tags": "cliff, island, aerial view, nature, landscape, ocean, sea, waves",
+  "pixabay_id": 42543,
+  "page": "https://pixabay.com/videos/id-42543/",
+  "duration": 12,
+  "tags": "wave, sea, water, sky, power, ocean waves",
   "rendition": "large"
  },
  "loc-2": {
   "query": "sea horizon",
-  "pixabay_id": 21528,
-  "page": "https://pixabay.com/videos/id-21528/",
-  "duration": 30,
-  "tags": "ocean, sailing, blue, waves, horizon, water, sea",
+  "pixabay_id": 306155,
+  "page": "https://pixabay.com/videos/id-306155/",
+  "duration": 12,
+  "tags": "sun, seascape, water, sunset, sea, horizon, red, ocean, reflection, calm, tranquil scene, peaceful, calmness, calming, peace",
   "rendition": "large"
  },
  "loc-3": {
   "query": "ocean aerial",
-  "pixabay_id": 2946,
-  "page": "https://pixabay.com/videos/id-2946/",
-  "duration": 14,
-  "tags": "island, motorboat, sea, ocean, aerial video, landscape, speedboat, boat",
+  "pixabay_id": 169443,
+  "page": "https://pixabay.com/videos/id-169443/",
+  "duration": 9,
+  "tags": "sea, ocean, sunset, sunrise, waves, seascape, sun, water, clouds, aerial view, tropical, sky, reflection, evening, drone, summer vacation, scenery, cloudscape, waterscape, sundown, paradise, summer",
   "rendition": "large"
  },
  "tl-1": {
   "query": "ocean sunset",
-  "pixabay_id": 140111,
-  "page": "https://pixabay.com/videos/id-140111/",
-  "duration": 20,
-  "tags": "sea, ocean, seagulls, birds, sunset, dusk, beach, paradise, flight, nature",
+  "pixabay_id": 233867,
+  "page": "https://pixabay.com/videos/id-233867/",
+  "duration": 23,
+  "tags": "ocean, sea, wave, water, sunset, reflection, gold, shiny, splashing, rippled, flowing, water surface, ripple, seascape",
   "rendition": "large"
  },
  "tl-2": {
@@ -41,10 +41,10 @@
  },
  "tl-3": {
   "query": "stormy sea",
-  "pixabay_id": 275633,
-  "page": "https://pixabay.com/videos/id-275633/",
-  "duration": 54,
-  "tags": "sea, wave, beach, sunset, ocean, sunrise, sunlight, seascape, shore, coastline, island, cliff, coast, splashing, seacoast, light, coastal, splash, shining, stormy, rock, sun",
+  "pixabay_id": 136684,
+  "page": "https://pixabay.com/videos/id-136684/",
+  "duration": 14,
+  "tags": "ocean, rain, seaview, philippines, stormy weather, rainy days, nature",
   "rendition": "large"
  }
 }
