@@ -59,3 +59,15 @@ def test_data_files_are_valid():
     for w, marked in na.LEX.items():
         assert marked.count("+") == 1, f"pronunciations.json: {w}"
         assert marked.replace("+", "") == w
+
+
+def test_estimated_word_times_fill_the_line():
+    ws = na.estimate_words("Раз два три", 10.0, 3.0)
+    assert [w["w"] for w in ws] == ["Раз", "два", "три"]
+    assert ws[0]["start"] == 10.0 and ws[-1]["end"] == 13.0
+
+
+def test_azure_word_times_are_shifted_by_trimmed_lead_and_line_start():
+    ws = na.line_words("Раз два", [("Раз", 0.30, 0.2), ("два", 0.55, 0.3)], line_start=5.0, lead_trim=0.26, dur=1.0)
+    assert ws[0]["start"] == 5.04 and ws[1]["start"] == 5.29
+    assert na.line_words("Раз два", [("Раз", 0.0, 0.2)], 5.0, 0.5, 1.0)[0]["start"] == 5.0  # never before the line
