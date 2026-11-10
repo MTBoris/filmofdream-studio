@@ -152,7 +152,7 @@ def s_locator():
     ax.annotate("", xy=(SANDY[0] + 0.3, SANDY[1] - 0.2), xytext=(NOUMEA[0] - 0.3, NOUMEA[1] + 0.3),
                 arrowprops=dict(arrowstyle="<->", color=RED, lw=3), xycoords=ccrs.PlateCarree()._as_mpl_transform(ax),
                 textcoords=ccrs.PlateCarree()._as_mpl_transform(ax))
-    caption(fig, "≈ 500 км до Новой Каледонии", y=0.1, color=INK, size=44)
+    caption(fig, "> 400 км до Новой Каледонии", y=0.1, color=INK, size=44)
     save(fig, "locator")
 
 

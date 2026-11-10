@@ -48,6 +48,26 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. ChatGPT writes i
   when Azure says the first word of the phrase (`nth` = which occurrence, default 1). Without `cue`: `at` seconds after the shot
   start (default 0.4). `dur` optional (default: until the shot ends).
 
+## Overlay templates (all drawn over the ocean video; palette `#101D2B #213E50 #E6D6B8 #D3A35B #E8EEF1`, PT Serif / IBM Plex Sans, margins 90/65 px)
+| template | `data` | `size` order |
+|---|---|---|
+| `ocean-fact` | `value` (number, list `[1500, 2000]` for a range, or a string such as `"400+"`, `"≈26"` – the number counts up, prefix/suffix stay), `unit`, `label`, `note`, `prefix`, `suffix`, `decimals` | value, label, note |
+| `ocean-coords` | `lat`, `lon` (text, typed in), `label`, `note` | coords, label, note |
+| `ocean-map` | `center [lat, lon]`, `span_km`, `title`, `marker {lat, lon, label}`, `points [...]` (points outside the card are skipped), `scale_km`, `note` | title, label, note |
+| `ocean-timeline` | `events [{date, label, cue?}]` – each event appears on its own `cue`; event text is never smaller than 34 px and sits on a local dark panel | date, event |
+| `ocean-compare` | `a {label, w, h}`, `b {...}`, `unit`, `note`, `max_px` – both shapes to the same scale | label, dims, note |
+| `lower-third` | `text`, `sub` (caption / source) | text, sub |
+| `title-card` | `title`, `subtitle` (chapter or final title) | card, subtitle |
+
+`size` is an object (`{"value": 100, "label": 80}`) or a list in the order above (e.g. `[100, 80, 100]`).
+Characters missing in the font (e.g. the minute sign ′ in PT Serif) are replaced by the nearest available one.
+
+## Stock rule: open water only
+Candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar words) are dropped. The only exception is a
+**research ship** shot: `query` contains "research ship", or the shot has `"vessels": true` (land is still excluded). Every row of the
+candidate sheet says which rule applies (`open water only` / `research ship: boats allowed`); `candidates.json` records the rule too.
+The filter works on Pixabay tags, so ChatGPT still has to look at the frames on the sheet.
+
 ## Rules the validator enforces
 1. No stock clip is used twice in an episode (candidates are unique across shots; two equal picks are an error).
 2. Unique ids for shots; known types and motions; valid `pick` format.
