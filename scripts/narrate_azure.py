@@ -8,8 +8,27 @@ voices/pronunciations.json. Such words are sent to Azure as IPA <phoneme> (the o
 import json, os, re, subprocess, sys, urllib.request, io, wave
 from xml.sax.saxutils import escape
 
-sys.path.insert(0, os.path.dirname(__file__))
-from narrate import parse  # same narration.txt format
+
+def parse(ep):
+    """Read EPISODE/narration.txt -> (items, lines). Items: {"type": "scene"|"line"|"para", ...}.
+    "@scene NAME" starts a scene, a trailing "//" marks a dramatic pause, "#" lines are comments."""
+    items = []
+    for raw in open(os.path.join(ep, "narration.txt"), encoding="utf-8"):
+        s = raw.rstrip("\n")
+        if s.startswith("#"):
+            continue
+        if s.startswith("@scene"):
+            items.append({"type": "scene", "name": s.split(None, 1)[1].strip()})
+        elif not s.strip():
+            items.append({"type": "para"})
+        else:
+            dramatic = s.rstrip().endswith("//")
+            text = s.rstrip().rstrip("/").strip()
+            items.append({"type": "line", "text": text, "dramatic": dramatic})
+    lines = [i for i in items if i["type"] == "line"]
+    for n, l in enumerate(lines):
+        l["idx"] = n
+    return items, lines
 
 VOICE = os.environ.get("VOICE", "ru-RU-DmitryNeural")
 RATE = os.environ.get("RATE", "-5%")

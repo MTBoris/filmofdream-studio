@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+out/
+stock/
+frames/
+clips/
+*.wav
+video.mp4
+video_only.mp4
+audio.m4a
