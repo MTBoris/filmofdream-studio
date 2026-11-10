@@ -5,7 +5,7 @@
 stock           -> STOCK_DIR/<shot id>.mp4, looped/cropped to 1920x1080
 image/external  -> ASSETS_DIR/<asset_id>.png, Ken Burns (push-in / pull-out / pan-left / pan-right / none);
                    a label from the asset (e.g. РЕКОНСТРУКЦИЯ) is stamped in the top-left safe corner
-overlay         -> rendered by scripts/overlays.py (templates, PR 4); until a template exists it is skipped with a warning
+overlay         -> animated template frames from scripts/overlays.py, composited over the shot from overlay.start to overlay.end
 Timing comes from the resolved shots (absolute seconds), so it follows the narration.
 """
 import json
@@ -55,26 +55,42 @@ def shot_clip(s, k, nshots, stock_dir, assets_dir, assets, clips_dir):
     d = s["dur"] + (XF if k < nshots - 1 else 0)
     nf = int(round(d * FPS))
     clip = os.path.join(clips_dir, f"{k:03d}.mp4")
-    enc = ["-an", "-frames:v", str(nf), "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", clip]
+    cmd, chain, idx = ["ffmpeg", "-loglevel", "error", "-y"], [], 1
     if s["type"] == "stock":
         src = os.path.join(stock_dir, s["id"] + ".mp4")
         if not os.path.exists(src):
             raise SystemExit(f"missing stock clip for shot {s['id']}: {src}")
-        vf = ("scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,"
-              "eq=saturation=0.92:contrast=1.04,format=yuv420p")
-        run(["ffmpeg", "-loglevel", "error", "-y", "-stream_loop", "-1", "-i", src, "-vf", vf, *enc])
-        return clip, d
-    png = os.path.join(assets_dir, s["asset_id"] + ".png")
-    if not os.path.exists(png):
-        raise SystemExit(f"missing image for shot {s['id']}: {png}")
-    label = s.get("label") or (assets.get(s["asset_id"]) or {}).get("label")
+        cmd += ["-stream_loop", "-1", "-i", src]
+        chain.append("[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,"
+                     "eq=saturation=0.92:contrast=1.04,format=yuv420p[v0]")
+    else:
+        png = os.path.join(assets_dir, s["asset_id"] + ".png")
+        if not os.path.exists(png):
+            raise SystemExit(f"missing image for shot {s['id']}: {png}")
+        cmd += ["-loop", "1", "-i", png]
+        chain.append(f"[0:v]{kenburns_filter(s.get('motion', 'push-in'), nf)}[v0]")
+    cur = "v0"
+    label = None if s["type"] == "stock" else (s.get("label") or (assets.get(s["asset_id"]) or {}).get("label"))
     if label:
         lp = os.path.join(clips_dir, f"label{k:03d}.png")
         label_png(label, lp)
-        fc = f"[0:v]{kenburns_filter(s.get('motion', 'push-in'), nf)}[b];[b][1:v]overlay=0:0:format=auto,format=yuv420p[v]"
-        run(["ffmpeg", "-loglevel", "error", "-y", "-loop", "1", "-i", png, "-i", lp, "-filter_complex", fc, "-map", "[v]", *enc])
-    else:
-        run(["ffmpeg", "-loglevel", "error", "-y", "-loop", "1", "-i", png, "-vf", kenburns_filter(s.get("motion", "push-in"), nf), *enc])
+        cmd += ["-i", lp]
+        chain.append(f"[{cur}][{idx}:v]overlay=0:0:format=auto[v{idx}]")
+        cur, idx = f"v{idx}", idx + 1
+    ov = s.get("overlay")
+    if ov:
+        import overlays
+        fdir = os.path.join(clips_dir, f"ov{k:03d}")
+        n = overlays.render(ov, fdir, FPS)
+        off = max(0.0, ov["start"] - s["start"])
+        cmd += ["-framerate", str(FPS), "-i", os.path.join(fdir, "%04d.png")]
+        chain.append(f"[{idx}:v]setpts=PTS+{off:.3f}/TB[ovl{idx}];[{cur}][ovl{idx}]overlay=0:0:eof_action=pass:format=auto[v{idx}]")
+        cur, idx = f"v{idx}", idx + 1
+        print(f"  overlay {ov['template']} {ov['start']:.1f}-{ov['end']:.1f}s ({n} frames)", flush=True)
+    chain.append(f"[{cur}]format=yuv420p[vout]")
+    cmd += ["-filter_complex", ";".join(chain), "-map", "[vout]", "-an", "-frames:v", str(nf),
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", clip]
+    run(cmd)
     return clip, d
 
 
@@ -87,8 +103,6 @@ def main(shots_path, stock_dir, assets_dir, narration, tl_path, out, sheet=None)
     clips = []
     for k, s in enumerate(shots):
         clips.append(shot_clip(s, k, len(shots), stock_dir, assets_dir, assets, clips_dir))
-        if s.get("overlay"):
-            print(f"WARN: shot {s['id']}: overlay template {s['overlay']['template']!r} is not rendered yet", flush=True)
         print(f"shot {k:02d} {s['id']} {s['type']} {s['dur']:.1f}s", flush=True)
     if sheet:
         from PIL import Image

@@ -227,7 +227,25 @@ def cmd_fetch(sb_path, stockdir):
     json.dump(sources, open(os.path.join(stockdir, "stock.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
+def cmd_autopick(sb_path, candidates_json, out_path):
+    """PREVIEW ONLY: take the first candidate for every shot without a pick. Real episodes are picked by ChatGPT."""
+    sb = sb2.load(sb_path)
+    cands = json.load(open(candidates_json, encoding="utf-8"))["candidates"]
+    for sc in sb["scenes"]:
+        for k, s in enumerate(sc["shots"]):
+            sid = s.get("id") or f"{sc['scene']}-{k + 1}"
+            if s.get("type") == "stock" and not sb2.pick_id(s.get("pick")):
+                if not cands.get(sid):
+                    sys.exit(f"no candidate for {sid}")
+                s["pick"] = cands[sid][0]["pick"]
+    json.dump(sb, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("auto-picked (preview only) ->", out_path)
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 4 or sys.argv[1] not in ("candidates", "fetch"):
+    if sys.argv[1:2] == ["autopick"] and len(sys.argv) == 5:
+        cmd_autopick(*sys.argv[2:])
+    elif len(sys.argv) != 4 or sys.argv[1] not in ("candidates", "fetch"):
         sys.exit(__doc__)
-    {"candidates": cmd_candidates, "fetch": cmd_fetch}[sys.argv[1]](sys.argv[2], sys.argv[3])
+    else:
+        {"candidates": cmd_candidates, "fetch": cmd_fetch}[sys.argv[1]](sys.argv[2], sys.argv[3])

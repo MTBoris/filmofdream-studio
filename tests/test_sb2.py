@@ -140,3 +140,22 @@ def test_scene_duration_mismatch_is_only_a_warning():
 def test_find_cue_nth():
     words = [{"w": "метров", "start": 1, "scene": "x"}, {"w": "метров", "start": 9, "scene": "x"}]
     assert sb2.find_cue(words, "x", "метров", 2) == 9
+
+
+def test_event_cues_resolve_to_absolute_times():
+    b = board()
+    b["scenes"][0]["shots"][0]["overlay"] = {
+        "template": "ocean-timeline", "cue": "глубина",
+        "data": {"events": [{"date": "1", "label": "a", "cue": "тысяча"}, {"date": "2", "label": "b", "cue": "метров"}]}}
+    shots, _ = sb2.resolve(b, TL)
+    ev = shots[0]["overlay"]["data"]["events"]
+    assert ev[0]["t"] == 3.6 and ev[1]["t"] == 4.6
+    assert "t" not in b["scenes"][0]["shots"][0]["overlay"]["data"]["events"][0]  # input is not modified
+
+
+def test_event_cue_outside_overlay_is_an_error():
+    b = board()
+    b["scenes"][0]["shots"][0]["overlay"] = {"template": "ocean-timeline", "cue": "глубина",
+                                              "data": {"events": [{"date": "1", "label": "a", "cue": "тысяча", "nth": 1}]}, "dur": 0.5}
+    with pytest.raises(sb2.StoryboardError, match="outside the overlay"):
+        sb2.resolve(b, TL)

@@ -191,7 +191,17 @@ def check_homographs(lines):
 def main(ep):
     import numpy as np
     items, lines = parse(ep)
-    check_homographs(lines)
+    check_homographs(lines)  # always on the whole text
+    only = [x.strip() for x in os.environ.get("ONLY_SCENES", "").split(",") if x.strip()]
+    if only:  # scene preview: narrate just these scenes
+        keep, on = [], False
+        for it in items:
+            if it["type"] == "scene":
+                on = it["name"] in only
+            if on:
+                keep.append(it)
+        items = keep
+        print("ONLY_SCENES:", ", ".join(only), flush=True)
     os.makedirs("out", exist_ok=True)
     sr = 48000
     gap = lambda ms: np.zeros(int(sr * ms / 1000), dtype=np.float32)

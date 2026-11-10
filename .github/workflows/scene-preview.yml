@@ -1,0 +1,50 @@
+name: Scene preview (templates on real scenes)
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "Episode folder", default: "episodes/001-sandy-island"}
+      storyboard: {description: "Preview storyboard file", default: "preview.storyboard.json"}
+      scenes: {description: "Scenes to narrate (comma separated)", default: "locator,timeline_removed"}
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      ONLY_SCENES: ${{ inputs.scenes }}
+      SB: ${{ inputs.episode }}/${{ inputs.storyboard }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet matplotlib pillow numpy soundfile azure-cognitiveservices-speech cartopy shapely
+      - run: python scripts/sb2.py check "$SB"
+      - name: Candidates + auto-pick (PREVIEW ONLY)
+        run: |
+          python scripts/stock2.py candidates "$SB" cands | tail -5
+          python scripts/stock2.py autopick "$SB" cands/candidates.json picked.json
+      - name: Narration of the preview scenes (word times)
+        run: python scripts/narrate_azure.py ${{ inputs.episode }}
+      - run: python scripts/sb2.py resolve picked.json out/timeline.json shots.json
+      - run: python scripts/assets.py ${{ inputs.episode }} picked.json assets
+      - run: python scripts/stock2.py fetch picked.json stock
+      - run: python scripts/render3.py shots.json stock assets out/narration.wav out/timeline.json video.mp4
+      - name: Compress + frame sheet
+        run: |
+          d=${{ inputs.episode }}/build/preview; rm -rf $d; mkdir -p $d
+          ffmpeg -loglevel error -y -i video.mp4 -vf scale=1280:720 -c:v libx264 -crf 27 -preset medium -c:a aac -b:a 128k -movflags +faststart $d/preview.mp4
+          ffmpeg -loglevel error -y -i video.mp4 -vf "fps=1/2,scale=384:216,tile=5x6" -frames:v 1 -q:v 4 $d/preview-sheet.jpg
+          cp out/timeline.json shots.json stock/stock.json $d/
+          ls -la $d
+      - uses: actions/upload-artifact@v4
+        with: {name: preview, path: "${{ inputs.episode }}/build/preview/*"}
+      - name: Commit preview
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add ${{ inputs.episode }}/build/preview && git commit -m "Template preview" && git push
