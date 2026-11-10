@@ -358,7 +358,7 @@ def s_navigation():
     ax.plot([5, 5 + 2.1 * math.cos(-0.4)], [4.5, 4.5 + 2.1 * math.sin(-0.4)], color=RED, lw=3)
     ax.text(11.2, 5.4, "1 минута", fontsize=60, color=INK, ha="center", weight="bold")
     ax.text(11.2, 4.4, "ошибки часов", fontsize=40, color=INK, ha="center")
-    ax.text(11.2, 2.8, "≈ 30 км", fontsize=90, color=RED, ha="center", weight="bold")
+    ax.text(11.2, 2.8, "> 25 км", fontsize=90, color=RED, ha="center", weight="bold")
     save(fig, "navigation")
     fig, ax = chart([157.5, 161, -20.3, -18.3], old=True)
     island_shape(ax, *SANDY, "none", RED, ls="--")
