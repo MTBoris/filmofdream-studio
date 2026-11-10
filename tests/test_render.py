@@ -66,3 +66,15 @@ def test_render_smoke(tmp_path, monkeypatch):
     assert sorted(s["codec_type"] for s in info["streams"]) == ["audio", "video"]
     assert float(info["format"]["duration"]) == pytest.approx(8.0, abs=1.0)
     assert os.path.exists("sheet.jpg")
+
+
+def test_fill_meta_image_credits(tmp_path):
+    meta = {"description": "Intro\n{CHAPTERS}\n\nФото:\n{IMAGE_CREDITS}", "chapters": [["a", "Start"]]}
+    tl = {"duration": 10, "scenes": [{"scene": "a", "start": 0}]}
+    assets_json = {"x": {"credit": "NASA image courtesy Y"}, "y": {"credit": "NASA image courtesy Y"}, "z": {"credit": None}}
+    for n, d in (("m", meta), ("t", tl), ("a", assets_json)):
+        (tmp_path / f"{n}.json").write_text(json.dumps(d), encoding="utf-8")
+    subprocess.run(["python3", "scripts/fill_meta.py", tmp_path / "m.json", tmp_path / "t.json", tmp_path / "o.json", tmp_path / "a.json"],
+                   check=True, capture_output=True)
+    desc = json.load(open(tmp_path / "o.json", encoding="utf-8"))["description"]
+    assert desc.count("NASA image courtesy Y") == 1 and "{IMAGE_CREDITS}" not in desc

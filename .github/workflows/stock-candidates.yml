@@ -1,0 +1,36 @@
+name: Stock candidates (3 per shot)
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "Episode folder", default: "episodes/001-sandy-island"}
+      storyboard: {description: "Storyboard file inside the episode folder", default: "storyboard.json"}
+permissions:
+  contents: write
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet pillow matplotlib
+      - name: Validate storyboard
+        run: python scripts/sb2.py check ${{ inputs.episode }}/${{ inputs.storyboard }}
+      - name: Search + candidate sheets
+        run: python scripts/stock2.py candidates ${{ inputs.episode }}/${{ inputs.storyboard }} ${{ inputs.episode }}/build/candidates | tee candidates.log
+      - uses: actions/upload-artifact@v4
+        with: {name: candidates, path: "${{ inputs.episode }}/build/candidates/sheet-*.jpg"}
+      - name: Commit sheets, candidates.json and the search cache
+        run: |
+          d=${{ inputs.episode }}/build/candidates
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git pull -q; git add $d && git commit -m "Stock candidates for ${{ inputs.episode }}" && git push || true
+      - name: Summary
+        if: always()
+        run: |
+          { echo '### Stock candidates'; echo '```'; grep -v '^searched' candidates.log | tail -30; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

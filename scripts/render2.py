@@ -81,6 +81,11 @@ def main(sb_path, frames_dir, stock_dir, narration, tl_path, out, sheet=None):
         for i, p in enumerate(thumbs):
             im.paste(Image.open(p), ((i % cols) * 384, (i // cols) * 216))
         im.save(sheet, quality=82)
+    assemble(clips, narration, total, out)
+
+
+def assemble(clips, narration, total, out):
+    """Cross-dissolve the shot clips [(path, duration)], mix narration + ducked music, mux to `out`."""
     inputs, fl, last, t = [], [], "0:v", clips[0][1]
     for c, _ in clips:
         inputs += ["-i", c]
