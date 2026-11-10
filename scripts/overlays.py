@@ -423,8 +423,46 @@ class MapBase:
         return out
 
 
+def label_box(x, y, dx, dy, anc, w, fh):
+    bx0 = {"ls": x + dx, "rs": x + dx - w, "ms": x + dx - w / 2}[anc]
+    return (bx0, y + dy - fh, bx0 + w, y + dy + fh * 0.3)
+
+
+def place_labels(items, card, fh):
+    """items: [(x, y, label, width)] in card coordinates. Returns [(dx, dy, anchor)] (None for an empty label): the first position
+    (right/left of the dot, then centred below/above) that stays inside `card` and covers no other label or dot."""
+    x0, y0, x1, y1 = card
+    dots = [(x - 14, y - 14, x + 14, y + 14) for x, y, _, _ in items]
+    labels, out = [], []
+    # candidate offsets from the dot, nearest first (right-up is preferred on ties)
+    options = sorted([(dx, dy, "ls" if dx > 0 else "rs" if dx < 0 else "ms") for dx in (20, -20, 0, 150, -150, 260, -260)
+                      for dy in (-16, 38, -34, 62, -70, 100, -100)], key=lambda o: (math.hypot(o[0] * 0.6, o[1]), -o[0]))
+
+    def clash(box, others):
+        return any(not (box[2] < o[0] - 4 or box[0] > o[2] + 4 or box[3] < o[1] - 4 or box[1] > o[3] + 4) for o in others)
+
+    for i, (x, y, label, w) in enumerate(items):
+        if not label:
+            out.append(None)
+            continue
+        others = labels + [d for j, d in enumerate(dots) if j != i]
+        pick = None
+        for dx, dy, anc in options:
+            box = label_box(x, y, dx, dy, anc, w, fh)
+            if box[0] >= x0 and box[2] <= x1 and box[1] >= y0 and box[3] <= y1 and not clash(box, others):
+                pick = (dx, dy, anc)
+                break
+        if pick is None:
+            pick = options[0]
+        labels.append(label_box(x, y, *pick[:2], pick[2], w, fh))
+        out.append(pick)
+    return out
+
+
 def ocean_map(t, D, data, ctx):
     sz = sizes(data, ("title", "label", "note"))
+    if not (isinstance(data.get("size"), dict) and "label" in data["size"]) and not isinstance(data.get("size"), (list, tuple)):
+        sz["label"] = min(sz["label"], 36)  # pin labels sit on a small card: smaller than the generic label size
     env = envelope(t, D)
     img = scrim_frame("right", env)
     base = ctx.setdefault("_maps", {})
@@ -452,6 +490,13 @@ def ocean_map(t, D, data, ctx):
     cx, cy = px0 + pw // 2, py0 + ph // 2
     comp(img, card, int(cx - card.width / 2), int(cy - card.height / 2))
     pts = ([data["marker"]] if data.get("marker") else []) + list(data.get("points", []))
+    offsets = ctx.setdefault("_label_offsets", {}).get(key)
+    if offsets is None:  # label positions are decided once (zoom 1) so that they never jump during the animation
+        items = []
+        for m in pts:
+            x1, y1 = mb.px(m["lat"], m["lon"])
+            items.append((x1 + px0, y1 + py0, m.get("label", ""), text_w(m.get("label", ""), "sans_bold", sz["label"])))
+        offsets = ctx["_label_offsets"][key] = place_labels(items, (px0 + 10, py0 + 10, px0 + pw - 10, py0 + ph - 10), sz["label"])
     for i, m in enumerate(pts):
         mx, my = mb.px(m["lat"], m["lon"])
         mx, my = (mx - pw / 2) * zoom + pw / 2 + px0, (my - ph / 2) * zoom + ph / 2 + py0
@@ -468,11 +513,9 @@ def ocean_map(t, D, data, ctx):
             ld.ellipse([mx - rr, my - rr, mx + rr, my + rr], outline=(*col, int(200 * (1 - pulse) * ma)), width=4)
         ld.ellipse([mx - 9, my - 9, mx + 9, my + 9], fill=(*col, int(255 * ma)), outline=(*C["text"], int(255 * ma)), width=3)
         comp(img, layer, 0, 0)
-        if m.get("label"):
-            if mx + 30 + text_w(m["label"], "sans_bold", sz["label"]) > px0 + pw - 10:
-                put_text(img, (mx - 20, my - 16), m["label"], "sans_bold", sz["label"], C["text"], ma, anchor="rs")
-            else:
-                put_text(img, (mx + 20, my - 16), m["label"], "sans_bold", sz["label"], C["text"], ma)
+        if m.get("label") and offsets[i]:
+            dx, dy, anchor = offsets[i]
+            put_text(img, (mx + dx, my + dy), m["label"], "sans_bold", sz["label"], C["text"], ma, anchor=anchor)
     if data.get("title"):
         put_text(img, (px0 + 4, py0 - 26 + (1 - appear(t, 0.0)) * MOT["rise_px"]), data["title"], "serif", sz["title"], C["text"], appear(t, 0.0) * env)
     # scale bar

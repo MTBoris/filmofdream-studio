@@ -177,3 +177,23 @@ def test_lower_third_and_title_card():
 
 def test_all_seven_templates_registered():
     assert set(ov.TEMPLATES) == {"ocean-fact", "ocean-coords", "ocean-timeline", "ocean-map", "ocean-compare", "lower-third", "title-card"}
+
+
+def test_map_labels_do_not_overlap_each_other():
+    items = [(240, 310, "остров Сэнди", 290), (110, 363, "Честерфилд", 260), (552, 382, "Новая Каледония", 380)]
+    card = (10, 10, 800, 800)
+    res = ov.place_labels(items, card, 34)
+    boxes = [ov.label_box(x, y, dx, dy, anc, w, 34) for (x, y, _, w), (dx, dy, anc) in zip(items, res)]
+    for i in range(3):
+        for j in range(i + 1, 3):
+            a, b = boxes[i], boxes[j]
+            assert a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1], (i, j, boxes)
+    assert all(b[0] >= card[0] and b[2] <= card[2] for b in boxes)       # every label stays inside the card
+
+
+def test_map_with_three_labelled_points_renders(monkeypatch):
+    data = {"center": [-20.8, 162.4], "span_km": 1100, "marker": {"lat": -19.22, "lon": 159.93, "label": "остров Сэнди"},
+            "points": [{"lat": -19.87, "lon": 158.32, "label": "Честерфилд"}, {"lat": -20.1, "lon": 164.0, "label": "Новая Каледония"}]}
+    ctx = {}
+    assert bright_pixels(ov.ocean_map(3.0, 8, data, ctx)) > 1500
+    assert len(next(iter(ctx["_label_offsets"].values()))) == 3
