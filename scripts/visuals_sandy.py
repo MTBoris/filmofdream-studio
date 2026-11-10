@@ -84,7 +84,7 @@ def chart(extent, old=True, title=None, grid=True):
             ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor="#2E4A3A", edgecolor="#9FB7C9", linewidth=0.8)
         gl_color = "#3D5A78"
     if grid:
-        gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=False, color=gl_color, linestyle="--", linewidth=0.8, alpha=0.7)
+        ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=False, color=gl_color, linestyle="--", linewidth=0.8, alpha=0.7)
     ax.spines["geo"].set_visible(False)
     if title:
         fig.text(0.04, 0.93, title, fontsize=40, color=INK if old else WHITE, family=SERIF, style="italic")
