@@ -46,15 +46,20 @@
 - Workflow: **Produce episode v2** (`produce2.yml`, inputs: episode, visuals, upload yes/no). Others: `frame-review.yml`, `visuals-preview.yml` (kept until templates exist), `yt-check.yml`, `yt-delete.yml` (only with Boris's "да"), `azure-test.yml`, `azure-stress.yml` (test texts and outputs in `voices/tests/`).
 - Old experiments removed in PR 1 (still in git history): `tts-bench`, `voice-*`, `narrate.yml`, `produce.yml`, `scripts/narrate.py` (Qwen), `scripts/render.py`, `bench/`, `casting/`, `samples/`. The narration.txt parser now lives in `scripts/narrate_azure.py`.
 
-## Next steps
-Engineering plan (approved 2026-11-09), small PRs, each: plan → Boris «да» → PR → green CI → merge.
-1. **PR 1 — cleanup** (this PR).
-2. **PR 2 — minimal CI** (`ci.yml`: pytest + ruff, offline tests: stress marks, homograph guard, shot timing, fill_meta, storyboard validation, tiny render smoke test).
-3. **PR 3 — storyboard v2** (format above, converter for episode 001, 3-candidate stock search + candidate sheet, `docs/STORYBOARD.md` with the ChatGPT prompt).
-4. **PR 4 — templates** + `design/tokens.json` (order above; preview for Boris before the rest).
-5. **PR 5 — automatic QA** (frame sheet every 2 s as artifact, rule: no repeated stock clip; upload refused on failure).
+## Engineering status (2026-11-10)
+Chain approved by Boris: PR → green CI → merge by Claude Code (no separate «да» per PR). **Stop points where Boris must look:** (a) template preview before the remaining templates are built, (b) the finished pilot (build → QA → frame sheets every 2 s → unlisted upload → link).
+Never without Boris's separate «да»: public status, deleting videos, any spending.
+
+Done and merged: PR 1 cleanup · text fix in scene «black_polygon/navigation» (coordinates «больше чем на двадцать пять километров») · PR 2 minimal CI (pytest + ruff) · storyboard v2 (`docs/STORYBOARD.md`, `sb2.py`, `stock2.py`, `assets.py`, `render3.py`, word-boundary timing, workflows `stock-candidates.yml` and `produce.yml`).
+In review / next:
+1. **Templates part 1** (`ocean-fact`, `ocean-timeline`, `ocean-map`, `design/tokens.json`, fonts) + `scene-preview.yml` → preview video for Boris. Remaining templates (`ocean-coords`, `ocean-compare`, `lower-third`, `title-card`) only after Boris approves the look.
+2. **QA** (`scripts/qa_video.py`): frame sheets every 2 s from the final video; one hard rule — no stock clip repeats in the episode; a failed QA blocks the upload.
+3. Waiting for Boris/ChatGPT: storyboard JSON + images (after Claude's fact check), the exact palette of visual direction v1 (colors in `design/tokens.json` are provisional), the real text sizes (100/80/100 px) — `overlay.data.size` already accepts them.
+4. After the pilot is out: remove the v1 pipeline (`produce2.yml`, `render2.main`, `visuals_sandy.py`, `visuals-preview.yml`, `contact_sheet.py`).
+
+External image: NASA Earth Observatory image 78863 (Gavre pumice raft, MODIS, 6 Aug 2012) — `type: external-image`, `assets.<id>.page = https://earthobservatory.nasa.gov/images/78863`, credit: «NASA image courtesy Jeff Schmaltz, LANCE/EOSDIS MODIS Rapid Response Team, GSFC». No NASA logo. Added to the description via `{IMAGE_CREDITS}` in `meta.json`.
 
 Other:
 - ChatGPT: visual direction for the pilot (choose clips from candidate sheet, images for scenes without footage: 1876 whaler, logbook, Admiralty chart, E.D., pumice raft, maps).
-- Claude: rebuild pilot with the new visuals → frame review → link to Boris → publish date (avoid RESTHE Shorts times).
+- Claude: rebuild pilot with ChatGPT's visuals → frame review → link to Boris → publish date (avoid RESTHE Shorts times).
 - Then episode 2 (Озеро Натрон), cadence every 2 days.
