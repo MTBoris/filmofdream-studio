@@ -1,0 +1,176 @@
+{
+ "shots": [
+  {
+   "id": "loc-1",
+   "type": "stock",
+   "query": "ocean waves",
+   "queries": [
+    "sea waves",
+    "ocean water"
+   ],
+   "dur": 3.0,
+   "pick": 1890,
+   "scene": "locator",
+   "n": 0,
+   "start": 0.0,
+   "end": 3.0
+  },
+  {
+   "id": "loc-2",
+   "type": "stock",
+   "query": "sea horizon",
+   "queries": [
+    "ocean horizon",
+    "calm sea"
+   ],
+   "dur": 3.5,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "в пятистах километрах",
+    "data": {
+     "value": 500,
+     "unit": "км",
+     "label": "от Новой Каледонии",
+     "note": "по картам до 2012 года"
+    },
+    "start": 4.437,
+    "end": 6.5
+   },
+   "pick": 21528,
+   "scene": "locator",
+   "n": 1,
+   "start": 3.0,
+   "end": 6.5
+  },
+  {
+   "id": "loc-3",
+   "type": "stock",
+   "query": "ocean aerial",
+   "queries": [
+    "sea aerial",
+    "ocean drone"
+   ],
+   "dur": 9.16,
+   "overlay": {
+    "template": "ocean-map",
+    "cue": "к северо-западу",
+    "data": {
+     "title": "Коралловое море",
+     "center": [
+      -20.8,
+      162.4
+     ],
+     "span_km": 1100,
+     "marker": {
+      "lat": -19.22,
+      "lon": 159.93,
+      "label": "остров Сэнди"
+     },
+     "points": [
+      {
+       "lat": -19.87,
+       "lon": 158.32,
+       "label": "Честерфилд"
+      },
+      {
+       "lat": -22.27,
+       "lon": 166.45,
+       "label": "Новая Каледония"
+      }
+     ],
+     "note": "положение по картам до 2012 года"
+    },
+    "start": 6.5,
+    "end": 15.66
+   },
+   "pick": 2946,
+   "scene": "locator",
+   "n": 2,
+   "start": 6.5,
+   "end": 15.66
+  },
+  {
+   "id": "tl-1",
+   "type": "stock",
+   "query": "ocean sunset",
+   "queries": [
+    "sea sunset",
+    "sunset waves"
+   ],
+   "dur": 11,
+   "overlay": {
+    "template": "ocean-timeline",
+    "cue": "в тысяча девятьсот семьдесят четвёртом",
+    "data": {
+     "events": [
+      {
+       "date": "1974",
+       "label": "Франция убирает остров с карт",
+       "cue": "в тысяча девятьсот семьдесят четвёртом",
+       "t": 19.394
+      },
+      {
+       "date": "1985",
+       "label": "Австралия убирает остров с карт",
+       "cue": "в восемьдесят пятом",
+       "t": 24.105
+      }
+     ]
+    },
+    "start": 19.394,
+    "end": 26.66
+   },
+   "pick": 140111,
+   "scene": "timeline_removed",
+   "n": 0,
+   "start": 15.66,
+   "end": 26.66
+  },
+  {
+   "id": "tl-2",
+   "type": "stock",
+   "query": "deep blue water",
+   "queries": [
+    "blue sea waves",
+    "underwater blue"
+   ],
+   "dur": 7,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "от полутора до двух",
+    "data": {
+     "value": [
+      1500,
+      2000
+     ],
+     "suffix": "+",
+     "unit": "м",
+     "label": "глубина по промерам"
+    },
+    "start": 27.68,
+    "end": 33.66
+   },
+   "pick": 304019,
+   "scene": "timeline_removed",
+   "n": 1,
+   "start": 26.66,
+   "end": 33.66
+  },
+  {
+   "id": "tl-3",
+   "type": "stock",
+   "query": "stormy sea",
+   "queries": [
+    "storm waves",
+    "rough sea"
+   ],
+   "dur": 13.19,
+   "pick": 275633,
+   "scene": "timeline_removed",
+   "n": 2,
+   "start": 33.66,
+   "end": 46.85
+  }
+ ],
+ "assets": {}
+}

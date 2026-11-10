@@ -1,0 +1,50 @@
+{
+ "loc-1": {
+  "query": "ocean waves",
+  "pixabay_id": 1890,
+  "page": "https://pixabay.com/videos/id-1890/",
+  "duration": 34,
+  "tags": "cliff, island, aerial view, nature, landscape, ocean, sea, waves",
+  "rendition": "large"
+ },
+ "loc-2": {
+  "query": "sea horizon",
+  "pixabay_id": 21528,
+  "page": "https://pixabay.com/videos/id-21528/",
+  "duration": 30,
+  "tags": "ocean, sailing, blue, waves, horizon, water, sea",
+  "rendition": "large"
+ },
+ "loc-3": {
+  "query": "ocean aerial",
+  "pixabay_id": 2946,
+  "page": "https://pixabay.com/videos/id-2946/",
+  "duration": 14,
+  "tags": "island, motorboat, sea, ocean, aerial video, landscape, speedboat, boat",
+  "rendition": "large"
+ },
+ "tl-1": {
+  "query": "ocean sunset",
+  "pixabay_id": 140111,
+  "page": "https://pixabay.com/videos/id-140111/",
+  "duration": 20,
+  "tags": "sea, ocean, seagulls, birds, sunset, dusk, beach, paradise, flight, nature",
+  "rendition": "large"
+ },
+ "tl-2": {
+  "query": "deep blue water",
+  "pixabay_id": 304019,
+  "page": "https://pixabay.com/videos/id-304019/",
+  "duration": 16,
+  "tags": "water, dark, background, sea, deep, blue, wave, liquid, seascape, ocean, surface, aquatic, flowing, water surface, wave - water, looping",
+  "rendition": "large"
+ },
+ "tl-3": {
+  "query": "stormy sea",
+  "pixabay_id": 275633,
+  "page": "https://pixabay.com/videos/id-275633/",
+  "duration": 54,
+  "tags": "sea, wave, beach, sunset, ocean, sunrise, sunlight, seascape, shore, coastline, island, cliff, coast, splashing, seacoast, light, coastal, splash, shining, stormy, rock, sun",
+  "rendition": "large"
+ }
+}
