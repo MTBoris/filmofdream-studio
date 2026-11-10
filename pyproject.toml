@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+# Existing scripts use compact style (semicolons, one-liners); CI only blocks real bugs.
+select = ["F", "E9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

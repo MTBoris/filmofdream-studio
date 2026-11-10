@@ -111,7 +111,7 @@ def synth(inner_ssml):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return r.read()
-        except Exception as e:
+        except Exception:
             if attempt == 3:
                 raise
             import time; time.sleep(3 * (attempt + 1))
