@@ -2,16 +2,20 @@
 
     python scripts/overlays.py preview TEMPLATE DATA.json OUT_DIR [SECONDS]    # frames for a quick look
 
-Templates: ocean-fact, ocean-map, ocean-timeline (more in the next PRs). Style comes from design/tokens.json.
+Templates: ocean-fact, ocean-coords, ocean-map, ocean-timeline, ocean-compare, lower-third, title-card.
+Style (exact palette, fonts, margins) comes from design/tokens.json.
 Each template is a function draw(t, D, data, ctx) -> RGBA Image (1920x1080); t = seconds since the overlay started,
 D = overlay length. A dark scrim under the text, a smooth fade/rise in and fade out, number counters.
 
 Text sizes: data["size"] overrides the token sizes - either an object {"value": 100, "label": 80, "note": 100}
-or a list in the template's field order (ocean-fact: value, label, note; ocean-timeline: date, event; ocean-map: title, label, note).
+or a list in the template's field order:
+  ocean-fact: value, label, note | ocean-coords: coords, label, note | ocean-timeline: date, event (event >= 34 px)
+  ocean-map: title, label, note | ocean-compare: label, dims, note | lower-third: text, sub | title-card: card, subtitle
 """
 import json
 import math
 import os
+import re
 import sys
 
 import numpy as np
@@ -22,6 +26,7 @@ TOK = json.load(open(os.path.join(ROOT, "design", "tokens.json"), encoding="utf-
 W, H, FPS = TOK["canvas"]["w"], TOK["canvas"]["h"], TOK["canvas"]["fps"]
 MX, MY = TOK["margin"]["x"], TOK["margin"]["y"]
 MOT = TOK["motion"]
+MINS = TOK.get("min_size", {})
 NBSP = " "
 
 
@@ -70,7 +75,8 @@ def fmt_num(v, decimals=0):
 
 
 def sizes(data, names):
-    """Pixel sizes for the template's text fields: token defaults, overridden by data["size"] (dict, list or one number)."""
+    """Pixel sizes for the template's text fields: token defaults, overridden by data["size"] (dict, list or one number).
+    A few fields never go below a readable minimum (design/tokens.json min_size, e.g. timeline event text >= 34 px)."""
     out = {n: TOK["size"][n] for n in names}
     sz = data.get("size")
     if isinstance(sz, dict):
@@ -79,7 +85,19 @@ def sizes(data, names):
         out.update(dict(zip(names, sz)))
     elif isinstance(sz, (int, float)):
         out[names[0]] = sz
-    return out
+    return {k: max(v, MINS.get(k, 0)) for k, v in out.items()}
+
+
+def parse_value(v):
+    """'400+' -> ('', 400, '+', 0); '≈26' -> ('≈', 26, '', 0); '2,5 млн' -> ('', 2.5, ' млн', 1); numbers pass through."""
+    if isinstance(v, (int, float)):
+        return "", v, "", 0 if float(v).is_integer() else 1
+    m = re.match(r"^\s*([^\d]*?)(\d[\d\u00a0 ]*(?:[.,]\d+)?)(.*)$", str(v), flags=re.S)
+    if not m:
+        return str(v), None, "", 0
+    num = m.group(2).replace("\u00a0", "").replace(" ", "")
+    dec = len(re.split(r"[.,]", num)[1]) if re.search(r"[.,]", num) else 0
+    return m.group(1), float(num.replace(",", ".")), m.group(3), dec
 
 
 # ---------- drawing helpers ----------
@@ -96,10 +114,34 @@ def comp(img, layer, x, y):
     img.alpha_composite(layer.crop((x0, y0, x1, y1)), (x + x0, y + y0))
 
 
+_glyphs = {}
+SUBST = {"\u2032": ["\u2019", "'"], "\u2033": ["\u201d", '"'], "\u2212": ["-"], "\u2248": ["~"]}  # prime, double prime, minus, almost equal
+
+
+def has_glyph(fnt, ch):
+    """True if the font really has the character (a missing one renders as the same box as an unassigned code point)."""
+    k = (id(fnt), ch)
+    if k not in _glyphs:
+        notdef = bytes(fnt.getmask("\U0010ffff"))
+        _glyphs[k] = ch.isspace() or bytes(fnt.getmask(ch)) != notdef
+    return _glyphs[k]
+
+
+def fit_glyphs(s, fnt):
+    """Replace characters the font lacks (e.g. the minute sign in PT Serif) with the nearest one it has."""
+    out = []
+    for ch in s:
+        if ord(ch) > 0x2000 and not has_glyph(fnt, ch):
+            ch = next((c for c in SUBST.get(ch, []) if has_glyph(fnt, c)), ch)
+        out.append(ch)
+    return "".join(out)
+
+
 def put_text(img, xy, s, key, px, color, alpha=1.0, anchor="ls", shadow=True):
     if alpha <= 0.004 or not s:
         return
     fnt = font(key, px)
+    s = fit_glyphs(s, fnt)
     xy = (int(round(xy[0])), int(round(xy[1])))
     x0, y0, x1, y1 = ImageDraw.Draw(img).textbbox(xy, s, font=fnt, anchor=anchor)
     pad = 22
@@ -123,6 +165,17 @@ def cap_h(key, px):
     return -b[1]
 
 
+def soft_panel(img, box, alpha, radius=26, blur=24):
+    """Dark, softly blurred rounded panel under text (local darkening for legibility)."""
+    if alpha <= 0.004:
+        return
+    x0, y0, x1, y1 = [int(v) for v in box]
+    pad = blur * 3
+    layer = Image.new("RGBA", (x1 - x0 + 2 * pad, y1 - y0 + 2 * pad), (0, 0, 0, 0))
+    ImageDraw.Draw(layer).rounded_rectangle([pad, pad, pad + x1 - x0, pad + y1 - y0], radius=radius, fill=(*C["scrim"], int(215 * alpha)))
+    comp(img, layer.filter(ImageFilter.GaussianBlur(blur)), x0 - pad, y0 - pad)
+
+
 _scrims = {}
 
 
@@ -136,7 +189,10 @@ def scrim_alpha(kind):
         a = np.maximum(0.80 * np.clip((0.62 - x) / 0.62, 0, 1) ** 1.4 * np.clip((y - 0.18) / 0.82, 0, 1) ** 0.8,
                        0.55 * np.clip((y - 0.62) / 0.38, 0, 1) ** 1.3)
     elif kind == "bottom":
-        a = 0.82 * np.clip((y - 0.45) / 0.55, 0, 1) ** 1.2 + 0 * x
+        a = 0.88 * np.clip((y - 0.38) / 0.62, 0, 1) ** 1.1 + 0 * x
+    elif kind == "veil":
+        r = np.sqrt(((x - 0.5) * 1.6) ** 2 + (y - 0.5) ** 2)
+        a = 0.50 + 0.30 * np.clip(r / 0.9, 0, 1)
     elif kind == "right":
         a = 0.62 * np.clip((x - 0.38) / 0.62, 0, 1) ** 1.3 + 0 * y
     else:
@@ -158,12 +214,17 @@ def fact(t, D, data, ctx):
     env = envelope(t, D)
     img = scrim_frame("bottom-left", env)
     rise = MOT["rise_px"]
-    values = data["value"] if isinstance(data["value"], list) else [data["value"]]
-    dec = int(data.get("decimals", 0))
+    raw = data["value"]
+    pre, suf, dec = data.get("prefix", ""), data.get("suffix", ""), int(data.get("decimals", 0))
+    if isinstance(raw, list):
+        values = raw
+    else:
+        p2, num, s2, d2 = parse_value(raw)
+        pre, suf, dec = p2 + pre, s2 + suf, max(dec, d2)
+        values = [num] if num is not None else []
     cnt = clamp01((t - 0.15) / MOT["counter_s"])
     shown = [v * ease_out(cnt) for v in values]
-    sep = "–"
-    vtxt = sep.join(fmt_num(v, dec) for v in shown) + data.get("suffix", "")
+    vtxt = pre + "–".join(fmt_num(v, dec) for v in shown) + suf if values else pre
     unit = data.get("unit", "")
     x, base = MX, H - MY
     if data.get("note"):
@@ -182,6 +243,42 @@ def fact(t, D, data, ctx):
     return img
 
 
+# ---------- ocean-coords ----------
+def coords(t, D, data, ctx):
+    sz = sizes(data, ("coords", "label", "note"))
+    env = envelope(t, D)
+    img = scrim_frame("bottom-left", env)
+    rise = MOT["rise_px"]
+    lines = [data[k] for k in ("lat", "lon") if data.get(k)]
+    x, base = MX, H - MY
+    if data.get("note"):
+        a = appear(t, 0.9) * env
+        put_text(img, (x, base + (1 - appear(t, 0.9)) * rise), data["note"], "sans", sz["note"], C["muted"], a)
+        base -= sz["note"] + 34
+    lh = int(sz["coords"] * 1.18)
+    x_text = x + 78
+    for i, ln in enumerate(reversed(lines)):  # last line sits on the baseline
+        k = len(lines) - 1 - i
+        t0 = 0.35 + 0.45 * k
+        shown = int(len(ln) * ease_io((t - t0) / 0.9) + 0.5)  # typed in, character by character
+        put_text(img, (x_text, base - i * lh), ln[:shown], "serif", sz["coords"], C["text"], env)
+    top = base - (len(lines) - 1) * lh
+    cy = (top + base) / 2 - cap_h("serif", sz["coords"]) / 2
+    pa = appear(t, 0.1) * env
+    pulse = (t * 0.9) % 1.0
+    layer = blank()
+    ld = ImageDraw.Draw(layer)
+    cx = x + 26
+    rr = 14 + 40 * pulse
+    ld.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], outline=(*C["accent"], int(200 * (1 - pulse) * pa)), width=4)
+    ld.ellipse([cx - 11, cy - 11, cx + 11, cy + 11], fill=(*C["accent"], int(255 * pa)), outline=(*C["text"], int(255 * pa)), width=3)
+    comp(img, layer, 0, 0)
+    if data.get("label"):
+        yl = top - cap_h("serif", sz["coords"]) - 30 + (1 - appear(t, 0.0)) * rise
+        put_text(img, (x_text, yl), data["label"].upper(), "sans_bold", sz["label"], C["accent"], appear(t, 0.0) * env)
+    return img
+
+
 # ---------- ocean-timeline ----------
 def timeline(t, D, data, ctx):
     sz = sizes(data, ("date", "event"))
@@ -189,22 +286,21 @@ def timeline(t, D, data, ctx):
     n = len(events)
     env = envelope(t, D)
     img = scrim_frame("bottom", env)
-    half = 170  # half of the widest label, keeps the outer labels inside the margins
+    half = 190  # half of the widest label, keeps the outer labels inside the margins
     left, right = MX + half, W - MX - half
-    step = min(430, (right - left) / max(1, n - 1)) if n > 1 else 0
+    step = min(460, (right - left) / max(1, n - 1)) if n > 1 else 0
     x0 = (left + right) / 2 - step * (n - 1) / 2
-    y_line = H - MY - 190
+    y_line = H - MY - 215
     times = []
     for i, e in enumerate(events):
         times.append(e["t"] - ctx.get("start", 0) if e.get("t") is not None else 0.5 + i * (MOT["stagger_s"] + 0.7))
-    d = ImageDraw.Draw(img)
     if n > 1:
         reach = x0
         for i in range(n - 1):
             seg = ease_io((t - times[i + 1] + 0.5) / 0.5)
             reach = max(reach, x0 + step * i + step * seg) if seg > 0 else reach
         layer = blank()
-        ImageDraw.Draw(layer).line([(x0, y_line), (reach, y_line)], fill=(*C["muted"], int(200 * env)), width=3)
+        ImageDraw.Draw(layer).line([(x0, y_line), (reach, y_line)], fill=(*C["muted"], int(220 * env)), width=3)
         comp(img, layer, 0, 0)
     for i, e in enumerate(events):
         a = appear(t, times[i]) * env
@@ -213,16 +309,19 @@ def timeline(t, D, data, ctx):
         cx = x0 + step * i
         last = i == n - 1 if data.get("highlight", "last") == "last" else e.get("highlight", False)
         col = C["accent"] if last else C["text"]
+        lines = wrap(e.get("label", ""), "sans", sz["event"], min(2 * half, step * 0.94) if n > 1 else 560)[:3]
+        rise = (1 - appear(t, times[i])) * MOT["rise_px"]
+        lw = max([text_w(str(e["date"]), "serif", sz["date"])] + [text_w(ln, "sans", sz["event"]) for ln in lines]) + 70
+        top = y_line - 34 - cap_h("serif", sz["date"]) - 26
+        bottom = y_line + 20 + sz["event"] * 1.25 * len(lines) + 28
+        soft_panel(img, (cx - lw / 2, top + rise, cx + lw / 2, bottom + rise), a * 0.9)  # local darkening under the text
         r = 11 + 4 * (1 - appear(t, times[i], 0.5))
         layer = blank()
         ImageDraw.Draw(layer).ellipse([cx - r, y_line - r, cx + r, y_line + r], fill=(*col, int(255 * a)), outline=(*C["scrim"], int(255 * a)), width=3)
         comp(img, layer, 0, 0)
-        rise = (1 - appear(t, times[i])) * MOT["rise_px"]
         put_text(img, (cx, y_line - 34 + rise), str(e["date"]), "serif", sz["date"], col, a, anchor="ms")
-        lines = wrap(e.get("label", ""), "sans", sz["event"], min(2 * half, step * 0.94) if n > 1 else 520)
-        for k, ln in enumerate(lines[:3]):
-            put_text(img, (cx, y_line + 20 + sz["event"] * (k + 1) * 1.15 + rise), ln, "sans", sz["event"], C["muted"] if not last else C["text"], a, anchor="ms")
-    del d
+        for k, ln in enumerate(lines):
+            put_text(img, (cx, y_line + 20 + sz["event"] * (k + 1) * 1.2 + rise), ln, "sans", sz["event"], C["text"], a, anchor="ms")
     return img
 
 
@@ -298,7 +397,7 @@ class MapBase:
 
     def _draw(self, data):
         ss = 2
-        im = Image.new("RGBA", (self.w * ss, self.h * ss), (*C["deep"], 150))
+        im = Image.new("RGBA", (self.w * ss, self.h * ss), (*C["panel"], 170))
         d = ImageDraw.Draw(im)
         # graticule every 5/10/20 degrees
         deg_w = self.span_km / 111.0 / max(0.2, math.cos(math.radians(self.lat)))
@@ -307,14 +406,14 @@ class MapBase:
         for k in range(-30, 31):
             lo = math.floor(lon_c / stepg) * stepg + k * stepg
             a, b = self.px(lat_c - 40, lo), self.px(lat_c + 40, lo)
-            d.line([(a[0] * ss, a[1] * ss), (b[0] * ss, b[1] * ss)], fill=(*C["grid"], 70), width=2)
+            d.line([(a[0] * ss, a[1] * ss), (b[0] * ss, b[1] * ss)], fill=(*C["grid"], 55), width=2)
             la = math.floor(lat_c / stepg) * stepg + k * stepg
             if abs(la) < 84:
                 a, b = self.px(la, lon_c - 90), self.px(la, lon_c + 90)
-                d.line([(a[0] * ss, a[1] * ss), (b[0] * ss, b[1] * ss)], fill=(*C["grid"], 70), width=2)
+                d.line([(a[0] * ss, a[1] * ss), (b[0] * ss, b[1] * ss)], fill=(*C["grid"], 55), width=2)
         for poly in (self.land or []):
             pts = [(self.px(la, lo)[0] * ss, self.px(la, lo)[1] * ss) for lo, la in poly]
-            d.polygon(pts, fill=(*C["land"], 175), outline=(*C["text"], 220))
+            d.polygon(pts, fill=(*C["land"], 190), outline=(*C["text"], 230))
         im = im.resize((self.w, self.h), Image.LANCZOS)
         mask = Image.new("L", (self.w, self.h), 0)
         ImageDraw.Draw(mask).rounded_rectangle([0, 0, self.w - 1, self.h - 1], radius=26, fill=255)
@@ -360,7 +459,7 @@ def ocean_map(t, D, data, ctx):
             continue  # outside the card
         ma = appear(t, 0.8 + 0.25 * i) * env
         main = i == 0 and bool(data.get("marker"))
-        col = C["alert"] if main else C["accent"]
+        col = C["accent"] if main else C["text"]
         pulse = (t * 0.9) % 1.0
         layer = blank()
         ld = ImageDraw.Draw(layer)
@@ -393,7 +492,89 @@ def ocean_map(t, D, data, ctx):
     return img
 
 
-TEMPLATES = {"ocean-fact": fact, "ocean-timeline": timeline, "ocean-map": ocean_map}
+# ---------- ocean-compare ----------
+def compare(t, D, data, ctx):
+    """Two shapes drawn to the same scale (e.g. pumice raft 463 x 55 km vs island 25 x 5 km)."""
+    sz = sizes(data, ("label", "dims", "note"))
+    env = envelope(t, D)
+    img = scrim_frame("bottom", env)
+    a_, b_ = data["a"], data["b"]
+    unit = data.get("unit", a_.get("unit", ""))
+    max_w = float(data.get("max_px", 1500))
+    pxk = max_w / max(a_["w"], b_["w"])
+    rise = MOT["rise_px"]
+    bottom = H - MY
+    if data.get("note"):
+        put_text(img, (MX, bottom + (1 - appear(t, 1.2)) * rise), data["note"], "sans", sz["note"], C["muted"], appear(t, 1.2) * env)
+        bottom -= sz["note"] + 34
+    blocks = [(b_, 0.9, C["text"]), (a_, 0.2, C["accent"])]  # drawn bottom-up: b at the bottom, a above it
+    for blk, t0, col in blocks:
+        rw, rh = blk["w"] * pxk, max(10.0, blk["h"] * pxk)
+        grow = ease_out((t - t0) / 1.1)
+        al = appear(t, t0, 0.5) * env
+        top = bottom - rh
+        layer = blank()
+        ld = ImageDraw.Draw(layer)
+        ld.rectangle([MX, top, MX + rw * grow, bottom], fill=(*col, int(110 * al)), outline=(*col, int(255 * al)), width=3)
+        comp(img, layer, 0, 0)
+        dims = f"{fmt_num(blk['w'])} × {fmt_num(blk['h'])}{NBSP}{blk.get('unit', unit)}".strip()
+        yb = top - 16 + (1 - appear(t, t0)) * rise
+        put_text(img, (MX, yb), blk["label"], "sans_bold", sz["label"], col, al)
+        put_text(img, (MX + text_w(blk["label"], "sans_bold", sz["label"]) + 28, yb), dims, "serif", sz["dims"], C["text"], al)
+        bottom = top - 16 - sz["label"] - 34
+    return img
+
+
+# ---------- lower-third ----------
+def lower_third(t, D, data, ctx):
+    sz = sizes(data, ("text", "sub"))
+    env = envelope(t, D)
+    img = blank()
+    a = appear(t, 0.0) * env
+    slide = (1 - appear(t, 0.0)) * 40
+    lines = wrap(data["text"], "sans_bold", sz["text"], 1300)[:2]
+    sub = data.get("sub")
+    h = sz["text"] * 1.25 * len(lines) + (sz["sub"] * 1.4 if sub else 0)
+    wmax = max([text_w(ln, "sans_bold", sz["text"]) for ln in lines] + ([text_w(sub, "sans", sz["sub"])] if sub else [0]))
+    bottom = H - MY
+    top = bottom - h
+    x = MX - slide
+    soft_panel(img, (x - 26, top - 24, x + 36 + wmax + 40, bottom + 22), a)
+    layer = blank()
+    ImageDraw.Draw(layer).rectangle([x, top + 4, x + 6, bottom - 4], fill=(*C["accent"], int(255 * a)))
+    comp(img, layer, 0, 0)
+    for k, ln in enumerate(lines):
+        put_text(img, (x + 28, top + sz["text"] * 1.12 * (k + 1) + k * sz["text"] * 0.13), ln, "sans_bold", sz["text"], C["text"], a)
+    if sub:
+        put_text(img, (x + 28, bottom - 6), sub, "sans", sz["sub"], C["muted"], appear(t, 0.2) * env)
+    return img
+
+
+# ---------- title-card ----------
+def title_card(t, D, data, ctx):
+    sz = sizes(data, ("card", "subtitle"))
+    env = envelope(t, D)
+    img = scrim_frame("veil", env)
+    lines = wrap(data["title"], "serif", sz["card"], W - 2 * MX - 220)[:3]
+    lh = sz["card"] * 1.15
+    sub = data.get("subtitle")
+    block = lh * len(lines) + (sz["subtitle"] * 1.6 + 30 if sub else 0)
+    top = (H - block) / 2
+    rise = (1 - appear(t, 0.15)) * MOT["rise_px"]
+    # accent rule grows from the centre
+    rw = 160 * ease_out((t - 0.0) / 0.9)
+    layer = blank()
+    ImageDraw.Draw(layer).line([(W / 2 - rw / 2, top - 44), (W / 2 + rw / 2, top - 44)], fill=(*C["accent"], int(255 * env)), width=5)
+    comp(img, layer, 0, 0)
+    for k, ln in enumerate(lines):
+        put_text(img, (W / 2, top + lh * (k + 1) - 14 + rise), ln, "serif", sz["card"], C["text"], appear(t, 0.15) * env, anchor="ms")
+    if sub:
+        put_text(img, (W / 2, top + lh * len(lines) + sz["subtitle"] * 1.05 + 34 + rise), sub, "sans", sz["subtitle"], C["muted"], appear(t, 0.5) * env, anchor="ms")
+    return img
+
+
+TEMPLATES = {"ocean-fact": fact, "ocean-coords": coords, "ocean-timeline": timeline, "ocean-map": ocean_map,
+             "ocean-compare": compare, "lower-third": lower_third, "title-card": title_card}
 
 
 def render(overlay, out_dir, fps=FPS):

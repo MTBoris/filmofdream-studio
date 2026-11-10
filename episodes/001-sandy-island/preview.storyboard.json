@@ -8,14 +8,14 @@
       "shots": [
         {"id": "loc-1", "type": "stock", "query": "ocean waves", "queries": ["sea waves", "ocean water"], "dur": 3.0},
         {"id": "loc-2", "type": "stock", "query": "sea horizon", "queries": ["ocean horizon", "calm sea"], "dur": 3.5,
-         "overlay": {"template": "ocean-fact", "cue": "в пятистах километрах",
-                     "data": {"value": 500, "unit": "км", "label": "от Новой Каледонии", "note": "по картам до 2012 года"}}},
+         "overlay": {"template": "ocean-fact", "cue": "больше чем в четырёхстах километрах",
+                     "data": {"value": "400+", "unit": "км", "label": "до Новой Каледонии", "note": "по координатам: 395–440 км до ближайших островов"}}},
         {"id": "loc-3", "type": "stock", "query": "ocean aerial", "queries": ["sea aerial", "ocean drone"], "dur": "rest",
          "overlay": {"template": "ocean-map", "cue": "к северо-западу",
                      "data": {"title": "Коралловое море", "center": [-20.8, 162.4], "span_km": 1100,
                               "marker": {"lat": -19.22, "lon": 159.93, "label": "остров Сэнди"},
                               "points": [{"lat": -19.87, "lon": 158.32, "label": "Честерфилд"},
-                                         {"lat": -22.27, "lon": 166.45, "label": "Новая Каледония"}],
+                                         {"lat": -20.1, "lon": 164.0, "label": "Новая Каледония"}],
                               "note": "положение по картам до 2012 года"}}}
       ]
     },

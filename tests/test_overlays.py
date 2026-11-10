@@ -105,3 +105,75 @@ def test_fonts_exist_and_have_cyrillic():
     assert f.getlength("Глубина") > 100
     ov.font("sans", 30)
     ov.font("sans_bold", 30)
+
+
+def test_exact_palette_v1():
+    assert ov.TOK["color"]["deep"].lower() == "#101d2b" and ov.TOK["color"]["panel"].lower() == "#213e50"
+    assert ov.TOK["color"]["muted"].lower() == "#e6d6b8" and ov.TOK["color"]["accent"].lower() == "#d3a35b"
+    assert ov.TOK["color"]["text"].lower() == "#e8eef1"
+    assert set(v.lower() for v in ov.TOK["color"].values()) <= {"#101d2b", "#213e50", "#e6d6b8", "#d3a35b", "#e8eef1"}
+
+
+def test_timeline_event_text_is_never_smaller_than_34px():
+    assert ov.sizes({}, ("date", "event"))["event"] >= 34
+    assert ov.sizes({"size": {"event": 20}}, ("date", "event"))["event"] == 34
+    assert ov.sizes({"size": [90, 24]}, ("date", "event"))["event"] == 34
+
+
+def test_timeline_has_a_local_dark_panel_under_the_text():
+    data = {"events": [{"date": "1974", "label": "Франция убирает остров с карт", "t": 0.2}]}
+    img = ov.timeline(2.0, 8, data, {"start": 0})
+    # just above the bottom scrim region and just under the label the panel adds darkness around the text block
+    px = img.getpixel((ov.W // 2 - 300, ov.H - ov.MY - 150))
+    assert px[3] > 120
+
+
+def test_parse_value_forms():
+    assert ov.parse_value("400+") == ("", 400.0, "+", 0)
+    assert ov.parse_value("≈26") == ("≈", 26.0, "", 0)
+    assert ov.parse_value("2,5 млн") == ("", 2.5, " млн", 1)
+    assert ov.parse_value(1400) == ("", 1400, "", 0)
+    assert ov.parse_value("без цифр")[1] is None
+
+
+def test_fact_string_values_count_up_and_keep_prefix_suffix():
+    early = bright_pixels(ov.fact(0.5, 6, {"value": "≈26", "unit": "км"}, {}))
+    late = bright_pixels(ov.fact(4.0, 6, {"value": "≈26", "unit": "км"}, {}))
+    assert 0 < early < late
+    assert bright_pixels(ov.fact(4.0, 6, {"value": "400+", "unit": "км", "label": "до"}, {})) > 3000
+
+
+def test_missing_glyphs_are_replaced_not_drawn_as_boxes():
+    f = ov.font("serif", 60)
+    assert not ov.has_glyph(f, "′")          # PT Serif has no prime sign
+    assert ov.fit_glyphs("19°13′ ю. ш.", f) == "19°13’ ю. ш."
+    assert ov.fit_glyphs("≈26 км", f) == "≈26 км"
+
+
+def test_coords_types_in_and_pulses():
+    data = {"lat": "19°13′ ю. ш.", "lon": "159°55′ в. д.", "label": "Положение"}
+    early = bright_pixels(ov.coords(0.6, 8, data, {}))
+    late = bright_pixels(ov.coords(4.0, 8, data, {}))
+    assert 0 < early < late
+
+
+def test_compare_draws_both_shapes_to_the_same_scale():
+    data = {"a": {"label": "Плот", "w": 463, "h": 55}, "b": {"label": "Остров", "w": 25, "h": 5}, "unit": "км"}
+    assert bright_pixels(ov.compare(0.9, 8, data, {})) < bright_pixels(ov.compare(5.0, 8, data, {}))
+    arr = np.asarray(ov.compare(5.0, 8, data, {})).astype(int)
+    outline = (arr[..., 3] == 255) & (abs(arr[..., 0] - ov.C["accent"][0]) < 3) & (abs(arr[..., 1] - ov.C["accent"][1]) < 3)
+    xs = np.where(outline.any(axis=0))[0]
+    assert xs.max() - xs.min() > 1400          # the 463 km raft spans ~1500 px (the island, 25 km, only ~80 px)
+    ys = np.where(outline.any(axis=1))[0]
+    assert (ys.max() - ys.min()) < 400
+
+
+def test_lower_third_and_title_card():
+    lt = ov.lower_third(2.0, 6, {"text": "Плот пемзы вулкана Гавр · NASA · 2012"}, {})
+    assert bright_pixels(lt) > 2000 and opaque_pixels(ov.lower_third(0.0, 6, {"text": "x"}, {})) == 0
+    tc = ov.title_card(2.5, 6, {"title": "Остров, которого нет", "subtitle": "Film of Dream"}, {})
+    assert bright_pixels(tc) > 8000 and opaque_pixels(ov.title_card(0.0, 6, {"title": "x"}, {})) == 0
+
+
+def test_all_seven_templates_registered():
+    assert set(ov.TEMPLATES) == {"ocean-fact", "ocean-coords", "ocean-timeline", "ocean-map", "ocean-compare", "lower-third", "title-card"}

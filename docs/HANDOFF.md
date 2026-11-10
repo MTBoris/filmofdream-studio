@@ -47,15 +47,13 @@
 - Old experiments removed in PR 1 (still in git history): `tts-bench`, `voice-*`, `narrate.yml`, `produce.yml`, `scripts/narrate.py` (Qwen), `scripts/render.py`, `bench/`, `casting/`, `samples/`. The narration.txt parser now lives in `scripts/narrate_azure.py`.
 
 ## Engineering status (2026-11-10)
-Chain approved by Boris: PR → green CI → merge by Claude Code (no separate «да» per PR). **Stop points where Boris must look:** (a) template preview before the remaining templates are built, (b) the finished pilot (build → QA → frame sheets every 2 s → unlisted upload → link).
+Chain approved by Boris: PR → green CI → merge by Claude Code (no separate «да» per PR). **Stop points where Boris must look:** the finished pilot (build → QA → frame sheets every 2 s → unlisted upload → link). The template preview was approved with edits (done below).
 Never without Boris's separate «да»: public status, deleting videos, any spending.
 
-Done and merged: PR 1 cleanup · text fix in scene «black_polygon/navigation» (coordinates «больше чем на двадцать пять километров») · PR 2 minimal CI (pytest + ruff) · storyboard v2 (`docs/STORYBOARD.md`, `sb2.py`, `stock2.py`, `assets.py`, `render3.py`, word-boundary timing, workflows `stock-candidates.yml` and `produce.yml`).
-In review / next:
-1. **Templates part 1** (`ocean-fact`, `ocean-timeline`, `ocean-map`, `design/tokens.json`, fonts) + `scene-preview.yml` → preview video for Boris. Remaining templates (`ocean-coords`, `ocean-compare`, `lower-third`, `title-card`) only after Boris approves the look.
-2. **QA** (`scripts/qa_video.py`): frame sheets every 2 s from the final video; one hard rule — no stock clip repeats in the episode; a failed QA blocks the upload.
-3. Waiting for Boris/ChatGPT: storyboard JSON + images (after Claude's fact check), the exact palette of visual direction v1 (colors in `design/tokens.json` are provisional), the real text sizes (100/80/100 px) — `overlay.data.size` already accepts them.
-4. After the pilot is out: remove the v1 pipeline (`produce2.yml`, `render2.main`, `visuals_sandy.py`, `visuals-preview.yml`, `contact_sheet.py`).
+Done and merged: cleanup · minimal CI (pytest + ruff) · storyboard v2 · templates part 1 · QA (`scripts/qa_video.py`: frame sheets every 2 s, rule "no stock clip repeats", blocks upload).
+Templates part 2 (this PR): all 7 templates (`ocean-fact`, `ocean-coords`, `ocean-map`, `ocean-timeline`, `ocean-compare`, `lower-third`, `title-card`), exact palette v1 in `design/tokens.json`, timeline text ≥ 34 px with a local dark panel, open-water-only stock filter (+ note on the candidate sheet; boats only in «research ship» shots), 5 reconstruction images from ChatGPT in `episodes/001-sandy-island/assets/` (`whaler_1876`, `ship_log_1876`, `sextant_chronometer`, `chart_1908`, `agloe_map_1930s`; 1920×1080, no readable text/people/logos), narration change «больше чем в четырёхстах километрах» (overlay `400+ км`; 395–440 km to the nearest islands of New Caledonia), map label «Новая Каледония» on northern Grande Terre (-20.1, 164.0).
+Waiting for Boris/ChatGPT: storyboard JSON (after Claude's fact check; navigation overlay `≈26`, pumice_scale caption «Плот пемзы вулкана Гавр · NASA · 2012» — not near the Coral Sea), a redone Bermeja image, the real text sizes (100/80/100 px: `overlay.data.size`).
+After the pilot is out: remove the v1 pipeline (`produce2.yml`, `render2.main`, `visuals_sandy.py`, `visuals-preview.yml`, `contact_sheet.py`).
 
 External image: NASA Earth Observatory image 78863 (Gavre pumice raft, MODIS, 6 Aug 2012) — `type: external-image`, `assets.<id>.page = https://earthobservatory.nasa.gov/images/78863`, credit: «NASA image courtesy Jeff Schmaltz, LANCE/EOSDIS MODIS Rapid Response Team, GSFC». No NASA logo. Added to the description via `{IMAGE_CREDITS}` in `meta.json`.
 

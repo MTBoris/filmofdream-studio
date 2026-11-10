@@ -3,6 +3,8 @@
     python scripts/stock2.py candidates STORYBOARD.json OUTDIR   # candidates.json, pool.json, sheet-NN.jpg
     python scripts/stock2.py fetch STORYBOARD.json STOCKDIR      # downloads the picked clips + stock.json (sources)
 
+OPEN WATER ONLY: candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar) are dropped,
+except in "research ship" shots (query contains "research ship", or "vessels": true). The sheet says which rule applies.
 A clip is never used twice in an episode: candidates are unique across all shots, picks must be unique
 (sb2.validate_structure), and if there are not enough unique clips the shortage is REPORTED, never repeated silently.
 The search results are cached in OUTDIR/pool.json (metadata only), so re-runs do not hit the Pixabay API again.
@@ -24,6 +26,15 @@ N_CANDIDATES = 3
 UA = {"User-Agent": "Mozilla/5.0 (filmofdream-studio)"}
 BAD = ("ai generated", "ai-generated", "fantasy", "3d", "render", "animation", "cgi", "futuristic", "sci-fi", "generated")
 STOP = ("old", "the", "and", "with")
+# Open water only: a candidate whose tags mention land, coast, islands or vessels is dropped.
+LAND_WORDS = {"land", "rock", "rocks", "rocky", "cliff", "cliffs", "coast", "coastal", "coastline", "shore", "shoreline", "beach",
+              "beaches", "island", "islands", "isle", "bay", "harbor", "harbour", "port", "pier", "dock", "jetty", "lighthouse",
+              "mountain", "mountains", "hill", "hills", "forest", "tree", "trees", "palm", "sand", "dune", "village", "town",
+              "city", "building", "buildings", "house", "bridge", "resort", "cape", "peninsula", "lagoon", "seaside"}
+VESSEL_WORDS = {"boat", "boats", "ship", "ships", "yacht", "yachts", "sailboat", "sailboats", "sailing", "motorboat", "speedboat",
+                "ferry", "cruise", "kayak", "canoe", "fishing", "vessel", "cargo", "tanker", "liner", "catamaran", "surfing",
+                "surfer", "swimmer", "swimming", "diver", "diving"}
+OPEN_WATER_NOTE = "Only open water: no land, rocks, coast, islands, boats (except 'research ship' shots)"
 
 
 def key():
@@ -59,6 +70,20 @@ def good(h, words):
             and h.get("duration", 0) >= 5)
 
 
+def tag_words(h):
+    return {w for t in h.get("tags", "").lower().replace(",", " ").split() for w in (t,)}
+
+
+def vessels_allowed(shot):
+    """Boats/ships are allowed only in 'research ship' shots (or with "vessels": true in the storyboard)."""
+    return bool(shot.get("vessels")) or "research ship" in " ".join([shot.get("query", "")] + list(shot.get("queries") or [])).lower()
+
+
+def open_water(h, allow_vessels=False):
+    w = tag_words(h)
+    return not (w & LAND_WORDS) and (allow_vessels or not (w & VESSEL_WORDS))
+
+
 def query_words(q):
     return [w[:5] for w in q.lower().split() if len(w) > 2 and w not in STOP]
 
@@ -74,9 +99,9 @@ def rendition(h):
     return None
 
 
-def filter_hits(hits, query):
+def filter_hits(hits, query, allow_vessels=False):
     words = query_words(query)
-    return [h for h in hits if good(h, words) and rendition(h)]
+    return [h for h in hits if good(h, words) and rendition(h) and open_water(h, allow_vessels)]
 
 
 def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES):
@@ -86,8 +111,9 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES):
     out, short = {}, []
     for s in shots:
         got = []
+        allow = vessels_allowed(s)
         for q in [s["query"]] + list(s.get("queries") or []):
-            for h in filter_hits(pool.get(q, []), q):
+            for h in filter_hits(pool.get(q, []), q, allow):
                 if h["id"] not in used and h["id"] not in {g["id"] for g in got}:
                     got.append(h)
                     if len(got) == n:
@@ -151,7 +177,8 @@ def make_sheets(rows, outdir, cache_dir, per_page=5):
         d = ImageDraw.Draw(im)
         for r, (shot, hits) in enumerate(chunk):
             y = r * row_h
-            d.text((8, y + 6), f"{shot['id']}   «{shot['query']}»   {shot.get('note', '')}"[:150], font=font(18), fill=(255, 220, 90))
+            rule = "research ship: boats allowed" if vessels_allowed(shot) else "open water only"
+            d.text((8, y + 6), f"{shot['id']}   «{shot['query']}»   [{rule}]   {shot.get('note', '')}"[:150], font=font(18), fill=(255, 220, 90))
             for c, h in enumerate(hits):
                 x0 = c * (W // N_CANDIDATES) + 6
                 d.text((x0, y + HEAD + 3), f"pix:{h['id']} · {h['duration']}s · {h['tags']}"[:64], font=font(14), fill=(220, 220, 220))
@@ -189,7 +216,7 @@ def cmd_candidates(sb_path, outdir):
     sheets = make_sheets(rows, outdir, cache_dir)
     summary = {sid: [{"pick": f"pix:{h['id']}", "page": h["page"], "duration": h["duration"], "tags": h["tags"]} for h in hs]
                for sid, hs in cands.items()}
-    json.dump({"candidates": summary, "shortage": short}, open(os.path.join(outdir, "candidates.json"), "w", encoding="utf-8"),
+    json.dump({"rule": OPEN_WATER_NOTE, "candidates": summary, "shortage": short}, open(os.path.join(outdir, "candidates.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     print(f"{len(todo)} shots need a pick; sheets: {', '.join(sheets)}")
     if short:
@@ -217,6 +244,8 @@ def cmd_fetch(sb_path, stockdir):
         r = rendition(h)
         if not r:
             sys.exit(f"{s['id']}: pix:{pid} has no 1280+ wide rendition")
+        if not open_water(h, vessels_allowed(s)):
+            print(f"WARN: {s['id']}: pix:{pid} is tagged with land/coast/boat words ({h['tags']}); the storyboard asks for open water")
         path = os.path.join(stockdir, s["id"] + ".mp4")
         with urllib.request.urlopen(urllib.request.Request(r[1]["url"], headers=UA), timeout=180) as resp:
             open(path, "wb").write(resp.read())

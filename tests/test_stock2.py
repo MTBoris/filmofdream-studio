@@ -45,3 +45,23 @@ def test_rendition_prefers_large_1920():
     assert stock2.rendition(hit(1))[0] == "large"
     h = hit(1, w=1280)
     assert stock2.rendition(h)[0] == "medium"
+
+
+def test_open_water_drops_land_rocks_islands_and_boats():
+    pool = [hit(1), hit(2, tags="ocean, waves, rocks"), hit(3, tags="ocean, waves, island"), hit(4, tags="ocean, waves, boat"),
+            hit(5, tags="ocean, waves, coastline"), hit(6, tags="ocean, waves, sailing"), hit(7, tags="ocean, waves, sunset")]
+    assert [h["id"] for h in stock2.filter_hits(pool, "ocean waves")] == [1, 7]
+
+
+def test_research_ship_shots_may_have_vessels_but_never_land():
+    pool = [hit(1, tags="research, ship, ocean"), hit(2, tags="research, ship, ocean, island")]
+    assert stock2.filter_hits(pool, "research ship ocean") == []             # default: open water only
+    assert [h["id"] for h in stock2.filter_hits(pool, "research ship ocean", allow_vessels=True)] == [1]
+    assert stock2.vessels_allowed({"query": "research ship at sea"}) and stock2.vessels_allowed({"query": "x", "vessels": True})
+    assert not stock2.vessels_allowed({"query": "ocean waves"})
+
+
+def test_assign_uses_vessel_rule_per_shot():
+    pool = {"research ship": [hit(i, tags="research, ship") for i in range(1, 4)], "ocean waves": [hit(i, tags="ocean, waves, boat") for i in range(10, 13)]}
+    out, short = stock2.assign_candidates([{"id": "a", "query": "research ship"}, {"id": "b", "query": "ocean waves"}], pool)
+    assert len(out["a"]) == 3 and out["b"] == [] and len(short) == 1
