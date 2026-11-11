@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          bash scripts/install_ffmpeg.sh
           pip install --quiet numpy soundfile azure-cognitiveservices-speech
       - name: Narration (Azure, Dmitry) - stops on unmarked homographs
         run: python scripts/narrate_azure.py "$EP" | tee narrate.log

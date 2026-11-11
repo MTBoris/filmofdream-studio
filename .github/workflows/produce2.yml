@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          bash scripts/install_ffmpeg.sh
           pip install --quiet matplotlib cartopy pillow numpy soundfile
       - name: Narration (Azure, Dmitry)
         run: python scripts/narrate_azure.py ${{ inputs.episode }}

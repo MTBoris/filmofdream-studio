@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          bash scripts/install_ffmpeg.sh
           pip install --quiet matplotlib pillow numpy soundfile azure-cognitiveservices-speech
       - name: Check storyboard (before spending any narration quota)
         run: python scripts/sb2.py check "$SB" --picks
