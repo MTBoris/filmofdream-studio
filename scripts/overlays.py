@@ -69,8 +69,8 @@ def envelope(t, D):
     return clamp01(t / MOT["in"]) * clamp01((D - t) / MOT["out"])
 
 
-def fmt_num(v, decimals=0):
-    s = f"{v:,.{decimals}f}".replace(",", NBSP)
+def fmt_num(v, decimals=0, group=True):
+    s = f"{v:,.{decimals}f}".replace(",", NBSP) if group else f"{v:.{decimals}f}"
     return s.replace(".", ",")
 
 
@@ -224,8 +224,12 @@ def fact(t, D, data, ctx):
         values = [num] if num is not None else []
     cnt = clamp01((t - 0.15) / MOT["counter_s"])
     shown = [v * ease_out(cnt) for v in values]
-    vtxt = pre + "–".join(fmt_num(v, dec) for v in shown) + suf if values else pre
+    grp = data.get("group", True)   # "group": false for years (2012, not 2 012)
+    vtxt = pre + "–".join(fmt_num(v, dec, grp) for v in shown) + suf if values else pre
     unit = data.get("unit", "")
+    full = pre + "–".join(fmt_num(v, dec, grp) for v in values) + suf if values else pre   # the final text, for the fit
+    while sz["value"] > 60 and text_w(full, "serif", sz["value"]) + (sz["value"] * 0.64 + text_w(unit, "serif", int(sz["value"] * 0.5)) if unit else 0) > W - 2 * MX:
+        sz["value"] -= 4   # long words ("СЛЕДУЮЩИЙ ВЫПУСК") shrink to stay inside the margins
     x, base = MX, H - MY
     if data.get("note"):
         a = appear(t, 0.45) * env

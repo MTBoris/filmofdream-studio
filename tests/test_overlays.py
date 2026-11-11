@@ -217,3 +217,12 @@ def test_image_pin_near_the_right_edge_puts_the_caption_on_the_left():
     a = np.asarray(ov.image_pin(3.0, 8, data, {})).astype(int)
     xs = np.where((a[..., 3] > 200) & (a[..., :3].sum(axis=2) > 450))[1]
     assert xs.max() <= ov.W - ov.MX + 6 and xs.min() < 1700
+
+
+def test_fact_year_without_thousands_separator_and_long_text_fits():
+    import re
+    assert ov.fmt_num(2012, 0, group=False) == "2012" and ov.fmt_num(2012) == "2 012"
+    img = ov.fact(4.0, 8, {"value": "СЛЕДУЮЩИЙ ВЫПУСК САМОЙ ДЛИННОЙ ПОДПИСИ", "label": "x"}, {})
+    xs = np.where(np.asarray(img)[..., 3] > 200)[1]
+    assert xs.max() <= ov.W - ov.MX + 10
+    assert re.fullmatch(r"2012", ov.fmt_num(2012.0, 0, False))

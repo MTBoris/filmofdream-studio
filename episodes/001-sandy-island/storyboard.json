@@ -1,214 +1,1787 @@
 {
- "_comment": "Shots per scene, shown in order; scene time is split between its shots. stock = Pixabay video search (English query). graphic = frame from the visuals script. caption = text over a stock shot.",
- "hook_map": [
-  {
-   "graphic": "hook_map_00"
+ "version": 2,
+ "_comment": "Final storyboard (Claude + ChatGPT, facts checked 2026-11-10), converted to the pipeline's template schemas. See docs/STORYBOARD.md.",
+ "assets": {
+  "whaler_1876": {
+   "label": "РЕКОНСТРУКЦИЯ"
   },
-  {
-   "stock": "ship ocean"
+  "ship_log_1876": {
+   "label": "РЕКОНСТРУКЦИЯ"
   },
-  {
-   "graphic": "hook_map_01"
+  "sextant_chronometer": {
+   "label": "РЕКОНСТРУКЦИЯ"
+  },
+  "chart_1908": {
+   "label": "РЕКОНСТРУКЦИЯ"
+  },
+  "agloe_map_1930s": {
+   "label": "РЕКОНСТРУКЦИЯ"
+  },
+  "bermeja_chart": {
+   "label": "РЕКОНСТРУКЦИЯ"
+  },
+  "nasa_havre_2012": {
+   "page": "https://earthobservatory.nasa.gov/images/78863",
+   "credit": "NASA image courtesy Jeff Schmaltz, LANCE/EOSDIS MODIS Rapid Response Team, GSFC"
   }
- ],
- "coral_sea": [
+ },
+ "scenes": [
   {
-   "stock": "ocean waves aerial drone",
-   "caption": "Коралловое море · ноябрь 2012"
+   "scene": "hook_map",
+   "duration": 16,
+   "shots": [
+    {
+     "id": "hook-map-01",
+     "type": "stock",
+     "dur": 4,
+     "query": "ocean waves aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Коралловое море",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       }
+      }
+     }
+    },
+    {
+     "id": "hook-map-02",
+     "type": "stock",
+     "dur": 4,
+     "query": "deep ocean blue water",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "25",
+       "unit": "км",
+       "label": "длина острова на карте"
+      }
+     }
+    },
+    {
+     "id": "hook-map-03",
+     "type": "stock",
+     "dur": 4,
+     "query": "sea horizon wide",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "1400",
+       "unit": "м",
+       "label": "глубина под килем"
+      }
+     }
+    },
+    {
+     "id": "hook-map-04",
+     "type": "stock",
+     "dur": 4,
+     "query": "ocean surface sunlight",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "title-card",
+      "data": {
+       "title": "ОСТРОВА НЕТ",
+       "subtitle": "Коралловое море"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "coral_sea_00"
+   "scene": "coral_sea",
+   "duration": 26,
+   "shots": [
+    {
+     "id": "coral-sea-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "rough ocean waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "lower-third",
+      "data": {
+       "text": "КОРАЛЛОВОЕ МОРЕ",
+       "sub": "Между Австралией и Новой Каледонией"
+      }
+     }
+    },
+    {
+     "id": "coral-sea-02",
+     "type": "stock",
+     "dur": 7,
+     "query": "ocean waves blue",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Ноябрь 2012",
+         "label": "Остров на картах и в научных базах"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "coral-sea-03",
+     "type": "stock",
+     "dur": 7,
+     "query": "blue sea drone",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "coral-sea-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean waves close up",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "136",
+       "unit": "лет",
+       "label": "ошибка жила на картах"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "coral_sea_01"
-  }
- ],
- "locator": [
-  {
-   "stock": "coral reef aerial"
+   "scene": "locator",
+   "duration": 15,
+   "shots": [
+    {
+     "id": "locator-01",
+     "type": "stock",
+     "dur": 5,
+     "query": "stormy sea aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Австралия — Новая Каледония",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       }
+      }
+     }
+    },
+    {
+     "id": "locator-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "open ocean horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-coords",
+      "data": {
+       "lat": "19,2° ю. ш.",
+       "lon": "159,9° в. д.",
+       "label": "Сэнди"
+      }
+     }
+    },
+    {
+     "id": "locator-03",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea waves sunset",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "400+",
+       "unit": "км",
+       "label": "к северо-западу от Новой Каледонии"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "locator_00"
-  }
- ],
- "black_polygon": [
-  {
-   "graphic": "black_polygon_00"
+   "scene": "black_polygon",
+   "duration": 27,
+   "shots": [
+    {
+     "id": "black-polygon-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "deep blue water aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Коралловое море",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       }
+      }
+     }
+    },
+    {
+     "id": "black-polygon-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "dark sea waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "black-polygon-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "calm sea horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "black-polygon-04",
+     "type": "stock",
+     "dur": 5,
+     "query": "dark ocean waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "2012",
+       "unit": "год",
+       "label": "чёрное пятно на цифровой карте",
+       "group": false
+      }
+     }
+    },
+    {
+     "id": "black-polygon-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean aerial view",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    }
+   ]
   },
   {
-   "graphic": "black_polygon_01"
-  }
- ],
- "whaler": [
-  {
-   "stock": "old sailing ship sea"
+   "scene": "whaler",
+   "duration": 29,
+   "shots": [
+    {
+     "id": "whaler-01",
+     "type": "image",
+     "dur": 6,
+     "asset_id": "whaler_1876"
+    },
+    {
+     "id": "whaler-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean sunset clouds",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1876",
+         "label": "Китобой «Велосити» · Коралловое море"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "whaler-03",
+     "type": "image",
+     "dur": 6,
+     "asset_id": "ship_log_1876"
+    },
+    {
+     "id": "whaler-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea storm waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "Песчаные островки",
+       "label": "и буруны · запись моряков"
+      }
+     }
+    },
+    {
+     "id": "whaler-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean waves drone",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    }
+   ]
   },
   {
-   "stock": "stormy sea",
-   "caption": "1876 · китобой «Велосити»"
+   "scene": "chart_1908",
+   "duration": 33,
+   "shots": [
+    {
+     "id": "chart-1908-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea surface aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "После 1876",
+         "label": "Австралийский морской справочник"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "chart-1908-02",
+     "type": "image",
+     "dur": 6,
+     "asset_id": "chart_1908"
+    },
+    {
+     "id": "chart-1908-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea waves aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1908",
+         "label": "Британская адмиралтейская карта"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "chart-1908-04",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean horizon clouds",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Коралловое море",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       }
+      }
+     }
+    },
+    {
+     "id": "chart-1908-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "blue ocean ripples",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Дальше",
+         "label": "Атлас The Times, карты Национального географического общества"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "chart-1908-06",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean drone overhead",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "XX век",
+         "label": "Остров переписывают с карты на карту"
+        }
+       ]
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "whaler_01"
+   "scene": "existence_doubtful",
+   "duration": 14,
+   "shots": [
+    {
+     "id": "existence-doubtful-01",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea foam waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "E.D.",
+       "label": "Existence Doubtful"
+      }
+     }
+    },
+    {
+     "id": "existence-doubtful-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean waves slow motion",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "СУЩЕСТВОВАНИЕ",
+       "label": "СОМНИТЕЛЬНО"
+      }
+     }
+    },
+    {
+     "id": "existence-doubtful-03",
+     "type": "stock",
+     "dur": 4,
+     "query": "deep sea surface",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Коралловое море",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       }
+      }
+     }
+    }
+   ]
   },
   {
-   "stock": "waves breaking reef"
-  }
- ],
- "chart_1908": [
-  {
-   "stock": "old map"
+   "scene": "timeline_removed",
+   "duration": 30,
+   "shots": [
+    {
+     "id": "timeline-removed-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean sunset aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1974",
+         "label": "Французская гидрографическая служба удаляет Сэнди"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "timeline-removed-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean wave spray",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1985",
+         "label": "Австралийская служба удаляет Сэнди"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "timeline-removed-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea horizon dusk",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": [
+        1500,
+        2000
+       ],
+       "unit": "м",
+       "label": "глубины в районе",
+       "suffix": "+"
+      }
+     }
+    },
+    {
+     "id": "timeline-removed-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean water surface",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "timeline-removed-05",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea aerial drone",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "После 1985",
+         "label": "Ошибка остаётся в других картах"
+        }
+       ]
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "chart_1908_00"
+   "scene": "digital",
+   "duration": 34,
+   "shots": [
+    {
+     "id": "digital-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean water closeup",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Конец XX века",
+         "label": "Бумажные карты переводят в цифровые данные"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "digital-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea waves morning",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "center": [
+        -20.8,
+        162.4
+       ],
+       "span_km": 1100,
+       "points": [
+        {
+         "lat": -19.87,
+         "lon": 158.32,
+         "label": "Честерфилд"
+        },
+        {
+         "lat": -20.1,
+         "lon": 164.0,
+         "label": "Новая Каледония"
+        }
+       ],
+       "title": "Коралловое море",
+       "marker": {
+        "lat": -19.22,
+        "lon": 159.93,
+        "label": "Сэнди"
+       },
+       "note": "Американская цифровая база береговых линий"
+      }
+     }
+    },
+    {
+     "id": "digital-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "storm waves aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "digital-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean swell",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "digital-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "open sea sunrise",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "СУША",
+       "label": "в цифровой базе данных"
+      }
+     }
+    },
+    {
+     "id": "digital-06",
+     "type": "stock",
+     "dur": 5,
+     "query": "deep ocean aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    }
+   ]
   },
   {
-   "stock": "old books library"
+   "scene": "voyage",
+   "duration": 29,
+   "shots": [
+    {
+     "id": "voyage-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea waves horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Октябрь 2012",
+         "label": "Исследовательское судно «Саузерн Сёрвейор»"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "voyage-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean blue sunlight",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "lower-third",
+      "data": {
+       "text": "Мария Сетон",
+       "sub": "Геофизик · Сиднейский университет"
+      }
+     }
+    },
+    {
+     "id": "voyage-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean waves aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "voyage-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "deep ocean blue water",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "voyage-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea horizon wide",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "ПРОВЕРКА",
+       "label": "курс через предполагаемый остров"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "chart_1908_01"
-  }
- ],
- "existence_doubtful": [
-  {
-   "stock": "compass"
+   "scene": "depth_profile",
+   "duration": 16,
+   "shots": [
+    {
+     "id": "depth-profile-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean surface sunlight",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": ">1400",
+       "unit": "м",
+       "label": "глубина по эхолоту"
+      }
+     }
+    },
+    {
+     "id": "depth-profile-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "rough ocean waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "depth-profile-03",
+     "type": "stock",
+     "dur": 5,
+     "query": "deep ocean waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    }
+   ]
   },
   {
-   "graphic": "existence_doubtful_01"
-  }
- ],
- "timeline_removed": [
-  {
-   "stock": "old map"
+   "scene": "news",
+   "duration": 16,
+   "shots": [
+    {
+     "id": "news-01",
+     "type": "stock",
+     "dur": 4,
+     "query": "blue sea drone",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Ноябрь 2012",
+         "label": "Учёные сообщают об острове-призраке"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "news-02",
+     "type": "stock",
+     "dur": 4,
+     "query": "ocean waves close up",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "«ОСТРОВ»",
+       "label": "на самом деле отсутствует"
+      }
+     }
+    },
+    {
+     "id": "news-03",
+     "type": "stock",
+     "dur": 4,
+     "query": "stormy sea aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "За неделю",
+         "label": "Найдена запись китобоя «Велосити», 1876"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "news-04",
+     "type": "stock",
+     "dur": 4,
+     "query": "open ocean horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "За неделю",
+         "label": "Найдена адмиралтейская карта 1908 года"
+        }
+       ]
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "timeline_removed_00"
-  }
- ],
- "digital": [
-  {
-   "stock": "computer data digital"
+   "scene": "polygon_gone",
+   "duration": 16,
+   "shots": [
+    {
+     "id": "polygon-gone-01",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea waves sunset",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "polygon-gone-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "deep blue water aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "Через несколько дней",
+         "label": "Google убирает остров со своих карт"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "polygon-gone-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "calm ocean water",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "136",
+       "unit": "лет",
+       "label": "ошибки на картах"
+      }
+     }
+    }
+   ]
   },
   {
-   "stock": "server room"
+   "scene": "agloe",
+   "duration": 34,
+   "shots": [
+    {
+     "id": "agloe-01",
+     "type": "image",
+     "dur": 6,
+     "asset_id": "agloe_map_1930s"
+    },
+    {
+     "id": "agloe-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "calm sea horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1930-е",
+         "label": "На карту штата Нью-Йорк добавляют Аглоэ"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "agloe-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "dark ocean waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "АГЛОЭ",
+       "label": "выдуманный городок — ловушка для копирования"
+      }
+     }
+    },
+    {
+     "id": "agloe-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "blue sea aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "agloe-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean sunset clouds",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "agloe-06",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea storm waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "КАРТА",
+       "label": "повлияла на реальность"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "digital_01"
-  }
- ],
- "voyage": [
-  {
-   "stock": "cargo ship at sea"
+   "scene": "bermeja",
+   "duration": 20,
+   "shots": [
+    {
+     "id": "bermeja-01",
+     "type": "image",
+     "dur": 5,
+     "asset_id": "bermeja_chart",
+     "motion": "none",
+     "overlay": {
+      "template": "image-pin",
+      "data": {
+       "x": 920,
+       "y": 540,
+       "text": "Бермеха — на картах веками, в 2009 году не найдена"
+      }
+     }
+    },
+    {
+     "id": "bermeja-02",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean waves drone",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "title": "Мексиканский залив",
+       "center": [
+        24.0,
+        -90.0
+       ],
+       "span_km": 1500,
+       "marker": {
+        "lat": 22.55,
+        "lon": -91.37,
+        "label": "Бермеха"
+       }
+      }
+     }
+    },
+    {
+     "id": "bermeja-03",
+     "type": "stock",
+     "dur": 5,
+     "query": "sea surface aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "2009",
+         "label": "Экспедиция не находит остров"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "bermeja-04",
+     "type": "stock",
+     "dur": 5,
+     "query": "gulf sea waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "ГРАНИЦЫ И НЕФТЬ",
+       "label": "почему остров имел значение"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "voyage_00"
+   "scene": "navigation",
+   "duration": 51,
+   "shots": [
+    {
+     "id": "navigation-01",
+     "type": "stock",
+     "dur": 7,
+     "query": "ocean horizon clouds",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "1876",
+       "unit": "год",
+       "label": "Как моряки определяли положение?",
+       "group": false
+      }
+     }
+    },
+    {
+     "id": "navigation-02",
+     "type": "image",
+     "dur": 7,
+     "asset_id": "sextant_chronometer"
+    },
+    {
+     "id": "navigation-03",
+     "type": "stock",
+     "dur": 7,
+     "query": "blue ocean ripples",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "1",
+       "unit": "минута",
+       "label": "ошибки корабельных часов"
+      }
+     }
+    },
+    {
+     "id": "navigation-04",
+     "type": "stock",
+     "dur": 7,
+     "query": "ocean drone overhead",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "≈26",
+       "unit": "км",
+       "label": "смещение по долготе при ошибке часов в 1 минуту"
+      }
+     }
+    },
+    {
+     "id": "navigation-05",
+     "type": "stock",
+     "dur": 7,
+     "query": "sea foam waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "navigation-06",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean waves slow motion",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "title": "Рифы Бамптон",
+       "center": [
+        -19.6,
+        159.5
+       ],
+       "span_km": 400,
+       "marker": {
+        "lat": -19.1,
+        "lon": 158.6,
+        "label": "Рифы Бамптон"
+       },
+       "note": "возможное место наблюдения"
+      }
+     }
+    },
+    {
+     "id": "navigation-07",
+     "type": "stock",
+     "dur": 5,
+     "query": "deep sea surface",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "navigation-08",
+     "type": "stock",
+     "dur": 5,
+     "query": "ocean sunset aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "После 1876",
+         "label": "Возможную ошибку повторяют на картах"
+        }
+       ]
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "voyage_01"
-  }
- ],
- "depth_profile": [
-  {
-   "stock": "deep ocean underwater dark"
+   "scene": "pumice",
+   "duration": 18,
+   "shots": [
+    {
+     "id": "pumice-01",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean wave spray",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "ПЕМЗА",
+       "label": "пористый вулканический камень"
+      }
+     }
+    },
+    {
+     "id": "pumice-02",
+     "type": "stock",
+     "dur": 6,
+     "query": "sea horizon dusk",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ]
+    },
+    {
+     "id": "pumice-03",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean surface waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "ПЛАВУЧЕЕ ПОЛЕ",
+       "label": "издалека похоже на отмель"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "depth_profile_00"
-  }
- ],
- "news": [
-  {
-   "stock": "newspaper printing"
+   "scene": "pumice_scale",
+   "duration": 35,
+   "shots": [
+    {
+     "id": "pumice-scale-01",
+     "type": "external-image",
+     "dur": 7,
+     "asset_id": "nasa_havre_2012",
+     "overlay": {
+      "template": "lower-third",
+      "data": {
+       "text": "Плот пемзы вулкана Гавр · NASA · 2012"
+      }
+     }
+    },
+    {
+     "id": "pumice-scale-02",
+     "type": "stock",
+     "dur": 7,
+     "query": "open sea aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-compare",
+      "data": {
+       "a": {
+        "label": "Плот пемзы Гавр, 2012",
+        "w": 463,
+        "h": 55
+       },
+       "b": {
+        "label": "Сэнди",
+        "w": 25,
+        "h": 5
+       },
+       "unit": "км"
+      }
+     }
+    },
+    {
+     "id": "pumice-scale-03",
+     "type": "stock",
+     "dur": 7,
+     "query": "ocean water closeup",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "2012",
+         "label": "Подводный вулкан Гавр · плот пемзы"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pumice-scale-04",
+     "type": "stock",
+     "dur": 7,
+     "query": "sea waves morning",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "2001–2002",
+         "label": "Пемза из Тонга дрейфовала поблизости"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pumice-scale-05",
+     "type": "stock",
+     "dur": 7,
+     "query": "storm waves aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "20",
+       "unit": "км",
+       "label": "от сообщённого места Сэнди"
+      }
+     }
+    }
+   ]
   },
   {
-   "graphic": "news_00"
-  }
- ],
- "polygon_gone": [
-  {
-   "graphic": "polygon_gone_00"
-  },
-  {
-   "stock": "ocean aerial"
-  },
-  {
-   "graphic": "polygon_gone_01"
-  }
- ],
- "agloe": [
-  {
-   "stock": "country road autumn"
-  },
-  {
-   "graphic": "agloe_00"
-  },
-  {
-   "graphic": "agloe_01"
-  }
- ],
- "bermeja": [
-  {
-   "stock": "ocean waves aerial"
-  },
-  {
-   "graphic": "bermeja_00"
-  }
- ],
- "navigation": [
-  {
-   "stock": "antique compass"
-  },
-  {
-   "stock": "pocket watch ticking"
-  },
-  {
-   "graphic": "navigation_00"
-  },
-  {
-   "stock": "sailing ship ocean"
-  },
-  {
-   "graphic": "navigation_01"
-  }
- ],
- "pumice": [
-  {
-   "stock": "volcano lava"
-  },
-  {
-   "stock": "volcanic rock"
-  },
-  {
-   "graphic": "pumice_00"
-  },
-  {
-   "stock": "waves breaking"
-  }
- ],
- "pumice_scale": [
-  {
-   "stock": "volcano eruption smoke"
-  },
-  {
-   "graphic": "pumice_scale_00"
-  },
-  {
-   "graphic": "pumice_scale_01"
-  },
-  {
-   "stock": "sea foam surface"
-  },
-  {
-   "graphic": "pumice_scale_02"
-  }
- ],
- "finale": [
-  {
-   "stock": "sunset ocean horizon"
-  },
-  {
-   "stock": "old book candle"
-  },
-  {
-   "graphic": "finale_01"
+   "scene": "finale",
+   "duration": 37.4,
+   "shots": [
+    {
+     "id": "finale-01",
+     "type": "stock",
+     "dur": 7,
+     "query": "ocean evening waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "КАРТА",
+       "label": "это рассказ о мире, а не сам мир"
+      }
+     }
+    },
+    {
+     "id": "finale-02",
+     "type": "stock",
+     "dur": 7,
+     "query": "open sea sunrise",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-timeline",
+      "data": {
+       "events": [
+        {
+         "date": "1876–2012",
+         "label": "136 лет передаваемой ошибки"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "finale-03",
+     "type": "stock",
+     "dur": 7,
+     "query": "deep ocean aerial",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-fact",
+      "data": {
+       "value": "СКОЛЬКО ЕЩЁ?",
+       "label": "мест на картах не существует?"
+      }
+     }
+    },
+    {
+     "id": "finale-04",
+     "type": "stock",
+     "dur": 6,
+     "query": "ocean sunset",
+     "queries": [
+      "sunset sea",
+      "sunset waves",
+      "ocean sunset horizon"
+     ]
+    },
+    {
+     "id": "finale-05",
+     "type": "stock",
+     "dur": 5,
+     "query": "sunset sea waves",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "ocean-map",
+      "data": {
+       "title": "Танзания",
+       "center": [
+        -5.0,
+        35.0
+       ],
+       "span_km": 1000,
+       "marker": {
+        "lat": -2.4,
+        "lon": 36.0,
+        "label": "озеро Натрон"
+       },
+       "note": "Щелочная вода и соляная корка"
+      }
+     }
+    },
+    {
+     "id": "finale-06",
+     "type": "stock",
+     "dur": 5.4,
+     "query": "ocean sunset horizon",
+     "queries": [
+      "ocean waves",
+      "sea waves",
+      "blue ocean"
+     ],
+     "overlay": {
+      "template": "title-card",
+      "data": {
+       "title": "FILM OF DREAM",
+       "subtitle": "Следующая история — озеро Натрон"
+      }
+     }
+    }
+   ]
   }
  ]
 }
