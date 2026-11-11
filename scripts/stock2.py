@@ -128,9 +128,11 @@ def filter_hits(hits, query, allow_vessels=False):
     return [h for h in hits if h["id"] not in blocked and good(h, words) and rendition(h) and open_water(h, allow_vessels)]
 
 
-def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None):
+def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxed=False):
     """shots: [{"id", "query", "queries"?}]. pool: {query: [hits]}. Returns ({shot_id: [hits]}, [shortage messages]).
-    No clip is a candidate for two shots (so the picks can never collide), and `taken` ids (already picked) are skipped."""
+    No clip is a candidate for two shots (so the picks can never collide), and `taken` ids (already picked) are skipped.
+    relaxed (pilot autopick): shots that are still short are filled with any clip that passes every other filter (open water,
+    16:9, no bars, blocklist), best tag overlap with the query first, instead of requiring every query word in the tags."""
     used = set(taken)
     out, short = {}, []
     for s in shots:
@@ -149,6 +151,26 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None):
         out[s["id"]] = got
         if len(got) < n:
             short.append(f"{s['id']} ({s['query']!r}): only {len(got)} unique clip(s) instead of {n}")
+    if relaxed:
+        everything = {}
+        for hits in pool.values():
+            for h in hits:
+                everything.setdefault(h["id"], h)
+        blocked = blocklist()
+        for s in shots:
+            got = out[s["id"]]
+            if len(got) >= n:
+                continue
+            allow = vessels_allowed(s)
+            words = set(query_words(s["query"]))
+            ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, [])
+                             and rendition(h) and open_water(h, allow) and (accept is None or accept(h))),
+                            key=lambda h: -sum(1 for w in words if w in h.get("tags", "").lower()))
+            for h in ranked[:n - len(got)]:
+                got.append(h)
+                used.add(h["id"])
+    if relaxed:
+        short = [f"{s['id']} ({s['query']!r}): only {len(out[s['id']])} unique clip(s) instead of {n}" for s in shots if len(out[s["id"]]) < n]
     return out, short
 
 
@@ -265,7 +287,7 @@ def cmd_candidates(sb_path, outdir):
                 print(f"dropped pix:{h['id']}: black bars", flush=True)
         return not bars[k]
 
-    cands, short = assign_candidates(todo, pool, taken=picked, accept=no_bars)
+    cands, short = assign_candidates(todo, pool, taken=picked, accept=no_bars, relaxed=bool(os.environ.get("STOCK_RELAXED")))
     json.dump(bars, open(bars_path, "w"))
     rows = [(s, cands[s["id"]]) for s in todo]
     sheets = make_sheets(rows, outdir, cache_dir)
