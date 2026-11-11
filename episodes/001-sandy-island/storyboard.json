@@ -19,10 +19,6 @@
   },
   "bermeja_chart": {
    "label": "РЕКОНСТРУКЦИЯ"
-  },
-  "nasa_havre_2012": {
-   "page": "https://earthobservatory.nasa.gov/images/78863",
-   "credit": "NASA image courtesy Jeff Schmaltz, LANCE/EOSDIS MODIS Rapid Response Team, GSFC"
   }
  },
  "scenes": [
@@ -2412,15 +2408,16 @@
    "shots": [
     {
      "id": "pumice-scale-01",
-     "type": "external-image",
+     "type": "stock",
      "dur": 7,
-     "asset_id": "nasa_havre_2012",
-     "overlay": {
-      "template": "lower-third",
-      "data": {
-       "text": "Плот пемзы вулкана Гавр · NASA · 2012"
-      }
-     }
+     "query": "ocean aerial",
+     "queries": [
+      "ocean",
+      "sea",
+      "open sea",
+      "ocean drone"
+     ],
+     "note": "PLACEHOLDER: NASA image 78863 (Gavre pumice raft) cannot be fetched - the old Earth Observatory page is gone. Restore type external-image + asset nasa_havre_2012 once a real URL/file exists."
     },
     {
      "id": "pumice-scale-02",
