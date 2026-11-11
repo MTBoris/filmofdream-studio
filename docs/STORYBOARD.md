@@ -51,7 +51,7 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. ChatGPT writes i
 ## Overlay templates (all drawn over the ocean video; palette `#101D2B #213E50 #E6D6B8 #D3A35B #E8EEF1`, PT Serif / IBM Plex Sans, margins 90/65 px)
 | template | `data` | `size` order |
 |---|---|---|
-| `ocean-fact` | `value` (number, list `[1500, 2000]` for a range, or a string such as `"400+"`, `"≈26"` – the number counts up, prefix/suffix stay), `unit`, `label`, `note`, `prefix`, `suffix`, `decimals` | value, label, note |
+| `ocean-fact` | `group` (false for years: 2012, not 2 012; long words shrink to fit), `value` (number, list `[1500, 2000]` for a range, or a string such as `"400+"`, `"≈26"` – the number counts up, prefix/suffix stay), `unit`, `label`, `note`, `prefix`, `suffix`, `decimals` | value, label, note |
 | `ocean-coords` | `lat`, `lon` (text, typed in), `label`, `note` | coords, label, note |
 | `ocean-map` | `center [lat, lon]`, `span_km`, `title`, `marker {lat, lon, label}`, `points [...]` (points outside the card are skipped), `scale_km`, `note` | title, label, note |
 | `ocean-timeline` | `events [{date, label, cue?}]` – each event appears on its own `cue`; event text is never smaller than 34 px and sits on a local dark panel | date, event |
