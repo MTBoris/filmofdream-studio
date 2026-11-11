@@ -71,11 +71,11 @@
   },
   {
    "scene": "fragile",
-   "start": 405.16
+   "start": 405.15
   },
   {
    "scene": "threat",
-   "start": 429.0
+   "start": 428.99
   },
   {
    "scene": "finale",
@@ -785,6371 +785,6371 @@
   },
   {
    "w": "Зато",
-   "start": 57.45,
-   "end": 57.937,
+   "start": 57.449,
+   "end": 57.936,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "он",
-   "start": 57.852,
-   "end": 57.997,
+   "start": 57.851,
+   "end": 57.996,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "широкий",
-   "start": 57.997,
-   "end": 58.576,
+   "start": 57.996,
+   "end": 58.575,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "от",
-   "start": 58.694,
-   "end": 58.905,
+   "start": 58.693,
+   "end": 58.904,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "берега",
-   "start": 58.905,
-   "end": 59.287,
+   "start": 58.904,
+   "end": 59.285,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "до",
-   "start": 59.287,
-   "end": 59.392,
+   "start": 59.285,
+   "end": 59.391,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "берега",
-   "start": 59.392,
-   "end": 59.839,
+   "start": 59.391,
+   "end": 59.838,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "около",
-   "start": 60.076,
-   "end": 60.537,
+   "start": 60.075,
+   "end": 60.535,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "пятнадцати",
-   "start": 60.537,
-   "end": 61.234,
+   "start": 60.535,
+   "end": 61.233,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "километров",
-   "start": 61.234,
-   "end": 61.918,
+   "start": 61.233,
+   "end": 61.917,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "А",
-   "start": 62.852,
-   "end": 63.037,
+   "start": 62.851,
+   "end": 63.035,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "в",
-   "start": 63.037,
-   "end": 63.102,
+   "start": 63.035,
+   "end": 63.101,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "сезон",
-   "start": 63.102,
-   "end": 63.484,
+   "start": 63.101,
+   "end": 63.483,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "дождей",
-   "start": 63.484,
-   "end": 63.944,
+   "start": 63.483,
+   "end": 63.943,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "озеро",
-   "start": 63.944,
-   "end": 64.405,
+   "start": 63.943,
+   "end": 64.404,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "разливается",
-   "start": 64.405,
-   "end": 65.01,
+   "start": 64.404,
+   "end": 65.009,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "ещё",
-   "start": 65.01,
-   "end": 65.339,
+   "start": 65.009,
+   "end": 65.338,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "шире",
-   "start": 65.339,
-   "end": 65.734,
+   "start": 65.338,
+   "end": 65.733,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "в",
-   "start": 66.063,
-   "end": 66.102,
+   "start": 66.062,
+   "end": 66.101,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "засуху",
-   "start": 66.102,
-   "end": 66.694,
+   "start": 66.101,
+   "end": 66.693,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "сжимается",
-   "start": 66.931,
-   "end": 67.787,
+   "start": 66.93,
+   "end": 67.785,
    "scene": "shallow",
    "line": 8
   },
   {
    "w": "В",
-   "start": 68.094,
-   "end": 68.37,
+   "start": 68.092,
+   "end": 68.369,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "озеро",
-   "start": 68.281,
-   "end": 68.61,
+   "start": 68.279,
+   "end": 68.608,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "впадает",
-   "start": 68.61,
-   "end": 69.07,
+   "start": 68.608,
+   "end": 69.069,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "река",
-   "start": 69.07,
-   "end": 69.425,
+   "start": 69.069,
+   "end": 69.424,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "но",
-   "start": 69.794,
-   "end": 69.899,
+   "start": 69.793,
+   "end": 69.898,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "из",
-   "start": 69.899,
-   "end": 70.004,
+   "start": 69.898,
+   "end": 70.003,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "него",
-   "start": 70.004,
-   "end": 70.281,
+   "start": 70.003,
+   "end": 70.279,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "не",
-   "start": 70.281,
-   "end": 70.399,
+   "start": 70.279,
+   "end": 70.398,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "вытекает",
-   "start": 70.399,
-   "end": 70.965,
+   "start": 70.398,
+   "end": 70.964,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "ни",
-   "start": 70.965,
-   "end": 71.11,
+   "start": 70.964,
+   "end": 71.108,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "одна",
-   "start": 71.11,
-   "end": 71.518,
+   "start": 71.108,
+   "end": 71.516,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "Воде",
-   "start": 72.491,
-   "end": 73.018,
+   "start": 72.49,
+   "end": 73.016,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "некуда",
-   "start": 73.018,
-   "end": 73.412,
+   "start": 73.016,
+   "end": 73.411,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "уходить",
-   "start": 73.412,
-   "end": 73.965,
+   "start": 73.411,
+   "end": 73.964,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "кроме",
-   "start": 74.123,
-   "end": 74.518,
+   "start": 74.122,
+   "end": 74.516,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "как",
-   "start": 74.518,
-   "end": 74.728,
+   "start": 74.516,
+   "end": 74.727,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "в",
-   "start": 74.728,
-   "end": 74.82,
+   "start": 74.727,
+   "end": 74.819,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "небо",
-   "start": 74.82,
-   "end": 75.307,
+   "start": 74.819,
+   "end": 75.306,
    "scene": "shallow",
    "line": 9
   },
   {
    "w": "Солнце",
-   "start": 76.222,
-   "end": 76.814,
+   "start": 76.22,
+   "end": 76.812,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "выпаривает",
-   "start": 76.729,
-   "end": 77.334,
+   "start": 76.727,
+   "end": 77.333,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "её",
-   "start": 77.334,
-   "end": 77.663,
+   "start": 77.333,
+   "end": 77.662,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "а",
-   "start": 77.887,
-   "end": 78.058,
+   "start": 77.885,
+   "end": 78.056,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "всё",
-   "start": 78.058,
-   "end": 78.387,
+   "start": 78.056,
+   "end": 78.385,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "что",
-   "start": 78.571,
-   "end": 78.781,
+   "start": 78.569,
+   "end": 78.78,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "было",
-   "start": 78.781,
-   "end": 79.005,
+   "start": 78.78,
+   "end": 79.004,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "растворено",
-   "start": 79.005,
-   "end": 79.623,
+   "start": 79.004,
+   "end": 79.622,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "остаётся",
-   "start": 79.768,
-   "end": 80.676,
+   "start": 79.767,
+   "end": 80.675,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "Год",
-   "start": 81.61,
-   "end": 82.084,
+   "start": 81.609,
+   "end": 82.083,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "за",
-   "start": 82.084,
-   "end": 82.242,
+   "start": 82.083,
+   "end": 82.241,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "годом",
-   "start": 82.242,
-   "end": 82.584,
+   "start": 82.241,
+   "end": 82.583,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "соль",
-   "start": 82.584,
-   "end": 82.887,
+   "start": 82.583,
+   "end": 82.885,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "и",
-   "start": 82.887,
-   "end": 83.058,
+   "start": 82.885,
+   "end": 83.056,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "сода",
-   "start": 83.058,
-   "end": 83.466,
+   "start": 83.056,
+   "end": 83.464,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "копятся",
-   "start": 83.466,
-   "end": 83.952,
+   "start": 83.464,
+   "end": 83.951,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "в",
-   "start": 83.952,
-   "end": 83.992,
+   "start": 83.951,
+   "end": 83.991,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "озере",
-   "start": 83.992,
-   "end": 84.505,
+   "start": 83.991,
+   "end": 84.504,
    "scene": "shallow",
    "line": 10
   },
   {
    "w": "Главное",
-   "start": 84.759,
-   "end": 85.43,
+   "start": 84.758,
+   "end": 85.429,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "вещество",
-   "start": 85.35,
-   "end": 85.863,
+   "start": 85.349,
+   "end": 85.862,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "здесь",
-   "start": 85.863,
-   "end": 86.271,
+   "start": 85.862,
+   "end": 86.27,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "карбонат",
-   "start": 86.455,
-   "end": 87.06,
+   "start": 86.454,
+   "end": 87.059,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "натрия",
-   "start": 87.06,
-   "end": 87.771,
+   "start": 87.059,
+   "end": 87.77,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "Проще",
-   "start": 88.731,
-   "end": 89.245,
+   "start": 88.73,
+   "end": 89.243,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "говоря",
-   "start": 89.245,
-   "end": 89.666,
+   "start": 89.243,
+   "end": 89.664,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "сода",
-   "start": 89.995,
-   "end": 90.56,
+   "start": 89.993,
+   "end": 90.559,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "Её",
-   "start": 91.481,
-   "end": 91.968,
+   "start": 91.48,
+   "end": 91.967,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "природную",
-   "start": 91.968,
-   "end": 92.481,
+   "start": 91.967,
+   "end": 92.48,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "форму",
-   "start": 92.481,
-   "end": 92.837,
+   "start": 92.48,
+   "end": 92.835,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "называют",
-   "start": 92.837,
-   "end": 93.337,
+   "start": 92.835,
+   "end": 93.335,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "натроном",
-   "start": 93.337,
-   "end": 93.863,
+   "start": 93.335,
+   "end": 93.862,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "отсюда",
-   "start": 94.113,
-   "end": 94.81,
+   "start": 94.112,
+   "end": 94.809,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "и",
-   "start": 94.81,
-   "end": 94.916,
+   "start": 94.809,
+   "end": 94.914,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "имя",
-   "start": 94.916,
-   "end": 95.284,
+   "start": 94.914,
+   "end": 95.283,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "озера",
-   "start": 95.284,
-   "end": 95.955,
+   "start": 95.283,
+   "end": 95.954,
    "scene": "chemistry",
    "line": 11
   },
   {
    "w": "Кислотность",
-   "start": 96.202,
-   "end": 96.926,
+   "start": 96.201,
+   "end": 96.924,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "воды",
-   "start": 96.867,
-   "end": 97.248,
+   "start": 96.865,
+   "end": 97.247,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "измеряют",
-   "start": 97.248,
-   "end": 97.893,
+   "start": 97.247,
+   "end": 97.892,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "по",
-   "start": 97.893,
-   "end": 98.025,
+   "start": 97.892,
+   "end": 98.023,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "шкале",
-   "start": 98.025,
-   "end": 98.446,
+   "start": 98.023,
+   "end": 98.444,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "пэ-аш",
-   "start": 98.446,
-   "end": 99.038,
+   "start": 98.444,
+   "end": 99.036,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "У",
-   "start": 99.933,
-   "end": 100.183,
+   "start": 99.931,
+   "end": 100.181,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "чистой",
-   "start": 100.183,
-   "end": 100.59,
+   "start": 100.181,
+   "end": 100.589,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "воды",
-   "start": 100.59,
-   "end": 100.972,
+   "start": 100.589,
+   "end": 100.971,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "семь",
-   "start": 101.248,
-   "end": 101.617,
+   "start": 101.247,
+   "end": 101.615,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "У",
-   "start": 102.511,
-   "end": 102.709,
+   "start": 102.51,
+   "end": 102.708,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "Натрона",
-   "start": 102.709,
-   "end": 103.261,
+   "start": 102.708,
+   "end": 103.26,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "до",
-   "start": 103.604,
-   "end": 103.788,
+   "start": 103.602,
+   "end": 103.786,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "десяти",
-   "start": 103.788,
-   "end": 104.248,
+   "start": 103.786,
+   "end": 104.247,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "с",
-   "start": 104.248,
-   "end": 104.327,
+   "start": 104.247,
+   "end": 104.326,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "половиной",
-   "start": 104.327,
-   "end": 104.985,
+   "start": 104.326,
+   "end": 104.984,
    "scene": "chemistry",
    "line": 12
   },
   {
    "w": "Это",
-   "start": 105.288,
-   "end": 105.63,
+   "start": 105.287,
+   "end": 105.629,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "почти",
-   "start": 105.55,
-   "end": 105.985,
+   "start": 105.549,
+   "end": 105.983,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "как",
-   "start": 105.985,
-   "end": 106.261,
+   "start": 105.983,
+   "end": 106.26,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "нашатырный",
-   "start": 106.261,
-   "end": 106.906,
+   "start": 106.26,
+   "end": 106.904,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "спирт",
-   "start": 106.906,
-   "end": 107.406,
+   "start": 106.904,
+   "end": 107.404,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "Такая",
-   "start": 108.353,
-   "end": 108.814,
+   "start": 108.352,
+   "end": 108.812,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "вода",
-   "start": 108.814,
-   "end": 109.116,
+   "start": 108.812,
+   "end": 109.115,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "разъедает",
-   "start": 109.116,
-   "end": 109.656,
+   "start": 109.115,
+   "end": 109.654,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "кожу",
-   "start": 109.656,
-   "end": 110.077,
+   "start": 109.654,
+   "end": 110.075,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "и",
-   "start": 110.077,
-   "end": 110.222,
+   "start": 110.075,
+   "end": 110.22,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "глаза",
-   "start": 110.222,
-   "end": 110.577,
+   "start": 110.22,
+   "end": 110.575,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "животным",
-   "start": 110.577,
-   "end": 111.143,
+   "start": 110.575,
+   "end": 111.141,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "которые",
-   "start": 111.419,
-   "end": 111.853,
+   "start": 111.418,
+   "end": 111.852,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "к",
-   "start": 111.853,
-   "end": 111.919,
+   "start": 111.852,
+   "end": 111.918,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "ней",
-   "start": 111.919,
-   "end": 112.116,
+   "start": 111.918,
+   "end": 112.115,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "не",
-   "start": 112.116,
-   "end": 112.248,
+   "start": 112.115,
+   "end": 112.247,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "приспособлены",
-   "start": 112.248,
-   "end": 113.103,
+   "start": 112.247,
+   "end": 113.102,
    "scene": "chemistry",
    "line": 13
   },
   {
    "w": "Журналисты",
-   "start": 113.424,
-   "end": 114.345,
+   "start": 113.422,
+   "end": 114.343,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "которые",
-   "start": 114.39,
-   "end": 114.811,
+   "start": 114.389,
+   "end": 114.81,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "здесь",
-   "start": 114.811,
-   "end": 115.061,
+   "start": 114.81,
+   "end": 115.06,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "бывали",
-   "start": 115.061,
-   "end": 115.483,
+   "start": 115.06,
+   "end": 115.481,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "рассказывают",
-   "start": 115.759,
-   "end": 116.496,
+   "start": 115.758,
+   "end": 116.494,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "вода",
-   "start": 116.746,
-   "end": 117.127,
+   "start": 116.744,
+   "end": 117.126,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "смывает",
-   "start": 117.127,
-   "end": 117.614,
+   "start": 117.126,
+   "end": 117.613,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "краску",
-   "start": 117.614,
-   "end": 118.035,
+   "start": 117.613,
+   "end": 118.034,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "даже",
-   "start": 118.035,
-   "end": 118.338,
+   "start": 118.034,
+   "end": 118.336,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "с",
-   "start": 118.338,
-   "end": 118.404,
+   "start": 118.336,
+   "end": 118.402,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "напечатанных",
-   "start": 118.404,
-   "end": 119.075,
+   "start": 118.402,
+   "end": 119.073,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "страниц",
-   "start": 119.075,
-   "end": 119.667,
+   "start": 119.073,
+   "end": 119.665,
    "scene": "chemistry",
    "line": 14
   },
   {
    "w": "А",
-   "start": 119.993,
-   "end": 120.217,
+   "start": 119.992,
+   "end": 120.215,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "человеку",
-   "start": 120.137,
-   "end": 120.676,
+   "start": 120.136,
+   "end": 120.675,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "долго",
-   "start": 120.676,
-   "end": 121.032,
+   "start": 120.675,
+   "end": 121.03,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "стоять",
-   "start": 121.032,
-   "end": 121.426,
+   "start": 121.03,
+   "end": 121.425,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "в",
-   "start": 121.426,
-   "end": 121.505,
+   "start": 121.425,
+   "end": 121.504,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "ней",
-   "start": 121.505,
-   "end": 121.663,
+   "start": 121.504,
+   "end": 121.662,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "босиком",
-   "start": 121.663,
-   "end": 122.111,
+   "start": 121.662,
+   "end": 122.109,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "опасно",
-   "start": 122.111,
-   "end": 122.597,
+   "start": 122.109,
+   "end": 122.596,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "кожа",
-   "start": 122.887,
-   "end": 123.282,
+   "start": 122.886,
+   "end": 123.28,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "просто",
-   "start": 123.282,
-   "end": 123.676,
+   "start": 123.28,
+   "end": 123.675,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "не",
-   "start": 123.676,
-   "end": 123.782,
+   "start": 123.675,
+   "end": 123.78,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "выдержит",
-   "start": 123.782,
-   "end": 124.361,
+   "start": 123.78,
+   "end": 124.359,
    "scene": "chemistry",
    "line": 15
   },
   {
    "w": "А",
-   "start": 124.668,
-   "end": 124.878,
+   "start": 124.667,
+   "end": 124.877,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "ещё",
-   "start": 124.801,
-   "end": 125.183,
+   "start": 124.8,
+   "end": 125.182,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "она",
-   "start": 125.183,
-   "end": 125.393,
+   "start": 125.182,
+   "end": 125.392,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "горячая",
-   "start": 125.393,
-   "end": 126.235,
+   "start": 125.392,
+   "end": 126.234,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "В",
-   "start": 127.196,
-   "end": 127.367,
+   "start": 127.195,
+   "end": 127.366,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "жаркий",
-   "start": 127.367,
-   "end": 127.788,
+   "start": 127.366,
+   "end": 127.787,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "сезон",
-   "start": 127.788,
-   "end": 128.222,
+   "start": 127.787,
+   "end": 128.221,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "вода",
-   "start": 128.222,
-   "end": 128.564,
+   "start": 128.221,
+   "end": 128.563,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "на",
-   "start": 128.564,
-   "end": 128.696,
+   "start": 128.563,
+   "end": 128.695,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "мелководье",
-   "start": 128.696,
-   "end": 129.367,
+   "start": 128.695,
+   "end": 129.366,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "прогревается",
-   "start": 129.367,
-   "end": 129.999,
+   "start": 129.366,
+   "end": 129.997,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "больше",
-   "start": 129.999,
-   "end": 130.42,
+   "start": 129.997,
+   "end": 130.418,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "чем",
-   "start": 130.42,
-   "end": 130.683,
+   "start": 130.418,
+   "end": 130.682,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "до",
-   "start": 130.683,
-   "end": 130.788,
+   "start": 130.682,
+   "end": 130.787,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "сорока",
-   "start": 130.788,
-   "end": 131.196,
+   "start": 130.787,
+   "end": 131.195,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "градусов",
-   "start": 131.196,
-   "end": 131.854,
+   "start": 131.195,
+   "end": 131.853,
    "scene": "heat",
    "line": 16
   },
   {
    "w": "Горячая",
-   "start": 132.173,
-   "end": 133.028,
+   "start": 132.172,
+   "end": 133.027,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "солёная",
-   "start": 133.173,
-   "end": 133.805,
+   "start": 133.172,
+   "end": 133.804,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "едкая",
-   "start": 134.121,
-   "end": 134.871,
+   "start": 134.12,
+   "end": 134.87,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "Для",
-   "start": 135.818,
-   "end": 136.213,
+   "start": 135.817,
+   "end": 136.212,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "большинства",
-   "start": 136.213,
-   "end": 136.805,
+   "start": 136.212,
+   "end": 136.804,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "живых",
-   "start": 136.805,
-   "end": 137.147,
+   "start": 136.804,
+   "end": 137.146,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "существ",
-   "start": 137.147,
-   "end": 137.7,
+   "start": 137.146,
+   "end": 137.698,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "смертельная",
-   "start": 137.884,
-   "end": 138.924,
+   "start": 137.883,
+   "end": 138.922,
    "scene": "heat",
    "line": 17
   },
   {
    "w": "С",
-   "start": 139.737,
-   "end": 139.947,
+   "start": 139.736,
+   "end": 139.946,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "воздуха",
-   "start": 139.867,
-   "end": 140.498,
+   "start": 139.865,
+   "end": 140.497,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "Натрон",
-   "start": 140.498,
-   "end": 140.959,
+   "start": 140.497,
+   "end": 140.957,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "иногда",
-   "start": 140.959,
-   "end": 141.419,
+   "start": 140.957,
+   "end": 141.418,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "выглядит",
-   "start": 141.419,
-   "end": 141.893,
+   "start": 141.418,
+   "end": 141.892,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "так",
-   "start": 141.893,
-   "end": 142.143,
+   "start": 141.892,
+   "end": 142.142,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "будто",
-   "start": 142.393,
-   "end": 142.761,
+   "start": 142.392,
+   "end": 142.76,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "его",
-   "start": 142.761,
-   "end": 142.985,
+   "start": 142.76,
+   "end": 142.984,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "залили",
-   "start": 142.985,
-   "end": 143.406,
+   "start": 142.984,
+   "end": 143.405,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "кровью",
-   "start": 143.406,
-   "end": 143.998,
+   "start": 143.405,
+   "end": 143.997,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "Ярко-красные",
-   "start": 144.972,
-   "end": 146.077,
+   "start": 144.97,
+   "end": 146.076,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "и",
-   "start": 146.077,
-   "end": 146.274,
+   "start": 146.076,
+   "end": 146.273,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "оранжевые",
-   "start": 146.274,
-   "end": 146.853,
+   "start": 146.273,
+   "end": 146.852,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "пятна",
-   "start": 146.853,
-   "end": 147.209,
+   "start": 146.852,
+   "end": 147.207,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "на",
-   "start": 147.209,
-   "end": 147.327,
+   "start": 147.207,
+   "end": 147.326,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "километры",
-   "start": 147.327,
-   "end": 147.84,
+   "start": 147.326,
+   "end": 147.839,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "вокруг",
-   "start": 147.84,
-   "end": 148.38,
+   "start": 147.839,
+   "end": 148.378,
    "scene": "red_water",
    "line": 18
   },
   {
    "w": "Это",
-   "start": 148.666,
-   "end": 149.008,
+   "start": 148.665,
+   "end": 149.007,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "не",
-   "start": 148.928,
-   "end": 149.06,
+   "start": 148.927,
+   "end": 149.058,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "краска",
-   "start": 149.06,
-   "end": 149.652,
+   "start": 149.058,
+   "end": 149.651,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "и",
-   "start": 149.652,
-   "end": 149.757,
+   "start": 149.651,
+   "end": 149.756,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "не",
-   "start": 149.757,
-   "end": 149.862,
+   "start": 149.756,
+   "end": 149.861,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "ржавчина",
-   "start": 149.862,
-   "end": 150.586,
+   "start": 149.861,
+   "end": 150.585,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "Это",
-   "start": 151.533,
-   "end": 151.902,
+   "start": 151.532,
+   "end": 151.901,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "микробы",
-   "start": 151.902,
-   "end": 152.52,
+   "start": 151.901,
+   "end": 152.519,
    "scene": "red_water",
    "line": 19
   },
   {
    "w": "Крошечные",
-   "start": 152.842,
-   "end": 153.526,
+   "start": 152.84,
+   "end": 153.524,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "организмы",
-   "start": 153.451,
-   "end": 154.03,
+   "start": 153.45,
+   "end": 154.029,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "которые",
-   "start": 154.267,
-   "end": 154.701,
+   "start": 154.266,
+   "end": 154.7,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "любят",
-   "start": 154.701,
-   "end": 155.004,
+   "start": 154.7,
+   "end": 155.002,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "соль",
-   "start": 155.004,
-   "end": 155.319,
+   "start": 155.002,
+   "end": 155.318,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "галоархеи",
-   "start": 155.609,
-   "end": 156.438,
+   "start": 155.608,
+   "end": 156.437,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "и",
-   "start": 156.438,
-   "end": 156.622,
+   "start": 156.437,
+   "end": 156.621,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "цианобактерии",
-   "start": 156.622,
-   "end": 157.675,
+   "start": 156.621,
+   "end": 157.673,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "В",
-   "start": 158.569,
-   "end": 158.846,
+   "start": 158.568,
+   "end": 158.844,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "их",
-   "start": 158.846,
-   "end": 159.004,
+   "start": 158.844,
+   "end": 159.002,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "клетках",
-   "start": 159.004,
-   "end": 159.569,
+   "start": 159.002,
+   "end": 159.568,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "есть",
-   "start": 159.569,
-   "end": 159.951,
+   "start": 159.568,
+   "end": 159.95,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "яркие",
-   "start": 159.951,
-   "end": 160.451,
+   "start": 159.95,
+   "end": 160.45,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "пигменты",
-   "start": 160.451,
-   "end": 161.109,
+   "start": 160.45,
+   "end": 161.108,
    "scene": "red_water",
    "line": 20
   },
   {
    "w": "Когда",
-   "start": 161.422,
-   "end": 161.909,
+   "start": 161.421,
+   "end": 161.908,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "озеро",
-   "start": 161.835,
-   "end": 162.256,
+   "start": 161.833,
+   "end": 162.254,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "мелеет",
-   "start": 162.256,
-   "end": 162.808,
+   "start": 162.254,
+   "end": 162.807,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "и",
-   "start": 162.808,
-   "end": 162.914,
+   "start": 162.807,
+   "end": 162.912,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "становится",
-   "start": 162.914,
-   "end": 163.519,
+   "start": 162.912,
+   "end": 163.518,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "ещё",
-   "start": 163.519,
-   "end": 163.835,
+   "start": 163.518,
+   "end": 163.833,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "солонее",
-   "start": 163.835,
-   "end": 164.4,
+   "start": 163.833,
+   "end": 164.399,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "им",
-   "start": 164.69,
-   "end": 164.927,
+   "start": 164.689,
+   "end": 164.925,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "становится",
-   "start": 164.927,
-   "end": 165.585,
+   "start": 164.925,
+   "end": 165.583,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "только",
-   "start": 165.585,
-   "end": 165.966,
+   "start": 165.583,
+   "end": 165.965,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "лучше",
-   "start": 165.966,
-   "end": 166.493,
+   "start": 165.965,
+   "end": 166.491,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "Они",
-   "start": 167.453,
-   "end": 167.835,
+   "start": 167.452,
+   "end": 167.833,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "размножаются",
-   "start": 167.835,
-   "end": 168.716,
+   "start": 167.833,
+   "end": 168.715,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "и",
-   "start": 168.979,
-   "end": 169.137,
+   "start": 168.978,
+   "end": 169.136,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "вода",
-   "start": 169.137,
-   "end": 169.44,
+   "start": 169.136,
+   "end": 169.439,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "краснеет",
-   "start": 169.44,
-   "end": 170.216,
+   "start": 169.439,
+   "end": 170.215,
    "scene": "red_water",
    "line": 21
   },
   {
    "w": "Поэтому",
-   "start": 170.503,
-   "end": 171.042,
+   "start": 170.502,
+   "end": 171.041,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "Натрон",
-   "start": 170.968,
-   "end": 171.442,
+   "start": 170.967,
+   "end": 171.44,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "меняет",
-   "start": 171.442,
-   "end": 171.902,
+   "start": 171.44,
+   "end": 171.901,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "цвет",
-   "start": 171.902,
-   "end": 172.389,
+   "start": 171.901,
+   "end": 172.388,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "После",
-   "start": 173.336,
-   "end": 173.718,
+   "start": 173.335,
+   "end": 173.717,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "дождей",
-   "start": 173.718,
-   "end": 174.179,
+   "start": 173.717,
+   "end": 174.177,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "он",
-   "start": 174.179,
-   "end": 174.429,
+   "start": 174.177,
+   "end": 174.427,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "бывает",
-   "start": 174.429,
-   "end": 174.81,
+   "start": 174.427,
+   "end": 174.809,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "синим",
-   "start": 174.81,
-   "end": 175.257,
+   "start": 174.809,
+   "end": 175.256,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "и",
-   "start": 175.257,
-   "end": 175.389,
+   "start": 175.256,
+   "end": 175.388,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "спокойным",
-   "start": 175.389,
-   "end": 176.113,
+   "start": 175.388,
+   "end": 176.111,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "А",
-   "start": 177.007,
-   "end": 177.218,
+   "start": 177.006,
+   "end": 177.217,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "к",
-   "start": 177.218,
-   "end": 177.271,
+   "start": 177.217,
+   "end": 177.269,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "концу",
-   "start": 177.271,
-   "end": 177.652,
+   "start": 177.269,
+   "end": 177.651,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "сухого",
-   "start": 177.652,
-   "end": 178.073,
+   "start": 177.651,
+   "end": 178.072,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "сезона",
-   "start": 178.073,
-   "end": 178.56,
+   "start": 178.072,
+   "end": 178.559,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "когда",
-   "start": 178.784,
-   "end": 179.113,
+   "start": 178.782,
+   "end": 179.111,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "вода",
-   "start": 179.113,
-   "end": 179.336,
+   "start": 179.111,
+   "end": 179.335,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "испаряется",
-   "start": 179.336,
-   "end": 180.126,
+   "start": 179.335,
+   "end": 180.125,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "оранжевым",
-   "start": 180.376,
-   "end": 181.073,
+   "start": 180.375,
+   "end": 181.072,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "розовым",
-   "start": 181.271,
-   "end": 181.85,
+   "start": 181.269,
+   "end": 181.848,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "красным",
-   "start": 181.994,
-   "end": 182.586,
+   "start": 181.993,
+   "end": 182.585,
    "scene": "red_water",
    "line": 22
   },
   {
    "w": "Одно",
-   "start": 182.882,
-   "end": 183.369,
+   "start": 182.881,
+   "end": 183.367,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "и",
-   "start": 183.284,
-   "end": 183.363,
+   "start": 183.283,
+   "end": 183.362,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "то",
-   "start": 183.363,
-   "end": 183.508,
+   "start": 183.362,
+   "end": 183.507,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "же",
-   "start": 183.508,
-   "end": 183.666,
+   "start": 183.507,
+   "end": 183.665,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "озеро",
-   "start": 183.666,
-   "end": 184.126,
+   "start": 183.665,
+   "end": 184.125,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "в",
-   "start": 184.126,
-   "end": 184.166,
+   "start": 184.125,
+   "end": 184.165,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "разные",
-   "start": 184.166,
-   "end": 184.534,
+   "start": 184.165,
+   "end": 184.533,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "месяцы",
-   "start": 184.534,
-   "end": 185.034,
+   "start": 184.533,
+   "end": 185.033,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "выглядит",
-   "start": 185.034,
-   "end": 185.574,
+   "start": 185.033,
+   "end": 185.572,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "как",
-   "start": 185.574,
-   "end": 185.824,
+   "start": 185.572,
+   "end": 185.822,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "разные",
-   "start": 185.824,
-   "end": 186.232,
+   "start": 185.822,
+   "end": 186.23,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "планеты",
-   "start": 186.232,
-   "end": 186.85,
+   "start": 186.23,
+   "end": 186.849,
    "scene": "red_water",
    "line": 23
   },
   {
    "w": "Теперь",
-   "start": 187.79,
-   "end": 188.237,
+   "start": 187.788,
+   "end": 188.236,
    "scene": "photographer",
    "line": 24
   },
   {
    "w": "о",
-   "start": 188.426,
-   "end": 188.544,
+   "start": 188.424,
+   "end": 188.543,
    "scene": "photographer",
    "line": 24
   },
   {
    "w": "тех",
-   "start": 188.544,
-   "end": 188.807,
+   "start": 188.543,
+   "end": 188.806,
    "scene": "photographer",
    "line": 24
   },
   {
    "w": "самых",
-   "start": 188.807,
-   "end": 189.176,
+   "start": 188.806,
+   "end": 189.174,
    "scene": "photographer",
    "line": 24
   },
   {
    "w": "снимках",
-   "start": 189.176,
-   "end": 189.834,
+   "start": 189.174,
+   "end": 189.832,
    "scene": "photographer",
    "line": 24
   },
   {
    "w": "Их",
-   "start": 190.153,
-   "end": 190.468,
+   "start": 190.151,
+   "end": 190.467,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "сделал",
-   "start": 190.382,
-   "end": 190.83,
+   "start": 190.381,
+   "end": 190.828,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "британский",
-   "start": 190.83,
-   "end": 191.369,
+   "start": 190.828,
+   "end": 191.368,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "фотограф",
-   "start": 191.369,
-   "end": 192.001,
+   "start": 191.368,
+   "end": 191.999,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Ник",
-   "start": 192.001,
-   "end": 192.29,
+   "start": 191.999,
+   "end": 192.289,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Брандт",
-   "start": 192.29,
-   "end": 192.843,
+   "start": 192.289,
+   "end": 192.841,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Он",
-   "start": 193.803,
-   "end": 194.093,
+   "start": 193.802,
+   "end": 194.091,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "снимал",
-   "start": 194.093,
-   "end": 194.527,
+   "start": 194.091,
+   "end": 194.526,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "дикую",
-   "start": 194.527,
-   "end": 194.895,
+   "start": 194.526,
+   "end": 194.894,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "природу",
-   "start": 194.895,
-   "end": 195.316,
+   "start": 194.894,
+   "end": 195.315,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Восточной",
-   "start": 195.316,
-   "end": 195.882,
+   "start": 195.315,
+   "end": 195.881,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Африки",
-   "start": 195.882,
-   "end": 196.369,
+   "start": 195.881,
+   "end": 196.368,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "и",
-   "start": 196.369,
-   "end": 196.566,
+   "start": 196.368,
+   "end": 196.565,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "однажды",
-   "start": 196.566,
-   "end": 197.066,
+   "start": 196.565,
+   "end": 197.065,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "приехал",
-   "start": 197.066,
-   "end": 197.566,
+   "start": 197.065,
+   "end": 197.565,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "на",
-   "start": 197.566,
-   "end": 197.698,
+   "start": 197.565,
+   "end": 197.697,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "берег",
-   "start": 197.698,
-   "end": 198.001,
+   "start": 197.697,
+   "end": 197.999,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Натрона",
-   "start": 198.001,
-   "end": 198.606,
+   "start": 197.999,
+   "end": 198.605,
    "scene": "photographer",
    "line": 25
   },
   {
    "w": "Вдоль",
-   "start": 198.89,
-   "end": 199.429,
+   "start": 198.889,
+   "end": 199.428,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "кромки",
-   "start": 199.341,
-   "end": 199.722,
+   "start": 199.339,
+   "end": 199.721,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "воды",
-   "start": 199.722,
-   "end": 200.012,
+   "start": 199.721,
+   "end": 200.01,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "лежали",
-   "start": 200.012,
-   "end": 200.485,
+   "start": 200.01,
+   "end": 200.484,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "птицы",
-   "start": 200.485,
-   "end": 201.051,
+   "start": 200.484,
+   "end": 201.05,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "и",
-   "start": 201.051,
-   "end": 201.196,
+   "start": 201.05,
+   "end": 201.195,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "летучие",
-   "start": 201.196,
-   "end": 201.735,
+   "start": 201.195,
+   "end": 201.734,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "мыши",
-   "start": 201.735,
-   "end": 202.235,
+   "start": 201.734,
+   "end": 202.234,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "Мёртвые",
-   "start": 203.183,
-   "end": 203.906,
+   "start": 203.181,
+   "end": 203.905,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "высохшие",
-   "start": 204.196,
-   "end": 204.893,
+   "start": 204.195,
+   "end": 204.892,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "покрытые",
-   "start": 205.143,
-   "end": 205.749,
+   "start": 205.142,
+   "end": 205.747,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "белой",
-   "start": 205.749,
-   "end": 206.091,
+   "start": 205.747,
+   "end": 206.089,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "коркой",
-   "start": 206.091,
-   "end": 206.617,
+   "start": 206.089,
+   "end": 206.616,
    "scene": "shoreline",
    "line": 26
   },
   {
    "w": "Брандт",
-   "start": 206.929,
-   "end": 207.534,
+   "start": 206.928,
+   "end": 207.533,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "честно",
-   "start": 207.447,
-   "end": 207.855,
+   "start": 207.445,
+   "end": 207.853,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "рассказал",
-   "start": 207.855,
-   "end": 208.407,
+   "start": 207.853,
+   "end": 208.406,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "что",
-   "start": 208.618,
-   "end": 208.894,
+   "start": 208.616,
+   "end": 208.893,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "сделал",
-   "start": 208.894,
-   "end": 209.315,
+   "start": 208.893,
+   "end": 209.314,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "дальше",
-   "start": 209.315,
-   "end": 209.841,
+   "start": 209.314,
+   "end": 209.84,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "Он",
-   "start": 210.749,
-   "end": 211.078,
+   "start": 210.748,
+   "end": 211.077,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "поднимал",
-   "start": 211.078,
-   "end": 211.526,
+   "start": 211.077,
+   "end": 211.524,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "их",
-   "start": 211.526,
-   "end": 211.604,
+   "start": 211.524,
+   "end": 211.603,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "с",
-   "start": 211.605,
-   "end": 211.697,
+   "start": 211.603,
+   "end": 211.695,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "берега",
-   "start": 211.697,
-   "end": 212.21,
+   "start": 211.695,
+   "end": 212.208,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "и",
-   "start": 212.21,
-   "end": 212.315,
+   "start": 212.208,
+   "end": 212.314,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "сажал",
-   "start": 212.315,
-   "end": 212.71,
+   "start": 212.314,
+   "end": 212.708,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "на",
-   "start": 212.71,
-   "end": 212.841,
+   "start": 212.708,
+   "end": 212.84,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "ветки",
-   "start": 212.841,
-   "end": 213.197,
+   "start": 212.84,
+   "end": 213.195,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "ставил",
-   "start": 213.499,
-   "end": 213.92,
+   "start": 213.498,
+   "end": 213.919,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "на",
-   "start": 213.92,
-   "end": 214.052,
+   "start": 213.919,
+   "end": 214.051,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "камни",
-   "start": 214.052,
-   "end": 214.46,
+   "start": 214.051,
+   "end": 214.458,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "в",
-   "start": 214.67,
-   "end": 214.697,
+   "start": 214.669,
+   "end": 214.695,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "живые",
-   "start": 214.697,
-   "end": 215.131,
+   "start": 214.695,
+   "end": 215.13,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "позы",
-   "start": 215.131,
-   "end": 215.605,
+   "start": 215.13,
+   "end": 215.603,
    "scene": "shoreline",
    "line": 27
   },
   {
    "w": "Он",
-   "start": 215.891,
-   "end": 216.167,
+   "start": 215.889,
+   "end": 216.166,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "хотел",
-   "start": 216.086,
-   "end": 216.533,
+   "start": 216.085,
+   "end": 216.532,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "чтобы",
-   "start": 216.731,
-   "end": 217.047,
+   "start": 216.729,
+   "end": 217.045,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "они",
-   "start": 217.047,
-   "end": 217.257,
+   "start": 217.045,
+   "end": 217.256,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "выглядели",
-   "start": 217.257,
-   "end": 217.77,
+   "start": 217.256,
+   "end": 217.769,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "живыми",
-   "start": 217.77,
-   "end": 218.244,
+   "start": 217.769,
+   "end": 218.243,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "даже",
-   "start": 218.56,
-   "end": 218.941,
+   "start": 218.558,
+   "end": 218.94,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "после",
-   "start": 218.941,
-   "end": 219.283,
+   "start": 218.94,
+   "end": 219.282,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "смерти",
-   "start": 219.283,
-   "end": 219.889,
+   "start": 219.282,
+   "end": 219.887,
    "scene": "shoreline",
    "line": 28
   },
   {
    "w": "Так",
-   "start": 220.836,
-   "end": 221.151,
+   "start": 220.834,
+   "end": 221.15,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "получились",
-   "start": 221.077,
-   "end": 221.617,
+   "start": 221.076,
+   "end": 221.616,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "кадры",
-   "start": 221.617,
-   "end": 222.051,
+   "start": 221.616,
+   "end": 222.05,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "для",
-   "start": 222.051,
-   "end": 222.196,
+   "start": 222.05,
+   "end": 222.195,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "его",
-   "start": 222.196,
-   "end": 222.393,
+   "start": 222.195,
+   "end": 222.392,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "книги",
-   "start": 222.393,
-   "end": 222.801,
+   "start": 222.392,
+   "end": 222.8,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "которая",
-   "start": 223.091,
-   "end": 223.499,
+   "start": 223.089,
+   "end": 223.497,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "вышла",
-   "start": 223.499,
-   "end": 223.854,
+   "start": 223.497,
+   "end": 223.852,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "в",
-   "start": 223.854,
-   "end": 223.92,
+   "start": 223.852,
+   "end": 223.918,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "две",
-   "start": 223.92,
-   "end": 224.183,
+   "start": 223.918,
+   "end": 224.181,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "тысячи",
-   "start": 224.183,
-   "end": 224.67,
+   "start": 224.181,
+   "end": 224.668,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "тринадцатом",
-   "start": 224.67,
-   "end": 225.275,
+   "start": 224.668,
+   "end": 225.274,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "году",
-   "start": 225.275,
-   "end": 225.749,
+   "start": 225.274,
+   "end": 225.747,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "И",
-   "start": 226.709,
-   "end": 226.959,
+   "start": 226.708,
+   "end": 226.958,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "весь",
-   "start": 226.959,
-   "end": 227.222,
+   "start": 226.958,
+   "end": 227.221,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "мир",
-   "start": 227.222,
-   "end": 227.485,
+   "start": 227.221,
+   "end": 227.484,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "решил",
-   "start": 227.485,
-   "end": 227.985,
+   "start": 227.484,
+   "end": 227.984,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "что",
-   "start": 228.235,
-   "end": 228.512,
+   "start": 228.234,
+   "end": 228.51,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "озеро",
-   "start": 228.512,
-   "end": 228.946,
+   "start": 228.51,
+   "end": 228.945,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "превращает",
-   "start": 228.946,
-   "end": 229.604,
+   "start": 228.945,
+   "end": 229.602,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "животных",
-   "start": 229.604,
-   "end": 230.104,
+   "start": 229.602,
+   "end": 230.102,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "в",
-   "start": 230.104,
-   "end": 230.143,
+   "start": 230.102,
+   "end": 230.142,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "статуи",
-   "start": 230.143,
-   "end": 230.762,
+   "start": 230.142,
+   "end": 230.76,
    "scene": "shoreline",
    "line": 29
   },
   {
    "w": "Но",
-   "start": 231.045,
+   "start": 231.043,
+   "end": 231.359,
+   "scene": "not_stone",
+   "line": 30
+  },
+  {
+   "w": "в",
+   "start": 231.281,
    "end": 231.36,
    "scene": "not_stone",
    "line": 30
   },
   {
-   "w": "в",
-   "start": 231.282,
-   "end": 231.361,
-   "scene": "not_stone",
-   "line": 30
-  },
-  {
    "w": "камень",
-   "start": 231.361,
-   "end": 231.769,
+   "start": 231.36,
+   "end": 231.768,
    "scene": "not_stone",
    "line": 30
   },
   {
    "w": "они",
-   "start": 231.769,
-   "end": 232.098,
+   "start": 231.768,
+   "end": 232.097,
    "scene": "not_stone",
    "line": 30
   },
   {
    "w": "не",
-   "start": 232.098,
-   "end": 232.23,
+   "start": 232.097,
+   "end": 232.228,
    "scene": "not_stone",
    "line": 30
   },
   {
    "w": "превращаются",
-   "start": 232.23,
-   "end": 233.203,
+   "start": 232.228,
+   "end": 233.202,
    "scene": "not_stone",
    "line": 30
   },
   {
    "w": "Животное",
-   "start": 234.125,
-   "end": 234.914,
+   "start": 234.123,
+   "end": 234.913,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "которое",
-   "start": 235.031,
-   "end": 235.452,
+   "start": 235.03,
+   "end": 235.451,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "погибло",
-   "start": 235.452,
-   "end": 235.886,
+   "start": 235.451,
+   "end": 235.885,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "на",
-   "start": 235.886,
-   "end": 235.979,
+   "start": 235.885,
+   "end": 235.977,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "берегу",
-   "start": 235.979,
-   "end": 236.294,
+   "start": 235.977,
+   "end": 236.293,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "Натрона",
-   "start": 236.294,
-   "end": 236.755,
+   "start": 236.293,
+   "end": 236.754,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "не",
-   "start": 237.123,
-   "end": 237.268,
+   "start": 237.122,
+   "end": 237.267,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "гниёт",
-   "start": 237.268,
-   "end": 237.729,
+   "start": 237.267,
+   "end": 237.727,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "так",
-   "start": 237.729,
-   "end": 238.044,
+   "start": 237.727,
+   "end": 238.043,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "как",
-   "start": 238.176,
-   "end": 238.413,
+   "start": 238.175,
+   "end": 238.411,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "в",
-   "start": 238.413,
-   "end": 238.479,
+   "start": 238.411,
+   "end": 238.477,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "обычном",
-   "start": 238.479,
-   "end": 238.926,
+   "start": 238.477,
+   "end": 238.925,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "месте",
-   "start": 238.926,
-   "end": 239.465,
+   "start": 238.925,
+   "end": 239.464,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "Сода",
-   "start": 240.413,
-   "end": 240.939,
+   "start": 240.411,
+   "end": 240.938,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "вытягивает",
-   "start": 240.939,
-   "end": 241.65,
+   "start": 240.938,
+   "end": 241.648,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "из",
-   "start": 241.65,
-   "end": 241.86,
+   "start": 241.648,
+   "end": 241.859,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "тела",
-   "start": 241.86,
-   "end": 242.136,
+   "start": 241.859,
+   "end": 242.135,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "воду",
-   "start": 242.136,
-   "end": 242.571,
+   "start": 242.135,
+   "end": 242.569,
    "scene": "not_stone",
    "line": 31
   },
   {
    "w": "Бактериям",
-   "start": 242.862,
-   "end": 243.704,
+   "start": 242.86,
+   "end": 243.702,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "которые",
-   "start": 243.854,
-   "end": 244.262,
+   "start": 243.852,
+   "end": 244.26,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "разлагают",
-   "start": 244.262,
-   "end": 244.801,
+   "start": 244.26,
+   "end": 244.8,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "мёртвое",
-   "start": 244.801,
-   "end": 245.327,
+   "start": 244.8,
+   "end": 245.326,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "в",
-   "start": 245.591,
-   "end": 245.643,
+   "start": 245.589,
+   "end": 245.642,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "такой",
-   "start": 245.643,
-   "end": 245.985,
+   "start": 245.642,
+   "end": 245.984,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "среде",
-   "start": 245.985,
-   "end": 246.393,
+   "start": 245.984,
+   "end": 246.392,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "трудно",
-   "start": 246.393,
-   "end": 246.814,
+   "start": 246.392,
+   "end": 246.813,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "выжить",
-   "start": 246.814,
-   "end": 247.314,
+   "start": 246.813,
+   "end": 247.313,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "И",
-   "start": 248.209,
-   "end": 248.446,
+   "start": 248.208,
+   "end": 248.445,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "тело",
-   "start": 248.446,
-   "end": 248.735,
+   "start": 248.445,
+   "end": 248.734,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "высыхает",
-   "start": 248.735,
-   "end": 249.354,
+   "start": 248.734,
+   "end": 249.352,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "а",
-   "start": 249.63,
-   "end": 249.722,
+   "start": 249.629,
+   "end": 249.721,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "снаружи",
-   "start": 249.722,
-   "end": 250.222,
+   "start": 249.721,
+   "end": 250.221,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "покрывается",
-   "start": 250.222,
-   "end": 250.906,
+   "start": 250.221,
+   "end": 250.905,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "коркой",
-   "start": 250.906,
-   "end": 251.354,
+   "start": 250.905,
+   "end": 251.352,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "из",
-   "start": 251.354,
-   "end": 251.564,
+   "start": 251.352,
+   "end": 251.563,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "солей",
-   "start": 251.564,
-   "end": 252.13,
+   "start": 251.563,
+   "end": 252.129,
    "scene": "not_stone",
    "line": 32
   },
   {
    "w": "Кстати",
-   "start": 252.419,
-   "end": 252.998,
+   "start": 252.417,
+   "end": 252.996,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "этот",
-   "start": 253.214,
-   "end": 253.504,
+   "start": 253.213,
+   "end": 253.502,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "способ",
-   "start": 253.504,
-   "end": 253.951,
+   "start": 253.502,
+   "end": 253.95,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "люди",
-   "start": 253.951,
-   "end": 254.28,
+   "start": 253.95,
+   "end": 254.279,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "знали",
-   "start": 254.28,
-   "end": 254.688,
+   "start": 254.279,
+   "end": 254.687,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "очень",
-   "start": 254.688,
-   "end": 255.096,
+   "start": 254.687,
+   "end": 255.095,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "давно",
-   "start": 255.096,
-   "end": 255.596,
+   "start": 255.095,
+   "end": 255.595,
    "scene": "egypt",
    "line": 33
   },
   {
    "w": "Древние",
-   "start": 255.903,
-   "end": 256.601,
+   "start": 255.902,
+   "end": 256.599,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "египтяне",
-   "start": 256.515,
-   "end": 257.186,
+   "start": 256.513,
+   "end": 257.184,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "засыпали",
-   "start": 257.186,
-   "end": 257.725,
+   "start": 257.184,
+   "end": 257.724,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "тела",
-   "start": 257.725,
-   "end": 258.094,
+   "start": 257.724,
+   "end": 258.092,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "умерших",
-   "start": 258.094,
-   "end": 258.62,
+   "start": 258.092,
+   "end": 258.618,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "натроном",
-   "start": 258.62,
-   "end": 259.107,
+   "start": 258.618,
+   "end": 259.105,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "чтобы",
-   "start": 259.37,
-   "end": 259.686,
+   "start": 259.368,
+   "end": 259.684,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "высушить",
-   "start": 259.686,
-   "end": 260.251,
+   "start": 259.684,
+   "end": 260.25,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "их",
-   "start": 260.251,
-   "end": 260.422,
+   "start": 260.25,
+   "end": 260.421,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "перед",
-   "start": 260.422,
-   "end": 260.672,
+   "start": 260.421,
+   "end": 260.671,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "бальзамированием",
-   "start": 260.672,
-   "end": 261.607,
+   "start": 260.671,
+   "end": 261.605,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "Тот",
-   "start": 262.528,
-   "end": 262.817,
+   "start": 262.526,
+   "end": 262.816,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "же",
-   "start": 262.817,
-   "end": 262.988,
+   "start": 262.816,
+   "end": 262.987,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "минерал",
-   "start": 262.988,
-   "end": 263.515,
+   "start": 262.987,
+   "end": 263.513,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "та",
-   "start": 263.725,
-   "end": 263.896,
+   "start": 263.724,
+   "end": 263.895,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "же",
-   "start": 263.896,
-   "end": 264.041,
+   "start": 263.895,
+   "end": 264.039,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "химия",
-   "start": 264.041,
-   "end": 264.804,
+   "start": 264.039,
+   "end": 264.803,
    "scene": "egypt",
    "line": 34
   },
   {
    "w": "Только",
-   "start": 264.941,
-   "end": 265.348,
+   "start": 264.939,
+   "end": 265.347,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "в",
-   "start": 265.273,
-   "end": 265.299,
+   "start": 265.271,
+   "end": 265.297,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "Египте",
-   "start": 265.299,
-   "end": 265.917,
+   "start": 265.297,
+   "end": 265.916,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "этим",
-   "start": 265.917,
-   "end": 266.312,
+   "start": 265.916,
+   "end": 266.311,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "занимались",
-   "start": 266.312,
-   "end": 266.838,
+   "start": 266.311,
+   "end": 266.837,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "жрецы",
-   "start": 266.838,
-   "end": 267.523,
+   "start": 266.837,
+   "end": 267.521,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "А",
-   "start": 268.483,
-   "end": 268.694,
+   "start": 268.482,
+   "end": 268.692,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "на",
-   "start": 268.694,
-   "end": 268.786,
+   "start": 268.692,
+   "end": 268.784,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "Натроне",
-   "start": 268.786,
-   "end": 269.312,
+   "start": 268.784,
+   "end": 269.311,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "само",
-   "start": 269.562,
-   "end": 269.97,
+   "start": 269.561,
+   "end": 269.968,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "озеро",
-   "start": 269.97,
-   "end": 270.602,
+   "start": 269.968,
+   "end": 270.6,
    "scene": "egypt",
    "line": 35
   },
   {
    "w": "Как",
-   "start": 271.533,
-   "end": 271.967,
+   "start": 271.531,
+   "end": 271.965,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "именно",
-   "start": 271.892,
-   "end": 272.261,
+   "start": 271.891,
+   "end": 272.259,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "погибают",
-   "start": 272.261,
-   "end": 272.8,
+   "start": 272.259,
+   "end": 272.799,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "эти",
-   "start": 272.8,
-   "end": 272.984,
+   "start": 272.799,
+   "end": 272.983,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "птицы",
-   "start": 272.984,
-   "end": 273.445,
+   "start": 272.983,
+   "end": 273.443,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "точно",
-   "start": 273.721,
-   "end": 274.195,
+   "start": 273.72,
+   "end": 274.193,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "не",
-   "start": 274.195,
-   "end": 274.326,
+   "start": 274.193,
+   "end": 274.325,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "знает",
-   "start": 274.326,
-   "end": 274.695,
+   "start": 274.325,
+   "end": 274.693,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "никто",
-   "start": 274.695,
-   "end": 275.221,
+   "start": 274.693,
+   "end": 275.22,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "Так",
-   "start": 276.195,
-   "end": 276.497,
+   "start": 276.193,
+   "end": 276.496,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "говорил",
-   "start": 276.497,
-   "end": 277.011,
+   "start": 276.496,
+   "end": 277.009,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "и",
-   "start": 277.011,
-   "end": 277.155,
+   "start": 277.009,
+   "end": 277.154,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "сам",
-   "start": 277.155,
-   "end": 277.458,
+   "start": 277.154,
+   "end": 277.456,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "Брандт",
-   "start": 277.458,
-   "end": 277.958,
+   "start": 277.457,
+   "end": 277.957,
    "scene": "how_they_die",
    "line": 36
   },
   {
    "w": "Сам",
-   "start": 278.244,
-   "end": 278.626,
+   "start": 278.243,
+   "end": 278.624,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "он",
-   "start": 278.54,
-   "end": 278.672,
+   "start": 278.539,
+   "end": 278.671,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "предполагал",
-   "start": 278.672,
-   "end": 279.343,
+   "start": 278.671,
+   "end": 279.342,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "что",
-   "start": 279.554,
-   "end": 279.777,
+   "start": 279.552,
+   "end": 279.776,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "виновата",
-   "start": 279.777,
-   "end": 280.225,
+   "start": 279.776,
+   "end": 280.223,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "гладкая",
-   "start": 280.225,
-   "end": 280.79,
+   "start": 280.223,
+   "end": 280.789,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "как",
-   "start": 281.014,
-   "end": 281.251,
+   "start": 281.013,
+   "end": 281.25,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "зеркало",
-   "start": 281.251,
-   "end": 281.817,
+   "start": 281.25,
+   "end": 281.815,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "поверхность",
-   "start": 281.922,
-   "end": 282.54,
+   "start": 281.921,
+   "end": 282.539,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "воды",
-   "start": 282.54,
-   "end": 283.054,
+   "start": 282.539,
+   "end": 283.052,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "Птицы",
-   "start": 284.027,
-   "end": 284.567,
+   "start": 284.026,
+   "end": 284.565,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "не",
-   "start": 284.567,
-   "end": 284.685,
+   "start": 284.565,
+   "end": 284.684,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "видят",
-   "start": 284.685,
-   "end": 285.04,
+   "start": 284.684,
+   "end": 285.039,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "где",
-   "start": 285.172,
-   "end": 285.435,
+   "start": 285.171,
+   "end": 285.434,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "кончается",
-   "start": 285.435,
-   "end": 286.027,
+   "start": 285.434,
+   "end": 286.026,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "небо",
-   "start": 286.027,
-   "end": 286.396,
+   "start": 286.026,
+   "end": 286.394,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "и",
-   "start": 286.685,
-   "end": 286.83,
+   "start": 286.684,
+   "end": 286.828,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "врезаются",
-   "start": 286.83,
-   "end": 287.383,
+   "start": 286.828,
+   "end": 287.381,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "в",
-   "start": 287.383,
-   "end": 287.435,
+   "start": 287.381,
+   "end": 287.434,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "озеро",
-   "start": 287.435,
-   "end": 287.804,
+   "start": 287.434,
+   "end": 287.802,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "как",
-   "start": 288.001,
-   "end": 288.251,
+   "start": 288.0,
+   "end": 288.25,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "в",
-   "start": 288.251,
-   "end": 288.317,
+   "start": 288.25,
+   "end": 288.315,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "оконное",
-   "start": 288.317,
-   "end": 288.804,
+   "start": 288.315,
+   "end": 288.802,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "стекло",
-   "start": 288.804,
-   "end": 289.383,
+   "start": 288.802,
+   "end": 289.381,
    "scene": "how_they_die",
    "line": 37
   },
   {
    "w": "Но",
-   "start": 289.675,
-   "end": 290.004,
+   "start": 289.673,
+   "end": 290.002,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "это",
-   "start": 289.926,
-   "end": 290.15,
+   "start": 289.925,
+   "end": 290.149,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "лишь",
-   "start": 290.15,
-   "end": 290.413,
+   "start": 290.149,
+   "end": 290.412,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "версия",
-   "start": 290.413,
-   "end": 291.19,
+   "start": 290.412,
+   "end": 291.188,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "Точного",
-   "start": 292.15,
-   "end": 292.69,
+   "start": 292.149,
+   "end": 292.688,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "ответа",
-   "start": 292.69,
-   "end": 293.137,
+   "start": 292.688,
+   "end": 293.136,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "нет",
-   "start": 293.137,
-   "end": 293.413,
+   "start": 293.136,
+   "end": 293.412,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "до",
-   "start": 293.413,
-   "end": 293.558,
+   "start": 293.412,
+   "end": 293.557,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "сих",
-   "start": 293.558,
-   "end": 293.782,
+   "start": 293.557,
+   "end": 293.78,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "пор",
-   "start": 293.782,
-   "end": 294.176,
+   "start": 293.78,
+   "end": 294.175,
    "scene": "how_they_die",
    "line": 38
   },
   {
    "w": "Рядом",
-   "start": 295.121,
-   "end": 295.647,
+   "start": 295.119,
+   "end": 295.645,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "с",
-   "start": 295.567,
-   "end": 295.633,
+   "start": 295.566,
+   "end": 295.632,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "озером",
-   "start": 295.633,
-   "end": 296.041,
+   "start": 295.632,
+   "end": 296.04,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "стоит",
-   "start": 296.041,
-   "end": 296.396,
+   "start": 296.04,
+   "end": 296.395,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "вулкан",
-   "start": 296.396,
-   "end": 296.936,
+   "start": 296.395,
+   "end": 296.934,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Ол",
-   "start": 296.936,
-   "end": 297.252,
+   "start": 296.934,
+   "end": 297.25,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Доиньо",
-   "start": 297.252,
-   "end": 297.659,
+   "start": 297.25,
+   "end": 297.658,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Ленгаи",
-   "start": 297.659,
-   "end": 298.278,
+   "start": 297.658,
+   "end": 298.276,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Его",
-   "start": 299.238,
-   "end": 299.659,
+   "start": 299.237,
+   "end": 299.658,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "название",
-   "start": 299.659,
-   "end": 300.186,
+   "start": 299.658,
+   "end": 300.184,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "на",
-   "start": 300.186,
-   "end": 300.291,
+   "start": 300.184,
+   "end": 300.29,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "языке",
-   "start": 300.291,
-   "end": 300.712,
+   "start": 300.29,
+   "end": 300.711,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "масаи",
-   "start": 300.712,
-   "end": 301.252,
+   "start": 300.711,
+   "end": 301.25,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "гора",
-   "start": 301.488,
-   "end": 301.817,
+   "start": 301.487,
+   "end": 301.816,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Бога",
-   "start": 301.817,
-   "end": 302.357,
+   "start": 301.816,
+   "end": 302.355,
    "scene": "volcano",
    "line": 39
   },
   {
    "w": "Это",
-   "start": 302.65,
-   "end": 302.992,
+   "start": 302.649,
+   "end": 302.991,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "единственный",
-   "start": 302.907,
-   "end": 303.683,
+   "start": 302.905,
+   "end": 303.682,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "действующий",
-   "start": 303.683,
-   "end": 304.289,
+   "start": 303.682,
+   "end": 304.287,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "вулкан",
-   "start": 304.289,
-   "end": 304.67,
+   "start": 304.287,
+   "end": 304.669,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "на",
-   "start": 304.67,
-   "end": 304.749,
+   "start": 304.669,
+   "end": 304.748,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "Земле",
-   "start": 304.749,
-   "end": 305.131,
+   "start": 304.748,
+   "end": 305.129,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "который",
-   "start": 305.446,
-   "end": 305.867,
+   "start": 305.445,
+   "end": 305.866,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "извергает",
-   "start": 305.867,
-   "end": 306.446,
+   "start": 305.866,
+   "end": 306.445,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "карбонатитовую",
-   "start": 306.446,
-   "end": 307.21,
+   "start": 306.445,
+   "end": 307.208,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "лаву",
-   "start": 307.21,
-   "end": 307.683,
+   "start": 307.208,
+   "end": 307.682,
    "scene": "volcano",
    "line": 40
   },
   {
    "w": "Она",
-   "start": 307.957,
-   "end": 308.352,
+   "start": 307.956,
+   "end": 308.351,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "холодная",
-   "start": 308.262,
-   "end": 308.749,
+   "start": 308.261,
+   "end": 308.748,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "по",
-   "start": 308.749,
-   "end": 308.894,
+   "start": 308.748,
+   "end": 308.892,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "меркам",
-   "start": 308.894,
-   "end": 309.249,
+   "start": 308.892,
+   "end": 309.248,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "вулканов",
-   "start": 309.249,
-   "end": 309.841,
+   "start": 309.248,
+   "end": 309.84,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "от",
-   "start": 310.078,
-   "end": 310.289,
+   "start": 310.077,
+   "end": 310.287,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "пятисот",
-   "start": 310.289,
-   "end": 310.802,
+   "start": 310.287,
+   "end": 310.8,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "до",
-   "start": 310.802,
-   "end": 310.947,
+   "start": 310.8,
+   "end": 310.945,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "шестисот",
-   "start": 310.947,
-   "end": 311.565,
+   "start": 310.945,
+   "end": 311.564,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "градусов",
-   "start": 311.565,
-   "end": 312.223,
+   "start": 311.564,
+   "end": 312.221,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "Днём",
-   "start": 313.183,
-   "end": 313.749,
+   "start": 313.182,
+   "end": 313.748,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "она",
-   "start": 313.749,
-   "end": 313.92,
+   "start": 313.748,
+   "end": 313.919,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "не",
-   "start": 313.92,
-   "end": 314.065,
+   "start": 313.919,
+   "end": 314.064,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "светится",
-   "start": 314.065,
-   "end": 314.565,
+   "start": 314.064,
+   "end": 314.564,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "красным",
-   "start": 314.565,
-   "end": 315.026,
+   "start": 314.564,
+   "end": 315.024,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "а",
-   "start": 315.328,
-   "end": 315.394,
+   "start": 315.327,
+   "end": 315.392,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "течёт",
-   "start": 315.394,
-   "end": 315.789,
+   "start": 315.392,
+   "end": 315.787,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "чёрной",
-   "start": 315.789,
-   "end": 316.289,
+   "start": 315.787,
+   "end": 316.287,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "как",
-   "start": 316.42,
-   "end": 316.657,
+   "start": 316.419,
+   "end": 316.656,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "нефть",
-   "start": 316.657,
-   "end": 317.131,
+   "start": 316.656,
+   "end": 317.129,
    "scene": "volcano",
    "line": 41
   },
   {
    "w": "А",
-   "start": 317.436,
-   "end": 317.66,
+   "start": 317.435,
+   "end": 317.659,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "через",
-   "start": 317.573,
-   "end": 317.85,
+   "start": 317.572,
+   "end": 317.848,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "несколько",
-   "start": 317.85,
-   "end": 318.284,
+   "start": 317.848,
+   "end": 318.282,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "часов",
-   "start": 318.284,
-   "end": 318.665,
+   "start": 318.282,
+   "end": 318.664,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "на",
-   "start": 318.665,
-   "end": 318.797,
+   "start": 318.664,
+   "end": 318.796,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "воздухе",
-   "start": 318.797,
-   "end": 319.231,
+   "start": 318.796,
+   "end": 319.23,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "белеет",
-   "start": 319.231,
-   "end": 319.652,
+   "start": 319.23,
+   "end": 319.651,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "будто",
-   "start": 319.915,
-   "end": 320.363,
+   "start": 319.914,
+   "end": 320.361,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "гору",
-   "start": 320.363,
-   "end": 320.679,
+   "start": 320.361,
+   "end": 320.677,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "засыпало",
-   "start": 320.679,
-   "end": 321.218,
+   "start": 320.677,
+   "end": 321.217,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "снегом",
-   "start": 321.218,
-   "end": 321.771,
+   "start": 321.217,
+   "end": 321.769,
    "scene": "volcano",
    "line": 42
   },
   {
    "w": "И",
-   "start": 322.697,
-   "end": 322.934,
+   "start": 322.696,
+   "end": 322.932,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "вот",
-   "start": 322.856,
-   "end": 323.08,
+   "start": 322.855,
+   "end": 323.078,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "здесь",
-   "start": 323.08,
-   "end": 323.448,
+   "start": 323.078,
+   "end": 323.447,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "начинается",
-   "start": 323.448,
-   "end": 324.172,
+   "start": 323.447,
+   "end": 324.17,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "самое",
-   "start": 324.172,
-   "end": 324.738,
+   "start": 324.17,
+   "end": 324.736,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "удивительное",
-   "start": 324.738,
-   "end": 325.672,
+   "start": 324.736,
+   "end": 325.67,
    "scene": "flamingo_arrive",
    "line": 43
   },
   {
    "w": "Это",
-   "start": 325.874,
-   "end": 326.242,
+   "start": 325.872,
+   "end": 326.241,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "озеро",
-   "start": 326.158,
-   "end": 326.658,
+   "start": 326.156,
+   "end": 326.656,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "где",
-   "start": 326.789,
-   "end": 327.039,
+   "start": 326.788,
+   "end": 327.038,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "погибают",
-   "start": 327.039,
-   "end": 327.539,
+   "start": 327.038,
+   "end": 327.538,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "птицы",
-   "start": 327.539,
-   "end": 328.0,
+   "start": 327.538,
+   "end": 327.998,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "главный",
-   "start": 328.276,
-   "end": 328.75,
+   "start": 328.275,
+   "end": 328.748,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "роддом",
-   "start": 328.75,
-   "end": 329.158,
+   "start": 328.748,
+   "end": 329.156,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "малых",
-   "start": 329.158,
-   "end": 329.5,
+   "start": 329.156,
+   "end": 329.498,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "фламинго",
-   "start": 329.5,
-   "end": 330.0,
+   "start": 329.498,
+   "end": 329.998,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "на",
-   "start": 330.0,
-   "end": 330.092,
+   "start": 329.998,
+   "end": 330.09,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "планете",
-   "start": 330.092,
-   "end": 330.737,
+   "start": 330.09,
+   "end": 330.735,
    "scene": "flamingo_arrive",
    "line": 44
   },
   {
    "w": "Здесь",
-   "start": 331.025,
-   "end": 331.552,
+   "start": 331.024,
+   "end": 331.55,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "появляются",
-   "start": 331.471,
-   "end": 331.998,
+   "start": 331.47,
+   "end": 331.996,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "на",
-   "start": 331.998,
-   "end": 332.116,
+   "start": 331.996,
+   "end": 332.115,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "свет",
-   "start": 332.116,
-   "end": 332.55,
+   "start": 332.115,
+   "end": 332.549,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "около",
-   "start": 332.55,
-   "end": 332.879,
+   "start": 332.549,
+   "end": 332.878,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "трёх",
-   "start": 332.879,
-   "end": 333.169,
+   "start": 332.878,
+   "end": 333.167,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "четвертей",
-   "start": 333.169,
-   "end": 333.734,
+   "start": 333.167,
+   "end": 333.733,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "всех",
-   "start": 333.734,
-   "end": 334.155,
+   "start": 333.733,
+   "end": 334.154,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "малых",
-   "start": 334.155,
-   "end": 334.498,
+   "start": 334.154,
+   "end": 334.496,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "фламинго",
-   "start": 334.498,
-   "end": 335.011,
+   "start": 334.496,
+   "end": 335.009,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "в",
-   "start": 335.011,
-   "end": 335.063,
+   "start": 335.009,
+   "end": 335.062,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "мире",
-   "start": 335.063,
-   "end": 335.55,
+   "start": 335.062,
+   "end": 335.549,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "Сюда",
-   "start": 336.498,
-   "end": 336.984,
+   "start": 336.496,
+   "end": 336.983,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "слетаются",
-   "start": 336.984,
-   "end": 337.59,
+   "start": 336.983,
+   "end": 337.588,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "больше",
-   "start": 337.59,
-   "end": 338.024,
+   "start": 337.588,
+   "end": 338.022,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "двух",
-   "start": 338.024,
-   "end": 338.445,
+   "start": 338.022,
+   "end": 338.444,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "миллионов",
-   "start": 338.445,
-   "end": 338.919,
+   "start": 338.444,
+   "end": 338.917,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "птиц",
-   "start": 338.919,
-   "end": 339.419,
+   "start": 338.917,
+   "end": 339.417,
    "scene": "flamingo_arrive",
    "line": 45
   },
   {
    "w": "Почему",
-   "start": 339.737,
-   "end": 340.329,
+   "start": 339.736,
+   "end": 340.328,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "именно",
-   "start": 340.258,
-   "end": 340.745,
+   "start": 340.257,
+   "end": 340.744,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "сюда",
-   "start": 340.745,
-   "end": 341.245,
+   "start": 340.744,
+   "end": 341.244,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "Из-за",
-   "start": 342.127,
-   "end": 342.6,
+   "start": 342.125,
+   "end": 342.599,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "той",
-   "start": 342.6,
-   "end": 342.824,
+   "start": 342.599,
+   "end": 342.823,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "самой",
-   "start": 342.824,
-   "end": 343.298,
+   "start": 342.823,
+   "end": 343.296,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "едкой",
-   "start": 343.298,
-   "end": 343.692,
+   "start": 343.296,
+   "end": 343.691,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "воды",
-   "start": 343.692,
-   "end": 344.179,
+   "start": 343.691,
+   "end": 344.178,
    "scene": "flamingo_why",
    "line": 46
   },
   {
    "w": "Фламинго",
-   "start": 344.458,
-   "end": 345.195,
+   "start": 344.457,
+   "end": 345.194,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "строят",
-   "start": 345.117,
-   "end": 345.472,
+   "start": 345.116,
+   "end": 345.471,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "гнёзда",
-   "start": 345.472,
-   "end": 345.907,
+   "start": 345.471,
+   "end": 345.905,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "на",
-   "start": 345.907,
-   "end": 345.986,
+   "start": 345.905,
+   "end": 345.984,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "островках",
-   "start": 345.986,
-   "end": 346.604,
+   "start": 345.984,
+   "end": 346.603,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "из",
-   "start": 346.604,
-   "end": 346.801,
+   "start": 346.603,
+   "end": 346.8,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "соли",
-   "start": 346.801,
-   "end": 347.183,
+   "start": 346.8,
+   "end": 347.182,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "посреди",
-   "start": 347.183,
-   "end": 347.67,
+   "start": 347.182,
+   "end": 347.668,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "озера",
-   "start": 347.67,
-   "end": 348.288,
+   "start": 347.668,
+   "end": 348.287,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "Хищники",
-   "start": 349.249,
-   "end": 349.959,
+   "start": 349.247,
+   "end": 349.958,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "туда",
-   "start": 349.959,
-   "end": 350.209,
+   "start": 349.958,
+   "end": 350.208,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "не",
-   "start": 350.209,
-   "end": 350.315,
+   "start": 350.208,
+   "end": 350.313,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "доберутся",
-   "start": 350.315,
-   "end": 350.933,
+   "start": 350.313,
+   "end": 350.932,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "им",
-   "start": 351.196,
-   "end": 351.446,
+   "start": 351.195,
+   "end": 351.445,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "пришлось",
-   "start": 351.446,
-   "end": 351.88,
+   "start": 351.445,
+   "end": 351.879,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "бы",
-   "start": 351.88,
-   "end": 352.025,
+   "start": 351.879,
+   "end": 352.024,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "идти",
-   "start": 352.025,
-   "end": 352.301,
+   "start": 352.024,
+   "end": 352.3,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "по",
-   "start": 352.301,
-   "end": 352.459,
+   "start": 352.3,
+   "end": 352.458,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "едкой",
-   "start": 352.459,
-   "end": 352.801,
+   "start": 352.458,
+   "end": 352.8,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "воде",
-   "start": 352.801,
-   "end": 353.275,
+   "start": 352.8,
+   "end": 353.274,
    "scene": "flamingo_why",
    "line": 47
   },
   {
    "w": "А",
-   "start": 353.566,
-   "end": 353.776,
+   "start": 353.564,
+   "end": 353.775,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "у",
-   "start": 353.698,
-   "end": 353.737,
+   "start": 353.696,
+   "end": 353.736,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "фламинго",
-   "start": 353.737,
-   "end": 354.263,
+   "start": 353.736,
+   "end": 354.262,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "на",
-   "start": 354.263,
-   "end": 354.369,
+   "start": 354.262,
+   "end": 354.367,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "ногах",
-   "start": 354.369,
-   "end": 354.869,
+   "start": 354.367,
+   "end": 354.867,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "очень",
-   "start": 354.869,
-   "end": 355.184,
+   "start": 354.867,
+   "end": 355.183,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "толстая",
-   "start": 355.184,
-   "end": 355.737,
+   "start": 355.183,
+   "end": 355.736,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "грубая",
-   "start": 355.961,
-   "end": 356.395,
+   "start": 355.959,
+   "end": 356.394,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "кожа",
-   "start": 356.395,
-   "end": 356.921,
+   "start": 356.394,
+   "end": 356.92,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "То",
-   "start": 357.856,
-   "end": 358.171,
+   "start": 357.854,
+   "end": 358.17,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "что",
-   "start": 358.369,
-   "end": 358.579,
+   "start": 358.367,
+   "end": 358.578,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "обожжёт",
-   "start": 358.579,
-   "end": 359.106,
+   "start": 358.578,
+   "end": 359.104,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "любого",
-   "start": 359.106,
-   "end": 359.487,
+   "start": 359.104,
+   "end": 359.486,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "зверя",
-   "start": 359.487,
-   "end": 359.921,
+   "start": 359.486,
+   "end": 359.92,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "им",
-   "start": 360.184,
-   "end": 360.434,
+   "start": 360.183,
+   "end": 360.433,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "почти",
-   "start": 360.434,
-   "end": 360.829,
+   "start": 360.433,
+   "end": 360.828,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "не",
-   "start": 360.829,
-   "end": 360.948,
+   "start": 360.828,
+   "end": 360.946,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "страшно",
-   "start": 360.948,
-   "end": 361.553,
+   "start": 360.946,
+   "end": 361.551,
    "scene": "flamingo_why",
    "line": 48
   },
   {
    "w": "Даже",
-   "start": 361.864,
-   "end": 362.469,
+   "start": 361.863,
+   "end": 362.468,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "их",
-   "start": 362.39,
-   "end": 362.68,
+   "start": 362.389,
+   "end": 362.678,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "розовый",
-   "start": 362.68,
-   "end": 363.075,
+   "start": 362.678,
+   "end": 363.073,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "цвет",
-   "start": 363.075,
-   "end": 363.443,
+   "start": 363.073,
+   "end": 363.442,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "отсюда",
-   "start": 363.654,
-   "end": 364.285,
+   "start": 363.652,
+   "end": 364.284,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "Фламинго",
-   "start": 365.232,
-   "end": 365.956,
+   "start": 365.231,
+   "end": 365.955,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "едят",
-   "start": 365.956,
-   "end": 366.377,
+   "start": 365.955,
+   "end": 366.376,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "те",
-   "start": 366.377,
-   "end": 366.588,
+   "start": 366.376,
+   "end": 366.586,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "самые",
-   "start": 366.588,
-   "end": 367.035,
+   "start": 366.586,
+   "end": 367.034,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "микроорганизмы",
-   "start": 367.035,
-   "end": 367.917,
+   "start": 367.034,
+   "end": 367.915,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "которые",
-   "start": 368.167,
-   "end": 368.654,
+   "start": 368.165,
+   "end": 368.652,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "окрашивают",
-   "start": 368.654,
-   "end": 369.496,
+   "start": 368.652,
+   "end": 369.494,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "озеро",
-   "start": 369.496,
-   "end": 370.048,
+   "start": 369.494,
+   "end": 370.047,
    "scene": "flamingo_food",
    "line": 49
   },
   {
    "w": "Пигменты",
-   "start": 370.3,
-   "end": 370.918,
+   "start": 370.299,
+   "end": 370.917,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "из",
-   "start": 370.851,
-   "end": 371.009,
+   "start": 370.85,
+   "end": 371.008,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "пищи",
-   "start": 371.009,
-   "end": 371.43,
+   "start": 371.008,
+   "end": 371.429,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "откладываются",
-   "start": 371.43,
-   "end": 372.285,
+   "start": 371.429,
+   "end": 372.284,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "в",
-   "start": 372.285,
-   "end": 372.364,
+   "start": 372.284,
+   "end": 372.363,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "перьях",
-   "start": 372.364,
-   "end": 372.891,
+   "start": 372.363,
+   "end": 372.889,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "Птица",
-   "start": 373.785,
-   "end": 374.351,
+   "start": 373.784,
+   "end": 374.35,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "буквально",
-   "start": 374.351,
-   "end": 375.022,
+   "start": 374.35,
+   "end": 375.021,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "окрашена",
-   "start": 375.022,
-   "end": 375.706,
+   "start": 375.021,
+   "end": 375.705,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "озером",
-   "start": 375.706,
-   "end": 376.272,
+   "start": 375.705,
+   "end": 376.271,
    "scene": "flamingo_food",
    "line": 50
   },
   {
    "w": "И",
-   "start": 377.21,
-   "end": 377.42,
+   "start": 377.208,
+   "end": 377.419,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "фламинго",
-   "start": 377.341,
-   "end": 377.92,
+   "start": 377.339,
+   "end": 377.918,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "здесь",
-   "start": 377.92,
-   "end": 378.301,
+   "start": 377.918,
+   "end": 378.3,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "не",
-   "start": 378.301,
-   "end": 378.485,
+   "start": 378.3,
+   "end": 378.484,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "одни",
-   "start": 378.485,
-   "end": 378.959,
+   "start": 378.484,
+   "end": 378.958,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "В",
-   "start": 379.933,
-   "end": 380.209,
+   "start": 379.931,
+   "end": 380.208,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "озере",
-   "start": 380.209,
-   "end": 380.577,
+   "start": 380.208,
+   "end": 380.576,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "почти",
-   "start": 380.578,
-   "end": 380.999,
+   "start": 380.576,
+   "end": 380.997,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "нет",
-   "start": 380.999,
-   "end": 381.262,
+   "start": 380.997,
+   "end": 381.26,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "рыбы",
-   "start": 381.262,
-   "end": 381.578,
+   "start": 381.26,
+   "end": 381.576,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "но",
-   "start": 381.906,
-   "end": 382.051,
+   "start": 381.905,
+   "end": 382.05,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "не",
-   "start": 382.051,
-   "end": 382.156,
+   "start": 382.05,
+   "end": 382.155,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "совсем",
-   "start": 382.156,
-   "end": 382.735,
+   "start": 382.155,
+   "end": 382.734,
    "scene": "fish",
    "line": 51
   },
   {
    "w": "В",
-   "start": 383.047,
-   "end": 383.244,
+   "start": 383.045,
+   "end": 383.243,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "лагунах",
-   "start": 383.167,
-   "end": 383.64,
+   "start": 383.165,
+   "end": 383.639,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "по",
-   "start": 383.64,
-   "end": 383.746,
+   "start": 383.639,
+   "end": 383.744,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "краям",
-   "start": 383.746,
-   "end": 384.075,
+   "start": 383.744,
+   "end": 384.073,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "Натрона",
-   "start": 384.075,
-   "end": 384.548,
+   "start": 384.073,
+   "end": 384.547,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "где",
-   "start": 384.706,
-   "end": 384.93,
+   "start": 384.705,
+   "end": 384.928,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "вода",
-   "start": 384.93,
-   "end": 385.167,
+   "start": 384.928,
+   "end": 385.165,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "чуть",
-   "start": 385.167,
-   "end": 385.404,
+   "start": 385.165,
+   "end": 385.402,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "менее",
-   "start": 385.404,
-   "end": 385.706,
+   "start": 385.402,
+   "end": 385.705,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "солёная",
-   "start": 385.706,
-   "end": 386.206,
+   "start": 385.705,
+   "end": 386.205,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "живут",
-   "start": 386.588,
-   "end": 386.969,
+   "start": 386.586,
+   "end": 386.968,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "три",
-   "start": 386.969,
-   "end": 387.193,
+   "start": 386.968,
+   "end": 387.192,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "вида",
-   "start": 387.193,
-   "end": 387.456,
+   "start": 387.192,
+   "end": 387.455,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "тиляпии",
-   "start": 387.456,
-   "end": 387.982,
+   "start": 387.455,
+   "end": 387.981,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "небольших",
-   "start": 388.193,
-   "end": 388.719,
+   "start": 388.192,
+   "end": 388.718,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "рыбок",
-   "start": 388.719,
-   "end": 389.114,
+   "start": 388.718,
+   "end": 389.113,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "которые",
-   "start": 389.311,
-   "end": 389.706,
+   "start": 389.31,
+   "end": 389.705,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "выдерживают",
-   "start": 389.706,
-   "end": 390.272,
+   "start": 389.705,
+   "end": 390.27,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "то",
-   "start": 390.272,
-   "end": 390.456,
+   "start": 390.271,
+   "end": 390.455,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "что",
-   "start": 390.732,
-   "end": 390.917,
+   "start": 390.731,
+   "end": 390.915,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "убило",
-   "start": 390.917,
-   "end": 391.232,
+   "start": 390.915,
+   "end": 391.231,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "бы",
-   "start": 391.232,
-   "end": 391.364,
+   "start": 391.231,
+   "end": 391.363,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "почти",
-   "start": 391.364,
-   "end": 391.772,
+   "start": 391.363,
+   "end": 391.77,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "любую",
-   "start": 391.772,
-   "end": 392.219,
+   "start": 391.771,
+   "end": 392.218,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "другую",
-   "start": 392.219,
-   "end": 392.614,
+   "start": 392.218,
+   "end": 392.613,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "рыбу",
-   "start": 392.614,
-   "end": 393.088,
+   "start": 392.613,
+   "end": 393.086,
    "scene": "fish",
    "line": 52
   },
   {
    "w": "Они",
-   "start": 393.359,
-   "end": 393.753,
+   "start": 393.357,
+   "end": 393.752,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "держатся",
-   "start": 393.667,
-   "end": 394.246,
+   "start": 393.665,
+   "end": 394.244,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "этих",
-   "start": 394.246,
-   "end": 394.601,
+   "start": 394.244,
+   "end": 394.6,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "лагун",
-   "start": 394.601,
-   "end": 395.061,
+   "start": 394.6,
+   "end": 395.06,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "и",
-   "start": 395.062,
-   "end": 395.193,
+   "start": 395.06,
+   "end": 395.192,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "не",
-   "start": 395.193,
-   "end": 395.298,
+   "start": 395.192,
+   "end": 395.297,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "заплывают",
-   "start": 395.298,
-   "end": 395.812,
+   "start": 395.297,
+   "end": 395.81,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "туда",
-   "start": 395.812,
-   "end": 396.127,
+   "start": 395.81,
+   "end": 396.126,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "где",
-   "start": 396.404,
-   "end": 396.64,
+   "start": 396.402,
+   "end": 396.639,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "вода",
-   "start": 396.64,
-   "end": 396.904,
+   "start": 396.639,
+   "end": 396.902,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "самая",
-   "start": 396.904,
-   "end": 397.338,
+   "start": 396.902,
+   "end": 397.336,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "едкая",
-   "start": 397.338,
-   "end": 398.062,
+   "start": 397.336,
+   "end": 398.06,
    "scene": "fish",
    "line": 53
   },
   {
    "w": "Жизнь",
-   "start": 398.232,
-   "end": 398.864,
+   "start": 398.231,
+   "end": 398.862,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "здесь",
-   "start": 398.786,
-   "end": 399.18,
+   "start": 398.784,
+   "end": 399.179,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "есть",
-   "start": 399.18,
-   "end": 399.707,
+   "start": 399.179,
+   "end": 399.705,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "Просто",
-   "start": 400.588,
-   "end": 401.022,
+   "start": 400.587,
+   "end": 401.021,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "она",
-   "start": 401.022,
-   "end": 401.246,
+   "start": 401.021,
+   "end": 401.245,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "очень",
-   "start": 401.246,
-   "end": 401.654,
+   "start": 401.245,
+   "end": 401.653,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "хорошо",
-   "start": 401.654,
-   "end": 402.049,
+   "start": 401.653,
+   "end": 402.047,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "знает",
-   "start": 402.049,
-   "end": 402.457,
+   "start": 402.047,
+   "end": 402.455,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "где",
-   "start": 402.707,
-   "end": 403.009,
+   "start": 402.705,
+   "end": 403.008,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "проходят",
-   "start": 403.009,
-   "end": 403.509,
+   "start": 403.008,
+   "end": 403.508,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "границы",
-   "start": 403.509,
-   "end": 404.22,
+   "start": 403.508,
+   "end": 404.218,
    "scene": "fish",
    "line": 54
   },
   {
    "w": "Но",
-   "start": 405.155,
-   "end": 405.511,
+   "start": 405.154,
+   "end": 405.509,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "и",
-   "start": 405.433,
-   "end": 405.591,
+   "start": 405.432,
+   "end": 405.59,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "у",
-   "start": 405.591,
-   "end": 405.67,
+   "start": 405.59,
+   "end": 405.669,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "этого",
-   "start": 405.67,
-   "end": 405.907,
+   "start": 405.669,
+   "end": 405.906,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "роддома",
-   "start": 405.907,
-   "end": 406.42,
+   "start": 405.906,
+   "end": 406.419,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "есть",
-   "start": 406.42,
-   "end": 406.762,
+   "start": 406.419,
+   "end": 406.761,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "условие",
-   "start": 406.762,
-   "end": 407.486,
+   "start": 406.761,
+   "end": 407.485,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "Уровень",
-   "start": 408.407,
-   "end": 408.894,
+   "start": 408.406,
+   "end": 408.892,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "воды",
-   "start": 408.894,
-   "end": 409.223,
+   "start": 408.892,
+   "end": 409.221,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "должен",
-   "start": 409.223,
-   "end": 409.591,
+   "start": 409.221,
+   "end": 409.59,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "быть",
-   "start": 409.591,
-   "end": 409.762,
+   "start": 409.59,
+   "end": 409.761,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "ровно",
-   "start": 409.762,
-   "end": 410.078,
+   "start": 409.761,
+   "end": 410.077,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "таким",
-   "start": 410.078,
-   "end": 410.539,
+   "start": 410.077,
+   "end": 410.537,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "каким",
-   "start": 410.723,
-   "end": 411.131,
+   "start": 410.721,
+   "end": 411.129,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "нужно",
-   "start": 411.131,
-   "end": 411.67,
+   "start": 411.129,
+   "end": 411.669,
    "scene": "fragile",
    "line": 55
   },
   {
    "w": "Слишком",
-   "start": 411.976,
-   "end": 412.647,
+   "start": 411.974,
+   "end": 412.645,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "много",
-   "start": 412.565,
-   "end": 412.88,
+   "start": 412.563,
+   "end": 412.879,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "воды",
-   "start": 412.88,
-   "end": 413.249,
+   "start": 412.879,
+   "end": 413.247,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "островки",
-   "start": 413.525,
-   "end": 414.144,
+   "start": 413.524,
+   "end": 414.142,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "уходят",
-   "start": 414.144,
-   "end": 414.552,
+   "start": 414.142,
+   "end": 414.55,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "под",
-   "start": 414.552,
-   "end": 414.709,
+   "start": 414.55,
+   "end": 414.708,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "воду",
-   "start": 414.709,
-   "end": 415.038,
+   "start": 414.708,
+   "end": 415.037,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "гнёзд",
-   "start": 415.288,
-   "end": 415.709,
+   "start": 415.287,
+   "end": 415.708,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "не",
-   "start": 415.709,
-   "end": 415.841,
+   "start": 415.708,
+   "end": 415.84,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "построить",
-   "start": 415.841,
-   "end": 416.473,
+   "start": 415.84,
+   "end": 416.471,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "Слишком",
-   "start": 417.367,
-   "end": 418.025,
+   "start": 417.366,
+   "end": 418.024,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "мало",
-   "start": 418.025,
-   "end": 418.341,
+   "start": 418.024,
+   "end": 418.34,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "хищники",
-   "start": 418.683,
-   "end": 419.262,
+   "start": 418.682,
+   "end": 419.261,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "пройдут",
-   "start": 419.262,
-   "end": 419.683,
+   "start": 419.261,
+   "end": 419.682,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "по",
-   "start": 419.683,
-   "end": 419.828,
+   "start": 419.682,
+   "end": 419.826,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "высохшему",
-   "start": 419.828,
-   "end": 420.394,
+   "start": 419.826,
+   "end": 420.392,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "дну",
-   "start": 420.394,
-   "end": 420.762,
+   "start": 420.392,
+   "end": 420.761,
    "scene": "fragile",
    "line": 56
   },
   {
    "w": "Поэтому",
-   "start": 421.036,
-   "end": 421.562,
+   "start": 421.035,
+   "end": 421.561,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "большой",
-   "start": 421.488,
-   "end": 421.896,
+   "start": 421.487,
+   "end": 421.895,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "сезон",
-   "start": 421.896,
-   "end": 422.291,
+   "start": 421.895,
+   "end": 422.289,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "гнездования",
-   "start": 422.291,
-   "end": 422.988,
+   "start": 422.289,
+   "end": 422.987,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "здесь",
-   "start": 422.988,
-   "end": 423.304,
+   "start": 422.987,
+   "end": 423.303,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "бывает",
-   "start": 423.304,
-   "end": 423.738,
+   "start": 423.303,
+   "end": 423.737,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "не",
-   "start": 423.738,
-   "end": 423.883,
+   "start": 423.737,
+   "end": 423.882,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "каждый",
-   "start": 423.883,
-   "end": 424.251,
+   "start": 423.882,
+   "end": 424.25,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "год",
-   "start": 424.251,
-   "end": 424.528,
+   "start": 424.25,
+   "end": 424.526,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "а",
-   "start": 424.83,
-   "end": 424.936,
+   "start": 424.829,
+   "end": 424.934,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "примерно",
-   "start": 424.936,
-   "end": 425.383,
+   "start": 424.934,
+   "end": 425.382,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "раз",
-   "start": 425.383,
-   "end": 425.62,
+   "start": 425.382,
+   "end": 425.618,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "в",
-   "start": 425.62,
-   "end": 425.686,
+   "start": 425.618,
+   "end": 425.684,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "три-четыре",
-   "start": 425.686,
-   "end": 426.199,
+   "start": 425.684,
+   "end": 426.197,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "года",
-   "start": 426.199,
-   "end": 426.541,
+   "start": 426.197,
+   "end": 426.539,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "когда",
-   "start": 426.751,
-   "end": 427.133,
+   "start": 426.75,
+   "end": 427.132,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "всё",
-   "start": 427.133,
-   "end": 427.357,
+   "start": 427.132,
+   "end": 427.355,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "сходится",
-   "start": 427.357,
-   "end": 428.08,
+   "start": 427.355,
+   "end": 428.079,
    "scene": "fragile",
    "line": 57
   },
   {
    "w": "Это",
-   "start": 428.996,
-   "end": 429.312,
+   "start": 428.995,
+   "end": 429.311,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "равновесие",
-   "start": 429.226,
-   "end": 429.963,
+   "start": 429.225,
+   "end": 429.961,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "очень",
-   "start": 429.963,
-   "end": 430.384,
+   "start": 429.961,
+   "end": 430.382,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "хрупкое",
-   "start": 430.384,
-   "end": 431.108,
+   "start": 430.382,
+   "end": 431.106,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "Главную",
-   "start": 432.015,
-   "end": 432.673,
+   "start": 432.014,
+   "end": 432.672,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "воду",
-   "start": 432.673,
-   "end": 432.937,
+   "start": 432.672,
+   "end": 432.935,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "озеру",
-   "start": 432.937,
-   "end": 433.344,
+   "start": 432.935,
+   "end": 433.343,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "даёт",
-   "start": 433.344,
-   "end": 433.7,
+   "start": 433.343,
+   "end": 433.698,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "река",
-   "start": 433.7,
-   "end": 434.081,
+   "start": 433.698,
+   "end": 434.08,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "Эвасо-Нгиро",
-   "start": 434.081,
-   "end": 434.923,
+   "start": 434.08,
+   "end": 434.922,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "которая",
-   "start": 435.2,
-   "end": 435.621,
+   "start": 435.198,
+   "end": 435.619,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "течёт",
-   "start": 435.621,
-   "end": 436.081,
+   "start": 435.619,
+   "end": 436.08,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "из",
-   "start": 436.081,
-   "end": 436.239,
+   "start": 436.08,
+   "end": 436.238,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "Кении",
-   "start": 436.239,
-   "end": 436.831,
+   "start": 436.238,
+   "end": 436.83,
    "scene": "threat",
    "line": 58
   },
   {
    "w": "Если",
-   "start": 437.057,
-   "end": 437.557,
+   "start": 437.056,
+   "end": 437.556,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "реку",
-   "start": 437.478,
-   "end": 437.781,
+   "start": 437.477,
+   "end": 437.779,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "перегородить",
-   "start": 437.781,
-   "end": 438.465,
+   "start": 437.779,
+   "end": 438.464,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "или",
-   "start": 438.465,
-   "end": 438.636,
+   "start": 438.464,
+   "end": 438.635,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "забрать",
-   "start": 438.636,
-   "end": 439.044,
+   "start": 438.635,
+   "end": 439.043,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "из",
-   "start": 439.044,
-   "end": 439.162,
+   "start": 439.043,
+   "end": 439.161,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "неё",
-   "start": 439.162,
-   "end": 439.412,
+   "start": 439.161,
+   "end": 439.411,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "воду",
-   "start": 439.412,
-   "end": 439.741,
+   "start": 439.411,
+   "end": 439.74,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "уровень",
-   "start": 440.044,
-   "end": 440.452,
+   "start": 440.043,
+   "end": 440.451,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "Натрона",
-   "start": 440.452,
-   "end": 440.899,
+   "start": 440.451,
+   "end": 440.898,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "изменится",
-   "start": 440.899,
-   "end": 441.544,
+   "start": 440.898,
+   "end": 441.543,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "и",
-   "start": 441.781,
-   "end": 441.939,
+   "start": 441.779,
+   "end": 441.937,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "соляные",
-   "start": 441.939,
-   "end": 442.334,
+   "start": 441.937,
+   "end": 442.332,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "островки",
-   "start": 442.334,
-   "end": 442.873,
+   "start": 442.332,
+   "end": 442.872,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "могут",
-   "start": 442.873,
-   "end": 443.189,
+   "start": 442.872,
+   "end": 443.187,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "уже",
-   "start": 443.189,
-   "end": 443.412,
+   "start": 443.187,
+   "end": 443.411,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "не",
-   "start": 443.412,
-   "end": 443.557,
+   "start": 443.411,
+   "end": 443.556,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "появиться",
-   "start": 443.557,
-   "end": 444.057,
+   "start": 443.556,
+   "end": 444.056,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "в",
-   "start": 444.057,
-   "end": 444.123,
+   "start": 444.056,
+   "end": 444.122,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "нужный",
-   "start": 444.123,
-   "end": 444.426,
+   "start": 444.122,
+   "end": 444.424,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "момент",
-   "start": 444.426,
-   "end": 444.952,
+   "start": 444.424,
+   "end": 444.951,
    "scene": "threat",
    "line": 59
   },
   {
    "w": "Поэтому",
-   "start": 445.239,
-   "end": 445.739,
+   "start": 445.237,
+   "end": 445.737,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "учёные",
-   "start": 445.665,
-   "end": 446.165,
+   "start": 445.663,
+   "end": 446.163,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "и",
-   "start": 446.165,
-   "end": 446.283,
+   "start": 446.163,
+   "end": 446.282,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "защитники",
-   "start": 446.283,
-   "end": 446.915,
+   "start": 446.282,
+   "end": 446.913,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "природы",
-   "start": 446.915,
-   "end": 447.336,
+   "start": 446.913,
+   "end": 447.334,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "внимательно",
-   "start": 447.336,
-   "end": 447.941,
+   "start": 447.334,
+   "end": 447.939,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "следят",
-   "start": 447.941,
-   "end": 448.296,
+   "start": 447.939,
+   "end": 448.295,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "за",
-   "start": 448.296,
-   "end": 448.441,
+   "start": 448.295,
+   "end": 448.439,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "каждым",
-   "start": 448.441,
-   "end": 448.809,
+   "start": 448.439,
+   "end": 448.808,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "проектом",
-   "start": 448.809,
-   "end": 449.257,
+   "start": 448.808,
+   "end": 449.255,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "рядом",
-   "start": 449.257,
-   "end": 449.546,
+   "start": 449.255,
+   "end": 449.545,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "с",
-   "start": 449.546,
-   "end": 449.612,
+   "start": 449.545,
+   "end": 449.61,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "озером",
-   "start": 449.612,
-   "end": 449.98,
+   "start": 449.611,
+   "end": 449.979,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "за",
-   "start": 450.322,
-   "end": 450.533,
+   "start": 450.321,
+   "end": 450.532,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "планами",
-   "start": 450.533,
-   "end": 450.915,
+   "start": 450.532,
+   "end": 450.913,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "строить",
-   "start": 450.915,
-   "end": 451.283,
+   "start": 450.913,
+   "end": 451.282,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "плотины",
-   "start": 451.283,
-   "end": 451.717,
+   "start": 451.282,
+   "end": 451.716,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "выше",
-   "start": 451.717,
-   "end": 452.007,
+   "start": 451.716,
+   "end": 452.005,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "по",
-   "start": 452.007,
-   "end": 452.099,
+   "start": 452.005,
+   "end": 452.097,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "реке",
-   "start": 452.099,
-   "end": 452.467,
+   "start": 452.097,
+   "end": 452.466,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "и",
-   "start": 452.467,
-   "end": 452.651,
+   "start": 452.466,
+   "end": 452.65,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "добывать",
-   "start": 452.651,
-   "end": 453.059,
+   "start": 452.65,
+   "end": 453.058,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "здесь",
-   "start": 453.059,
-   "end": 453.362,
+   "start": 453.058,
+   "end": 453.36,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "соду",
-   "start": 453.362,
-   "end": 453.888,
+   "start": 453.361,
+   "end": 453.887,
    "scene": "threat",
    "line": 60
   },
   {
    "w": "Для",
-   "start": 454.148,
-   "end": 454.53,
+   "start": 454.147,
+   "end": 454.528,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "людей",
-   "start": 454.448,
-   "end": 454.856,
+   "start": 454.447,
+   "end": 454.855,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "это",
-   "start": 454.856,
-   "end": 455.08,
+   "start": 454.855,
+   "end": 455.079,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "вопрос",
-   "start": 455.08,
-   "end": 455.514,
+   "start": 455.079,
+   "end": 455.513,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "промышленности",
-   "start": 455.514,
-   "end": 456.475,
+   "start": 455.513,
+   "end": 456.473,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "А",
-   "start": 457.383,
-   "end": 457.606,
+   "start": 457.381,
+   "end": 457.605,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "для",
-   "start": 457.606,
-   "end": 457.764,
+   "start": 457.605,
+   "end": 457.763,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "фламинго",
-   "start": 457.764,
-   "end": 458.277,
+   "start": 457.763,
+   "end": 458.276,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "вопрос",
-   "start": 458.619,
-   "end": 459.041,
+   "start": 458.618,
+   "end": 459.039,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "того",
-   "start": 459.041,
-   "end": 459.356,
+   "start": 459.039,
+   "end": 459.355,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "будет",
-   "start": 459.659,
-   "end": 460.014,
+   "start": 459.658,
+   "end": 460.013,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "ли",
-   "start": 460.014,
-   "end": 460.106,
+   "start": 460.013,
+   "end": 460.105,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "у",
-   "start": 460.106,
-   "end": 460.172,
+   "start": 460.105,
+   "end": 460.171,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "них",
-   "start": 460.172,
-   "end": 460.409,
+   "start": 460.171,
+   "end": 460.408,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "где",
-   "start": 460.409,
-   "end": 460.685,
+   "start": 460.408,
+   "end": 460.684,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "вывести",
-   "start": 460.685,
-   "end": 461.106,
+   "start": 460.684,
+   "end": 461.105,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "птенцов",
-   "start": 461.106,
-   "end": 461.712,
+   "start": 461.105,
+   "end": 461.71,
    "scene": "threat",
    "line": 61
   },
   {
    "w": "Так",
-   "start": 462.677,
-   "end": 462.967,
+   "start": 462.676,
+   "end": 462.966,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "что",
-   "start": 462.895,
-   "end": 463.158,
+   "start": 462.894,
+   "end": 463.157,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "же",
-   "start": 463.158,
-   "end": 463.343,
+   "start": 463.157,
+   "end": 463.341,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "такое",
-   "start": 463.343,
-   "end": 463.856,
+   "start": 463.341,
+   "end": 463.854,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "озеро",
-   "start": 463.856,
-   "end": 464.29,
+   "start": 463.854,
+   "end": 464.288,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "Натрон",
-   "start": 464.29,
-   "end": 464.882,
+   "start": 464.288,
+   "end": 464.881,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "Озеро",
-   "start": 465.764,
-   "end": 466.316,
+   "start": 465.762,
+   "end": 466.315,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "которое",
-   "start": 466.606,
-   "end": 467.066,
+   "start": 466.604,
+   "end": 467.065,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "превращает",
-   "start": 467.066,
-   "end": 467.724,
+   "start": 467.065,
+   "end": 467.723,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "птиц",
-   "start": 467.724,
-   "end": 468.066,
+   "start": 467.723,
+   "end": 468.065,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "в",
-   "start": 468.066,
-   "end": 468.119,
+   "start": 468.065,
+   "end": 468.117,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "камень",
-   "start": 468.119,
-   "end": 468.632,
+   "start": 468.117,
+   "end": 468.631,
    "scene": "finale",
    "line": 62
   },
   {
    "w": "Нет",
-   "start": 469.61,
-   "end": 470.215,
+   "start": 469.609,
+   "end": 470.214,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "Камня",
-   "start": 471.065,
-   "end": 471.578,
+   "start": 471.063,
+   "end": 471.577,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "здесь",
-   "start": 471.578,
-   "end": 471.933,
+   "start": 471.577,
+   "end": 471.932,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "нет",
-   "start": 471.933,
-   "end": 472.368,
+   "start": 471.932,
+   "end": 472.366,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "Есть",
-   "start": 473.315,
-   "end": 473.802,
+   "start": 473.313,
+   "end": 473.8,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "сода",
-   "start": 473.802,
-   "end": 474.262,
+   "start": 473.8,
+   "end": 474.261,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "которая",
-   "start": 474.512,
-   "end": 474.973,
+   "start": 474.511,
+   "end": 474.971,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "высушивает",
-   "start": 474.973,
-   "end": 475.789,
+   "start": 474.971,
+   "end": 475.787,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "Есть",
-   "start": 476.736,
-   "end": 477.21,
+   "start": 476.735,
+   "end": 477.208,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "фотограф",
-   "start": 477.21,
-   "end": 477.802,
+   "start": 477.208,
+   "end": 477.8,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "который",
-   "start": 478.025,
-   "end": 478.42,
+   "start": 478.024,
+   "end": 478.419,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "посадил",
-   "start": 478.42,
-   "end": 478.933,
+   "start": 478.419,
+   "end": 478.932,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "мёртвых",
-   "start": 478.933,
-   "end": 479.433,
+   "start": 478.932,
+   "end": 479.432,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "птиц",
-   "start": 479.433,
-   "end": 479.815,
+   "start": 479.432,
+   "end": 479.813,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "на",
-   "start": 479.815,
-   "end": 479.96,
+   "start": 479.813,
+   "end": 479.958,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "ветки",
-   "start": 479.96,
-   "end": 480.486,
+   "start": 479.958,
+   "end": 480.485,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "И",
-   "start": 481.446,
-   "end": 481.67,
+   "start": 481.445,
+   "end": 481.669,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "есть",
-   "start": 481.67,
-   "end": 482.039,
+   "start": 481.669,
+   "end": 482.037,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "миллионы",
-   "start": 482.039,
-   "end": 482.486,
+   "start": 482.037,
+   "end": 482.485,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "живых",
-   "start": 482.486,
-   "end": 482.828,
+   "start": 482.485,
+   "end": 482.827,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "птиц",
-   "start": 482.828,
-   "end": 483.262,
+   "start": 482.827,
+   "end": 483.261,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "которые",
-   "start": 483.446,
-   "end": 483.907,
+   "start": 483.445,
+   "end": 483.906,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "выбрали",
-   "start": 483.907,
-   "end": 484.381,
+   "start": 483.906,
+   "end": 484.379,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "это",
-   "start": 484.381,
-   "end": 484.618,
+   "start": 484.379,
+   "end": 484.616,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "место",
-   "start": 484.618,
-   "end": 485.012,
+   "start": 484.616,
+   "end": 485.011,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "потому",
-   "start": 485.262,
-   "end": 485.552,
+   "start": 485.261,
+   "end": 485.55,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "что",
-   "start": 485.552,
-   "end": 485.736,
+   "start": 485.55,
+   "end": 485.735,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "оно",
-   "start": 485.736,
-   "end": 485.894,
+   "start": 485.735,
+   "end": 485.892,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "смертельно",
-   "start": 485.894,
-   "end": 486.565,
+   "start": 485.892,
+   "end": 486.563,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "для",
-   "start": 486.565,
-   "end": 486.723,
+   "start": 486.563,
+   "end": 486.721,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "других",
-   "start": 486.723,
-   "end": 487.223,
+   "start": 486.721,
+   "end": 487.221,
    "scene": "finale",
    "line": 63
   },
   {
    "w": "Одна",
-   "start": 487.557,
-   "end": 488.03,
+   "start": 487.555,
+   "end": 488.029,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "и",
-   "start": 487.943,
-   "end": 488.022,
+   "start": 487.941,
+   "end": 488.02,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "та",
-   "start": 488.022,
-   "end": 488.167,
+   "start": 488.02,
+   "end": 488.165,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "же",
-   "start": 488.167,
-   "end": 488.285,
+   "start": 488.165,
+   "end": 488.284,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "вода",
-   "start": 488.285,
-   "end": 488.561,
+   "start": 488.284,
+   "end": 488.56,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "одних",
-   "start": 488.561,
-   "end": 488.956,
+   "start": 488.56,
+   "end": 488.955,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "защищает",
-   "start": 488.956,
-   "end": 489.693,
+   "start": 488.955,
+   "end": 489.691,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "а",
-   "start": 489.917,
-   "end": 490.022,
+   "start": 489.915,
+   "end": 490.02,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "других",
-   "start": 490.022,
-   "end": 490.548,
+   "start": 490.02,
+   "end": 490.547,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "убивает",
-   "start": 490.548,
-   "end": 491.219,
+   "start": 490.547,
+   "end": 491.218,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "Всё",
-   "start": 492.14,
-   "end": 492.535,
+   "start": 492.139,
+   "end": 492.534,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "зависит",
-   "start": 492.535,
-   "end": 493.061,
+   "start": 492.534,
+   "end": 493.06,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "от",
-   "start": 493.061,
-   "end": 493.206,
+   "start": 493.06,
+   "end": 493.205,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "того",
-   "start": 493.206,
-   "end": 493.574,
+   "start": 493.205,
+   "end": 493.573,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "кто",
-   "start": 493.746,
-   "end": 493.982,
+   "start": 493.744,
+   "end": 493.981,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "ты",
-   "start": 493.982,
-   "end": 494.403,
+   "start": 493.981,
+   "end": 494.402,
    "scene": "finale",
    "line": 64
   },
   {
    "w": "В",
-   "start": 495.667,
-   "end": 495.786,
+   "start": 495.666,
+   "end": 495.784,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "следующий",
-   "start": 495.701,
-   "end": 496.161,
+   "start": 495.699,
+   "end": 496.16,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "раз",
-   "start": 496.161,
-   "end": 496.464,
+   "start": 496.16,
+   "end": 496.462,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "когда",
-   "start": 496.648,
-   "end": 496.99,
+   "start": 496.647,
+   "end": 496.989,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "увидите",
-   "start": 496.99,
-   "end": 497.372,
+   "start": 496.989,
+   "end": 497.37,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "фотографию",
-   "start": 497.372,
-   "end": 498.043,
+   "start": 497.37,
+   "end": 498.041,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "окаменевшей",
-   "start": 498.188,
-   "end": 499.003,
+   "start": 498.186,
+   "end": 499.002,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "птицы",
-   "start": 499.161,
-   "end": 499.714,
+   "start": 499.16,
+   "end": 499.712,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "вспомните",
-   "start": 499.859,
-   "end": 500.477,
+   "start": 499.857,
+   "end": 500.476,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "за",
-   "start": 500.938,
-   "end": 501.109,
+   "start": 500.936,
+   "end": 501.107,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "ней",
-   "start": 501.109,
-   "end": 501.28,
+   "start": 501.107,
+   "end": 501.278,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "стоит",
-   "start": 501.28,
-   "end": 501.635,
+   "start": 501.278,
+   "end": 501.634,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "не",
-   "start": 501.635,
-   "end": 501.74,
+   "start": 501.634,
+   "end": 501.739,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "магия",
-   "start": 501.74,
-   "end": 502.188,
+   "start": 501.739,
+   "end": 502.186,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "а",
-   "start": 502.332,
-   "end": 502.49,
+   "start": 502.331,
+   "end": 502.489,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "химия",
-   "start": 502.49,
-   "end": 502.99,
+   "start": 502.489,
+   "end": 502.989,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "и",
-   "start": 503.28,
-   "end": 503.385,
+   "start": 503.278,
+   "end": 503.384,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "человек",
-   "start": 503.385,
-   "end": 503.806,
+   "start": 503.384,
+   "end": 503.805,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "с",
-   "start": 503.806,
-   "end": 503.885,
+   "start": 503.805,
+   "end": 503.884,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "камерой",
-   "start": 503.885,
-   "end": 504.332,
+   "start": 503.884,
+   "end": 504.331,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "который",
-   "start": 504.49,
-   "end": 504.898,
+   "start": 504.489,
+   "end": 504.897,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "выбрал",
-   "start": 504.898,
-   "end": 505.28,
+   "start": 504.897,
+   "end": 505.278,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "позу",
-   "start": 505.28,
-   "end": 505.793,
+   "start": 505.278,
+   "end": 505.791,
    "scene": "finale",
    "line": 65
   },
   {
    "w": "А",
-   "start": 506.402,
-   "end": 506.612,
+   "start": 506.4,
+   "end": 506.611,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "какое",
-   "start": 506.535,
-   "end": 506.929,
+   "start": 506.533,
+   "end": 506.928,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "место",
-   "start": 506.929,
-   "end": 507.285,
+   "start": 506.928,
+   "end": 507.283,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "на",
-   "start": 507.285,
-   "end": 507.39,
+   "start": 507.283,
+   "end": 507.388,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "Земле",
-   "start": 507.39,
-   "end": 507.785,
+   "start": 507.388,
+   "end": 507.783,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "кажется",
-   "start": 507.785,
-   "end": 508.298,
+   "start": 507.783,
+   "end": 508.296,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "вам",
-   "start": 508.298,
-   "end": 508.508,
+   "start": 508.296,
+   "end": 508.507,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "самым",
-   "start": 508.508,
-   "end": 508.929,
+   "start": 508.507,
+   "end": 508.928,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "странным",
-   "start": 508.929,
-   "end": 509.561,
+   "start": 508.928,
+   "end": 509.56,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "Напишите",
-   "start": 510.443,
-   "end": 511.114,
+   "start": 510.441,
+   "end": 511.112,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "в",
-   "start": 511.114,
-   "end": 511.153,
+   "start": 511.112,
+   "end": 511.152,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "комментариях",
-   "start": 511.153,
-   "end": 511.864,
+   "start": 511.152,
+   "end": 511.862,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "возможно",
-   "start": 512.074,
-   "end": 512.732,
+   "start": 512.073,
+   "end": 512.731,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "о",
-   "start": 512.969,
-   "end": 513.166,
+   "start": 512.967,
+   "end": 513.165,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "нём",
-   "start": 513.166,
-   "end": 513.39,
+   "start": 513.165,
+   "end": 513.388,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "будет",
-   "start": 513.39,
-   "end": 513.693,
+   "start": 513.388,
+   "end": 513.691,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "следующий",
-   "start": 513.693,
-   "end": 514.206,
+   "start": 513.691,
+   "end": 514.204,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "выпуск",
-   "start": 514.206,
-   "end": 514.719,
+   "start": 514.204,
+   "end": 514.717,
    "scene": "finale",
    "line": 66
   },
   {
    "w": "Подпишитесь",
-   "start": 515.033,
-   "end": 515.888,
+   "start": 515.032,
+   "end": 515.887,
    "scene": "finale",
    "line": 67
   },
   {
    "w": "чтобы",
-   "start": 515.971,
-   "end": 516.366,
+   "start": 515.97,
+   "end": 516.365,
    "scene": "finale",
    "line": 67
   },
   {
    "w": "не",
-   "start": 516.366,
-   "end": 516.484,
+   "start": 516.365,
+   "end": 516.483,
    "scene": "finale",
    "line": 67
   },
   {
    "w": "пропустить",
-   "start": 516.484,
-   "end": 517.169,
+   "start": 516.483,
+   "end": 517.167,
    "scene": "finale",
    "line": 67
   }

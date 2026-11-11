@@ -1,0 +1,2348 @@
+{
+ "shots": [
+  {
+   "id": "hook-01",
+   "type": "stock",
+   "query": "bird branch",
+   "queries": [
+    "bird silhouette",
+    "bird tree",
+    "dry tree",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.19,
+   "pick": 65801,
+   "scene": "hook",
+   "n": 0,
+   "start": 0.0,
+   "end": 7.19
+  },
+  {
+   "id": "hook-02",
+   "type": "stock",
+   "query": "bird silhouette",
+   "queries": [
+    "bird branch",
+    "bird tree",
+    "dry tree",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.19,
+   "pick": 290740,
+   "scene": "hook",
+   "n": 1,
+   "start": 7.19,
+   "end": 14.38
+  },
+  {
+   "id": "hook-03",
+   "type": "stock",
+   "query": "bird tree",
+   "queries": [
+    "bird branch",
+    "bird silhouette",
+    "dry tree",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.2,
+   "pick": 190097,
+   "scene": "hook",
+   "n": 2,
+   "start": 14.38,
+   "end": 21.58
+  },
+  {
+   "id": "hook_question-01",
+   "type": "stock",
+   "query": "flamingos",
+   "queries": [
+    "pink lake",
+    "flamingo flock",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.86,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "в две тысячи тринадцатом году",
+    "data": {
+     "value": 2013,
+     "group": false,
+     "label": "снимки облетели мир"
+    },
+    "start": 23.237,
+    "end": 27.44
+   },
+   "pick": 120394,
+   "scene": "hook_question",
+   "n": 0,
+   "start": 21.58,
+   "end": 27.44
+  },
+  {
+   "id": "hook_question-02",
+   "type": "stock",
+   "query": "pink lake",
+   "queries": [
+    "flamingos",
+    "flamingo flock",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.86,
+   "pick": 239675,
+   "scene": "hook_question",
+   "n": 1,
+   "start": 27.44,
+   "end": 33.3
+  },
+  {
+   "id": "hook_question-03",
+   "type": "stock",
+   "query": "flamingo flock",
+   "queries": [
+    "flamingos",
+    "pink lake",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.86,
+   "pick": 153367,
+   "scene": "hook_question",
+   "n": 2,
+   "start": 33.3,
+   "end": 39.16
+  },
+  {
+   "id": "locator-01",
+   "type": "stock",
+   "query": "savanna",
+   "queries": [
+    "africa landscape",
+    "acacia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.24,
+   "overlay": {
+    "template": "ocean-map",
+    "cue": "Озеро Натрон",
+    "data": {
+     "title": "Озеро Натрон · Танзания",
+     "center": [
+      -2.4,
+      35.9
+     ],
+     "span_km": 620,
+     "borders": true,
+     "lakes": true,
+     "marker": {
+      "lat": -2.33,
+      "lon": 36.03,
+      "label": "Озеро Натрон"
+     },
+     "areas": [
+      {
+       "lat": -4.7,
+       "lon": 34.7,
+       "label": "ТАНЗАНИЯ"
+      },
+      {
+       "lat": -0.5,
+       "lon": 37.5,
+       "label": "КЕНИЯ"
+      }
+     ],
+     "lines": [
+      {
+       "points": [
+        [
+         0.4,
+         36.05
+        ],
+        [
+         -0.8,
+         36.4
+        ],
+        [
+         -1.9,
+         36.27
+        ],
+        [
+         -2.45,
+         35.98
+        ],
+        [
+         -3.6,
+         35.8
+        ],
+        [
+         -4.9,
+         35.7
+        ]
+       ],
+       "label": "Великая рифтовая долина",
+       "label_at": [
+        -4.1,
+        36.9
+       ]
+      }
+     ]
+    },
+    "start": 39.16,
+    "end": 45.4
+   },
+   "pick": 260654,
+   "scene": "locator",
+   "n": 0,
+   "start": 39.16,
+   "end": 45.4
+  },
+  {
+   "id": "locator-02",
+   "type": "stock",
+   "query": "africa landscape",
+   "queries": [
+    "savanna",
+    "acacia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.24,
+   "pick": 302163,
+   "scene": "locator",
+   "n": 1,
+   "start": 45.4,
+   "end": 51.64
+  },
+  {
+   "id": "shallow-01",
+   "type": "stock",
+   "query": "salt lake aerial",
+   "queries": [
+    "lake aerial",
+    "shallow lake",
+    "salt lake",
+    "lake drone",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.94,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "всего около полуметра",
+    "data": {
+     "value": "≈0,5",
+     "unit": "м",
+     "label": "глубина"
+    },
+    "start": 55.577,
+    "end": 58.58
+   },
+   "pick": 352978,
+   "scene": "shallow",
+   "n": 0,
+   "start": 51.64,
+   "end": 58.58
+  },
+  {
+   "id": "shallow-02",
+   "type": "stock",
+   "query": "lake aerial",
+   "queries": [
+    "salt lake aerial",
+    "shallow lake",
+    "salt lake",
+    "lake drone",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.55,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "около пятнадцати километров",
+    "data": {
+     "value": "≈15",
+     "unit": "км",
+     "label": "ширина"
+    },
+    "start": 60.075,
+    "end": 65.13
+   },
+   "pick": 206379,
+   "scene": "shallow",
+   "n": 1,
+   "start": 58.58,
+   "end": 65.13
+  },
+  {
+   "id": "shallow-03",
+   "type": "stock",
+   "query": "shallow lake",
+   "queries": [
+    "salt lake aerial",
+    "lake aerial",
+    "salt lake",
+    "lake drone",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.55,
+   "pick": 381413,
+   "scene": "shallow",
+   "n": 2,
+   "start": 65.13,
+   "end": 71.68
+  },
+  {
+   "id": "shallow-04",
+   "type": "stock",
+   "query": "salt lake",
+   "queries": [
+    "salt lake aerial",
+    "lake aerial",
+    "shallow lake",
+    "lake drone",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.55,
+   "pick": 384608,
+   "scene": "shallow",
+   "n": 3,
+   "start": 71.68,
+   "end": 78.23
+  },
+  {
+   "id": "shallow-05",
+   "type": "stock",
+   "query": "lake drone",
+   "queries": [
+    "salt lake aerial",
+    "lake aerial",
+    "shallow lake",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.53,
+   "pick": 383425,
+   "scene": "shallow",
+   "n": 4,
+   "start": 78.23,
+   "end": 84.76
+  },
+  {
+   "id": "chemistry-01",
+   "type": "stock",
+   "query": "salt crust",
+   "queries": [
+    "salt crystals",
+    "salt flat",
+    "salt lake",
+    "salt texture",
+    "white salt",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.68,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "карбонат натрия",
+    "data": {
+     "text": "Карбонат натрия",
+     "sub": "сода · природная форма — натрон"
+    },
+    "start": 86.454,
+    "end": 91.44
+   },
+   "pick": 128114,
+   "scene": "chemistry",
+   "n": 0,
+   "start": 84.76,
+   "end": 91.44
+  },
+  {
+   "id": "chemistry-02",
+   "type": "stock",
+   "query": "salt crystals",
+   "queries": [
+    "salt crust",
+    "salt flat",
+    "salt lake",
+    "salt texture",
+    "white salt",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.68,
+   "pick": 128192,
+   "scene": "chemistry",
+   "n": 1,
+   "start": 91.44,
+   "end": 98.12
+  },
+  {
+   "id": "chemistry-03",
+   "type": "stock",
+   "query": "salt flat",
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "salt lake",
+    "salt texture",
+    "white salt",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.68,
+   "overlay": {
+    "template": "ocean-timeline",
+    "cue": "У чистой воды",
+    "data": {
+     "events": [
+      {
+       "date": "pH 7",
+       "label": "чистая вода",
+       "cue": "У чистой воды",
+       "t": 99.931
+      },
+      {
+       "date": "pH 10,5",
+       "label": "вода Натрона",
+       "cue": "до десяти с половиной",
+       "t": 103.602
+      }
+     ]
+    },
+    "start": 99.931,
+    "end": 104.8
+   },
+   "pick": 348106,
+   "scene": "chemistry",
+   "n": 2,
+   "start": 98.12,
+   "end": 104.8
+  },
+  {
+   "id": "chemistry-04",
+   "type": "stock",
+   "query": "salt lake",
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "salt flat",
+    "salt texture",
+    "white salt",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.62,
+   "pick": 276144,
+   "scene": "chemistry",
+   "n": 3,
+   "start": 104.8,
+   "end": 111.42
+  },
+  {
+   "id": "chemistry-05",
+   "type": "stock",
+   "query": "salt texture",
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "salt flat",
+    "salt lake",
+    "white salt",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.62,
+   "pick": 79896,
+   "scene": "chemistry",
+   "n": 4,
+   "start": 111.42,
+   "end": 118.04
+  },
+  {
+   "id": "chemistry-06",
+   "type": "stock",
+   "query": "white salt",
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "salt flat",
+    "salt lake",
+    "salt texture",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.63,
+   "pick": 311478,
+   "scene": "chemistry",
+   "n": 5,
+   "start": 118.04,
+   "end": 124.67
+  },
+  {
+   "id": "heat-01",
+   "type": "stock",
+   "query": "heat haze",
+   "queries": [
+    "desert heat",
+    "hot sun",
+    "mirage",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.02,
+   "pick": 113622,
+   "scene": "heat",
+   "n": 0,
+   "start": 124.67,
+   "end": 129.69
+  },
+  {
+   "id": "heat-02",
+   "type": "stock",
+   "query": "desert heat",
+   "queries": [
+    "heat haze",
+    "hot sun",
+    "mirage",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.02,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "больше чем до сорока градусов",
+    "data": {
+     "value": "40+",
+     "unit": "°C",
+     "label": "вода на мелководье"
+    },
+    "start": 129.997,
+    "end": 134.71
+   },
+   "pick": 43293,
+   "scene": "heat",
+   "n": 1,
+   "start": 129.69,
+   "end": 134.71
+  },
+  {
+   "id": "heat-03",
+   "type": "stock",
+   "query": "hot sun",
+   "queries": [
+    "heat haze",
+    "desert heat",
+    "mirage",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.03,
+   "pick": 206376,
+   "scene": "heat",
+   "n": 2,
+   "start": 134.71,
+   "end": 139.74
+  },
+  {
+   "id": "red_water-01",
+   "type": "stock",
+   "query": "pink lake",
+   "queries": [
+    "red lake",
+    "salt lake aerial",
+    "pink water",
+    "red water",
+    "algae",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "pick": 371741,
+   "scene": "red_water",
+   "n": 0,
+   "start": 139.74,
+   "end": 146.6
+  },
+  {
+   "id": "red_water-02",
+   "type": "stock",
+   "query": "red lake",
+   "queries": [
+    "pink lake",
+    "salt lake aerial",
+    "pink water",
+    "red water",
+    "algae",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "pick": 381987,
+   "scene": "red_water",
+   "n": 1,
+   "start": 146.6,
+   "end": 153.46
+  },
+  {
+   "id": "red_water-03",
+   "type": "stock",
+   "query": "salt lake aerial",
+   "queries": [
+    "pink lake",
+    "red lake",
+    "pink water",
+    "red water",
+    "algae",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "галоархеи и цианобактерии",
+    "data": {
+     "text": "галоархеи · цианобактерии",
+     "sub": "микробы, которые любят соль"
+    },
+    "start": 155.608,
+    "end": 160.32
+   },
+   "pick": 371740,
+   "scene": "red_water",
+   "n": 2,
+   "start": 153.46,
+   "end": 160.32
+  },
+  {
+   "id": "red_water-04",
+   "type": "stock",
+   "query": "pink water",
+   "queries": [
+    "pink lake",
+    "red lake",
+    "salt lake aerial",
+    "red water",
+    "algae",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "pick": 314356,
+   "scene": "red_water",
+   "n": 3,
+   "start": 160.32,
+   "end": 167.18
+  },
+  {
+   "id": "red_water-05",
+   "type": "stock",
+   "query": "red water",
+   "queries": [
+    "pink lake",
+    "red lake",
+    "salt lake aerial",
+    "pink water",
+    "algae",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "pick": 369676,
+   "scene": "red_water",
+   "n": 4,
+   "start": 167.18,
+   "end": 174.04
+  },
+  {
+   "id": "red_water-06",
+   "type": "stock",
+   "query": "algae",
+   "queries": [
+    "pink lake",
+    "red lake",
+    "salt lake aerial",
+    "pink water",
+    "red water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.86,
+   "pick": 314357,
+   "scene": "red_water",
+   "n": 5,
+   "start": 174.04,
+   "end": 180.9
+  },
+  {
+   "id": "red_water-07",
+   "type": "stock",
+   "query": "lake aerial",
+   "queries": [
+    "pink lake",
+    "red lake",
+    "salt lake aerial",
+    "pink water",
+    "red water",
+    "algae",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.89,
+   "pick": 15779,
+   "scene": "red_water",
+   "n": 6,
+   "start": 180.9,
+   "end": 187.79
+  },
+  {
+   "id": "photographer-01",
+   "type": "stock",
+   "query": "savanna",
+   "queries": [
+    "acacia tree",
+    "africa sunset",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 3.61,
+   "pick": 5634,
+   "scene": "photographer",
+   "n": 0,
+   "start": 187.79,
+   "end": 191.4
+  },
+  {
+   "id": "photographer-02",
+   "type": "stock",
+   "query": "acacia tree",
+   "queries": [
+    "savanna",
+    "africa sunset",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.49,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Ник Брандт",
+    "data": {
+     "text": "Ник Брандт",
+     "sub": "книга 2013 года"
+    },
+    "start": 191.999,
+    "end": 198.89
+   },
+   "pick": 70877,
+   "scene": "photographer",
+   "n": 1,
+   "start": 191.4,
+   "end": 198.89
+  },
+  {
+   "id": "shoreline-01",
+   "type": "stock",
+   "query": "bird branch",
+   "queries": [
+    "birds tree",
+    "bird silhouette",
+    "dead tree",
+    "birds branch",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.47,
+   "pick": 44653,
+   "scene": "shoreline",
+   "n": 0,
+   "start": 198.89,
+   "end": 204.36
+  },
+  {
+   "id": "shoreline-02",
+   "type": "stock",
+   "query": "birds tree",
+   "queries": [
+    "bird branch",
+    "bird silhouette",
+    "dead tree",
+    "birds branch",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.47,
+   "pick": 258819,
+   "scene": "shoreline",
+   "n": 1,
+   "start": 204.36,
+   "end": 209.83
+  },
+  {
+   "id": "shoreline-03",
+   "type": "stock",
+   "query": "bird silhouette",
+   "queries": [
+    "bird branch",
+    "birds tree",
+    "dead tree",
+    "birds branch",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.47,
+   "pick": 128853,
+   "scene": "shoreline",
+   "n": 2,
+   "start": 209.83,
+   "end": 215.3
+  },
+  {
+   "id": "shoreline-04",
+   "type": "stock",
+   "query": "dead tree",
+   "queries": [
+    "bird branch",
+    "birds tree",
+    "bird silhouette",
+    "birds branch",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.87,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Он хотел, чтобы они выглядели живыми",
+    "data": {
+     "text": "«Живые — даже после смерти»",
+     "sub": "замысел Ника Брандта (пересказ)"
+    },
+    "start": 215.889,
+    "end": 223.17
+   },
+   "pick": 198837,
+   "scene": "shoreline",
+   "n": 3,
+   "start": 215.3,
+   "end": 223.17
+  },
+  {
+   "id": "shoreline-05",
+   "type": "stock",
+   "query": "birds branch",
+   "queries": [
+    "bird branch",
+    "birds tree",
+    "bird silhouette",
+    "dead tree",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.87,
+   "pick": 75334,
+   "scene": "shoreline",
+   "n": 4,
+   "start": 223.17,
+   "end": 231.04
+  },
+  {
+   "id": "not_stone-01",
+   "type": "stock",
+   "query": "salt crust",
+   "queries": [
+    "white salt",
+    "salt crystals",
+    "dry lake",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.13,
+   "pick": 79894,
+   "scene": "not_stone",
+   "n": 0,
+   "start": 231.04,
+   "end": 238.17
+  },
+  {
+   "id": "not_stone-02",
+   "type": "stock",
+   "query": "white salt",
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "dry lake",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.13,
+   "pick": 281970,
+   "scene": "not_stone",
+   "n": 1,
+   "start": 238.17,
+   "end": 245.3
+  },
+  {
+   "id": "not_stone-03",
+   "type": "stock",
+   "query": "salt crystals",
+   "queries": [
+    "salt crust",
+    "white salt",
+    "dry lake",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.12,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "И тело высыхает",
+    "data": {
+     "text": "Не камень",
+     "sub": "высушенное тело в корке солей"
+    },
+    "start": 248.208,
+    "end": 252.42
+   },
+   "pick": 82325,
+   "scene": "not_stone",
+   "n": 2,
+   "start": 245.3,
+   "end": 252.42
+  },
+  {
+   "id": "egypt-01",
+   "type": "stock",
+   "query": "sand dunes",
+   "queries": [
+    "desert",
+    "sahara",
+    "egypt desert",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.78,
+   "pick": 26085,
+   "scene": "egypt",
+   "n": 0,
+   "start": 252.42,
+   "end": 257.2
+  },
+  {
+   "id": "egypt-02",
+   "type": "stock",
+   "query": "desert",
+   "queries": [
+    "sand dunes",
+    "sahara",
+    "egypt desert",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.78,
+   "pick": 222163,
+   "scene": "egypt",
+   "n": 1,
+   "start": 257.2,
+   "end": 261.98
+  },
+  {
+   "id": "egypt-03",
+   "type": "stock",
+   "query": "sahara",
+   "queries": [
+    "sand dunes",
+    "desert",
+    "egypt desert",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.78,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Тот же минерал",
+    "data": {
+     "text": "натрон = карбонат натрия",
+     "sub": "им сушили тела в Древнем Египте"
+    },
+    "start": 262.526,
+    "end": 266.76
+   },
+   "pick": 16139,
+   "scene": "egypt",
+   "n": 2,
+   "start": 261.98,
+   "end": 266.76
+  },
+  {
+   "id": "egypt-04",
+   "type": "stock",
+   "query": "egypt desert",
+   "queries": [
+    "sand dunes",
+    "desert",
+    "sahara",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.77,
+   "pick": 92837,
+   "scene": "egypt",
+   "n": 3,
+   "start": 266.76,
+   "end": 271.53
+  },
+  {
+   "id": "how_they_die-01",
+   "type": "stock",
+   "query": "lake reflection",
+   "queries": [
+    "sky reflection",
+    "calm lake",
+    "water mirror",
+    "lake sky",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.9,
+   "pick": 188595,
+   "scene": "how_they_die",
+   "n": 0,
+   "start": 271.53,
+   "end": 277.43
+  },
+  {
+   "id": "how_they_die-02",
+   "type": "stock",
+   "query": "sky reflection",
+   "queries": [
+    "lake reflection",
+    "calm lake",
+    "water mirror",
+    "lake sky",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.9,
+   "pick": 4225,
+   "scene": "how_they_die",
+   "n": 1,
+   "start": 277.43,
+   "end": 283.33
+  },
+  {
+   "id": "how_they_die-03",
+   "type": "stock",
+   "query": "calm lake",
+   "queries": [
+    "lake reflection",
+    "sky reflection",
+    "water mirror",
+    "lake sky",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.9,
+   "pick": 119242,
+   "scene": "how_they_die",
+   "n": 2,
+   "start": 283.33,
+   "end": 289.23
+  },
+  {
+   "id": "how_they_die-04",
+   "type": "stock",
+   "query": "water mirror",
+   "queries": [
+    "lake reflection",
+    "sky reflection",
+    "calm lake",
+    "lake sky",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.89,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Но это лишь версия",
+    "data": {
+     "text": "Версия, не доказано",
+     "sub": "предположение Ника Брандта"
+    },
+    "start": 289.673,
+    "end": 295.12
+   },
+   "pick": 15319,
+   "scene": "how_they_die",
+   "n": 3,
+   "start": 289.23,
+   "end": 295.12
+  },
+  {
+   "id": "volcano-01",
+   "type": "stock",
+   "query": "volcano",
+   "queries": [
+    "volcano crater",
+    "lava",
+    "volcano aerial",
+    "volcanic",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.89,
+   "overlay": {
+    "template": "ocean-map",
+    "cue": "вулкан Ол Доиньо Ленгаи",
+    "data": {
+     "title": "Ол Доиньо Ленгаи",
+     "center": [
+      -2.55,
+      35.97
+     ],
+     "span_km": 120,
+     "lakes": true,
+     "borders": true,
+     "marker": {
+      "lat": -2.76,
+      "lon": 35.91,
+      "label": "вулкан"
+     },
+     "points": [
+      {
+       "lat": -2.33,
+       "lon": 36.03,
+       "label": "озеро Натрон"
+      }
+     ]
+    },
+    "start": 296.395,
+    "end": 302.01
+   },
+   "pick": 237116,
+   "scene": "volcano",
+   "n": 0,
+   "start": 295.12,
+   "end": 302.01
+  },
+  {
+   "id": "volcano-02",
+   "type": "stock",
+   "query": "volcano crater",
+   "queries": [
+    "volcano",
+    "lava",
+    "volcano aerial",
+    "volcanic",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.89,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "единственный действующий вулкан",
+    "data": {
+     "text": "Единственный действующий карбонатитовый вулкан",
+     "sub": "на Земле"
+    },
+    "start": 302.905,
+    "end": 308.9
+   },
+   "pick": 150622,
+   "scene": "volcano",
+   "n": 1,
+   "start": 302.01,
+   "end": 308.9
+  },
+  {
+   "id": "volcano-03",
+   "type": "stock",
+   "query": "lava",
+   "queries": [
+    "volcano",
+    "volcano crater",
+    "volcano aerial",
+    "volcanic",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.9,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "от пятисот до шестисот градусов",
+    "data": {
+     "value": [
+      500,
+      600
+     ],
+     "unit": "°C",
+     "label": "температура лавы"
+    },
+    "start": 310.077,
+    "end": 315.8
+   },
+   "pick": 50782,
+   "scene": "volcano",
+   "n": 2,
+   "start": 308.9,
+   "end": 315.8
+  },
+  {
+   "id": "volcano-04",
+   "type": "stock",
+   "query": "volcano aerial",
+   "queries": [
+    "volcano",
+    "volcano crater",
+    "lava",
+    "volcanic",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.9,
+   "pick": 351831,
+   "scene": "volcano",
+   "n": 3,
+   "start": 315.8,
+   "end": 322.7
+  },
+  {
+   "id": "flamingo_arrive-01",
+   "type": "stock",
+   "query": "flamingo flock",
+   "queries": [
+    "flamingos flying",
+    "flamingos",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.43,
+   "pick": 214630,
+   "scene": "flamingo_arrive",
+   "n": 0,
+   "start": 322.7,
+   "end": 329.13
+  },
+  {
+   "id": "flamingo_arrive-02",
+   "type": "stock",
+   "query": "flamingos flying",
+   "queries": [
+    "flamingo flock",
+    "flamingos",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.43,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "около трёх четвертей",
+    "data": {
+     "value": "≈75",
+     "unit": "%",
+     "label": "малых фламинго мира"
+    },
+    "start": 332.549,
+    "end": 335.56
+   },
+   "pick": 367097,
+   "scene": "flamingo_arrive",
+   "n": 1,
+   "start": 329.13,
+   "end": 335.56
+  },
+  {
+   "id": "flamingo_arrive-03",
+   "type": "stock",
+   "query": "flamingos",
+   "queries": [
+    "flamingo flock",
+    "flamingos flying",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.18,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "больше двух миллионов птиц",
+    "data": {
+     "value": "2+",
+     "unit": "млн",
+     "label": "птиц"
+    },
+    "start": 337.588,
+    "end": 339.74
+   },
+   "pick": 304021,
+   "scene": "flamingo_arrive",
+   "n": 2,
+   "start": 335.56,
+   "end": 339.74
+  },
+  {
+   "id": "flamingo_why-01",
+   "type": "stock",
+   "query": "flamingos lake",
+   "queries": [
+    "flamingo walking",
+    "flamingo",
+    "flamingos water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 4.12,
+   "pick": 75747,
+   "scene": "flamingo_why",
+   "n": 0,
+   "start": 339.74,
+   "end": 343.86
+  },
+  {
+   "id": "flamingo_why-02",
+   "type": "stock",
+   "query": "flamingo walking",
+   "queries": [
+    "flamingos lake",
+    "flamingo",
+    "flamingos water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.0,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Фламинго строят гнёзда",
+    "data": {
+     "text": "Гнёзда на соляных островках",
+     "sub": "хищникам не дойти по едкой воде"
+    },
+    "start": 344.457,
+    "end": 349.86
+   },
+   "pick": 117993,
+   "scene": "flamingo_why",
+   "n": 1,
+   "start": 343.86,
+   "end": 349.86
+  },
+  {
+   "id": "flamingo_why-03",
+   "type": "stock",
+   "query": "flamingo",
+   "queries": [
+    "flamingos lake",
+    "flamingo walking",
+    "flamingos water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.0,
+   "pick": 114157,
+   "scene": "flamingo_why",
+   "n": 2,
+   "start": 349.86,
+   "end": 355.86
+  },
+  {
+   "id": "flamingo_why-04",
+   "type": "stock",
+   "query": "flamingos water",
+   "queries": [
+    "flamingos lake",
+    "flamingo walking",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.0,
+   "pick": 49718,
+   "scene": "flamingo_why",
+   "n": 3,
+   "start": 355.86,
+   "end": 361.86
+  },
+  {
+   "id": "flamingo_food-01",
+   "type": "stock",
+   "query": "flamingo feeding",
+   "queries": [
+    "pink flamingo",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 3.92,
+   "pick": 172625,
+   "scene": "flamingo_food",
+   "n": 0,
+   "start": 361.86,
+   "end": 365.78
+  },
+  {
+   "id": "flamingo_food-02",
+   "type": "stock",
+   "query": "pink flamingo",
+   "queries": [
+    "flamingo feeding",
+    "flamingo",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 3.92,
+   "pick": 359872,
+   "scene": "flamingo_food",
+   "n": 1,
+   "start": 365.78,
+   "end": 369.7
+  },
+  {
+   "id": "flamingo_food-03",
+   "type": "stock",
+   "query": "flamingo",
+   "queries": [
+    "flamingo feeding",
+    "pink flamingo",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.51,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "Пигменты из пищи",
+    "data": {
+     "text": "Розовый цвет — из пищи",
+     "sub": "пигменты микроорганизмов"
+    },
+    "start": 370.299,
+    "end": 377.21
+   },
+   "pick": 109019,
+   "scene": "flamingo_food",
+   "n": 2,
+   "start": 369.7,
+   "end": 377.21
+  },
+  {
+   "id": "fish-01",
+   "type": "stock",
+   "query": "lagoon",
+   "queries": [
+    "fish pond",
+    "lake shore",
+    "shallow water",
+    "tilapia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.99,
+   "pick": 220601,
+   "scene": "fish",
+   "n": 0,
+   "start": 377.21,
+   "end": 384.2
+  },
+  {
+   "id": "fish-02",
+   "type": "stock",
+   "query": "fish pond",
+   "queries": [
+    "lagoon",
+    "lake shore",
+    "shallow water",
+    "tilapia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.99,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "живут три вида тиляпии",
+    "data": {
+     "value": 3,
+     "label": "вида тиляпии",
+     "note": "в лагунах по краям озера"
+    },
+    "start": 386.586,
+    "end": 391.19
+   },
+   "pick": 3734,
+   "scene": "fish",
+   "n": 1,
+   "start": 384.2,
+   "end": 391.19
+  },
+  {
+   "id": "fish-03",
+   "type": "stock",
+   "query": "lake shore",
+   "queries": [
+    "lagoon",
+    "fish pond",
+    "shallow water",
+    "tilapia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.99,
+   "pick": 244839,
+   "scene": "fish",
+   "n": 2,
+   "start": 391.19,
+   "end": 398.18
+  },
+  {
+   "id": "fish-04",
+   "type": "stock",
+   "query": "shallow water",
+   "queries": [
+    "lagoon",
+    "fish pond",
+    "lake shore",
+    "tilapia",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 6.97,
+   "pick": 371747,
+   "scene": "fish",
+   "n": 3,
+   "start": 398.18,
+   "end": 405.15
+  },
+  {
+   "id": "fragile-01",
+   "type": "stock",
+   "query": "dry lake",
+   "queries": [
+    "cracked earth",
+    "drought",
+    "lake water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.96,
+   "pick": 89769,
+   "scene": "fragile",
+   "n": 0,
+   "start": 405.15,
+   "end": 411.11
+  },
+  {
+   "id": "fragile-02",
+   "type": "stock",
+   "query": "cracked earth",
+   "queries": [
+    "dry lake",
+    "drought",
+    "lake water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.96,
+   "pick": 89835,
+   "scene": "fragile",
+   "n": 1,
+   "start": 411.11,
+   "end": 417.07
+  },
+  {
+   "id": "fragile-03",
+   "type": "stock",
+   "query": "drought",
+   "queries": [
+    "dry lake",
+    "cracked earth",
+    "lake water",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.96,
+   "pick": 128925,
+   "scene": "fragile",
+   "n": 2,
+   "start": 417.07,
+   "end": 423.03
+  },
+  {
+   "id": "fragile-04",
+   "type": "stock",
+   "query": "lake water",
+   "queries": [
+    "dry lake",
+    "cracked earth",
+    "drought",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.96,
+   "overlay": {
+    "template": "ocean-fact",
+    "cue": "примерно раз в",
+    "data": {
+     "value": [
+      3,
+      4
+     ],
+     "prefix": "раз в ",
+     "unit": "года",
+     "label": "большой сезон гнездования"
+    },
+    "start": 424.934,
+    "end": 428.99
+   },
+   "pick": 128924,
+   "scene": "fragile",
+   "n": 3,
+   "start": 423.03,
+   "end": 428.99
+  },
+  {
+   "id": "threat-01",
+   "type": "stock",
+   "query": "river africa",
+   "queries": [
+    "river aerial",
+    "savanna river",
+    "river",
+    "kenya landscape",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 5.6,
+   "pick": 234016,
+   "scene": "threat",
+   "n": 0,
+   "start": 428.99,
+   "end": 434.59
+  },
+  {
+   "id": "threat-02",
+   "type": "stock",
+   "query": "river aerial",
+   "queries": [
+    "river africa",
+    "savanna river",
+    "river",
+    "kenya landscape",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.02,
+   "overlay": {
+    "template": "lower-third",
+    "cue": "которая течёт из Кении",
+    "data": {
+     "text": "Река Эвасо-Нгиро",
+     "sub": "главная вода озера · течёт из Кении"
+    },
+    "start": 435.198,
+    "end": 441.61
+   },
+   "pick": 216060,
+   "scene": "threat",
+   "n": 1,
+   "start": 434.59,
+   "end": 441.61
+  },
+  {
+   "id": "threat-03",
+   "type": "stock",
+   "query": "savanna river",
+   "queries": [
+    "river africa",
+    "river aerial",
+    "river",
+    "kenya landscape",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.02,
+   "pick": 120998,
+   "scene": "threat",
+   "n": 2,
+   "start": 441.61,
+   "end": 448.63
+  },
+  {
+   "id": "threat-04",
+   "type": "stock",
+   "query": "river",
+   "queries": [
+    "river africa",
+    "river aerial",
+    "savanna river",
+    "kenya landscape",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.02,
+   "pick": 174860,
+   "scene": "threat",
+   "n": 3,
+   "start": 448.63,
+   "end": 455.65
+  },
+  {
+   "id": "threat-05",
+   "type": "stock",
+   "query": "kenya landscape",
+   "queries": [
+    "river africa",
+    "river aerial",
+    "savanna river",
+    "river",
+    "lake aerial",
+    "salt lake",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.03,
+   "pick": 290531,
+   "scene": "threat",
+   "n": 4,
+   "start": 455.65,
+   "end": 462.68
+  },
+  {
+   "id": "finale-01",
+   "type": "stock",
+   "query": "lake sunset",
+   "queries": [
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 21488,
+   "scene": "finale",
+   "n": 0,
+   "start": 462.68,
+   "end": 469.72
+  },
+  {
+   "id": "finale-02",
+   "type": "stock",
+   "query": "flamingos sunset",
+   "queries": [
+    "lake sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "overlay": {
+    "template": "title-card",
+    "cue": "Камня здесь нет",
+    "data": {
+     "title": "Камня нет",
+     "subtitle": "есть сода · есть фламинго"
+    },
+    "start": 471.063,
+    "end": 476.76
+   },
+   "pick": 63736,
+   "scene": "finale",
+   "n": 1,
+   "start": 469.72,
+   "end": 476.76
+  },
+  {
+   "id": "finale-03",
+   "type": "stock",
+   "query": "flamingos flying",
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 13456,
+   "scene": "finale",
+   "n": 2,
+   "start": 476.76,
+   "end": 483.8
+  },
+  {
+   "id": "finale-04",
+   "type": "stock",
+   "query": "birds sunset",
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "flamingos flying",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 140111,
+   "scene": "finale",
+   "n": 3,
+   "start": 483.8,
+   "end": 490.84
+  },
+  {
+   "id": "finale-05",
+   "type": "stock",
+   "query": "salt lake",
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 217540,
+   "scene": "finale",
+   "n": 4,
+   "start": 490.84,
+   "end": 497.88
+  },
+  {
+   "id": "finale-06",
+   "type": "stock",
+   "query": "flamingo flock",
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 83096,
+   "scene": "finale",
+   "n": 5,
+   "start": 497.88,
+   "end": 504.92
+  },
+  {
+   "id": "finale-07",
+   "type": "stock",
+   "query": "sunset africa",
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.04,
+   "pick": 292151,
+   "scene": "finale",
+   "n": 6,
+   "start": 504.92,
+   "end": 511.96
+  },
+  {
+   "id": "finale-08",
+   "type": "stock",
+   "query": "lake sunset",
+   "queries": [
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa",
+    "lake aerial",
+    "flamingos",
+    "savanna",
+    "africa landscape",
+    "lake",
+    "birds",
+    "nature"
+   ],
+   "dur": 7.02,
+   "pick": 83098,
+   "scene": "finale",
+   "n": 7,
+   "start": 511.96,
+   "end": 518.98
+  }
+ ],
+ "assets": {}
+}
