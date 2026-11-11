@@ -129,4 +129,4 @@ def test_relaxed_fills_shots_that_strict_matching_leaves_empty():
     assert strict["b"] == [] and short
     out, short = stock2.assign_candidates(shots, pool, relaxed=True)
     ids = [h["id"] for h in out["a"]] + [h["id"] for h in out["b"]]
-    assert len(out["b"]) == 3 and len(ids) == len(set(ids)) and not short
+    assert len(out["b"]) == 1 and len(ids) == len(set(ids)) and not short

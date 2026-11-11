@@ -159,18 +159,18 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
         blocked = blocklist()
         for s in shots:
             got = out[s["id"]]
-            if len(got) >= n:
-                continue
+            if got:
+                continue   # relaxed fill only guarantees ONE clip per shot, so the 231-clip pool is not used up by early shots
             allow = vessels_allowed(s)
             words = set(query_words(s["query"]))
             ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, [])
                              and rendition(h) and open_water(h, allow) and (accept is None or accept(h))),
                             key=lambda h: -sum(1 for w in words if w in h.get("tags", "").lower()))
-            for h in ranked[:n - len(got)]:
+            for h in ranked[:1]:
                 got.append(h)
                 used.add(h["id"])
     if relaxed:
-        short = [f"{s['id']} ({s['query']!r}): only {len(out[s['id']])} unique clip(s) instead of {n}" for s in shots if len(out[s["id"]]) < n]
+        short = [f"{s['id']} ({s['query']!r}): no clip at all" for s in shots if not out[s["id"]]]
     return out, short
 
 
