@@ -76,8 +76,10 @@ def slim(h):
 
 
 def search(q):
-    hits = [slim(h) for h in api({"q": q, "per_page": 50, "safesearch": "true", "order": "popular"})]
-    time.sleep(0.7)
+    hits = []
+    for page in (1, 2):   # 100 hits per query: the open-water filter drops most of them
+        hits += [slim(h) for h in api({"q": q, "per_page": 50, "page": page, "safesearch": "true", "order": "popular"})]
+        time.sleep(0.7)
     return hits
 
 
@@ -136,6 +138,8 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
     16:9, no bars, blocklist), best tag overlap with the query first, instead of requiring every query word in the tags."""
     used = set(taken)
     out, short = {}, []
+    if relaxed:
+        n = 1   # autopick needs one clip per shot; taking 3 for early shots would use the small open-water pool up
     for s in shots:
         got = []
         allow = vessels_allowed(s)
