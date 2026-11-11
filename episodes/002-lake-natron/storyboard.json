@@ -899,7 +899,7 @@
       "birds",
       "nature"
      ],
-     "dur": 7.87,
+     "dur": 7.88,
      "overlay": {
       "template": "lower-third",
       "cue": "Он хотел, чтобы они выглядели живыми",
@@ -929,7 +929,7 @@
       "nature"
      ],
      "dur": "rest",
-     "pick": "pix:75334"
+     "pick": "pix:158386"
     }
    ]
   },
@@ -1355,7 +1355,7 @@
       "birds",
       "nature"
      ],
-     "dur": 6.43,
+     "dur": 6.42,
      "pick": "pix:214630"
     },
     {
@@ -1374,7 +1374,7 @@
       "birds",
       "nature"
      ],
-     "dur": 6.43,
+     "dur": 6.42,
      "overlay": {
       "template": "ocean-fact",
       "cue": "около трёх четвертей",
@@ -1531,7 +1531,7 @@
       "nature"
      ],
      "dur": 3.92,
-     "pick": "pix:172625"
+     "pick": "pix:236396"
     },
     {
      "id": "flamingo_food-02",
@@ -1583,7 +1583,7 @@
   },
   {
    "scene": "fish",
-   "duration": 27.95,
+   "duration": 27.94,
    "shots": [
     {
      "id": "fish-01",
@@ -1624,7 +1624,7 @@
       "birds",
       "nature"
      ],
-     "dur": 6.99,
+     "dur": 6.98,
      "overlay": {
       "template": "ocean-fact",
       "cue": "живут три вида тиляпии",
@@ -1781,7 +1781,7 @@
   },
   {
    "scene": "threat",
-   "duration": 33.68,
+   "duration": 33.69,
    "shots": [
     {
      "id": "threat-01",
@@ -1801,7 +1801,7 @@
       "birds",
       "nature"
      ],
-     "dur": 5.6,
+     "dur": 5.61,
      "pick": "pix:234016"
     },
     {
