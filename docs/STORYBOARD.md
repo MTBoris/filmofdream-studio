@@ -1,7 +1,7 @@
-# Storyboard v2 (ChatGPT → pipeline)
+# Storyboard v2
 
-One JSON file per episode: `episodes/NNN-name/storyboard.json`. ChatGPT writes it; Boris/Claude commit it
-(ChatGPT has no repo access). Images go to `episodes/NNN-name/assets/<asset_id>.png|jpg`.
+One JSON file per episode: `episodes/NNN-name/storyboard.json`. Since 2026-11-11 Claude Code writes it from `script.md`
+(ChatGPT only on request). Images go to `episodes/NNN-name/assets/<asset_id>.png|jpg`.
 
 ```json
 {
@@ -63,7 +63,17 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. ChatGPT writes i
 `size` is an object (`{"value": 100, "label": 80}`) or a list in the order above (e.g. `[100, 80, 100]`).
 Characters missing in the font (e.g. the minute sign ′ in PT Serif) are replaced by the nearest available one.
 
-## Stock rule: open water only
+## Stock profile (`"stock_profile"` at the top of the storyboard; a stock shot may override it)
+| profile | allowed | dropped (by Pixabay tags) |
+|---|---|---|
+| `open-water` (default, pilot) | open sea only | land, rocks, coast, islands, lakes, rivers, trees, snow …; boats except «research ship» shots |
+| `nature-lake` (episode 002) | salt/soda lakes, flamingos, birds, savanna, dry branches, salt crust, volcanoes, red/pink water | boats, buildings, roads, vehicles, zoos/cages, piers, snow/ice |
+
+**Always dropped, every profile:** people, person, man, woman, couple, girl, boy, children, faces/portraits, tourists, smoke (smoke bombs),
+house, village, town, city, logo; AI/3D/animation; clips that are not 16:9; black bars; `config/stock_blocklist.json`.
+In relaxed autopick a clip must also carry a topical tag (`sea/ocean` for open-water; lake, flamingo, bird, savanna, volcano, salt … for nature-lake).
+
+## Stock rule for the `open-water` profile
 Candidates tagged with land, rocks, coast, beach, islands, jungle, palm, tree, forest, rain-forest, boats/ships (and similar words) are dropped.
 Also dropped: clips that are **not 16:9**, clips whose **picture has black bars** (detected on the pixels of the preview, and again on the full
 clip when it is downloaded – the build stops if a picked clip has bars), and clips on `config/stock_blocklist.json` (visibly wrong

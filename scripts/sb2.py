@@ -22,6 +22,7 @@ TOL = 1.5          # allowed difference between the sum of shot durations and th
 MIN_SHOT = 1.0     # a "rest" shot must keep at least this much
 OVERLAY_DELAY = 0.4  # overlay without cue/at appears this long after its shot starts
 TYPES = ("stock", "image", "external-image")
+STOCK_PROFILES = ("open-water", "nature-lake")  # stock filter profiles, see scripts/stock2.py
 MOTIONS = ("push-in", "pull-out", "pan-left", "pan-right", "none")
 
 
@@ -91,6 +92,8 @@ def validate_structure(sb):
         hint = " (this looks like the old v1 format: scene -> shots; v2 needs {\"version\": 2, \"scenes\": [...]})" if isinstance(sb, dict) else ""
         return ["storyboard has no 'scenes' list" + hint], warns
     seen_scenes, seen_ids = set(), set()
+    if sb.get("stock_profile", "open-water") not in STOCK_PROFILES:
+        errs.append(f"stock_profile must be one of {STOCK_PROFILES}, got {sb.get('stock_profile')!r}")
     for sc in sb["scenes"]:
         name = sc.get("scene")
         if not name:
@@ -118,6 +121,8 @@ def validate_structure(sb):
             elif not isinstance(d, (int, float)) or d <= 0:
                 errs.append(f"{where}: dur must be a positive number or 'rest'")
             if t == "stock":
+                if s.get("stock_profile", "open-water") not in STOCK_PROFILES:
+                    errs.append(f"{where}: stock_profile must be one of {STOCK_PROFILES}")
                 if not s.get("query"):
                     errs.append(f"{where}: stock shot needs 'query'")
                 try:
