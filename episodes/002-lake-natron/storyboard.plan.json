@@ -2,62 +2,602 @@
  "_comment": "Scene plan for scripts/sb_plan.py (Claude Code). Overlays only with facts from the table in script.md. No clip is labelled as Natron or Ol Doinyo Lengai: places are shown on maps.",
  "stock_profile": "nature-lake",
  "max_shot": 7.5,
- "fallback": ["lake aerial", "salt lake", "flamingos", "savanna", "africa landscape", "lake", "birds", "nature"],
+ "fallback": [
+  "lake aerial",
+  "salt lake",
+  "flamingos",
+  "savanna",
+  "africa landscape",
+  "lake",
+  "birds",
+  "nature"
+ ],
  "scenes": {
-  "hook": {"queries": ["bird branch", "bird silhouette", "bird tree", "dry tree"]},
-  "hook_question": {"queries": ["flamingos", "pink lake", "flamingo flock"],
-   "overlays": [{"template": "ocean-fact", "cue": "в две тысячи тринадцатом году",
-                 "data": {"value": 2013, "group": false, "label": "снимки облетели мир"}}]},
-  "locator": {"queries": ["savanna", "africa landscape", "acacia"],
-   "overlays": [{"template": "ocean-map", "cue": "Озеро Натрон",
-     "data": {"title": "Озеро Натрон · Танзания", "center": [-2.4, 35.9], "span_km": 620, "borders": true, "lakes": true,
-              "marker": {"lat": -2.33, "lon": 36.03, "label": "Озеро Натрон"},
-              "areas": [{"lat": -4.7, "lon": 34.7, "label": "ТАНЗАНИЯ"}, {"lat": -0.5, "lon": 37.5, "label": "КЕНИЯ"}],
-              "lines": [{"points": [[0.4, 36.05], [-0.8, 36.4], [-1.9, 36.27], [-2.45, 35.98], [-3.6, 35.8], [-4.9, 35.7]],
-                         "label": "Великая рифтовая долина", "label_at": [-4.1, 36.9]}]}}]},
-  "shallow": {"queries": ["salt lake aerial", "lake aerial", "shallow lake", "salt lake", "lake drone"],
-   "overlays": [{"template": "ocean-fact", "cue": "всего около полуметра", "data": {"value": "≈0,5", "unit": "м", "label": "глубина"}},
-                {"template": "ocean-fact", "cue": "около пятнадцати километров", "data": {"value": "≈15", "unit": "км", "label": "ширина"}}]},
-  "chemistry": {"queries": ["salt crust", "salt crystals", "salt flat", "salt lake", "salt texture", "white salt"],
-   "overlays": [{"template": "lower-third", "cue": "карбонат натрия", "data": {"text": "Карбонат натрия", "sub": "сода · природная форма — натрон"}},
-                {"template": "ocean-timeline", "cue": "У чистой воды",
-                 "data": {"events": [{"date": "pH 7", "label": "чистая вода", "cue": "У чистой воды"},
-                                     {"date": "pH 10,5", "label": "вода Натрона", "cue": "до десяти с половиной"}]}}]},
-  "heat": {"queries": ["heat haze", "desert heat", "hot sun", "mirage"],
-   "overlays": [{"template": "ocean-fact", "cue": "больше чем до сорока градусов", "data": {"value": "40+", "unit": "°C", "label": "вода на мелководье"}}]},
-  "red_water": {"queries": ["pink lake", "red lake", "salt lake aerial", "pink water", "red water", "algae", "lake aerial"],
-   "overlays": [{"template": "lower-third", "cue": "галоархеи и цианобактерии", "data": {"text": "галоархеи · цианобактерии", "sub": "микробы, которые любят соль"}}]},
-  "photographer": {"queries": ["savanna", "acacia tree", "africa sunset"],
-   "overlays": [{"template": "lower-third", "cue": "Ник Брандт", "data": {"text": "Ник Брандт", "sub": "книга 2013 года"}}]},
-  "shoreline": {"queries": ["bird branch", "birds tree", "bird silhouette", "dead tree", "birds branch"],
-   "overlays": [{"template": "lower-third", "cue": "Он хотел, чтобы они выглядели живыми", "data": {"text": "«Живые — даже после смерти»", "sub": "замысел Ника Брандта (пересказ)"}}]},
-  "not_stone": {"queries": ["salt crust", "white salt", "salt crystals", "dry lake"],
-   "overlays": [{"template": "lower-third", "cue": "И тело высыхает", "data": {"text": "Не камень", "sub": "высушенное тело в корке солей"}}]},
-  "egypt": {"queries": ["sand dunes", "desert", "sahara", "egypt desert"],
-   "overlays": [{"template": "lower-third", "cue": "Тот же минерал", "data": {"text": "натрон = карбонат натрия", "sub": "им сушили тела в Древнем Египте"}}]},
-  "how_they_die": {"queries": ["lake reflection", "sky reflection", "calm lake", "water mirror", "lake sky"],
-   "overlays": [{"template": "lower-third", "cue": "Но это лишь версия", "data": {"text": "Версия, не доказано", "sub": "предположение Ника Брандта"}}]},
-  "volcano": {"queries": ["volcano", "volcano crater", "lava", "volcano aerial", "volcanic"],
-   "overlays": [{"template": "ocean-map", "cue": "вулкан Ол Доиньо Ленгаи",
-                 "data": {"title": "Ол Доиньо Ленгаи", "center": [-2.55, 35.97], "span_km": 120, "lakes": true, "borders": true,
-                          "marker": {"lat": -2.76, "lon": 35.91, "label": "вулкан"},
-                          "points": [{"lat": -2.33, "lon": 36.03, "label": "озеро Натрон"}]}},
-                {"template": "lower-third", "cue": "единственный действующий вулкан", "data": {"text": "Единственный действующий карбонатитовый вулкан", "sub": "на Земле"}},
-                {"template": "ocean-fact", "cue": "от пятисот до шестисот градусов", "data": {"value": [500, 600], "unit": "°C", "label": "температура лавы"}}]},
-  "flamingo_arrive": {"queries": ["flamingo flock", "flamingos flying", "flamingos", "flamingo"],
-   "overlays": [{"template": "ocean-fact", "cue": "около трёх четвертей", "data": {"value": "≈75", "unit": "%", "label": "малых фламинго мира"}},
-                {"template": "ocean-fact", "cue": "больше двух миллионов птиц", "data": {"value": "2+", "unit": "млн", "label": "птиц"}}]},
-  "flamingo_why": {"queries": ["flamingos lake", "flamingo walking", "flamingo", "flamingos water"],
-   "overlays": [{"template": "lower-third", "cue": "Фламинго строят гнёзда", "data": {"text": "Гнёзда на соляных островках", "sub": "хищникам не дойти по едкой воде"}}]},
-  "flamingo_food": {"queries": ["flamingo feeding", "pink flamingo", "flamingo"],
-   "overlays": [{"template": "lower-third", "cue": "Пигменты из пищи", "data": {"text": "Розовый цвет — из пищи", "sub": "пигменты микроорганизмов"}}]},
-  "fish": {"queries": ["lagoon", "fish pond", "lake shore", "shallow water", "tilapia"],
-   "overlays": [{"template": "ocean-fact", "cue": "живут три вида тиляпии", "data": {"value": 3, "label": "вида тиляпии", "note": "в лагунах по краям озера"}}]},
-  "fragile": {"queries": ["dry lake", "cracked earth", "drought", "lake water"],
-   "overlays": [{"template": "ocean-fact", "cue": "примерно раз в", "data": {"value": [3, 4], "prefix": "раз в ", "unit": "года", "label": "большой сезон гнездования"}}]},
-  "threat": {"queries": ["river africa", "river aerial", "savanna river", "river", "kenya landscape"],
-   "overlays": [{"template": "lower-third", "cue": "которая течёт из Кении", "data": {"text": "Река Эвасо-Нгиро", "sub": "главная вода озера · течёт из Кении"}}]},
-  "finale": {"queries": ["lake sunset", "flamingos sunset", "flamingos flying", "birds sunset", "salt lake", "flamingo flock", "sunset africa"],
-   "overlays": [{"template": "title-card", "cue": "Камня здесь нет", "data": {"title": "Камня нет", "subtitle": "есть сода · есть фламинго"}}]}
+  "hook": {
+   "queries": [
+    "bird branch",
+    "bird silhouette",
+    "bird tree",
+    "dry tree"
+   ]
+  },
+  "hook_question": {
+   "queries": [
+    "flamingos",
+    "pink lake",
+    "flamingo flock"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "в две тысячи тринадцатом году",
+     "data": {
+      "value": 2013,
+      "group": false,
+      "label": "снимки облетели мир"
+     }
+    }
+   ]
+  },
+  "locator": {
+   "queries": [
+    "savanna",
+    "africa landscape",
+    "acacia"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-map",
+     "cue": "Озеро Натрон",
+     "data": {
+      "title": "Озеро Натрон · Танзания",
+      "center": [
+       -2.4,
+       35.9
+      ],
+      "span_km": 620,
+      "borders": true,
+      "lakes": true,
+      "marker": {
+       "lat": -2.33,
+       "lon": 36.03,
+       "label": "Озеро Натрон"
+      },
+      "areas": [
+       {
+        "lat": -4.7,
+        "lon": 34.7,
+        "label": "ТАНЗАНИЯ"
+       },
+       {
+        "lat": -0.5,
+        "lon": 37.5,
+        "label": "КЕНИЯ"
+       }
+      ],
+      "lines": [
+       {
+        "points": [
+         [
+          0.4,
+          36.05
+         ],
+         [
+          -0.8,
+          36.4
+         ],
+         [
+          -1.9,
+          36.27
+         ],
+         [
+          -2.45,
+          35.98
+         ],
+         [
+          -3.6,
+          35.8
+         ],
+         [
+          -4.9,
+          35.7
+         ]
+        ],
+        "label": "Великая рифтовая долина",
+        "label_at": [
+         -4.1,
+         36.9
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "shallow": {
+   "queries": [
+    "salt lake aerial",
+    "lake aerial",
+    "shallow lake",
+    "salt lake",
+    "lake drone"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "всего около полуметра",
+     "data": {
+      "value": "≈0,5",
+      "unit": "м",
+      "label": "глубина"
+     }
+    },
+    {
+     "template": "ocean-fact",
+     "cue": "около пятнадцати километров",
+     "data": {
+      "value": "≈15",
+      "unit": "км",
+      "label": "ширина"
+     }
+    }
+   ]
+  },
+  "chemistry": {
+   "queries": [
+    "salt crust",
+    "salt crystals",
+    "salt flat",
+    "salt lake",
+    "salt texture",
+    "white salt"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "карбонат натрия",
+     "data": {
+      "text": "Карбонат натрия",
+      "sub": "сода · природная форма — натрон"
+     }
+    },
+    {
+     "template": "ocean-timeline",
+     "cue": "У чистой воды",
+     "data": {
+      "events": [
+       {
+        "date": "pH 7",
+        "label": "чистая вода",
+        "cue": "У чистой воды"
+       },
+       {
+        "date": "pH 10,5",
+        "label": "вода Натрона",
+        "cue": "до десяти с половиной"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "heat": {
+   "queries": [
+    "heat haze",
+    "desert heat",
+    "hot sun",
+    "mirage"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "больше чем до сорока градусов",
+     "data": {
+      "value": "40+",
+      "unit": "°C",
+      "label": "вода на мелководье"
+     }
+    }
+   ]
+  },
+  "red_water": {
+   "queries": [
+    "pink lake",
+    "red lake",
+    "salt lake aerial",
+    "pink water",
+    "red water",
+    "algae",
+    "lake aerial"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "галоархеи и цианобактерии",
+     "data": {
+      "text": "галоархеи · цианобактерии",
+      "sub": "микробы, которые любят соль"
+     }
+    }
+   ]
+  },
+  "photographer": {
+   "queries": [
+    "savanna",
+    "acacia tree",
+    "africa sunset"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Ник Брандт",
+     "data": {
+      "text": "Ник Брандт",
+      "sub": "книга 2013 года"
+     }
+    }
+   ]
+  },
+  "shoreline": {
+   "queries": [
+    "bird branch",
+    "birds tree",
+    "bird silhouette",
+    "dead tree",
+    "birds branch"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Он хотел, чтобы они выглядели живыми",
+     "data": {
+      "text": "«Живые — даже после смерти»",
+      "sub": "замысел Ника Брандта (пересказ)"
+     }
+    }
+   ]
+  },
+  "not_stone": {
+   "queries": [
+    "salt crust",
+    "white salt",
+    "salt crystals",
+    "dry lake"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "И тело высыхает",
+     "data": {
+      "text": "Не камень",
+      "sub": "высушенное тело в корке солей"
+     }
+    }
+   ]
+  },
+  "egypt": {
+   "queries": [
+    "sand dunes",
+    "desert",
+    "sahara",
+    "egypt desert"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Тот же минерал",
+     "data": {
+      "text": "натрон = карбонат натрия",
+      "sub": "им сушили тела в Древнем Египте"
+     }
+    }
+   ]
+  },
+  "how_they_die": {
+   "queries": [
+    "lake reflection",
+    "sky reflection",
+    "calm lake",
+    "water mirror",
+    "lake sky"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Но это лишь версия",
+     "data": {
+      "text": "Версия, не доказано",
+      "sub": "предположение Ника Брандта"
+     }
+    }
+   ]
+  },
+  "volcano": {
+   "queries": [
+    "volcano",
+    "volcano crater",
+    "lava",
+    "volcano aerial",
+    "volcanic"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-map",
+     "cue": "вулкан Ол Доиньо Ленгаи",
+     "data": {
+      "title": "Ол Доиньо Ленгаи",
+      "center": [
+       -2.55,
+       35.97
+      ],
+      "span_km": 120,
+      "lakes": true,
+      "borders": true,
+      "marker": {
+       "lat": -2.76,
+       "lon": 35.91,
+       "label": "вулкан"
+      },
+      "points": [
+       {
+        "lat": -2.33,
+        "lon": 36.03,
+        "label": "озеро Натрон"
+       }
+      ]
+     }
+    },
+    {
+     "template": "lower-third",
+     "cue": "единственный действующий вулкан",
+     "data": {
+      "text": "Единственный действующий карбонатитовый вулкан",
+      "sub": "на Земле"
+     }
+    },
+    {
+     "template": "ocean-fact",
+     "cue": "от пятисот до шестисот градусов",
+     "data": {
+      "value": [
+       500,
+       600
+      ],
+      "unit": "°C",
+      "label": "температура лавы"
+     }
+    }
+   ]
+  },
+  "flamingo_arrive": {
+   "queries": [
+    "flamingo flock",
+    "flamingos flying",
+    "flamingos",
+    "flamingo"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "около трёх четвертей",
+     "data": {
+      "value": "≈75",
+      "unit": "%",
+      "label": "малых фламинго мира"
+     }
+    },
+    {
+     "template": "ocean-fact",
+     "cue": "больше двух миллионов птиц",
+     "data": {
+      "value": "2+",
+      "unit": "млн",
+      "label": "птиц"
+     }
+    }
+   ]
+  },
+  "flamingo_why": {
+   "queries": [
+    "flamingos lake",
+    "flamingo walking",
+    "flamingo",
+    "flamingos water"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Фламинго строят гнёзда",
+     "data": {
+      "text": "Гнёзда на соляных островках",
+      "sub": "хищникам не дойти по едкой воде"
+     }
+    }
+   ]
+  },
+  "flamingo_food": {
+   "queries": [
+    "flamingo feeding",
+    "pink flamingo",
+    "flamingo"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "Пигменты из пищи",
+     "data": {
+      "text": "Розовый цвет — из пищи",
+      "sub": "пигменты микроорганизмов"
+     }
+    }
+   ]
+  },
+  "fish": {
+   "queries": [
+    "lagoon",
+    "fish pond",
+    "lake shore",
+    "shallow water",
+    "tilapia"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "живут три вида тиляпии",
+     "data": {
+      "value": 3,
+      "label": "вида тиляпии",
+      "note": "в лагунах по краям озера"
+     }
+    }
+   ]
+  },
+  "fragile": {
+   "queries": [
+    "dry lake",
+    "cracked earth",
+    "drought",
+    "lake water"
+   ],
+   "overlays": [
+    {
+     "template": "ocean-fact",
+     "cue": "примерно раз в",
+     "data": {
+      "value": [
+       3,
+       4
+      ],
+      "prefix": "раз в ",
+      "unit": "года",
+      "label": "большой сезон гнездования"
+     }
+    }
+   ]
+  },
+  "threat": {
+   "queries": [
+    "river africa",
+    "river aerial",
+    "savanna river",
+    "river",
+    "kenya landscape"
+   ],
+   "overlays": [
+    {
+     "template": "lower-third",
+     "cue": "которая течёт из Кении",
+     "data": {
+      "text": "Река Эвасо-Нгиро",
+      "sub": "главная вода озера · течёт из Кении"
+     }
+    }
+   ]
+  },
+  "finale": {
+   "queries": [
+    "lake sunset",
+    "flamingos sunset",
+    "flamingos flying",
+    "birds sunset",
+    "salt lake",
+    "flamingo flock",
+    "sunset africa"
+   ],
+   "overlays": [
+    {
+     "template": "title-card",
+     "cue": "Камня здесь нет",
+     "data": {
+      "title": "Камня нет",
+      "subtitle": "есть сода · есть фламинго"
+     }
+    }
+   ]
+  }
+ },
+ "picks": {
+  "hook-01": "pix:65801",
+  "hook-02": "pix:290740",
+  "hook-03": "pix:190097",
+  "hook_question-01": "pix:120394",
+  "hook_question-02": "pix:239675",
+  "hook_question-03": "pix:153367",
+  "locator-01": "pix:260654",
+  "locator-02": "pix:302163",
+  "shallow-01": "pix:352978",
+  "shallow-02": "pix:206379",
+  "shallow-03": "pix:381413",
+  "shallow-04": "pix:384608",
+  "shallow-05": "pix:383425",
+  "chemistry-01": "pix:128114",
+  "chemistry-02": "pix:128192",
+  "chemistry-03": "pix:348106",
+  "chemistry-04": "pix:276144",
+  "chemistry-05": "pix:79896",
+  "chemistry-06": "pix:311478",
+  "heat-01": "pix:113622",
+  "heat-02": "pix:43293",
+  "heat-03": "pix:206376",
+  "red_water-01": "pix:371741",
+  "red_water-02": "pix:381987",
+  "red_water-03": "pix:371740",
+  "red_water-04": "pix:314356",
+  "red_water-05": "pix:369676",
+  "red_water-06": "pix:314357",
+  "red_water-07": "pix:15779",
+  "photographer-01": "pix:5634",
+  "photographer-02": "pix:70877",
+  "shoreline-01": "pix:44653",
+  "shoreline-02": "pix:258819",
+  "shoreline-03": "pix:128853",
+  "shoreline-04": "pix:198837",
+  "shoreline-05": "pix:75334",
+  "not_stone-01": "pix:79894",
+  "not_stone-02": "pix:281970",
+  "not_stone-03": "pix:82325",
+  "egypt-01": "pix:26085",
+  "egypt-02": "pix:222163",
+  "egypt-03": "pix:16139",
+  "egypt-04": "pix:92837",
+  "how_they_die-01": "pix:188595",
+  "how_they_die-02": "pix:4225",
+  "how_they_die-03": "pix:119242",
+  "how_they_die-04": "pix:15319",
+  "volcano-01": "pix:237116",
+  "volcano-02": "pix:150622",
+  "volcano-03": "pix:50782",
+  "volcano-04": "pix:351831",
+  "flamingo_arrive-01": "pix:214630",
+  "flamingo_arrive-02": "pix:367097",
+  "flamingo_arrive-03": "pix:304021",
+  "flamingo_why-01": "pix:75747",
+  "flamingo_why-02": "pix:117993",
+  "flamingo_why-03": "pix:114157",
+  "flamingo_why-04": "pix:49718",
+  "flamingo_food-01": "pix:172625",
+  "flamingo_food-02": "pix:359872",
+  "flamingo_food-03": "pix:109019",
+  "fish-01": "pix:220601",
+  "fish-02": "pix:3734",
+  "fish-03": "pix:244839",
+  "fish-04": "pix:371747",
+  "fragile-01": "pix:89769",
+  "fragile-02": "pix:89835",
+  "fragile-03": "pix:128925",
+  "fragile-04": "pix:128924",
+  "threat-01": "pix:234016",
+  "threat-02": "pix:216060",
+  "threat-03": "pix:120998",
+  "threat-04": "pix:174860",
+  "threat-05": "pix:290531",
+  "finale-01": "pix:21488",
+  "finale-02": "pix:63736",
+  "finale-03": "pix:13456",
+  "finale-04": "pix:140111",
+  "finale-05": "pix:217540",
+  "finale-06": "pix:83096",
+  "finale-07": "pix:292151",
+  "finale-08": "pix:83098"
  }
 }

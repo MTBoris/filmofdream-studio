@@ -2,7 +2,7 @@
 
     python scripts/sb_plan.py PLAN.json TIMELINE.json OUT_STORYBOARD.json
 
-PLAN: {"stock_profile": "...", "max_shot": 8, "fallback": [queries...],
+PLAN: {"stock_profile": "...", "max_shot": 8, "fallback": [queries...], "picks": {shot_id: "pix:123"},
        "scenes": {name: {"queries": [q1, q2, ...], "overlays": [{"template", "data", "cue", "nth"?}, ...]}}}
 For every narration scene the real length is split into n = ceil(len / max_shot) shots of equal length (the last one "rest").
 Each overlay is put on the shot that contains the moment its cue is spoken; if two overlays land in one shot, the
@@ -100,6 +100,9 @@ def main(plan_path, tl_path, out_path):
     for name, (w0, w1) in win.items():
         spec = plan["scenes"][name]
         shots = scene_shots(name, w0, w1, spec, words, max_shot, plan.get("fallback", []))
+        for sh in shots:   # clips chosen after looking at the candidate sheets
+            if sh["id"] in (plan.get("picks") or {}):
+                sh["pick"] = plan["picks"][sh["id"]]
         scenes.append({"scene": name, "duration": round(w1 - w0, 2), "shots": shots})
     sb = {"version": 2, "stock_profile": plan.get("stock_profile", "open-water"), "assets": plan.get("assets", {}), "scenes": scenes}
     json.dump(sb, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

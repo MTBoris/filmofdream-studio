@@ -24,7 +24,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.19
+     "dur": 7.19,
+     "pick": "pix:65801"
     },
     {
      "id": "hook-02",
@@ -43,7 +44,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.19
+     "dur": 7.19,
+     "pick": "pix:290740"
     },
     {
      "id": "hook-03",
@@ -62,7 +64,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:190097"
     }
    ]
   },
@@ -94,7 +97,8 @@
        "group": false,
        "label": "снимки облетели мир"
       }
-     }
+     },
+     "pick": "pix:120394"
     },
     {
      "id": "hook_question-02",
@@ -111,7 +115,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.86
+     "dur": 5.86,
+     "pick": "pix:239675"
     },
     {
      "id": "hook_question-03",
@@ -128,7 +133,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:153367"
     }
    ]
   },
@@ -216,7 +222,8 @@
         }
        ]
       }
-     }
+     },
+     "pick": "pix:260654"
     },
     {
      "id": "locator-02",
@@ -232,7 +239,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:302163"
     }
    ]
   },
@@ -265,7 +273,8 @@
        "unit": "м",
        "label": "глубина"
       }
-     }
+     },
+     "pick": "pix:352978"
     },
     {
      "id": "shallow-02",
@@ -292,7 +301,8 @@
        "unit": "км",
        "label": "ширина"
       }
-     }
+     },
+     "pick": "pix:206379"
     },
     {
      "id": "shallow-03",
@@ -310,7 +320,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.55
+     "dur": 6.55,
+     "pick": "pix:381413"
     },
     {
      "id": "shallow-04",
@@ -328,7 +339,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.55
+     "dur": 6.55,
+     "pick": "pix:384608"
     },
     {
      "id": "shallow-05",
@@ -346,7 +358,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:383425"
     }
    ]
   },
@@ -380,7 +393,8 @@
        "text": "Карбонат натрия",
        "sub": "сода · природная форма — натрон"
       }
-     }
+     },
+     "pick": "pix:128114"
     },
     {
      "id": "chemistry-02",
@@ -400,7 +414,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.68
+     "dur": 6.68,
+     "pick": "pix:128192"
     },
     {
      "id": "chemistry-03",
@@ -438,7 +453,8 @@
         }
        ]
       }
-     }
+     },
+     "pick": "pix:348106"
     },
     {
      "id": "chemistry-04",
@@ -458,7 +474,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.62
+     "dur": 6.62,
+     "pick": "pix:276144"
     },
     {
      "id": "chemistry-05",
@@ -478,7 +495,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.62
+     "dur": 6.62,
+     "pick": "pix:79896"
     },
     {
      "id": "chemistry-06",
@@ -498,7 +516,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:311478"
     }
    ]
   },
@@ -523,7 +542,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.02
+     "dur": 5.02,
+     "pick": "pix:113622"
     },
     {
      "id": "heat-02",
@@ -551,7 +571,8 @@
        "unit": "°C",
        "label": "вода на мелководье"
       }
-     }
+     },
+     "pick": "pix:43293"
     },
     {
      "id": "heat-03",
@@ -570,7 +591,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:206376"
     }
    ]
   },
@@ -597,7 +619,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.86
+     "dur": 6.86,
+     "pick": "pix:371741"
     },
     {
      "id": "red_water-02",
@@ -618,7 +641,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.86
+     "dur": 6.86,
+     "pick": "pix:381987"
     },
     {
      "id": "red_water-03",
@@ -647,7 +671,8 @@
        "text": "галоархеи · цианобактерии",
        "sub": "микробы, которые любят соль"
       }
-     }
+     },
+     "pick": "pix:371740"
     },
     {
      "id": "red_water-04",
@@ -668,7 +693,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.86
+     "dur": 6.86,
+     "pick": "pix:314356"
     },
     {
      "id": "red_water-05",
@@ -689,7 +715,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.86
+     "dur": 6.86,
+     "pick": "pix:369676"
     },
     {
      "id": "red_water-06",
@@ -710,7 +737,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.86
+     "dur": 6.86,
+     "pick": "pix:314357"
     },
     {
      "id": "red_water-07",
@@ -731,7 +759,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:15779"
     }
    ]
   },
@@ -754,7 +783,8 @@
       "birds",
       "nature"
      ],
-     "dur": 3.61
+     "dur": 3.61,
+     "pick": "pix:5634"
     },
     {
      "id": "photographer-02",
@@ -779,7 +809,8 @@
        "text": "Ник Брандт",
        "sub": "книга 2013 года"
       }
-     }
+     },
+     "pick": "pix:70877"
     }
    ]
   },
@@ -805,7 +836,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.47
+     "dur": 5.47,
+     "pick": "pix:44653"
     },
     {
      "id": "shoreline-02",
@@ -825,7 +857,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.47
+     "dur": 5.47,
+     "pick": "pix:258819"
     },
     {
      "id": "shoreline-03",
@@ -845,7 +878,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.47
+     "dur": 5.47,
+     "pick": "pix:128853"
     },
     {
      "id": "shoreline-04",
@@ -873,7 +907,8 @@
        "text": "«Живые — даже после смерти»",
        "sub": "замысел Ника Брандта (пересказ)"
       }
-     }
+     },
+     "pick": "pix:198837"
     },
     {
      "id": "shoreline-05",
@@ -893,7 +928,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:75334"
     }
    ]
   },
@@ -918,7 +954,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.13
+     "dur": 7.13,
+     "pick": "pix:79894"
     },
     {
      "id": "not_stone-02",
@@ -937,7 +974,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.13
+     "dur": 7.13,
+     "pick": "pix:281970"
     },
     {
      "id": "not_stone-03",
@@ -964,7 +1002,8 @@
        "text": "Не камень",
        "sub": "высушенное тело в корке солей"
       }
-     }
+     },
+     "pick": "pix:82325"
     }
    ]
   },
@@ -989,7 +1028,8 @@
       "birds",
       "nature"
      ],
-     "dur": 4.78
+     "dur": 4.78,
+     "pick": "pix:26085"
     },
     {
      "id": "egypt-02",
@@ -1008,7 +1048,8 @@
       "birds",
       "nature"
      ],
-     "dur": 4.78
+     "dur": 4.78,
+     "pick": "pix:222163"
     },
     {
      "id": "egypt-03",
@@ -1035,7 +1076,8 @@
        "text": "натрон = карбонат натрия",
        "sub": "им сушили тела в Древнем Египте"
       }
-     }
+     },
+     "pick": "pix:16139"
     },
     {
      "id": "egypt-04",
@@ -1054,7 +1096,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:92837"
     }
    ]
   },
@@ -1080,7 +1123,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.9
+     "dur": 5.9,
+     "pick": "pix:188595"
     },
     {
      "id": "how_they_die-02",
@@ -1100,7 +1144,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.9
+     "dur": 5.9,
+     "pick": "pix:4225"
     },
     {
      "id": "how_they_die-03",
@@ -1120,7 +1165,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.9
+     "dur": 5.9,
+     "pick": "pix:119242"
     },
     {
      "id": "how_they_die-04",
@@ -1148,7 +1194,8 @@
        "text": "Версия, не доказано",
        "sub": "предположение Ника Брандта"
       }
-     }
+     },
+     "pick": "pix:15319"
     }
    ]
   },
@@ -1200,7 +1247,8 @@
         }
        ]
       }
-     }
+     },
+     "pick": "pix:237116"
     },
     {
      "id": "volcano-02",
@@ -1228,7 +1276,8 @@
        "text": "Единственный действующий карбонатитовый вулкан",
        "sub": "на Земле"
       }
-     }
+     },
+     "pick": "pix:150622"
     },
     {
      "id": "volcano-03",
@@ -1260,7 +1309,8 @@
        "unit": "°C",
        "label": "температура лавы"
       }
-     }
+     },
+     "pick": "pix:50782"
     },
     {
      "id": "volcano-04",
@@ -1280,7 +1330,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:351831"
     }
    ]
   },
@@ -1304,7 +1355,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.43
+     "dur": 6.43,
+     "pick": "pix:214630"
     },
     {
      "id": "flamingo_arrive-02",
@@ -1331,7 +1383,8 @@
        "unit": "%",
        "label": "малых фламинго мира"
       }
-     }
+     },
+     "pick": "pix:367097"
     },
     {
      "id": "flamingo_arrive-03",
@@ -1358,7 +1411,8 @@
        "unit": "млн",
        "label": "птиц"
       }
-     }
+     },
+     "pick": "pix:304021"
     }
    ]
   },
@@ -1383,7 +1437,8 @@
       "birds",
       "nature"
      ],
-     "dur": 4.12
+     "dur": 4.12,
+     "pick": "pix:75747"
     },
     {
      "id": "flamingo_why-02",
@@ -1410,7 +1465,8 @@
        "text": "Гнёзда на соляных островках",
        "sub": "хищникам не дойти по едкой воде"
       }
-     }
+     },
+     "pick": "pix:117993"
     },
     {
      "id": "flamingo_why-03",
@@ -1429,7 +1485,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.0
+     "dur": 6.0,
+     "pick": "pix:114157"
     },
     {
      "id": "flamingo_why-04",
@@ -1448,7 +1505,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:49718"
     }
    ]
   },
@@ -1472,7 +1530,8 @@
       "birds",
       "nature"
      ],
-     "dur": 3.92
+     "dur": 3.92,
+     "pick": "pix:172625"
     },
     {
      "id": "flamingo_food-02",
@@ -1490,7 +1549,8 @@
       "birds",
       "nature"
      ],
-     "dur": 3.92
+     "dur": 3.92,
+     "pick": "pix:359872"
     },
     {
      "id": "flamingo_food-03",
@@ -1516,7 +1576,8 @@
        "text": "Розовый цвет — из пищи",
        "sub": "пигменты микроорганизмов"
       }
-     }
+     },
+     "pick": "pix:109019"
     }
    ]
   },
@@ -1542,7 +1603,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.99
+     "dur": 6.99,
+     "pick": "pix:220601"
     },
     {
      "id": "fish-02",
@@ -1571,7 +1633,8 @@
        "label": "вида тиляпии",
        "note": "в лагунах по краям озера"
       }
-     }
+     },
+     "pick": "pix:3734"
     },
     {
      "id": "fish-03",
@@ -1591,7 +1654,8 @@
       "birds",
       "nature"
      ],
-     "dur": 6.99
+     "dur": 6.99,
+     "pick": "pix:244839"
     },
     {
      "id": "fish-04",
@@ -1611,7 +1675,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:371747"
     }
    ]
   },
@@ -1636,7 +1701,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.96
+     "dur": 5.96,
+     "pick": "pix:89769"
     },
     {
      "id": "fragile-02",
@@ -1655,7 +1721,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.96
+     "dur": 5.96,
+     "pick": "pix:89835"
     },
     {
      "id": "fragile-03",
@@ -1674,7 +1741,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.96
+     "dur": 5.96,
+     "pick": "pix:128925"
     },
     {
      "id": "fragile-04",
@@ -1706,7 +1774,8 @@
        "unit": "года",
        "label": "большой сезон гнездования"
       }
-     }
+     },
+     "pick": "pix:128924"
     }
    ]
   },
@@ -1732,7 +1801,8 @@
       "birds",
       "nature"
      ],
-     "dur": 5.6
+     "dur": 5.6,
+     "pick": "pix:234016"
     },
     {
      "id": "threat-02",
@@ -1760,7 +1830,8 @@
        "text": "Река Эвасо-Нгиро",
        "sub": "главная вода озера · течёт из Кении"
       }
-     }
+     },
+     "pick": "pix:216060"
     },
     {
      "id": "threat-03",
@@ -1780,7 +1851,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.02
+     "dur": 7.02,
+     "pick": "pix:120998"
     },
     {
      "id": "threat-04",
@@ -1800,7 +1872,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.02
+     "dur": 7.02,
+     "pick": "pix:174860"
     },
     {
      "id": "threat-05",
@@ -1820,7 +1893,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:290531"
     }
    ]
   },
@@ -1847,7 +1921,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:21488"
     },
     {
      "id": "finale-02",
@@ -1876,7 +1951,8 @@
        "title": "Камня нет",
        "subtitle": "есть сода · есть фламинго"
       }
-     }
+     },
+     "pick": "pix:63736"
     },
     {
      "id": "finale-03",
@@ -1897,7 +1973,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:13456"
     },
     {
      "id": "finale-04",
@@ -1918,7 +1995,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:140111"
     },
     {
      "id": "finale-05",
@@ -1939,7 +2017,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:217540"
     },
     {
      "id": "finale-06",
@@ -1960,7 +2039,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:83096"
     },
     {
      "id": "finale-07",
@@ -1981,7 +2061,8 @@
       "birds",
       "nature"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:292151"
     },
     {
      "id": "finale-08",
@@ -2002,7 +2083,8 @@
       "birds",
       "nature"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:83098"
     }
    ]
   }
