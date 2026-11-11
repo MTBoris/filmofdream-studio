@@ -223,7 +223,7 @@ def fact(t, D, data, ctx):
         pre, suf, dec = p2 + pre, s2 + suf, max(dec, d2)
         values = [num] if num is not None else []
     cnt = clamp01((t - 0.15) / MOT["counter_s"])
-    shown = [v * ease_out(cnt) for v in values]
+    shown = [v * ease_out(cnt) for v in values] if data.get("group", True) else list(values)   # years are shown as they are, no count-up
     grp = data.get("group", True)   # "group": false for years (2012, not 2 012)
     vtxt = pre + "–".join(fmt_num(v, dec, grp) for v in shown) + suf if values else pre
     unit = data.get("unit", "")
