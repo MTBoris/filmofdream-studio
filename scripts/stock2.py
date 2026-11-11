@@ -5,8 +5,13 @@
 
 Also dropped: clips on config/stock_blocklist.json, clips that are not 16:9, and clips whose picture has black bars
 (checked on the pixels of the preview video, and again on the full clip when it is downloaded).
-OPEN WATER ONLY: candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar) are dropped,
-except in "research ship" shots (query contains "research ship", or "vessels": true). The sheet says which rule applies.
+STOCK PROFILE (storyboard "stock_profile", default "open-water"; a shot may override it with "stock_profile"):
+  open-water   candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar) are dropped,
+               except boats in "research ship" shots (query contains "research ship", or "vessels": true).
+  nature-lake  salt/soda lakes, flamingos, birds, savanna, dry branches, salt crust, volcanoes, red/pink water are allowed;
+               boats, buildings/towns, vehicles, zoos are dropped.
+In every profile clips tagged with people/faces (COMMON_FORBID: people, person, man, woman, couple, girl, boy, ...), smoke
+(smoke bombs), houses, villages, towns, cities are dropped. The sheet says which rule applies.
 A clip is never used twice in an episode: candidates are unique across all shots, picks must be unique
 (sb2.validate_structure), and if there are not enough unique clips the shortage is REPORTED, never repeated silently.
 The search results are cached in OUTDIR/pool.json (metadata only), so re-runs do not hit the Pixabay API again.
@@ -39,6 +44,24 @@ LAND_WORDS = {"land", "rock", "rocks", "rocky", "cliff", "cliffs", "coast", "coa
 VESSEL_WORDS = {"boat", "boats", "ship", "ships", "yacht", "yachts", "sailboat", "sailboats", "sailing", "motorboat", "speedboat",
                 "ferry", "cruise", "kayak", "canoe", "fishing", "vessel", "cargo", "tanker", "liner", "catamaran", "surfing",
                 "surfer", "swimmer", "swimming", "diver", "diving"}
+# Never allowed, whatever the profile: people/faces, smoke bombs, houses/settlements.
+COMMON_FORBID = {"people", "person", "persons", "man", "men", "woman", "women", "couple", "girl", "girls", "boy", "boys", "child",
+                 "children", "kid", "kids", "human", "face", "portrait", "family", "crowd", "tourist", "tourists", "model",
+                 "smoke", "smoke bomb", "house", "houses", "village", "town", "city", "logo"}
+# nature-lake: the lake/savanna/volcano world is allowed, but not boats, buildings, roads, vehicles or captivity.
+NATURE_FORBID = {"building", "buildings", "street", "road", "car", "cars", "vehicle", "jeep", "truck", "bridge", "pier", "dock",
+                 "jetty", "harbor", "harbour", "port", "resort", "hotel", "zoo", "cage", "aquarium", "fence", "farm", "castle",
+                 "church", "lighthouse", "swimmer", "swimming", "fishing", "fisherman", "surfing", "surfer", "diver", "diving",
+                 "underwater", "snow", "ice", "winter", "christmas"}
+NATURE_ANY = {"lake", "flamingo", "flamingos", "bird", "birds", "savanna", "savannah", "africa", "volcano", "salt", "branch",
+              "tree", "water", "nature", "wildlife", "landscape", "desert"}
+PROFILES = {
+    "open-water": {"note": "Only open water: no land, rocks, coast, islands, boats (except 'research ship' shots), no people/houses; "
+                           "16:9 only, no black bars", "label": "open water only"},
+    "nature-lake": {"note": "Nature/lake: salt lakes, flamingos, birds, savanna, branches, salt crust, volcanoes, red water allowed; "
+                            "no people/faces, houses/towns, boats, vehicles, smoke, logos; 16:9 only, no black bars", "label": "nature-lake"},
+}
+DEFAULT_PROFILE = "open-water"
 BLOCKLIST_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "stock_blocklist.json")
 ASPECT = 16 / 9
 ASPECT_TOL = 0.03   # clips that are not 16:9 (within 3 %) are dropped: they come with bars or need a heavy crop
@@ -51,7 +74,14 @@ def blocklist():
         return {}
 
 
-OPEN_WATER_NOTE = "Only open water: no land, rocks, coast, islands, boats (except 'research ship' shots); 16:9 only, no black bars"
+OPEN_WATER_NOTE = PROFILES["open-water"]["note"]
+
+
+def profile_of(shot):
+    p = shot.get("stock_profile") or DEFAULT_PROFILE
+    if p not in PROFILES:
+        raise SystemExit(f"unknown stock_profile {p!r} (known: {', '.join(PROFILES)})")
+    return p
 
 
 def key():
@@ -102,7 +132,22 @@ def vessels_allowed(shot):
 
 def open_water(h, allow_vessels=False):
     w = tag_words(h)
-    return not (w & LAND_WORDS) and (allow_vessels or not (w & VESSEL_WORDS))
+    return not (w & LAND_WORDS) and not (w & COMMON_FORBID) and (allow_vessels or not (w & VESSEL_WORDS))
+
+
+def nature_lake(h):
+    w = tag_words(h)
+    return not (w & COMMON_FORBID) and not (w & VESSEL_WORDS) and not (w & NATURE_FORBID)
+
+
+def profile_ok(h, profile=DEFAULT_PROFILE, allow_vessels=False):
+    if profile == "nature-lake":
+        return nature_lake(h)
+    return open_water(h, allow_vessels)
+
+
+def shot_ok(h, shot):
+    return profile_ok(h, profile_of(shot), vessels_allowed(shot))
 
 
 def query_words(q):
@@ -125,10 +170,10 @@ def rendition(h):
     return None
 
 
-def filter_hits(hits, query, allow_vessels=False):
+def filter_hits(hits, query, allow_vessels=False, profile=DEFAULT_PROFILE):
     words = query_words(query)
     blocked = blocklist()
-    return [h for h in hits if h["id"] not in blocked and good(h, words) and rendition(h) and open_water(h, allow_vessels)]
+    return [h for h in hits if h["id"] not in blocked and good(h, words) and rendition(h) and profile_ok(h, profile, allow_vessels)]
 
 
 def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxed=False):
@@ -143,8 +188,9 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
     for s in shots:
         got = []
         allow = vessels_allowed(s)
+        prof = profile_of(s)
         for q in [s["query"]] + list(s.get("queries") or []):
-            for h in filter_hits(pool.get(q, []), q, allow):
+            for h in filter_hits(pool.get(q, []), q, allow, prof):
                 if h["id"] not in used and h["id"] not in {g["id"] for g in got} and (accept is None or accept(h)):
                     got.append(h)
                     if len(got) == n:
@@ -166,10 +212,11 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
             got = out[s["id"]]
             if got:
                 continue   # relaxed fill only guarantees ONE clip per shot, so the 231-clip pool is not used up by early shots
-            allow = vessels_allowed(s)
+            prof = profile_of(s)
+            topical = {"sea", "ocean"} if prof == "open-water" else NATURE_ANY
             words = set(query_words(s["query"]))
-            ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, []) and ({"sea", "ocean"} & tag_words(h))
-                             and rendition(h) and open_water(h, allow) and (accept is None or accept(h))),
+            ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, []) and (topical & tag_words(h))
+                             and rendition(h) and shot_ok(h, s) and (accept is None or accept(h))),
                             key=lambda h: -sum(1 for w in words if w in h.get("tags", "").lower()))
             for h in ranked[:1]:
                 got.append(h)
@@ -181,10 +228,12 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
 
 def stock_shots(sb):
     out = []
+    prof = sb.get("stock_profile") or DEFAULT_PROFILE
     for sc in sb["scenes"]:
         for k, s in enumerate(sc["shots"]):
             if s.get("type") == "stock":
-                out.append(dict(s, id=s.get("id") or f"{sc['scene']}-{k + 1}", scene=sc["scene"]))
+                out.append(dict(s, id=s.get("id") or f"{sc['scene']}-{k + 1}", scene=sc["scene"],
+                                stock_profile=s.get("stock_profile") or prof))
     return out
 
 
@@ -247,7 +296,8 @@ def make_sheets(rows, outdir, cache_dir, per_page=5):
         d = ImageDraw.Draw(im)
         for r, (shot, hits) in enumerate(chunk):
             y = r * row_h
-            rule = "research ship: boats allowed" if vessels_allowed(shot) else "open water only"
+            prof = profile_of(shot)
+            rule = PROFILES[prof]["label"] if prof != "open-water" else "research ship: boats allowed" if vessels_allowed(shot) else "open water only"
             d.text((8, y + 6), f"{shot['id']}   «{shot['query']}»   [{rule}]   {shot.get('note', '')}"[:150], font=font(18), fill=(255, 220, 90))
             for c, h in enumerate(hits):
                 x0 = c * (W // N_CANDIDATES) + 6
@@ -298,7 +348,8 @@ def cmd_candidates(sb_path, outdir):
     sheets = make_sheets(rows, outdir, cache_dir)
     summary = {sid: [{"pick": f"pix:{h['id']}", "page": h["page"], "duration": h["duration"], "tags": h["tags"]} for h in hs]
                for sid, hs in cands.items()}
-    json.dump({"rule": OPEN_WATER_NOTE, "candidates": summary, "shortage": short}, open(os.path.join(outdir, "candidates.json"), "w", encoding="utf-8"),
+    profs = sorted({profile_of(s) for s in shots}) or [DEFAULT_PROFILE]
+    json.dump({"rule": " | ".join(PROFILES[p]["note"] for p in profs), "profile": profs, "candidates": summary, "shortage": short}, open(os.path.join(outdir, "candidates.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     print(f"{len(todo)} shots need a pick; sheets: {', '.join(sheets)}")
     if short:
@@ -328,8 +379,8 @@ def cmd_fetch(sb_path, stockdir):
         r = rendition(h)
         if not r:
             sys.exit(f"{s['id']}: pix:{pid} has no 1280+ wide rendition")
-        if not open_water(h, vessels_allowed(s)):
-            print(f"WARN: {s['id']}: pix:{pid} is tagged with land/coast/boat words ({h['tags']}); the storyboard asks for open water")
+        if not shot_ok(h, s):
+            print(f"WARN: {s['id']}: pix:{pid} has tags the stock profile {profile_of(s)!r} forbids ({h['tags']})")
         path = os.path.join(stockdir, s["id"] + ".mp4")
         with urllib.request.urlopen(urllib.request.Request(r[1]["url"], headers=UA), timeout=180) as resp:
             open(path, "wb").write(resp.read())

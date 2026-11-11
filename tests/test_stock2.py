@@ -130,3 +130,39 @@ def test_relaxed_fills_shots_that_strict_matching_leaves_empty():
     out, short = stock2.assign_candidates(shots, pool, relaxed=True)
     ids = [h["id"] for h in out["a"]] + [h["id"] for h in out["b"]]
     assert len(out["b"]) == 1 and len(ids) == len(set(ids)) and not short
+
+
+def test_people_smoke_and_settlements_are_dropped_in_every_profile():
+    bad = ["ocean, waves, people", "sea, man, sunset", "sea, woman", "ocean, couple", "sea, girl", "sea, boy", "sea, smoke",
+           "sea, house", "sea, village", "sea, town", "sea, city", "sea, person"]
+    pool = [hit(i, tags=t) for i, t in enumerate(bad, 1)] + [hit(99, tags="sea, waves")]
+    assert [h["id"] for h in stock2.filter_hits(pool, "sea")] == [99]
+    lake = [hit(i, tags=t.replace("sea", "lake")) for i, t in enumerate(bad, 1)] + [hit(98, tags="lake, flamingo")]
+    assert [h["id"] for h in stock2.filter_hits(lake, "lake", profile="nature-lake")] == [98]
+
+
+def test_nature_lake_allows_lake_world_but_not_boats_or_buildings():
+    allowed = ["lake, flamingo, birds", "salt lake, aerial, red water", "savanna, africa, tree", "dry branch, bird, silhouette",
+               "volcano, crater, mountain", "salt, crust, desert", "pink lake, water, nature", "lake, shore, rocks"]
+    pool = [hit(i, tags=t) for i, t in enumerate(allowed, 1)]
+    assert len(stock2.filter_hits(pool, "", profile="nature-lake")) == len(allowed)
+    assert {1, 2, 3, 5, 8}.isdisjoint(h["id"] for h in stock2.filter_hits(pool, ""))  # open-water still rejects lake/tree/mountain/rocks
+    banned = ["lake, boat", "lake, fishing, boat", "lake, building", "savanna, jeep, safari", "flamingo, zoo", "lake, pier"]
+    assert stock2.filter_hits([hit(i, tags=t) for i, t in enumerate(banned, 1)], "", profile="nature-lake") == []
+
+
+def test_profile_comes_from_the_storyboard_and_relaxed_fill_respects_it():
+    sb = {"stock_profile": "nature-lake", "scenes": [{"scene": "a", "shots": [{"type": "stock", "query": "flamingo"},
+                                                                          {"type": "stock", "query": "ocean", "stock_profile": "open-water"}]}]}
+    shots = stock2.stock_shots(sb)
+    assert [s["stock_profile"] for s in shots] == ["nature-lake", "open-water"]
+    pool = {"flamingo": [], "ocean": [], "other": [hit(1, tags="lake, birds, people"), hit(2, tags="salt lake, birds")]}
+    out, short = stock2.assign_candidates(shots[:1], pool, relaxed=True)
+    assert [h["id"] for h in out[shots[0]["id"]]] == [2] and not short
+
+
+def test_unknown_profile_is_a_storyboard_error():
+    import sb2
+    sb = {"stock_profile": "city", "scenes": [{"scene": "a", "shots": [{"type": "stock", "query": "x", "dur": "rest"}]}]}
+    errs, _ = sb2.validate_structure(sb)
+    assert any("stock_profile" in e for e in errs)
