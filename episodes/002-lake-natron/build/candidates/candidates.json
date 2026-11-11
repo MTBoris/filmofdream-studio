@@ -1,0 +1,1649 @@
+{
+ "rule": "Nature/lake: salt lakes, flamingos, birds, savanna, branches, salt crust, volcanoes, red water allowed; no people/faces, houses/towns, boats, vehicles, smoke, logos; 16:9 only, no black bars",
+ "profile": [
+  "nature-lake"
+ ],
+ "candidates": {
+  "hook-01": [
+   {
+    "pick": "pix:65801",
+    "page": "https://pixabay.com/videos/id-65801/",
+    "duration": 8,
+    "tags": "robin, bird, perched, branch, red throat, cute, petit, beak, feathers, animal, nature"
+   },
+   {
+    "pick": "pix:142088",
+    "page": "https://pixabay.com/videos/id-142088/",
+    "duration": 17,
+    "tags": "bird, kingfisher, scalpel, branch, flying, japan"
+   },
+   {
+    "pick": "pix:113628",
+    "page": "https://pixabay.com/videos/id-113628/",
+    "duration": 31,
+    "tags": "bird, hoopoe, animal, tree, branch, forest, nature"
+   }
+  ],
+  "hook-02": [
+   {
+    "pick": "pix:292575",
+    "page": "https://pixabay.com/videos/id-292575/",
+    "duration": 49,
+    "tags": "sunset, nature, sky, dusk, sun, beach, sea, seagull, bird, wildlife, gull, silhouette"
+   },
+   {
+    "pick": "pix:288095",
+    "page": "https://pixabay.com/videos/id-288095/",
+    "duration": 49,
+    "tags": "seagull, bird, wildlife, sea, gull, plumage, sky, fauna, beach, silhouette, sun, sunset, nature"
+   },
+   {
+    "pick": "pix:290740",
+    "page": "https://pixabay.com/videos/id-290740/",
+    "duration": 49,
+    "tags": "seagull, nature, bird, animal, wildlife, gull, sun, sunset, orange, silhouette, relaxing"
+   }
+  ],
+  "hook-03": [
+   {
+    "pick": "pix:2797",
+    "page": "https://pixabay.com/videos/id-2797/",
+    "duration": 14,
+    "tags": "bullfinch, male, bird, nature, red, finch, spring, avian, colorful, plumage, beak, springtime, perched, birdwatching, outdoors, perching, feeding, tree, bark"
+   },
+   {
+    "pick": "pix:171255",
+    "page": "https://pixabay.com/videos/id-171255/",
+    "duration": 31,
+    "tags": "toucan, bird, tree, green, colorful bird, long-billed bird"
+   },
+   {
+    "pick": "pix:190097",
+    "page": "https://pixabay.com/videos/id-190097/",
+    "duration": 32,
+    "tags": "bird, tree, forest, nature"
+   }
+  ],
+  "hook_question-01": [
+   {
+    "pick": "pix:109018",
+    "page": "https://pixabay.com/videos/id-109018/",
+    "duration": 16,
+    "tags": "flamingo, flamingo bird, animal, bird, birds"
+   },
+   {
+    "pick": "pix:120394",
+    "page": "https://pixabay.com/videos/id-120394/",
+    "duration": 21,
+    "tags": "flamingo, water bird, bird, exotic, plumage, wildlife"
+   },
+   {
+    "pick": "pix:49459",
+    "page": "https://pixabay.com/videos/id-49459/",
+    "duration": 22,
+    "tags": "flamingo, pink, animal, birds, feeder, pond, water, plants, ducks, nature"
+   }
+  ],
+  "hook_question-02": [
+   {
+    "pick": "pix:163869",
+    "page": "https://pixabay.com/videos/id-163869/",
+    "duration": 28,
+    "tags": "flower, water lilies, lake, aquatic plants, wind, nature, pink"
+   },
+   {
+    "pick": "pix:239675",
+    "page": "https://pixabay.com/videos/id-239675/",
+    "duration": 24,
+    "tags": "pink lake, salt lake, salt, tree, clouds, lake, pink, nature, landscape"
+   },
+   {
+    "pick": "pix:135407",
+    "page": "https://pixabay.com/videos/id-135407/",
+    "duration": 13,
+    "tags": "flamingo, pink, bird, lake, water, animal"
+   }
+  ],
+  "hook_question-03": [
+   {
+    "pick": "pix:153367",
+    "page": "https://pixabay.com/videos/id-153367/",
+    "duration": 15,
+    "tags": "flamingos, birds, flock, water, wild, animals, exotic, the needle, tropical, park, fauna, nature"
+   },
+   {
+    "pick": "pix:153373",
+    "page": "https://pixabay.com/videos/id-153373/",
+    "duration": 26,
+    "tags": "flamingos, birds, flock, water, wild, animal, exotic, the needle, beak, tropical, park, feather, fauna, nature"
+   },
+   {
+    "pick": "pix:153371",
+    "page": "https://pixabay.com/videos/id-153371/",
+    "duration": 16,
+    "tags": "flamingos, birds, flock, water, wild, animal, exotic, the needle, beak, tropical, park, feather, fauna, nature"
+   }
+  ],
+  "locator-01": [
+   {
+    "pick": "pix:260654",
+    "page": "https://pixabay.com/videos/id-260654/",
+    "duration": 42,
+    "tags": "zebra, nature, animal, wildlife, mammal, safari, africa, fauna, species, horse, savanna"
+   },
+   {
+    "pick": "pix:258883",
+    "page": "https://pixabay.com/videos/id-258883/",
+    "duration": 24,
+    "tags": "zebra, animal, wildlife, mammal, safari, striped, equine, wild, stripes, fauna, wilderness, species, savanna, head, black-and-white, nature"
+   },
+   {
+    "pick": "pix:70861",
+    "page": "https://pixabay.com/videos/id-70861/",
+    "duration": 11,
+    "tags": "giraffe, herbivore, mammal, camelopardalis, safari, african, conservation, ecology, savanna, wilderness, habitat, wildlife"
+   }
+  ],
+  "locator-02": [
+   {
+    "pick": "pix:302163",
+    "page": "https://pixabay.com/videos/id-302163/",
+    "duration": 31,
+    "tags": "africa, south africa, nature, drone, landscape, flight, mountains, sky, travel, field"
+   },
+   {
+    "pick": "pix:302189",
+    "page": "https://pixabay.com/videos/id-302189/",
+    "duration": 24,
+    "tags": "africa, south africa, nature, drone, landscape, flight, travel, sky, sea, ocean, shore"
+   },
+   {
+    "pick": "pix:302190",
+    "page": "https://pixabay.com/videos/id-302190/",
+    "duration": 27,
+    "tags": "africa, south africa, nature, drone, landscape, flight, travel, sky, sea, ocean, shore"
+   }
+  ],
+  "shallow-01": [
+   {
+    "pick": "pix:275593",
+    "page": "https://pixabay.com/videos/id-275593/",
+    "duration": 12,
+    "tags": "aerial view, salt lake, shoreline, nature, landscape, dry, salt, bushland, australia, dirt track"
+   },
+   {
+    "pick": "pix:371741",
+    "page": "https://pixabay.com/videos/id-371741/",
+    "duration": 12,
+    "tags": "salt lake, aerial view, nature, drone, aerial, water, outdoors, reflection, salt, clouds, tranquil, scenery, peaceful, lake, calm, lake shore, landscape"
+   },
+   {
+    "pick": "pix:381987",
+    "page": "https://pixabay.com/videos/id-381987/",
+    "duration": 19,
+    "tags": "salt lake, pink, lake, aerial view, drone video, outdoors, nature, calm, australia, outback, landscape, bush"
+   }
+  ],
+  "shallow-02": [
+   {
+    "pick": "pix:371424",
+    "page": "https://pixabay.com/videos/id-371424/",
+    "duration": 14,
+    "tags": "nature, landscape, lake, aerial, drone, water, mountains, forest, natural"
+   },
+   {
+    "pick": "pix:5747",
+    "page": "https://pixabay.com/videos/id-5747/",
+    "duration": 45,
+    "tags": "lake, calm, drone, mountains, trees, nature, landscape, aerial"
+   },
+   {
+    "pick": "pix:176796",
+    "page": "https://pixabay.com/videos/id-176796/",
+    "duration": 15,
+    "tags": "lake, crossroads, swamp, aerial video, vfx"
+   }
+  ],
+  "shallow-03": [
+   {
+    "pick": "pix:16767",
+    "page": "https://pixabay.com/videos/id-16767/",
+    "duration": 44,
+    "tags": "green pond, shallow bottom, nature, aerial view, shallow, lake, drones flying, fly, sky, drone, water, landscape, sun, field, tree, horizon, colorful, peaceful, clear, bottom, summer, outdoor, reflection, pine trees, radio towers"
+   },
+   {
+    "pick": "pix:311205",
+    "page": "https://pixabay.com/videos/id-311205/",
+    "duration": 8,
+    "tags": "aerial, drone footage, landscape, nature, lake, pond, reservoir, green water, shallow, drought, top view, forest, reflection, sun glare, geography, patterns, environmental, texture"
+   },
+   {
+    "pick": "pix:352978",
+    "page": "https://pixabay.com/videos/id-352978/",
+    "duration": 17,
+    "tags": "salt lake, aerial view, nature, landscape, beautiful, shoreline, water, color, lake, salinity, pattern, white salt, green water"
+   }
+  ],
+  "shallow-04": [
+   {
+    "pick": "pix:381413",
+    "page": "https://pixabay.com/videos/id-381413/",
+    "duration": 17,
+    "tags": "salt lake, color, lake, pattern, nature, outdoors, drone video, water, australia, outback, salt, sand, barren"
+   },
+   {
+    "pick": "pix:206379",
+    "page": "https://pixabay.com/videos/id-206379/",
+    "duration": 13,
+    "tags": "lake, salt lake, sunset, lake tyrell, nature"
+   },
+   {
+    "pick": "pix:128114",
+    "page": "https://pixabay.com/videos/id-128114/",
+    "duration": 11,
+    "tags": "salt, lake, mountains, uyuni, bolivia, drone, nature, sun"
+   }
+  ],
+  "shallow-05": [
+   {
+    "pick": "pix:199294",
+    "page": "https://pixabay.com/videos/id-199294/",
+    "duration": 14,
+    "tags": "forest, drone, autumn, lake, holland"
+   },
+   {
+    "pick": "pix:360527",
+    "page": "https://pixabay.com/videos/id-360527/",
+    "duration": 17,
+    "tags": "nature, landscape, water, mountains, forest, lake, flying, drone"
+   },
+   {
+    "pick": "pix:13132",
+    "page": "https://pixabay.com/videos/id-13132/",
+    "duration": 12,
+    "tags": "drone flight, drone, lake, bavaria, bavarian forest, aerial view, movie, video"
+   }
+  ],
+  "chemistry-01": [
+   {
+    "pick": "pix:384608",
+    "page": "https://pixabay.com/videos/id-384608/",
+    "duration": 21,
+    "tags": "salt lake, green, aerial view, drone video, nature, landscape, water, flat lands, calm, still, tranquil, outdoors"
+   },
+   {
+    "pick": "pix:140428",
+    "page": "https://pixabay.com/videos/id-140428/",
+    "duration": 25,
+    "tags": "salt flats, camera, photographer, utah, outdoors, adventure, travel, sky, landscape"
+   },
+   {
+    "pick": "pix:140469",
+    "page": "https://pixabay.com/videos/id-140469/",
+    "duration": 20,
+    "tags": "salt flats, adventure, utah, water, scenic, sky, landscape, nature"
+   }
+  ],
+  "chemistry-02": [
+   {
+    "pick": "pix:140470",
+    "page": "https://pixabay.com/videos/id-140470/",
+    "duration": 20,
+    "tags": "adventure, utah, salt flats, water, scenic, sky, landscape, nature"
+   },
+   {
+    "pick": "pix:140471",
+    "page": "https://pixabay.com/videos/id-140471/",
+    "duration": 10,
+    "tags": "rock, lake, adventure, utah, salt flats, water, scenic, sky, landscape, nature"
+   },
+   {
+    "pick": "pix:140472",
+    "page": "https://pixabay.com/videos/id-140472/",
+    "duration": 15,
+    "tags": "salt flats, adventure, utah, water, scenic, sky, landscape, nature"
+   }
+  ],
+  "chemistry-03": [
+   {
+    "pick": "pix:206376",
+    "page": "https://pixabay.com/videos/id-206376/",
+    "duration": 5,
+    "tags": "lake, salt lake, sunset, lake tyrell, nature"
+   },
+   {
+    "pick": "pix:276144",
+    "page": "https://pixabay.com/videos/id-276144/",
+    "duration": 28,
+    "tags": "salt lake, dry, lake, scenic, scenery, aerial view, landscape, salt bed, australia, morning sun, sunrise, peaceful, nature"
+   },
+   {
+    "pick": "pix:348106",
+    "page": "https://pixabay.com/videos/id-348106/",
+    "duration": 21,
+    "tags": "salt lake, aerial view, nature, salt, outdoors, landscape, travel, western australia, lake bed, lake, scenic"
+   }
+  ],
+  "chemistry-04": [
+   {
+    "pick": "pix:276152",
+    "page": "https://pixabay.com/videos/id-276152/",
+    "duration": 29,
+    "tags": "dirt track, aerial view, lake shore, summer, nature, shore, bush track, australia, sand, salt lake shore, salt, bushland"
+   },
+   {
+    "pick": "pix:208207",
+    "page": "https://pixabay.com/videos/id-208207/",
+    "duration": 20,
+    "tags": "lake, qinghai lake, qinghai, gansu, scenery, salt lake"
+   },
+   {
+    "pick": "pix:128192",
+    "page": "https://pixabay.com/videos/id-128192/",
+    "duration": 14,
+    "tags": "lake, salt, bolivia, uyuni, water, nature, island, drone, travel"
+   }
+  ],
+  "chemistry-05": [
+   {
+    "pick": "pix:244535",
+    "page": "https://pixabay.com/videos/id-244535/",
+    "duration": 19,
+    "tags": "sea, ocean, waves, water, salt water, california, pacific ocean, texture, nature"
+   },
+   {
+    "pick": "pix:208208",
+    "page": "https://pixabay.com/videos/id-208208/",
+    "duration": 57,
+    "tags": "lake, qinghai lake, qinghai china, xining, scenery, blue sky, qinghai-tibet plateau, chaka salt lake"
+   },
+   {
+    "pick": "pix:371747",
+    "page": "https://pixabay.com/videos/id-371747/",
+    "duration": 18,
+    "tags": "lake shore, clouds, shoreline, aerial view, drone, aerial, landscape, water, outdoors, nature, salt lake, brown water, lake, beach"
+   }
+  ],
+  "chemistry-06": [
+   {
+    "pick": "pix:11642",
+    "page": "https://pixabay.com/videos/id-11642/",
+    "duration": 54,
+    "tags": "chop, herbs, food, meat, meal, fresh, cooking, dinner, ingredient, pepper, raw, red, gourmet, board, wooden, green, cuisine, preparation, eating, beef, cut, salt, steak, healthy, uncooked, spice, white, grill, grilled, rosemary, organic, kitchen"
+   },
+   {
+    "pick": "pix:314356",
+    "page": "https://pixabay.com/videos/id-314356/",
+    "duration": 39,
+    "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, asia, cappadocia, sun, drone, 4k"
+   },
+   {
+    "pick": "pix:314358",
+    "page": "https://pixabay.com/videos/id-314358/",
+    "duration": 37,
+    "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, salty, asia, cappadocia, sun, drone, 4k"
+   }
+  ],
+  "heat-01": [
+   {
+    "pick": "pix:43293",
+    "page": "https://pixabay.com/videos/id-43293/",
+    "duration": 20,
+    "tags": "antelope, pronghorn, mammal, wildlife, nature, outdoors, wilderness, horns, animal, wild, scenic, stag, environment, utah, alone, running, heat, desert, arid, dry, majestic, american, sand, summer"
+   },
+   {
+    "pick": "pix:47126",
+    "page": "https://pixabay.com/videos/id-47126/",
+    "duration": 8,
+    "tags": "sun, sky, hot sun, sunrise, sunlight, summer, nature, clouds"
+   },
+   {
+    "pick": "pix:95080",
+    "page": "https://pixabay.com/videos/id-95080/",
+    "duration": 8,
+    "tags": "trees, forest, sun, sunset, movement, nature, leaves, autumn, colors, summer, hot, chestnuts, edible, ancient"
+   }
+  ],
+  "heat-02": [
+   {
+    "pick": "pix:95419",
+    "page": "https://pixabay.com/videos/id-95419/",
+    "duration": 11,
+    "tags": "tree, pine tree, branches, trunk, green, sun, rays, movement, colors, nature, forest, nice, summer, hot, leaves"
+   },
+   {
+    "pick": "pix:123763",
+    "page": "https://pixabay.com/videos/id-123763/",
+    "duration": 59,
+    "tags": "beach, view, summer, holiday, sunset, sun, sunny, daytime, evening, romantic, trip, tropical, hot, sea, ocean, to swim, that, sky, background, nature, umbrella, beautiful wallpaper, sunbed"
+   },
+   {
+    "pick": "pix:10287",
+    "page": "https://pixabay.com/videos/id-10287/",
+    "duration": 16,
+    "tags": "nature, seascape, tide, cove, blue, north landing, flamborough, bridlington, yorkshire, uk, england, pebbles, cliffs, chalk, beach, still, clouds, blue sky, tourism, shore, coastal, seaweed, tidal, scenic, cliff, sea, coast, water, coastline, rock, ocean, sand, sky, bay, landscape, peaceful, vacation, spring, hot, warm, welcoming, travel, sunny, holiday, tranquil, natural, relax, scenery, calm, sun"
+   }
+  ],
+  "heat-03": [
+   {
+    "pick": "pix:113622",
+    "page": "https://pixabay.com/videos/id-113622/",
+    "duration": 10,
+    "tags": "desert, earphones, nature, africa, sweetcorn, hot, sahara, algeria, trip, sun, earth, sunrise, soil, pyramid, pyramids, islamic, antique, bedouin, tunisia, mosque, morocco, arab, arabia, islam, mecca, muslim, saudi"
+   },
+   {
+    "pick": "pix:38316",
+    "page": "https://pixabay.com/videos/id-38316/",
+    "duration": 16,
+    "tags": "spa, hot tub, water, pool, relax, swim, bathroom, luxury, massage, therapy, wet, holiday, jacuzzi, sun, blue, wash, relaxation"
+   },
+   {
+    "pick": "pix:201284",
+    "page": "https://pixabay.com/videos/id-201284/",
+    "duration": 16,
+    "tags": "desert, sand, sandboarding, sandboard, hot weather, sunny weather, drought, sun, wind, drone, drone view, aerial, outdoor, outside, africa, sahara, travel, morocco, landscape"
+   }
+  ],
+  "red_water-01": [
+   {
+    "pick": "pix:28664",
+    "page": "https://pixabay.com/videos/id-28664/",
+    "duration": 15,
+    "tags": "autumn, orange, pink, yellow, green, color change, maine, season, drone, aerial video, sunset, trees, stream, water, lake, lakeside, fall, island"
+   },
+   {
+    "pick": "pix:61965",
+    "page": "https://pixabay.com/videos/id-61965/",
+    "duration": 15,
+    "tags": "lotus, pink, flower, bloom, blossom, nature, pond, summer, water, green, leaf, garden, lily, lake, natural, plants"
+   },
+   {
+    "pick": "pix:92738",
+    "page": "https://pixabay.com/videos/id-92738/",
+    "duration": 30,
+    "tags": "flowers, pond, purple, pink, green, nature, pretty, relaxing, peaceful, wind, grass, stream, river, lake, bird, reed, marsh"
+   }
+  ],
+  "red_water-02": [
+   {
+    "pick": "pix:15779",
+    "page": "https://pixabay.com/videos/id-15779/",
+    "duration": 6,
+    "tags": "sunset, clouds, lake, red, evening atmosphere, eve, water, shining, heaven, sun, evening sky, setting sun, lichtspiel, reflection, play of colors, lighting mood, to dye, mood, romantic, dusk, landscape, nature, afterglow"
+   },
+   {
+    "pick": "pix:132146",
+    "page": "https://pixabay.com/videos/id-132146/",
+    "duration": 13,
+    "tags": "lake, trees, forest, water, mountains, blue sky, autumn, red leaves, nature"
+   },
+   {
+    "pick": "pix:15588",
+    "page": "https://pixabay.com/videos/id-15588/",
+    "duration": 14,
+    "tags": "duck, beak, red, eye, waters, bird, nature, lake"
+   }
+  ],
+  "red_water-03": [
+   {
+    "pick": "pix:371740",
+    "page": "https://pixabay.com/videos/id-371740/",
+    "duration": 18,
+    "tags": "salt lake, pattern, aerial view, nature, drone, aerial, water, outdoors, reflections, clouds, landscape, dramatic, calm"
+   },
+   {
+    "pick": "pix:383425",
+    "page": "https://pixabay.com/videos/id-383425/",
+    "duration": 15,
+    "tags": "aerial view, salt lake, nature, dji, landscape, still waters, peace, water, lake, calm, green"
+   },
+   {
+    "pick": "pix:369676",
+    "page": "https://pixabay.com/videos/id-369676/",
+    "duration": 15,
+    "tags": "salt lake, green water, nature, water, lake, scenery, shoreline, colors, aerial view, drone photography"
+   }
+  ],
+  "red_water-04": [
+   {
+    "pick": "pix:218113",
+    "page": "https://pixabay.com/videos/id-218113/",
+    "duration": 18,
+    "tags": "water lily, flowers, blossom, bloom, pink, leaves, pond, water, wind, nature"
+   },
+   {
+    "pick": "pix:115000",
+    "page": "https://pixabay.com/videos/id-115000/",
+    "duration": 18,
+    "tags": "flamingo, bird, pink, pond, water, water bird, exotic, wildlife"
+   },
+   {
+    "pick": "pix:218114",
+    "page": "https://pixabay.com/videos/id-218114/",
+    "duration": 15,
+    "tags": "water lily, flower, blossom, bloom, pink, nature, leaves, pond, wind"
+   }
+  ],
+  "red_water-05": [
+   {
+    "pick": "pix:306155",
+    "page": "https://pixabay.com/videos/id-306155/",
+    "duration": 12,
+    "tags": "sun, seascape, water, sunset, sea, horizon, red, ocean, reflection, calm, tranquil scene, peaceful, calmness, calming, peace"
+   },
+   {
+    "pick": "pix:165179",
+    "page": "https://pixabay.com/videos/id-165179/",
+    "duration": 23,
+    "tags": "water lilies, wind, wave, red water lily, aquatic plants, pond, nature"
+   },
+   {
+    "pick": "pix:276628",
+    "page": "https://pixabay.com/videos/id-276628/",
+    "duration": 34,
+    "tags": "flowers, red plum, bird, white-eye, rain, water drops, honey sucking, spring"
+   }
+  ],
+  "red_water-06": [
+   {
+    "pick": "pix:124194",
+    "page": "https://pixabay.com/videos/id-124194/",
+    "duration": 15,
+    "tags": "cliff, waterfall, rocks, ocean, drops, trickle, algae"
+   },
+   {
+    "pick": "pix:218829",
+    "page": "https://pixabay.com/videos/id-218829/",
+    "duration": 12,
+    "tags": "swan, lake, water, animal, meal, algae, swims, beautiful, nature, bird, water bird, reflection"
+   },
+   {
+    "pick": "pix:213950",
+    "page": "https://pixabay.com/videos/id-213950/",
+    "duration": 28,
+    "tags": "tadpoles, frog, pond, water, newt, algae, moss, weed, nature"
+   }
+  ],
+  "red_water-07": [
+   {
+    "pick": "pix:168802",
+    "page": "https://pixabay.com/videos/id-168802/",
+    "duration": 14,
+    "tags": "lake, fields, aerial view, poland"
+   },
+   {
+    "pick": "pix:38370",
+    "page": "https://pixabay.com/videos/id-38370/",
+    "duration": 14,
+    "tags": "mountain, bavaria, view, landscape, aerial, drone, drone footage, lake, germany, alps"
+   },
+   {
+    "pick": "pix:5748",
+    "page": "https://pixabay.com/videos/id-5748/",
+    "duration": 12,
+    "tags": "lake, turquoise, water, nature, drone, mountains, trees, landscape, green, aerial"
+   }
+  ],
+  "photographer-01": [
+   {
+    "pick": "pix:5634",
+    "page": "https://pixabay.com/videos/id-5634/",
+    "duration": 13,
+    "tags": "africa, animals, wilderness, wildlife, herd, flock, grassing, savanna, reserve, environment, summer, herbivore, kenya"
+   },
+   {
+    "pick": "pix:70877",
+    "page": "https://pixabay.com/videos/id-70877/",
+    "duration": 12,
+    "tags": "elephant, animal, safari, africa, mammal, savanna, nature, water, african, ear, herbivore, ivory, pachyderm, wildlife, big, drinking, large, namibia, savannah, south, wild, national, trunk, beautiful"
+   },
+   {
+    "pick": "pix:230118",
+    "page": "https://pixabay.com/videos/id-230118/",
+    "duration": 5,
+    "tags": "ostrich, sunset, safari, south africa, durban, bush, plains, green, blue sky, grass, savannah, africa, grazing, graminivore, indian ocean, water, evening, savanna, prairie, trees, zebras, wild, wild animals, animals"
+   }
+  ],
+  "photographer-02": [
+   {
+    "pick": "pix:28095",
+    "page": "https://pixabay.com/videos/id-28095/",
+    "duration": 54,
+    "tags": "flower of the acacia, tree, flower, acacia, spring, nature, branch, flowering, foliage, white, petal, flora, beautiful, flowers"
+   },
+   {
+    "pick": "pix:69210",
+    "page": "https://pixabay.com/videos/id-69210/",
+    "duration": 12,
+    "tags": "flowers, tree, shrub, mimosa, flowering, acacia, mimosa flower, silver wattle, acacia dealbata"
+   },
+   {
+    "pick": "pix:46334",
+    "page": "https://pixabay.com/videos/id-46334/",
+    "duration": 20,
+    "tags": "acacia, tree, wind, leaves, sky, nature, summer"
+   }
+  ],
+  "shoreline-01": [
+   {
+    "pick": "pix:165069",
+    "page": "https://pixabay.com/videos/id-165069/",
+    "duration": 25,
+    "tags": "bird, stieglitz, plumage, construction pole, branch, bird watching, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:36989",
+    "page": "https://pixabay.com/videos/id-36989/",
+    "duration": 19,
+    "tags": "sparrows, branch, tree, bird"
+   },
+   {
+    "pick": "pix:44653",
+    "page": "https://pixabay.com/videos/id-44653/",
+    "duration": 27,
+    "tags": "red whiskered bulbul bird, wildlife, branch, animal, cute"
+   }
+  ],
+  "shoreline-02": [
+   {
+    "pick": "pix:258819",
+    "page": "https://pixabay.com/videos/id-258819/",
+    "duration": 15,
+    "tags": "bird, pigeon, turtledove, stopped, branch, down, natural"
+   },
+   {
+    "pick": "pix:188779",
+    "page": "https://pixabay.com/videos/id-188779/",
+    "duration": 18,
+    "tags": "bird, sperling, branch, construction pole, plumage, songbird, bird watching, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:158386",
+    "page": "https://pixabay.com/videos/id-158386/",
+    "duration": 11,
+    "tags": "bird, sperling, field sparrow, plumage, branches, branch, shrub, nature, wildlife"
+   }
+  ],
+  "shoreline-03": [
+   {
+    "pick": "pix:292373",
+    "page": "https://pixabay.com/videos/id-292373/",
+    "duration": 49,
+    "tags": "sunset, nature, sky, dusk, twilight, sun, seagull, bird, animal, wildlife, silhouette"
+   },
+   {
+    "pick": "pix:128853",
+    "page": "https://pixabay.com/videos/id-128853/",
+    "duration": 15,
+    "tags": "crows, birds, wildlife, animal, park, birdwatching, feathers, wild, summer, tree, nature, corbie, crows flock, migratory bird, swarm, silhouette, beautiful wallpaper, background"
+   },
+   {
+    "pick": "pix:236610",
+    "page": "https://pixabay.com/videos/id-236610/",
+    "duration": 48,
+    "tags": "sunset, nature, landscape, dusk, sky, twilight, sun, seagull, bird, gull, plumage, wildlife, feathers, beak, silhouette"
+   }
+  ],
+  "shoreline-04": [
+   {
+    "pick": "pix:198837",
+    "page": "https://pixabay.com/videos/id-198837/",
+    "duration": 20,
+    "tags": "sunset, clouds, evening atmosphere, alps, swiss alps, tree, dead tree, nature, landscape"
+   },
+   {
+    "pick": "pix:27113",
+    "page": "https://pixabay.com/videos/id-27113/",
+    "duration": 11,
+    "tags": "moss, wood, old, dead, tree stump, nature, forest floor, weathered"
+   },
+   {
+    "pick": "pix:377406",
+    "page": "https://pixabay.com/videos/id-377406/",
+    "duration": 20,
+    "tags": "bird, japanese accentor, prunella rubida, male, whisper, claiming territory, dead tree, it's stopped, natural"
+   }
+  ],
+  "shoreline-05": [
+   {
+    "pick": "pix:73978",
+    "page": "https://pixabay.com/videos/id-73978/",
+    "duration": 16,
+    "tags": "birds, branch, fauna, nature"
+   },
+   {
+    "pick": "pix:75334",
+    "page": "https://pixabay.com/videos/id-75334/",
+    "duration": 20,
+    "tags": "birds, food, branch, tree, avian, ornithology, nature"
+   },
+   {
+    "pick": "pix:75466",
+    "page": "https://pixabay.com/videos/id-75466/",
+    "duration": 20,
+    "tags": "birds, food, branch, tree, avian, ornithology, nature"
+   }
+  ],
+  "not_stone-01": [
+   {
+    "pick": "pix:381510",
+    "page": "https://pixabay.com/videos/id-381510/",
+    "duration": 10,
+    "tags": "aerial view, drone shot, lake, mountain, landscape, turquoise water, nature, scenic view, reservoir, dry land, wilderness, travel, outdoors, environment, clouds, sky, panorama, desert landscape, peaceful, geology"
+   },
+   {
+    "pick": "pix:79894",
+    "page": "https://pixabay.com/videos/id-79894/",
+    "duration": 19,
+    "tags": "salt, sand, lake, desert, dry, salt lake, ankara, nature, sky, environmental, reflection, water, landscape"
+   },
+   {
+    "pick": "pix:82325",
+    "page": "https://pixabay.com/videos/id-82325/",
+    "duration": 9,
+    "tags": "lake, salt lake, desert, salt, sand, dry, sky, nature, environmental, clouds, water, hot, reflection, landscape"
+   }
+  ],
+  "not_stone-02": [
+   {
+    "pick": "pix:281970",
+    "page": "https://pixabay.com/videos/id-281970/",
+    "duration": 11,
+    "tags": "lake, landscape, dry, tree, calm, water, finland"
+   },
+   {
+    "pick": "pix:114737",
+    "page": "https://pixabay.com/videos/id-114737/",
+    "duration": 12,
+    "tags": "mountain, peak, river, nature, landscape, alpine, drone, aerials, aerial, travel, france, water, lake, tree"
+   },
+   {
+    "pick": "pix:118792",
+    "page": "https://pixabay.com/videos/id-118792/",
+    "duration": 11,
+    "tags": "forest, lake, wales, landscape, hills, aerial, scenic"
+   }
+  ],
+  "not_stone-03": [
+   {
+    "pick": "pix:217540",
+    "page": "https://pixabay.com/videos/id-217540/",
+    "duration": 18,
+    "tags": "lake, rocks, sky, lake shore, aerial view, nature, landscape"
+   },
+   {
+    "pick": "pix:148409",
+    "page": "https://pixabay.com/videos/id-148409/",
+    "duration": 42,
+    "tags": "lake, mountain, sky, clouds, aerial, nature"
+   },
+   {
+    "pick": "pix:171983",
+    "page": "https://pixabay.com/videos/id-171983/",
+    "duration": 15,
+    "tags": "trees, mountain, lake, biking, forest, meadow, sky, aerial"
+   }
+  ],
+  "egypt-01": [
+   {
+    "pick": "pix:284566",
+    "page": "https://pixabay.com/videos/id-284566/",
+    "duration": 20,
+    "tags": "desert, dunes, sand, namibia, nature, africa, drone"
+   },
+   {
+    "pick": "pix:92837",
+    "page": "https://pixabay.com/videos/id-92837/",
+    "duration": 7,
+    "tags": "desert, sand, dunes, dry, travel, clouds, hill, hot, sahara, sand dune, landscape, nature"
+   },
+   {
+    "pick": "pix:26085",
+    "page": "https://pixabay.com/videos/id-26085/",
+    "duration": 73,
+    "tags": "namibia, sundowner, sunset, africa, landscape, sahara, sand, national park, desert, safari, sandy, drought, nature, dunes, sand dunes"
+   }
+  ],
+  "egypt-02": [
+   {
+    "pick": "pix:304330",
+    "page": "https://pixabay.com/videos/id-304330/",
+    "duration": 15,
+    "tags": "mountains, desert, view"
+   },
+   {
+    "pick": "pix:222163",
+    "page": "https://pixabay.com/videos/id-222163/",
+    "duration": 25,
+    "tags": "desert, sunset, sky, clouds, nature, arizona, landscape, sedona"
+   },
+   {
+    "pick": "pix:2266",
+    "page": "https://pixabay.com/videos/id-2266/",
+    "duration": 21,
+    "tags": "mountains, clouds, fog, mist, desert, mountain top, peaks, mountain range, clouds sky, hills, nature"
+   }
+  ],
+  "egypt-03": [
+   {
+    "pick": "pix:92843",
+    "page": "https://pixabay.com/videos/id-92843/",
+    "duration": 9,
+    "tags": "sand, desert, dunes, beach, nature, travel, dry, clouds, hill, hot, sahara, landscape"
+   },
+   {
+    "pick": "pix:16139",
+    "page": "https://pixabay.com/videos/id-16139/",
+    "duration": 24,
+    "tags": "dunes, desert, gobi, sahara, travel, adventure, africa, asia, china, sand, landscape, nature, darling, loneliness, morocco, stillness, peace, sunrise, silence, sandboard"
+   },
+   {
+    "pick": "pix:92842",
+    "page": "https://pixabay.com/videos/id-92842/",
+    "duration": 8,
+    "tags": "sand, desert, dunes, beach, nature, travel, dry, clouds, hill, hot, sahara, landscape"
+   }
+  ],
+  "egypt-04": [
+   {
+    "pick": "pix:262458",
+    "page": "https://pixabay.com/videos/id-262458/",
+    "duration": 10,
+    "tags": "pyramids, egypt, desert, egyptian, sand, ancient, camel, architecture, giza, archaeology, tourism, ufo"
+   },
+   {
+    "pick": "pix:248445",
+    "page": "https://pixabay.com/videos/id-248445/",
+    "duration": 9,
+    "tags": "camels, desert, sunset, silhouette, sand, sun, animal, nature, travel, dunes, sahara, egypt, safari, sky, caravan, wild, summer, adventure, journey, art, landscape"
+   },
+   {
+    "pick": "pix:272355",
+    "page": "https://pixabay.com/videos/id-272355/",
+    "duration": 7,
+    "tags": "egypt, egyptian, desert, sand, landscape, dry, nature"
+   }
+  ],
+  "how_they_die-01": [
+   {
+    "pick": "pix:186405",
+    "page": "https://pixabay.com/videos/id-186405/",
+    "duration": 13,
+    "tags": "trees, lake, fall, reflection, water, idyllic, autumn mood, lakeside, sunlight, nature, landscape, black lake, austria"
+   },
+   {
+    "pick": "pix:188595",
+    "page": "https://pixabay.com/videos/id-188595/",
+    "duration": 21,
+    "tags": "mountains, lake, autumn, autumnal leaves, reflection, water surface, morning light, tranquility, majestic, mt togakushi, japan, landscape, timelapse"
+   },
+   {
+    "pick": "pix:292827",
+    "page": "https://pixabay.com/videos/id-292827/",
+    "duration": 20,
+    "tags": "moraine lake, banff national park, canada nature, mountain lake, turquoise water, alpine scenery, canadian rockies, travel canada, lake reflections, cinematic landscape, peaceful nature, glacial lake, mountain view, lake time lapse, scenic beauty, outdoor travel, sky and water, nature lovers, mountain wilderness, nature escape, tranquil view, high-resolution lake, national park"
+   }
+  ],
+  "how_they_die-02": [
+   {
+    "pick": "pix:74888",
+    "page": "https://pixabay.com/videos/id-74888/",
+    "duration": 36,
+    "tags": "ocean, birds, waves, beach, sunset, sea, wildlife, horizon, seagulls, nature, sky, coast, relax, sunrise, reflection, australia, landscape, live wallpaper"
+   },
+   {
+    "pick": "pix:33194",
+    "page": "https://pixabay.com/videos/id-33194/",
+    "duration": 40,
+    "tags": "sea, iceland, ocean, water, sky, panorama, clouds, outdoors, reflections, blue, drone, live wallpaper"
+   },
+   {
+    "pick": "pix:4225",
+    "page": "https://pixabay.com/videos/id-4225/",
+    "duration": 13,
+    "tags": "lake, clouds, summer, nature, sky, water, mirror reflection, pond, lake view, day, reflection in water, forest, blue sky, colorful sky"
+   }
+  ],
+  "how_they_die-03": [
+   {
+    "pick": "pix:119242",
+    "page": "https://pixabay.com/videos/id-119242/",
+    "duration": 60,
+    "tags": "lake, mountains, sunset, sunrise, relaxing, calm, nature"
+   },
+   {
+    "pick": "pix:112237",
+    "page": "https://pixabay.com/videos/id-112237/",
+    "duration": 21,
+    "tags": "fjord, island, lake, norway, water, spring, calm, drone, landscape, nature"
+   },
+   {
+    "pick": "pix:37356",
+    "page": "https://pixabay.com/videos/id-37356/",
+    "duration": 10,
+    "tags": "water, lake, sunset, reflection, calm, cityscape, peaceful"
+   }
+  ],
+  "how_they_die-04": [
+   {
+    "pick": "pix:15269",
+    "page": "https://pixabay.com/videos/id-15269/",
+    "duration": 9,
+    "tags": "lake, water, nature, landscape, water mirror, agua, reflection"
+   },
+   {
+    "pick": "pix:4409",
+    "page": "https://pixabay.com/videos/id-4409/",
+    "duration": 14,
+    "tags": "water, reflection, autumn, spring, reflection in water, nature, mirror reflection, leaves"
+   },
+   {
+    "pick": "pix:15319",
+    "page": "https://pixabay.com/videos/id-15319/",
+    "duration": 15,
+    "tags": "lake, sun, reflection, nature, eventide, water mirror, dam, water"
+   }
+  ],
+  "volcano-01": [
+   {
+    "pick": "pix:152085",
+    "page": "https://pixabay.com/videos/id-152085/",
+    "duration": 15,
+    "tags": "volcano, iceland, icelandic, eruption, smoking, fire, lava, glow, drone, nature, pollution"
+   },
+   {
+    "pick": "pix:191354",
+    "page": "https://pixabay.com/videos/id-191354/",
+    "duration": 7,
+    "tags": "volcano, mountain, jungle, aerial, drone, forest, palm trees, island, exotic, bali, nature, indonesia"
+   },
+   {
+    "pick": "pix:144678",
+    "page": "https://pixabay.com/videos/id-144678/",
+    "duration": 6,
+    "tags": "volcano lava, explosion, volcano, lava, volcanic, hot, nature"
+   }
+  ],
+  "volcano-02": [
+   {
+    "pick": "pix:50782",
+    "page": "https://pixabay.com/videos/id-50782/",
+    "duration": 37,
+    "tags": "mountains, volcano, crater, nature, landscape, france"
+   },
+   {
+    "pick": "pix:150622",
+    "page": "https://pixabay.com/videos/id-150622/",
+    "duration": 11,
+    "tags": "volcano, mountain, crater, lake, water, yugama"
+   },
+   {
+    "pick": "pix:351831",
+    "page": "https://pixabay.com/videos/id-351831/",
+    "duration": 40,
+    "tags": "quilotoa, ecuador, nature, laguna, lake, landscape, crater, lagoon, andes, volcano, mountain, water"
+   }
+  ],
+  "volcano-03": [
+   {
+    "pick": "pix:262905",
+    "page": "https://pixabay.com/videos/id-262905/",
+    "duration": 11,
+    "tags": "mountain, volcano, lava"
+   },
+   {
+    "pick": "pix:2818",
+    "page": "https://pixabay.com/videos/id-2818/",
+    "duration": 20,
+    "tags": "lava lamp, light, lamp, silver, glass, liquid, retro, seventies, lavalamp, illumination, vintage, fluid, decoration, bubble, decor, home, colorful, blob, bright, orange, sixties, illuminated, hippie, calming, cool, 1960s, decorate, style, hippy, psychadelic, moving, motion, slow, movement"
+   },
+   {
+    "pick": "pix:190532",
+    "page": "https://pixabay.com/videos/id-190532/",
+    "duration": 16,
+    "tags": "sea, rocks, water, lava, stone, volcanic, nature"
+   }
+  ],
+  "volcano-04": [
+   {
+    "pick": "pix:188129",
+    "page": "https://pixabay.com/videos/id-188129/",
+    "duration": 8,
+    "tags": "mountains, forest, volcano, travel, aerial, drone, vietnam, nature"
+   },
+   {
+    "pick": "pix:237116",
+    "page": "https://pixabay.com/videos/id-237116/",
+    "duration": 19,
+    "tags": "valley, volcano, crater, etna, aerial view, eruption, journey, cloudscape, drone, landmark, italy, sicily, scenery, majestic, aerial, geology, sky, lava"
+   },
+   {
+    "pick": "pix:344389",
+    "page": "https://pixabay.com/videos/id-344389/",
+    "duration": 28,
+    "tags": "aerial view, beach, blue water, clean, destination, drone, golden, hike, island, madeira, nature, ocean, paradise, porto santo, portugal, portuguese, sand, sustainability, sustainable, transparent, tropical, holidays, volcanic, volcano"
+   }
+  ],
+  "flamingo_arrive-01": [
+   {
+    "pick": "pix:172579",
+    "page": "https://pixabay.com/videos/id-172579/",
+    "duration": 34,
+    "tags": "flamingo, birds, water bird, water, plumage, pond, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:80024",
+    "page": "https://pixabay.com/videos/id-80024/",
+    "duration": 8,
+    "tags": "bird, flamingo, beak, bill, feathers, plumage, animal, wildlife, wild, nature"
+   },
+   {
+    "pick": "pix:173540",
+    "page": "https://pixabay.com/videos/id-173540/",
+    "duration": 27,
+    "tags": "flamingo, bird, water bird, plumage, water, pond, wildlife, slow motion"
+   }
+  ],
+  "flamingo_arrive-02": [
+   {
+    "pick": "pix:94445",
+    "page": "https://pixabay.com/videos/id-94445/",
+    "duration": 11,
+    "tags": "flamingo, pink, legs, beak, to stand, large, swarm"
+   },
+   {
+    "pick": "pix:367097",
+    "page": "https://pixabay.com/videos/id-367097/",
+    "duration": 18,
+    "tags": "flamingos, birds, wildlife, pink, flamingo, nature, animal, plumage, lake, tropical, multicoloured, region de murcia, san pedro del pinatar"
+   },
+   {
+    "pick": "pix:164825",
+    "page": "https://pixabay.com/videos/id-164825/",
+    "duration": 8,
+    "tags": "bird, flamingo, pink, bushes, park, cute, animal, plumage, nature, beak"
+   }
+  ],
+  "flamingo_arrive-03": [
+   {
+    "pick": "pix:107290",
+    "page": "https://pixabay.com/videos/id-107290/",
+    "duration": 30,
+    "tags": "flamingo, bird, water bird, feeding, duck, group, wildlife, plumage, exotic"
+   },
+   {
+    "pick": "pix:26816",
+    "page": "https://pixabay.com/videos/id-26816/",
+    "duration": 13,
+    "tags": "flamingo, sleep, bird, pink, water bird, feathers, beak, plumage, water, brood, eggs"
+   },
+   {
+    "pick": "pix:214630",
+    "page": "https://pixabay.com/videos/id-214630/",
+    "duration": 49,
+    "tags": "flamingo, birds, sambhar lake, rajasthan, travel, jaipur, tourism, wildlife, nature, landscape"
+   }
+  ],
+  "flamingo_why-01": [
+   {
+    "pick": "pix:304021",
+    "page": "https://pixabay.com/videos/id-304021/",
+    "duration": 20,
+    "tags": "flamingo, nature, bird, wildlife, animal, plumage, ornithology, feathers, fauna, lake, sea, murcia, spain, sunrise, golden hour, water, slow motion"
+   },
+   {
+    "pick": "pix:117993",
+    "page": "https://pixabay.com/videos/id-117993/",
+    "duration": 17,
+    "tags": "flamingo, birds, pink, lake, trees, summer, bathe, struggle"
+   },
+   {
+    "pick": "pix:75747",
+    "page": "https://pixabay.com/videos/id-75747/",
+    "duration": 44,
+    "tags": "flamingos, birds, lake, reflection, animals, landscape"
+   }
+  ],
+  "flamingo_why-02": [
+   {
+    "pick": "pix:132669",
+    "page": "https://pixabay.com/videos/id-132669/",
+    "duration": 19,
+    "tags": "flamingos, birds, lake, beach, dubai, nature"
+   },
+   {
+    "pick": "pix:365039",
+    "page": "https://pixabay.com/videos/id-365039/",
+    "duration": 13,
+    "tags": "flamingos, birds, animal, wildlife, tropical, water, lake"
+   },
+   {
+    "pick": "pix:134527",
+    "page": "https://pixabay.com/videos/id-134527/",
+    "duration": 19,
+    "tags": "lake, flamingos, birds, nature"
+   }
+  ],
+  "flamingo_why-03": [
+   {
+    "pick": "pix:114157",
+    "page": "https://pixabay.com/videos/id-114157/",
+    "duration": 20,
+    "tags": "flamingo, bird, water bird, exotic, pink, pond, water, plumage, wildlife"
+   },
+   {
+    "pick": "pix:109178",
+    "page": "https://pixabay.com/videos/id-109178/",
+    "duration": 33,
+    "tags": "flamingo, water bird, bird, plumage, pond, water, drink, lighting mood, sunlight, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:319734",
+    "page": "https://pixabay.com/videos/id-319734/",
+    "duration": 14,
+    "tags": "bird, nature, wildlife, plumage, ornithology, flamingo, woodpecker, spring, birdwatching, feathers, branch"
+   }
+  ],
+  "flamingo_why-04": [
+   {
+    "pick": "pix:164288",
+    "page": "https://pixabay.com/videos/id-164288/",
+    "duration": 30,
+    "tags": "flamingo, cub, water bird, bathing fun, relax, plumage, pink, feathers, water, pond, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:49718",
+    "page": "https://pixabay.com/videos/id-49718/",
+    "duration": 12,
+    "tags": "flamingos, birds, plumage, feather, water birds, bill, tropical, nature"
+   },
+   {
+    "pick": "pix:305473",
+    "page": "https://pixabay.com/videos/id-305473/",
+    "duration": 38,
+    "tags": "nature, animal, pink, plumage, feathers, wildlife, ornithology, beak, flamingos, birds, tropical, fauna, murcia, water, sea, mediterranean, landscape"
+   }
+  ],
+  "flamingo_food-01": [
+   {
+    "pick": "pix:172625",
+    "page": "https://pixabay.com/videos/id-172625/",
+    "duration": 24,
+    "tags": "flamingos, birds, beak, herd, wings, legs, feathers, animals, nature, pink, tropical"
+   },
+   {
+    "pick": "pix:175479",
+    "page": "https://pixabay.com/videos/id-175479/",
+    "duration": 13,
+    "tags": "flamingos, pink flamingos, birds, nature"
+   },
+   {
+    "pick": "pix:308773",
+    "page": "https://pixabay.com/videos/id-308773/",
+    "duration": 13,
+    "tags": "flamingo, birds, animal, pink, feathers, plumage, wildlife, avian, beak, tropical, species, exotic, fauna, ornithology, nature"
+   }
+  ],
+  "flamingo_food-02": [
+   {
+    "pick": "pix:359872",
+    "page": "https://pixabay.com/videos/id-359872/",
+    "duration": 9,
+    "tags": "flamingo, nature, bird, animal, pink, plumage, feathers, wildlife, ornithology, beak, species, avian, water, exotic, wild, creature"
+   },
+   {
+    "pick": "pix:236396",
+    "page": "https://pixabay.com/videos/id-236396/",
+    "duration": 24,
+    "tags": "birds, flamingos, animal, wildlife, plumage, ornithology, fauna, pink, species, avian, beak, exotic, water, feathers, wild, neck, nature"
+   },
+   {
+    "pick": "pix:319735",
+    "page": "https://pixabay.com/videos/id-319735/",
+    "duration": 13,
+    "tags": "bird, nature, animal, wildlife, plumage, ornithology, flamingo, duck, woodpecker, heron, pelican, spring, fauna, birdwatching, songbird, feathers, branch"
+   }
+  ],
+  "flamingo_food-03": [
+   {
+    "pick": "pix:190954",
+    "page": "https://pixabay.com/videos/id-190954/",
+    "duration": 15,
+    "tags": "flamingos, birds, plumage, waterfowl, wildlife, slow motion"
+   },
+   {
+    "pick": "pix:143296",
+    "page": "https://pixabay.com/videos/id-143296/",
+    "duration": 11,
+    "tags": "flamingos, birds, pond, nature"
+   },
+   {
+    "pick": "pix:109019",
+    "page": "https://pixabay.com/videos/id-109019/",
+    "duration": 33,
+    "tags": "flamingo, birds, flamingo bird, red bird, white bird, animal"
+   }
+  ],
+  "fish-01": [
+   {
+    "pick": "pix:172189",
+    "page": "https://pixabay.com/videos/id-172189/",
+    "duration": 29,
+    "tags": "field, rice field, lagoon, phatamgiang, hue, vietnam, country, peaceful, pagoda"
+   },
+   {
+    "pick": "pix:6399",
+    "page": "https://pixabay.com/videos/id-6399/",
+    "duration": 11,
+    "tags": "sea, beach, ocean, horizon, water, sand, travel, summer, vacation, tropical, blue, sky, shore, waves, sun, nature, white, sunny, scenic, outdoor, seashore, coastline, tourism, relax, paradise, idyllic, turquoise, leisure, landscape, aerial view, romantic, coast, recreation, panorama, lagoon, exotic, holiday, island"
+   },
+   {
+    "pick": "pix:21795",
+    "page": "https://pixabay.com/videos/id-21795/",
+    "duration": 24,
+    "tags": "bay, ocean, palm, beach, water, seascape, rock, environment, ecology, beautiful, lagoon"
+   }
+  ],
+  "fish-02": [
+   {
+    "pick": "pix:184799",
+    "page": "https://pixabay.com/videos/id-184799/",
+    "duration": 30,
+    "tags": "fish, koi, pond, animals"
+   },
+   {
+    "pick": "pix:204554",
+    "page": "https://pixabay.com/videos/id-204554/",
+    "duration": 6,
+    "tags": "fish, pond, water, aquaculture"
+   },
+   {
+    "pick": "pix:3734",
+    "page": "https://pixabay.com/videos/id-3734/",
+    "duration": 15,
+    "tags": "pond, fish, plant, nature, water, sunlight, green, summer"
+   }
+  ],
+  "fish-03": [
+   {
+    "pick": "pix:38716",
+    "page": "https://pixabay.com/videos/id-38716/",
+    "duration": 10,
+    "tags": "lake michigan, waves, water, beach, lake, landscape, splash, nature, shore"
+   },
+   {
+    "pick": "pix:170268",
+    "page": "https://pixabay.com/videos/id-170268/",
+    "duration": 16,
+    "tags": "vineyard, plantation, lake, tihanyi peninsula, northern shore of lake balaton, balaton water, drone video"
+   },
+   {
+    "pick": "pix:24",
+    "page": "https://pixabay.com/videos/id-24/",
+    "duration": 28,
+    "tags": "lake, sunset, evening, twilight, red, sky, orange, purple, romantic, calm, peaceful, sea, shore, meditation, meditate, windless, nightfall, dusk, dawn"
+   }
+  ],
+  "fish-04": [
+   {
+    "pick": "pix:53385",
+    "page": "https://pixabay.com/videos/id-53385/",
+    "duration": 56,
+    "tags": "mountain stream, shallow river, river, riverbank, nature, flowing, river rock, rocks, waterfalls, water, stream"
+   },
+   {
+    "pick": "pix:384625",
+    "page": "https://pixabay.com/videos/id-384625/",
+    "duration": 20,
+    "tags": "water, cascade, stream, rushing, nature, boulders, river, creek, fall, moody, cold, flow, ragging, rocks, smooth, stones, shallow"
+   },
+   {
+    "pick": "pix:220601",
+    "page": "https://pixabay.com/videos/id-220601/",
+    "duration": 39,
+    "tags": "beach, sea, water, coastline, shallow, shore, coast, ocean, rocky, tranquility, rocks, clear, clean, island, water surface, seashore, mediterranean, calm water"
+   }
+  ],
+  "fragile-01": [
+   {
+    "pick": "pix:328726",
+    "page": "https://pixabay.com/videos/id-328726/",
+    "duration": 14,
+    "tags": "desert, drought, nature, sand, dry, earth, africa, landscape, cracked, sahara, erosion"
+   },
+   {
+    "pick": "pix:89769",
+    "page": "https://pixabay.com/videos/id-89769/",
+    "duration": 16,
+    "tags": "desert, drought, muddy, river"
+   },
+   {
+    "pick": "pix:89835",
+    "page": "https://pixabay.com/videos/id-89835/",
+    "duration": 28,
+    "tags": "river, drought, plain, desert"
+   }
+  ],
+  "fragile-02": [
+   {
+    "pick": "pix:89833",
+    "page": "https://pixabay.com/videos/id-89833/",
+    "duration": 32,
+    "tags": "dam, drought, historical, landscape"
+   },
+   {
+    "pick": "pix:147075",
+    "page": "https://pixabay.com/videos/id-147075/",
+    "duration": 31,
+    "tags": "water tap, waterdrop, fountain, water, drought, waste, quiet, drops"
+   },
+   {
+    "pick": "pix:128924",
+    "page": "https://pixabay.com/videos/id-128924/",
+    "duration": 28,
+    "tags": "river, sand, drought"
+   }
+  ],
+  "fragile-03": [
+   {
+    "pick": "pix:128925",
+    "page": "https://pixabay.com/videos/id-128925/",
+    "duration": 51,
+    "tags": "river, sand, drought, nature"
+   },
+   {
+    "pick": "pix:89831",
+    "page": "https://pixabay.com/videos/id-89831/",
+    "duration": 8,
+    "tags": "dam, drought, historical, landscape"
+   },
+   {
+    "pick": "pix:147074",
+    "page": "https://pixabay.com/videos/id-147074/",
+    "duration": 33,
+    "tags": "water tap, fountain, waterdrop, water, drops, drought, waste, quiet"
+   }
+  ],
+  "fragile-04": [
+   {
+    "pick": "pix:244839",
+    "page": "https://pixabay.com/videos/id-244839/",
+    "duration": 46,
+    "tags": "waves, lake, darkness, water, nature"
+   },
+   {
+    "pick": "pix:181916",
+    "page": "https://pixabay.com/videos/id-181916/",
+    "duration": 45,
+    "tags": "raindrop, rain, water, lake, rainy weather, drops, wet, raindrops jump, slow motion, nature"
+   },
+   {
+    "pick": "pix:75008",
+    "page": "https://pixabay.com/videos/id-75008/",
+    "duration": 20,
+    "tags": "water lilies, lotus, pond, aquatic plants, wildflower, lake, park, republic of korea, live wallpaper"
+   }
+  ],
+  "threat-01": [
+   {
+    "pick": "pix:234016",
+    "page": "https://pixabay.com/videos/id-234016/",
+    "duration": 16,
+    "tags": "river, valley, domed hills, fog, aerial, drone, water, forest, mist, trees, mountains, blue sky, lisbon falls, scenic, graskop, mpumalanga, south africa, nature, landscape"
+   },
+   {
+    "pick": "pix:234670",
+    "page": "https://pixabay.com/videos/id-234670/",
+    "duration": 8,
+    "tags": "mountains, domed hills, three rondawels, blyde river canyon, green canyon, canyon, nature, valley, scenic, geology, outdoors, rocks, tourism, natural landmark, adventure, cliff, clouds, blue sky, mpumalanga, south africa, landscape"
+   },
+   {
+    "pick": "pix:134772",
+    "page": "https://pixabay.com/videos/id-134772/",
+    "duration": 27,
+    "tags": "river, sunset, nature, zimbabwe, africa, water"
+   }
+  ],
+  "threat-02": [
+   {
+    "pick": "pix:216058",
+    "page": "https://pixabay.com/videos/id-216058/",
+    "duration": 33,
+    "tags": "drone, drones, drone images, nature, forest, river, landscape, drone footage, aerial view, aerial image, amazon, aerial images, cloud, sky"
+   },
+   {
+    "pick": "pix:216060",
+    "page": "https://pixabay.com/videos/id-216060/",
+    "duration": 26,
+    "tags": "drone, drone images, nature, forest, river, landscape, drone footage, aerial view, aerial image, amazon, aerial images, clouds, sky"
+   },
+   {
+    "pick": "pix:216057",
+    "page": "https://pixabay.com/videos/id-216057/",
+    "duration": 18,
+    "tags": "drone, drones, drone images, nature, forest, river, landscape, drone footage, aerial view, aerial image, amazon, aerial images, cloud, sky"
+   }
+  ],
+  "threat-03": [
+   {
+    "pick": "pix:120998",
+    "page": "https://pixabay.com/videos/id-120998/",
+    "duration": 59,
+    "tags": "giraffe, wetland, drone, wildlife, africa, river"
+   },
+   {
+    "pick": "pix:228297",
+    "page": "https://pixabay.com/videos/id-228297/",
+    "duration": 55,
+    "tags": "khartoum, sudan, sudanese, africa, travel, nile, egypt, nature, river, landscape, water, drone"
+   },
+   {
+    "pick": "pix:252824",
+    "page": "https://pixabay.com/videos/id-252824/",
+    "duration": 41,
+    "tags": "waterfall, river, africa, uganda, nature"
+   }
+  ],
+  "threat-04": [
+   {
+    "pick": "pix:174860",
+    "page": "https://pixabay.com/videos/id-174860/",
+    "duration": 28,
+    "tags": "river, stream, waterfall, trees, forest, mountain river, landscape, nature"
+   },
+   {
+    "pick": "pix:240320",
+    "page": "https://pixabay.com/videos/id-240320/",
+    "duration": 30,
+    "tags": "leaves, water, river, stream, autumn, fall, season, nature"
+   },
+   {
+    "pick": "pix:358693",
+    "page": "https://pixabay.com/videos/id-358693/",
+    "duration": 35,
+    "tags": "water, falls, waterfall, rivers, river, nature, landscape, forest, green"
+   }
+  ],
+  "threat-05": [
+   {
+    "pick": "pix:315680",
+    "page": "https://pixabay.com/videos/id-315680/",
+    "duration": 11,
+    "tags": "malindi, mombasa, kenya, historical, africa, nature, safari, landscape"
+   },
+   {
+    "pick": "pix:315682",
+    "page": "https://pixabay.com/videos/id-315682/",
+    "duration": 17,
+    "tags": "malindi, mombasa, kenya, historical, africa, nature, safari, landscape"
+   },
+   {
+    "pick": "pix:290531",
+    "page": "https://pixabay.com/videos/id-290531/",
+    "duration": 13,
+    "tags": "east africa, africa, nature, kenya, trees, bush, branches, flora, handheld, sony, slog-3, forest, clouds, landscape"
+   }
+  ],
+  "finale-01": [
+   {
+    "pick": "pix:47213",
+    "page": "https://pixabay.com/videos/id-47213/",
+    "duration": 30,
+    "tags": "waterfalls, river, dolomiti, lake, mountains, alpi, water, panorama, landscape, italy, nature, sun, sunset, clouds, sky, wind, blue, forest, flowers, animals, plant, atmosphere, gopro, 4k, sport"
+   },
+   {
+    "pick": "pix:21488",
+    "page": "https://pixabay.com/videos/id-21488/",
+    "duration": 26,
+    "tags": "water, lake, sunset, landscape"
+   },
+   {
+    "pick": "pix:19274",
+    "page": "https://pixabay.com/videos/id-19274/",
+    "duration": 13,
+    "tags": "sunset, sky, cloud, blue, light, lake"
+   }
+  ],
+  "finale-02": [
+   {
+    "pick": "pix:63736",
+    "page": "https://pixabay.com/videos/id-63736/",
+    "duration": 30,
+    "tags": "lake, sunset, mountains, nature, sky, sun, clouds, sea, river, landscape"
+   },
+   {
+    "pick": "pix:26610",
+    "page": "https://pixabay.com/videos/id-26610/",
+    "duration": 16,
+    "tags": "lake baikal, lake, sunset, russia, irkutsk, time-lapse"
+   },
+   {
+    "pick": "pix:135524",
+    "page": "https://pixabay.com/videos/id-135524/",
+    "duration": 20,
+    "tags": "sunrise, sunset, river, lake, pond, geese, reflection, nature"
+   }
+  ],
+  "finale-03": [
+   {
+    "pick": "pix:13456",
+    "page": "https://pixabay.com/videos/id-13456/",
+    "duration": 40,
+    "tags": "sunset, lake, nature, evening atmosphere, water reflection"
+   },
+   {
+    "pick": "pix:23525",
+    "page": "https://pixabay.com/videos/id-23525/",
+    "duration": 21,
+    "tags": "japan, miyajima island, mountains, view, water, sea, lake, sunset, gates"
+   },
+   {
+    "pick": "pix:66967",
+    "page": "https://pixabay.com/videos/id-66967/",
+    "duration": 24,
+    "tags": "sunset, lake, mountains, clouds, sun, water, reflection, nature, river, sea, sky, landscape"
+   }
+  ],
+  "finale-04": [
+   {
+    "pick": "pix:140111",
+    "page": "https://pixabay.com/videos/id-140111/",
+    "duration": 20,
+    "tags": "sea, ocean, seagulls, birds, sunset, dusk, beach, paradise, flight, nature"
+   },
+   {
+    "pick": "pix:129736",
+    "page": "https://pixabay.com/videos/id-129736/",
+    "duration": 41,
+    "tags": "sunset, beach, pismo beach, palm trees, birds"
+   },
+   {
+    "pick": "pix:38258",
+    "page": "https://pixabay.com/videos/id-38258/",
+    "duration": 20,
+    "tags": "sunset, birds, nature, sunrise, orange"
+   }
+  ],
+  "finale-05": [
+   {
+    "pick": "pix:314357",
+    "page": "https://pixabay.com/videos/id-314357/",
+    "duration": 40,
+    "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, salty, asia, cappadocia, sun, drone, 4k, orange"
+   },
+   {
+    "pick": "pix:311478",
+    "page": "https://pixabay.com/videos/id-311478/",
+    "duration": 29,
+    "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, salty, asia, cappadocia, sun, drone, 4k"
+   },
+   {
+    "pick": "pix:79896",
+    "page": "https://pixabay.com/videos/id-79896/",
+    "duration": 20,
+    "tags": "salt, lake, salt lake, salt lacquer, ankara, sky, nature"
+   }
+  ],
+  "finale-06": [
+   {
+    "pick": "pix:83096",
+    "page": "https://pixabay.com/videos/id-83096/",
+    "duration": 10,
+    "tags": "lake, sunset, reflection, sky, dusk, vivid, colorful, summer, nature, 4k, landscape"
+   },
+   {
+    "pick": "pix:45214",
+    "page": "https://pixabay.com/videos/id-45214/",
+    "duration": 36,
+    "tags": "water, lake, river, nature, mountains, panorama, sunset, sun, wind, clouds, sky, flowers, italy"
+   },
+   {
+    "pick": "pix:4359",
+    "page": "https://pixabay.com/videos/id-4359/",
+    "duration": 27,
+    "tags": "evening, summer, dawn, sunset, sun, landscape, nature, sky, clouds, lake, russia, orange, water, silence, sunset sky, reflection, river, vacation, trees"
+   }
+  ],
+  "finale-07": [
+   {
+    "pick": "pix:361058",
+    "page": "https://pixabay.com/videos/id-361058/",
+    "duration": 14,
+    "tags": "branches, sunset, trees, forest, nature, woods, leaves, africa"
+   },
+   {
+    "pick": "pix:292151",
+    "page": "https://pixabay.com/videos/id-292151/",
+    "duration": 38,
+    "tags": "elephants, sunset, elephant, savannah, tanzania, zanzibar, safari, african sunset, travel, africa"
+   },
+   {
+    "pick": "pix:202173",
+    "page": "https://pixabay.com/videos/id-202173/",
+    "duration": 28,
+    "tags": "sea, atlantic, sunset, nature, africa, morocco"
+   }
+  ],
+  "finale-08": [
+   {
+    "pick": "pix:221728",
+    "page": "https://pixabay.com/videos/id-221728/",
+    "duration": 56,
+    "tags": "lake, sunset, summer, wildlife, mountain, trees, evening, travel"
+   },
+   {
+    "pick": "pix:83098",
+    "page": "https://pixabay.com/videos/id-83098/",
+    "duration": 12,
+    "tags": "lake, sunset, reflection, sky, dusk, vivid, colorful, summer, nature, 4k, landscape"
+   },
+   {
+    "pick": "pix:216653",
+    "page": "https://pixabay.com/videos/id-216653/",
+    "duration": 14,
+    "tags": "tree, wood, lake, sea, view, sunset, evening, sky, nature, landscape"
+   }
+  ]
+ },
+ "shortage": []
+}
