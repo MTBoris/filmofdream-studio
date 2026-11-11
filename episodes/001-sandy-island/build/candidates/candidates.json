@@ -26,7 +26,7 @@
     "pick": "pix:304019",
     "page": "https://pixabay.com/videos/id-304019/",
     "duration": 16,
-    "tags": "water, dark, background, sea, deep, blue, wave, liquid, seascape, ocean, surface, aquatic, flowing, water surface, wave - water, beautiful wallpaper, looping"
+    "tags": "water, dark, background, sea, deep, blue, wave, liquid, beautiful wallpaper, seascape, ocean, surface, aquatic, flowing, water surface, wave - water, looping"
    },
    {
     "pick": "pix:26640",
@@ -265,10 +265,10 @@
     "tags": "ocean, sea, nature, seascape, water, waves, aerial view, swirling water, dark sea, breaking waves, foam, splash, surf, spume, spray, beautiful"
    },
    {
-    "pick": "pix:284518",
-    "page": "https://pixabay.com/videos/id-284518/",
-    "duration": 28,
-    "tags": "background, sunset, water, sea, dark, seascape, water surface, reflection, surface, ocean, liquid, beautiful wallpaper, copy space, smooth, gold colored, dawn, sunrise, gold, waves, golden"
+    "pick": "pix:230029",
+    "page": "https://pixabay.com/videos/id-230029/",
+    "duration": 19,
+    "tags": "ocean, sea, waves, water, liquid, seascape, beautiful wallpaper, flowing, motion, dark, surface, water surface, tranquility, tranquil, pattern, calm, moving, background"
    }
   ],
   "black-polygon-05": [
@@ -699,12 +699,6 @@
     "page": "https://pixabay.com/videos/id-212850/",
     "duration": 29,
     "tags": "ocean, sea, water, waves, sculpture, art, frame, window, movement, peace, reveal, calm, nature"
-   },
-   {
-    "pick": "pix:230029",
-    "page": "https://pixabay.com/videos/id-230029/",
-    "duration": 19,
-    "tags": "ocean, sea, waves, water, liquid, seascape, beautiful wallpaper, flowing, motion, dark, surface, water surface, tranquility, tranquil, pattern, calm, moving, background"
    }
   ],
   "agloe-02": [
@@ -717,10 +711,10 @@
   ],
   "agloe-03": [
    {
-    "pick": "pix:43292",
-    "page": "https://pixabay.com/videos/id-43292/",
-    "duration": 22,
-    "tags": "sunset, clouds, colorful, colour, ocean, vitamin sea, beautiful wallpaper, heaven, landscape, nature, lovely, dream, vacations, meditation, orange, eve, wave, moon, night, dark, background, zoom, paradise"
+    "pick": "pix:284518",
+    "page": "https://pixabay.com/videos/id-284518/",
+    "duration": 28,
+    "tags": "background, sunset, water, sea, dark, seascape, water surface, reflection, surface, ocean, liquid, beautiful wallpaper, copy space, smooth, gold colored, dawn, sunrise, gold, waves, golden"
    }
   ],
   "agloe-04": [
@@ -761,10 +755,10 @@
   ],
   "bermeja-02": [
    {
-    "pick": "pix:22443",
-    "page": "https://pixabay.com/videos/id-22443/",
-    "duration": 15,
-    "tags": "nature, river, water, sea, gold, bed, reflection, dark, ripple, stream, liquid, waves"
+    "pick": "pix:43292",
+    "page": "https://pixabay.com/videos/id-43292/",
+    "duration": 22,
+    "tags": "sunset, clouds, colorful, colour, ocean, vitamin sea, beautiful wallpaper, heaven, landscape, nature, lovely, dream, vacations, meditation, orange, eve, wave, moon, night, dark, background, zoom, paradise"
    }
   ],
   "bermeja-03": [
@@ -905,10 +899,10 @@
   ],
   "pumice-scale-04": [
    {
-    "pick": "pix:113164",
-    "page": "https://pixabay.com/videos/id-113164/",
-    "duration": 36,
-    "tags": "sunrise, sunset, morning, sea, wave, golden, landscape, nature"
+    "pick": "pix:22443",
+    "page": "https://pixabay.com/videos/id-22443/",
+    "duration": 15,
+    "tags": "nature, river, water, sea, gold, bed, reflection, dark, ripple, stream, liquid, waves"
    }
   ],
   "pumice-scale-05": [
@@ -965,10 +959,10 @@
   ],
   "finale-05": [
    {
-    "pick": "pix:367723",
-    "page": "https://pixabay.com/videos/id-367723/",
-    "duration": 20,
-    "tags": "sea, wave, storm, natural, japan, miyazaki, nature, landscape landscape, Miyazaki, Japan"
+    "pick": "pix:113164",
+    "page": "https://pixabay.com/videos/id-113164/",
+    "duration": 36,
+    "tags": "sunrise, sunset, morning, sea, wave, golden, landscape, nature"
    }
   ],
   "finale-06": [
