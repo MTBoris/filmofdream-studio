@@ -360,24 +360,54 @@ def nice_km(target):
     return 5000
 
 
-def land_polygons(bbox):
-    """Land polygons (lists of (lon, lat)) inside bbox=(lon0, lat0, lon1, lat1) from Natural Earth via cartopy. [] if unavailable."""
+def ne_geoms(bbox, resolution, category, name):
+    """Natural Earth geometries (shapely) that intersect bbox=(lon0, lat0, lon1, lat1). [] if the data is unavailable."""
     try:
         import cartopy.io.shapereader as shpreader
         from shapely.geometry import box
-        path = shpreader.natural_earth(resolution="50m", category="physical", name="land")
+        path = shpreader.natural_earth(resolution=resolution, category=category, name=name)
         region = box(*bbox)
-        polys = []
+        out = []
         for g in shpreader.Reader(path).geometries():
-            if not g.intersects(region):
-                continue
-            for p in (g.geoms if hasattr(g, "geoms") else [g]):
-                if p.intersects(region):
-                    polys.append(list(p.exterior.coords))
-        return polys
+            if g.intersects(region):
+                out.extend(g.geoms if hasattr(g, "geoms") else [g])
+        return [g for g in out if g.intersects(region)]
     except Exception as e:  # noqa: BLE001
-        print("WARN: no land data for ocean-map:", type(e).__name__, str(e)[:100], flush=True)
+        print(f"WARN: no {name} data for ocean-map:", type(e).__name__, str(e)[:100], flush=True)
         return []
+
+
+def land_polygons(bbox):
+    """Land polygons (lists of (lon, lat)) inside bbox=(lon0, lat0, lon1, lat1) from Natural Earth via cartopy. [] if unavailable."""
+    return [list(p.exterior.coords) for p in ne_geoms(bbox, "50m", "physical", "land")]
+
+
+def lake_polygons(bbox):
+    """Lakes (Natural Earth 10m) as lists of (lon, lat)."""
+    return [list(p.exterior.coords) for p in ne_geoms(bbox, "10m", "physical", "lakes") if hasattr(p, "exterior")]
+
+
+def border_lines(bbox):
+    """Land borders between countries (Natural Earth 10m) as lists of (lon, lat)."""
+    return [list(g.coords) for g in ne_geoms(bbox, "10m", "cultural", "admin_0_boundary_lines_land") if hasattr(g, "coords")]
+
+
+def dashed(d, pts, fill, width, dash=18, gap=12):
+    """Dashed polyline through pts (pixel coordinates)."""
+    on, left = True, dash
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        seg = math.hypot(x1 - x0, y1 - y0)
+        pos = 0.0
+        while seg - pos > 1e-6:
+            step = min(left, seg - pos)
+            a, b = pos / seg, (pos + step) / seg
+            if on:
+                d.line([(x0 + (x1 - x0) * a, y0 + (y1 - y0) * a), (x0 + (x1 - x0) * b, y0 + (y1 - y0) * b)], fill=fill, width=width)
+            pos += step
+            left -= step
+            if left <= 1e-6:
+                on = not on
+                left = dash if on else gap
 
 
 class MapBase:
@@ -393,6 +423,8 @@ class MapBase:
         self.lat = lat
         self.km_per_px = self.m_per_px * math.cos(math.radians(lat)) / 1000
         self.land = data.get("_land")
+        self.lakes = data.get("_lakes") or []
+        self.borders = data.get("_borders") or []
         self.img = self._draw(data)
 
     def px(self, lat, lon):
@@ -418,12 +450,33 @@ class MapBase:
         for poly in (self.land or []):
             pts = [(self.px(la, lo)[0] * ss, self.px(la, lo)[1] * ss) for lo, la in poly]
             d.polygon(pts, fill=(*C["land"], 190), outline=(*C["text"], 230))
+        for poly in self.lakes:
+            pts = [(self.px(la, lo)[0] * ss, self.px(la, lo)[1] * ss) for lo, la in poly]
+            d.polygon(pts, fill=(*C["panel"], 235), outline=(*C["deep"], 200))
+        for line in self.borders:  # country borders: dashed, dark on the light land
+            dashed(d, [(self.px(la, lo)[0] * ss, self.px(la, lo)[1] * ss) for lo, la in line], (*C["deep"], 210), 3 * ss, 9 * ss, 6 * ss)
+        for ln in data.get("lines") or []:  # e.g. a rift valley: a soft dark band with a dashed centre line
+            pts = [(self.px(la, lo)[0] * ss, self.px(la, lo)[1] * ss) for la, lo in ln["points"]]
+            band = Image.new("RGBA", im.size, (0, 0, 0, 0))
+            ImageDraw.Draw(band).line(pts, fill=(*C["deep"], 70), width=26 * ss, joint="curve")
+            im.alpha_composite(band.filter(ImageFilter.GaussianBlur(6 * ss)))
+            d = ImageDraw.Draw(im)
+            dashed(d, pts, (*C["deep"], 235), 3 * ss, 14 * ss, 8 * ss)
         im = im.resize((self.w, self.h), Image.LANCZOS)
         mask = Image.new("L", (self.w, self.h), 0)
         ImageDraw.Draw(mask).rounded_rectangle([0, 0, self.w - 1, self.h - 1], radius=26, fill=255)
         out = Image.new("RGBA", (self.w, self.h), (0, 0, 0, 0))
         out.paste(im, (0, 0), mask)
-        ImageDraw.Draw(out).rounded_rectangle([0, 0, self.w - 1, self.h - 1], radius=26, outline=(*C["text"], 90), width=2)
+        od = ImageDraw.Draw(out)
+        od.rounded_rectangle([0, 0, self.w - 1, self.h - 1], radius=26, outline=(*C["text"], 90), width=2)
+        # area names (countries) and line labels: printed on the map in the dark colour, no dot
+        labels = [(a["lat"], a["lon"], a["label"], 30, "sans_bold") for a in data.get("areas") or []]
+        labels += [(ln["label_at"][0], ln["label_at"][1], ln["label"], 26, "sans") for ln in data.get("lines") or []
+                   if ln.get("label") and ln.get("label_at")]
+        for la, lo, text, px_, key in labels:
+            x, y = self.px(la, lo)
+            if 10 < x < self.w - 10 and 10 < y < self.h - 10:
+                od.text((x, y), text, font=font(key, px_), fill=(*C["deep"], 225), anchor="mm")
         return out
 
 
@@ -474,7 +527,9 @@ def ocean_map(t, D, data, ctx):
     if key not in base:
         lat, lon = data["center"]
         span_deg = float(data.get("span_km", 800)) / 111.0
-        d2 = dict(data, _land=land_polygons((lon - span_deg, lat - span_deg, lon + span_deg, lat + span_deg)))
+        bb = (lon - span_deg, lat - span_deg, lon + span_deg, lat + span_deg)
+        d2 = dict(data, _land=land_polygons(bb), _lakes=lake_polygons(bb) if data.get("lakes") else [],
+                  _borders=border_lines(bb) if data.get("borders") else [])
         base[key] = MapBase(d2)
     mb = base[key]
     pw, ph = mb.w, mb.h

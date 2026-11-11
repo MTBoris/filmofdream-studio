@@ -47,12 +47,14 @@ VESSEL_WORDS = {"boat", "boats", "ship", "ships", "yacht", "yachts", "sailboat",
 # Never allowed, whatever the profile: people/faces, smoke bombs, houses/settlements.
 COMMON_FORBID = {"people", "person", "persons", "man", "men", "woman", "women", "couple", "girl", "girls", "boy", "boys", "child",
                  "children", "kid", "kids", "human", "face", "portrait", "family", "crowd", "tourist", "tourists", "model",
-                 "smoke", "smoke bomb", "house", "houses", "village", "town", "city", "logo"}
+                 "smoke", "smoke bomb", "house", "houses", "village", "town", "city", "logo", "photographer", "camera", "hiker",
+                 "hiking", "rider", "selfie", "skyline", "skyscraper", "cityscape", "camel", "camels"}
 # nature-lake: the lake/savanna/volcano world is allowed, but not boats, buildings, roads, vehicles or captivity.
 NATURE_FORBID = {"building", "buildings", "street", "road", "car", "cars", "vehicle", "jeep", "truck", "bridge", "pier", "dock",
                  "jetty", "harbor", "harbour", "port", "resort", "hotel", "zoo", "cage", "aquarium", "fence", "farm", "castle",
                  "church", "lighthouse", "swimmer", "swimming", "fishing", "fisherman", "surfing", "surfer", "diver", "diving",
-                 "underwater", "snow", "ice", "winter", "christmas"}
+                 "underwater", "snow", "ice", "winter", "christmas", "dam", "pylon", "power line", "electricity", "tap",
+                 "fountain", "aquaculture", "koi", "lava lamp", "pyramid", "pyramids", "gazebo", "torii"}
 NATURE_ANY = {"lake", "flamingo", "flamingos", "bird", "birds", "savanna", "savannah", "africa", "volcano", "salt", "branch",
               "tree", "water", "nature", "wildlife", "landscape", "desert"}
 PROFILES = {

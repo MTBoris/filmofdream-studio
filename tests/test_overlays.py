@@ -8,6 +8,8 @@ import overlays as ov
 @pytest.fixture(autouse=True)
 def no_network_land(monkeypatch):
     monkeypatch.setattr(ov, "land_polygons", lambda bbox: [])
+    monkeypatch.setattr(ov, "lake_polygons", lambda bbox: [])
+    monkeypatch.setattr(ov, "border_lines", lambda bbox: [])
 
 
 def opaque_pixels(img, thr=40):
@@ -226,3 +228,22 @@ def test_fact_year_without_thousands_separator_and_long_text_fits():
     xs = np.where(np.asarray(img)[..., 3] > 200)[1]
     assert xs.max() <= ov.W - ov.MX + 10
     assert re.fullmatch(r"2012", ov.fmt_num(2012.0, 0, False))
+
+
+def test_inland_map_with_borders_lakes_rift_and_area_names(monkeypatch):
+    land = [[(30.0, -8.0), (42.0, -8.0), (42.0, 4.0), (30.0, 4.0), (30.0, -8.0)]]
+    monkeypatch.setattr(ov, "land_polygons", lambda bbox: land)
+    monkeypatch.setattr(ov, "lake_polygons", lambda bbox: [[(35.9, -2.6), (36.1, -2.6), (36.1, -2.1), (35.9, -2.1)]])
+    monkeypatch.setattr(ov, "border_lines", lambda bbox: [[(33.9, -1.0), (37.6, -3.0), (39.2, -4.6)]])
+    data = {"center": [-2.5, 36.0], "span_km": 600, "borders": True, "lakes": True,
+            "marker": {"lat": -2.33, "lon": 36.03, "label": "Озеро Натрон"},
+            "areas": [{"lat": -4.0, "lon": 35.0, "label": "ТАНЗАНИЯ"}, {"lat": 0.0, "lon": 37.0, "label": "КЕНИЯ"}],
+            "lines": [{"points": [[0.5, 36.0], [-2.3, 36.0], [-4.5, 35.7]], "label": "рифт", "label_at": [-1.0, 36.6]}]}
+    ctx = {}
+    img = ov.ocean_map(3.0, 8, data, ctx)
+    mb = next(iter(ctx["_maps"].values()))
+    assert mb.lakes and mb.borders
+    x, y = mb.px(-2.35, 36.0)  # inside the lake: panel blue, not the beige land
+    r, g, b, a = mb.img.getpixel((int(x), int(y)))
+    assert b > r
+    assert bright_pixels(img) > 1500
