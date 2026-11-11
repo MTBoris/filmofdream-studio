@@ -40,7 +40,7 @@ def test_pilot_storyboard_matches_narration_scenes():
     sb = json.load(open("episodes/001-sandy-island/storyboard.json", encoding="utf-8"))
     scenes = [l.split(None, 1)[1].strip() for l in open("episodes/001-sandy-island/narration.txt", encoding="utf-8")
               if l.startswith("@scene")]
-    assert set(k for k in sb if not k.startswith("_")) == set(scenes)
+    assert [sc["scene"] for sc in sb["scenes"]] == scenes   # storyboard v2: same scenes, same order as the narration
     meta = json.load(open("episodes/001-sandy-island/meta.json", encoding="utf-8"))
     assert all(c[0] in scenes for c in meta["chapters"])
 
