@@ -26,7 +26,7 @@
     "pick": "pix:304019",
     "page": "https://pixabay.com/videos/id-304019/",
     "duration": 16,
-    "tags": "water, dark, background, sea, deep, blue, wave, liquid, seascape, ocean, surface, aquatic, beautiful wallpaper, flowing, water surface, wave - water, looping"
+    "tags": "water, dark, background, sea, deep, blue, wave, liquid, seascape, ocean, surface, aquatic, flowing, water surface, wave - water, beautiful wallpaper, looping"
    },
    {
     "pick": "pix:26640",
@@ -181,7 +181,14 @@
     "tags": "ocean, sea, waves, blue, turquoise, texture, summer, water, nature"
    }
   ],
-  "locator-02": [],
+  "locator-02": [
+   {
+    "pick": "pix:226534",
+    "page": "https://pixabay.com/videos/id-226534/",
+    "duration": 29,
+    "tags": "ocean, sea, sunset, sun, water, sunlight, reflection, yellow, water surface, seascape, wave, vibrant color, sunrise, dawn, flowing, glowing, horizon"
+   }
+  ],
   "locator-03": [
    {
     "pick": "pix:18853",
@@ -196,7 +203,14 @@
     "tags": "sunset, sea, ocean, waves, anture, outdoors"
    }
   ],
-  "black-polygon-01": [],
+  "black-polygon-01": [
+   {
+    "pick": "pix:14963",
+    "page": "https://pixabay.com/videos/id-14963/",
+    "duration": 20,
+    "tags": "winter, snow, white, nature, river, water, ice, ice block, light, cold, blue, frost, weather, freeze, drone, aerial"
+   }
+  ],
   "black-polygon-02": [
    {
     "pick": "pix:248158",
@@ -296,7 +310,7 @@
     "pick": "pix:71122",
     "page": "https://pixabay.com/videos/id-71122/",
     "duration": 19,
-    "tags": "waves, sea, ocean, storm, water, tide, horizon, loop, beautiful wallpaper, seamless, background, nature, 4k, wallpaper, live wallpaper, earth day"
+    "tags": "waves, sea, ocean, storm, beautiful wallpaper, water, tide, horizon, loop, seamless, background, nature, 4k, wallpaper, live wallpaper, earth day"
    },
    {
     "pick": "pix:205011",
@@ -325,8 +339,22 @@
     "tags": "waves, crashing, rolling, ocean, nature, aerial, drone footage, earth day"
    }
   ],
-  "chart-1908-01": [],
-  "chart-1908-03": [],
+  "chart-1908-01": [
+   {
+    "pick": "pix:204607",
+    "page": "https://pixabay.com/videos/id-204607/",
+    "duration": 30,
+    "tags": "wave, sunset, sea, ocean, water, seascape, sunlight, surface, reflection, liquid, light, sunny, sunrise, calm, ripple, sunshine, glow, tranquil, sundown, glowing, flowing"
+   }
+  ],
+  "chart-1908-03": [
+   {
+    "pick": "pix:199083",
+    "page": "https://pixabay.com/videos/id-199083/",
+    "duration": 20,
+    "tags": "sunset, sea, waves, sky, water, aerial, reflection, golden hour, nature, scotland, landscape"
+   }
+  ],
   "chart-1908-04": [
    {
     "pick": "pix:25665",
@@ -367,7 +395,14 @@
     "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, mousse, foam, side, blue, dark, power, energy, depth"
    }
   ],
-  "chart-1908-06": [],
+  "chart-1908-06": [
+   {
+    "pick": "pix:217836",
+    "page": "https://pixabay.com/videos/id-217836/",
+    "duration": 29,
+    "tags": "ocean, shiny, sunlight, abstract, sea, water, bright, blur, defocused, surface, light, blurry, blurred, pattern, liquid, reflection, shine, sparkle, beautiful wallpaper, sparkling, background"
+   }
+  ],
   "existence-doubtful-01": [
    {
     "pick": "pix:92578",
@@ -396,8 +431,22 @@
     "tags": "ocean, sea, sunset, waves, birds, slow, motion, 4k, nature, water, peaceful"
    }
   ],
-  "existence-doubtful-03": [],
-  "timeline-removed-01": [],
+  "existence-doubtful-03": [
+   {
+    "pick": "pix:294101",
+    "page": "https://pixabay.com/videos/id-294101/",
+    "duration": 23,
+    "tags": "sunlight, sunset, water, sea, background, wave, seascape, reflection, gold, ocean, beautiful wallpaper, gold colored, light, calm, tranquil scene, glittering, liquid, surface, glitter, shiny, fluid, glowing, glow"
+   }
+  ],
+  "timeline-removed-01": [
+   {
+    "pick": "pix:277116",
+    "page": "https://pixabay.com/videos/id-277116/",
+    "duration": 55,
+    "tags": "wave, sunset, water, sea, seascape, ocean, sun, sunlight, reflection, sunrise, gold, breaking wave, horizon over water, orange, sunny, red, water surface, sunshine, reflecting, colourful, breaking, shiny, shine, splash"
+   }
+  ],
   "timeline-removed-02": [
    {
     "pick": "pix:205009",
@@ -418,7 +467,14 @@
     "tags": "waterfall, wave, ocean, wind, beautiful wallpaper, bounce, foam, spray, marine, kennedy, nature, travel, water, tourism, tropical, relaxation, background, landscape"
    }
   ],
-  "timeline-removed-03": [],
+  "timeline-removed-03": [
+   {
+    "pick": "pix:246391",
+    "page": "https://pixabay.com/videos/id-246391/",
+    "duration": 10,
+    "tags": "sunrise, horizon, winter, snow, cold, season, winter landscape, landscape"
+   }
+  ],
   "timeline-removed-04": [
    {
     "pick": "pix:233867",
@@ -439,7 +495,14 @@
     "tags": "sea, moonlight, night, water, reflection, seascape, surface, ocean, liquid, shiny, glittering, sparkling, close-up, water surface, darkness, mysterious, shine, sparkle, moonrise, moonshine, night light"
    }
   ],
-  "timeline-removed-05": [],
+  "timeline-removed-05": [
+   {
+    "pick": "pix:128015",
+    "page": "https://pixabay.com/videos/id-128015/",
+    "duration": 61,
+    "tags": "sunset, sea, drone, lake, aerial, stunning, tranquil, gippsland lakes, victoria, peaceful, australia"
+   }
+  ],
   "digital-01": [
    {
     "pick": "pix:188040",
@@ -476,10 +539,38 @@
     "tags": "sea, waves, sky, water, aerial, beauty, storm, clouds, scotland, nature, landscape"
    }
   ],
-  "digital-04": [],
-  "digital-05": [],
-  "digital-06": [],
-  "voyage-01": [],
+  "digital-04": [
+   {
+    "pick": "pix:212825",
+    "page": "https://pixabay.com/videos/id-212825/",
+    "duration": 26,
+    "tags": "ocean, sea, sunset, seascape, sunlight, horizon, water, sun, light, peaceful, reflection, golden, sunshine, shine, copy space, water surface, drops, droplets"
+   }
+  ],
+  "digital-05": [
+   {
+    "pick": "pix:364088",
+    "page": "https://pixabay.com/videos/id-364088/",
+    "duration": 30,
+    "tags": "nature, landscape, water, sea, sun, sunrise, sunlight, horizon, summer"
+   }
+  ],
+  "digital-06": [
+   {
+    "pick": "pix:1841",
+    "page": "https://pixabay.com/videos/id-1841/",
+    "duration": 12,
+    "tags": "seascape, sea, ocean, aerial photography, fpv"
+   }
+  ],
+  "voyage-01": [
+   {
+    "pick": "pix:349414",
+    "page": "https://pixabay.com/videos/id-349414/",
+    "duration": 11,
+    "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, light breeze, atmosphere, blue, marin, maritime, orientation, horizon, diurnal, movement, luminous, transparent, green, algae"
+   }
+  ],
   "voyage-02": [
    {
     "pick": "pix:353266",
@@ -488,9 +579,30 @@
     "tags": "sea, ocean, sunset, blue water, golden water, reflections, ripples, waves, dusk, sunlight, shine, twinkle, calmed down, serenity, seascape, nature, relaxation, holiday, end of the day, gentle waves, shimmering, cross, horizon, sky"
    }
   ],
-  "voyage-03": [],
-  "voyage-04": [],
-  "voyage-05": [],
+  "voyage-03": [
+   {
+    "pick": "pix:191000",
+    "page": "https://pixabay.com/videos/id-191000/",
+    "duration": 35,
+    "tags": "ocean, sea, sunset, waves, atlantic, seascape, clouds, sun, nature"
+   }
+  ],
+  "voyage-04": [
+   {
+    "pick": "pix:94166",
+    "page": "https://pixabay.com/videos/id-94166/",
+    "duration": 22,
+    "tags": "water, sea, ocean, blue, surface, wave, waving, beautiful wallpaper, abstract, background, drop, backdrop"
+   }
+  ],
+  "voyage-05": [
+   {
+    "pick": "pix:253486",
+    "page": "https://pixabay.com/videos/id-253486/",
+    "duration": 13,
+    "tags": "sky, clouds, nature, sun, atmosphere, sunset, cloudscape, weather, moon, cloudy, horizon, daylight, sea"
+   }
+  ],
   "depth-profile-01": [
    {
     "pick": "pix:277109",
@@ -511,14 +623,70 @@
     "tags": "ocean, sea, sunset, seascape, wave, water, sun, water surface, sunlight, peaceful, sunrise, reflection, tranquil, calm"
    }
   ],
-  "depth-profile-02": [],
-  "depth-profile-03": [],
-  "news-01": [],
-  "news-02": [],
-  "news-03": [],
-  "news-04": [],
-  "polygon-gone-01": [],
-  "polygon-gone-02": [],
+  "depth-profile-02": [
+   {
+    "pick": "pix:265052",
+    "page": "https://pixabay.com/videos/id-265052/",
+    "duration": 30,
+    "tags": "water, sea, reflexion, blue, ripple, surface, liquid, wet, splash, waves, reflection, texture, ocean"
+   }
+  ],
+  "depth-profile-03": [
+   {
+    "pick": "pix:65148",
+    "page": "https://pixabay.com/videos/id-65148/",
+    "duration": 57,
+    "tags": "ocean, waves, water, marine, surface, texture, nature, lake, river, landscape, tropical, open, deep"
+   }
+  ],
+  "news-01": [
+   {
+    "pick": "pix:14966",
+    "page": "https://pixabay.com/videos/id-14966/",
+    "duration": 34,
+    "tags": "winter, ice, river, water, snow, blue, ice blocks, drone, aerial, hd, cold, frost, white, nature, weather, landscape, outdoor"
+   }
+  ],
+  "news-02": [
+   {
+    "pick": "pix:306502",
+    "page": "https://pixabay.com/videos/id-306502/",
+    "duration": 9,
+    "tags": "water, sea, sun, sunset, drop, splashing, sunlight, seascape, water surface, splash, droplet, sunbeam, shiny, ocean, gold colored, close-up, majestic, sunshine, sky"
+   }
+  ],
+  "news-03": [
+   {
+    "pick": "pix:217848",
+    "page": "https://pixabay.com/videos/id-217848/",
+    "duration": 64,
+    "tags": "sunset, wave, sea, water, seascape, sun, crashing, sunlight, breaking wave, reflection, splash, storm, cinematic, crash, gold, spray, rough"
+   }
+  ],
+  "news-04": [
+   {
+    "pick": "pix:341694",
+    "page": "https://pixabay.com/videos/id-341694/",
+    "duration": 30,
+    "tags": "water, background, sea, gold, sunlight, surface, wave, colourful, sunset, ocean, calm, colours, liquid, orange, light, sunrise, yellow, sunny, seascape, clean, shine, wave - water, smooth, close-up"
+   }
+  ],
+  "polygon-gone-01": [
+   {
+    "pick": "pix:28852",
+    "page": "https://pixabay.com/videos/id-28852/",
+    "duration": 30,
+    "tags": "sea, sunset, wave, evening"
+   }
+  ],
+  "polygon-gone-02": [
+   {
+    "pick": "pix:85674",
+    "page": "https://pixabay.com/videos/id-85674/",
+    "duration": 48,
+    "tags": "fish, aquarium, underwater, ocean, marine, coral, dive, reef, deep, sea, water"
+   }
+  ],
   "polygon-gone-03": [
    {
     "pick": "pix:74637",
@@ -539,9 +707,30 @@
     "tags": "ocean, sea, waves, water, liquid, seascape, beautiful wallpaper, flowing, motion, dark, surface, water surface, tranquility, tranquil, pattern, calm, moving, background"
    }
   ],
-  "agloe-02": [],
-  "agloe-03": [],
-  "agloe-04": [],
+  "agloe-02": [
+   {
+    "pick": "pix:279189",
+    "page": "https://pixabay.com/videos/id-279189/",
+    "duration": 20,
+    "tags": "seascape, red, sunset, water, reflection, backgrounds, sunlight, wave - water, tranquility, close-up, water surface, wave pattern, vibrant color, sea"
+   }
+  ],
+  "agloe-03": [
+   {
+    "pick": "pix:43292",
+    "page": "https://pixabay.com/videos/id-43292/",
+    "duration": 22,
+    "tags": "sunset, clouds, colorful, colour, ocean, vitamin sea, beautiful wallpaper, heaven, landscape, nature, lovely, dream, vacations, meditation, orange, eve, wave, moon, night, dark, background, zoom, paradise"
+   }
+  ],
+  "agloe-04": [
+   {
+    "pick": "pix:120784",
+    "page": "https://pixabay.com/videos/id-120784/",
+    "duration": 27,
+    "tags": "castle, sea, andalusia, sunset, aerial view, bird's eye view, spain"
+   }
+  ],
   "agloe-05": [
    {
     "pick": "pix:214391",
@@ -570,8 +759,22 @@
     "tags": "sea, waves, water, spray, storm, wind, blue"
    }
   ],
-  "bermeja-02": [],
-  "bermeja-03": [],
+  "bermeja-02": [
+   {
+    "pick": "pix:22443",
+    "page": "https://pixabay.com/videos/id-22443/",
+    "duration": 15,
+    "tags": "nature, river, water, sea, gold, bed, reflection, dark, ripple, stream, liquid, waves"
+   }
+  ],
+  "bermeja-03": [
+   {
+    "pick": "pix:133547",
+    "page": "https://pixabay.com/videos/id-133547/",
+    "duration": 40,
+    "tags": "sunrise, sea, water surface, reflection, sun, sunshine"
+   }
+  ],
   "bermeja-04": [
    {
     "pick": "pix:343597",
@@ -586,7 +789,14 @@
     "tags": "rough sea, waves, adriatic sea, italy, gulf, promontory, turbid waves, abruzzo, water, sea, punta ferruccio"
    }
   ],
-  "navigation-01": [],
+  "navigation-01": [
+   {
+    "pick": "pix:134826",
+    "page": "https://pixabay.com/videos/id-134826/",
+    "duration": 22,
+    "tags": "sunset, sun, sea, ocean, greece, mediterranean, clouds, sunbeams"
+   }
+  ],
   "navigation-03": [
    {
     "pick": "pix:375342",
@@ -607,7 +817,14 @@
     "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, light breeze, atmosphere, blue, marin, maritime, orientation, movement, birds, ducks, swim, aquatic, wings, beak"
    }
   ],
-  "navigation-04": [],
+  "navigation-04": [
+   {
+    "pick": "pix:134825",
+    "page": "https://pixabay.com/videos/id-134825/",
+    "duration": 24,
+    "tags": "sunset, sun, sea, ocean, greece, mediterranean, clouds, sunbeams"
+   }
+  ],
   "navigation-05": [
    {
     "pick": "pix:163782",
@@ -622,9 +839,30 @@
     "tags": "sea, spray, foam, water, fluffy, bubbling bubbles, relaxing, wobbling, waves"
    }
   ],
-  "navigation-06": [],
-  "navigation-07": [],
-  "navigation-08": [],
+  "navigation-06": [
+   {
+    "pick": "pix:279522",
+    "page": "https://pixabay.com/videos/id-279522/",
+    "duration": 18,
+    "tags": "sea, smooth, water, motion, liquid, flowing, wave, ocean, detail, surface, freshness, splashing, surface level, fluid, movement, peaceful, splash"
+   }
+  ],
+  "navigation-07": [
+   {
+    "pick": "pix:133548",
+    "page": "https://pixabay.com/videos/id-133548/",
+    "duration": 30,
+    "tags": "sunrise, sea, waves, water surface, sun"
+   }
+  ],
+  "navigation-08": [
+   {
+    "pick": "pix:218910",
+    "page": "https://pixabay.com/videos/id-218910/",
+    "duration": 7,
+    "tags": "sky, heavy rain, clouds, storm, sunset, atmospheric, lightning, night, nature, drone, aerial"
+   }
+  ],
   "pumice-01": [
    {
     "pick": "pix:211748",
@@ -633,7 +871,14 @@
     "tags": "ocean, sea, waves, water, blue, splashing, spray, dangerous, powerful, splash, flow, surface"
    }
   ],
-  "pumice-02": [],
+  "pumice-02": [
+   {
+    "pick": "pix:28975",
+    "page": "https://pixabay.com/videos/id-28975/",
+    "duration": 27,
+    "tags": "sunrise, fog, sea of fog, fall, landscape, tomorrow, dusk, silhouette, mood, clouds, sun, law, midland, fog blanket, time lapse, timelapse"
+   }
+  ],
   "pumice-03": [
    {
     "pick": "pix:228697",
@@ -642,13 +887,62 @@
     "tags": "ocean, sea, waves, surface, tropical, reflection, nature"
    }
   ],
-  "pumice-scale-02": [],
-  "pumice-scale-03": [],
-  "pumice-scale-04": [],
-  "pumice-scale-05": [],
-  "finale-01": [],
-  "finale-02": [],
-  "finale-03": [],
+  "pumice-scale-02": [
+   {
+    "pick": "pix:182190",
+    "page": "https://pixabay.com/videos/id-182190/",
+    "duration": 21,
+    "tags": "sea, sunrise, mallorca, spain, aerial footage, 4k"
+   }
+  ],
+  "pumice-scale-03": [
+   {
+    "pick": "pix:133217",
+    "page": "https://pixabay.com/videos/id-133217/",
+    "duration": 58,
+    "tags": "sea, ocean, sun, reflections, water surface, water, mediterranean, greece"
+   }
+  ],
+  "pumice-scale-04": [
+   {
+    "pick": "pix:113164",
+    "page": "https://pixabay.com/videos/id-113164/",
+    "duration": 36,
+    "tags": "sunrise, sunset, morning, sea, wave, golden, landscape, nature"
+   }
+  ],
+  "pumice-scale-05": [
+   {
+    "pick": "pix:199856",
+    "page": "https://pixabay.com/videos/id-199856/",
+    "duration": 14,
+    "tags": "sky, clouds, storm, weather, storm clouds, drone, aerial, nature, timelapse, time-lapse, time lapse"
+   }
+  ],
+  "finale-01": [
+   {
+    "pick": "pix:133219",
+    "page": "https://pixabay.com/videos/id-133219/",
+    "duration": 17,
+    "tags": "sea, ocean, expanse, flower, water surface, reflections, mediterranean, greece"
+   }
+  ],
+  "finale-02": [
+   {
+    "pick": "pix:328740",
+    "page": "https://pixabay.com/videos/id-328740/",
+    "duration": 46,
+    "tags": "alps, sunrise, fog, sea of fog, clouds, landscape, switzerland, nature"
+   }
+  ],
+  "finale-03": [
+   {
+    "pick": "pix:349452",
+    "page": "https://pixabay.com/videos/id-349452/",
+    "duration": 59,
+    "tags": "wave, water, ocean, sea, dark, motion, seascape, dramatic, storm, ripple, stormy, power, liquid, deep, powerful, oceanic, depth, cinematic, crest, offshore, fluid, wild"
+   }
+  ],
   "finale-04": [
    {
     "pick": "pix:153976",
@@ -669,7 +963,14 @@
     "tags": "sunset, sky, sea, ocean, light, horizon, drone"
    }
   ],
-  "finale-05": [],
+  "finale-05": [
+   {
+    "pick": "pix:367723",
+    "page": "https://pixabay.com/videos/id-367723/",
+    "duration": 20,
+    "tags": "sea, wave, storm, natural, japan, miyazaki, nature, landscape landscape, Miyazaki, Japan"
+   }
+  ],
   "finale-06": [
    {
     "pick": "pix:42001",
@@ -679,62 +980,5 @@
    }
   ]
  },
- "shortage": [
-  "locator-02 ('open ocean horizon'): only 0 unique clip(s) instead of 3",
-  "locator-03 ('sea waves sunset'): only 2 unique clip(s) instead of 3",
-  "black-polygon-01 ('deep blue water aerial'): only 0 unique clip(s) instead of 3",
-  "black-polygon-05 ('ocean aerial view'): only 2 unique clip(s) instead of 3",
-  "whaler-05 ('ocean waves drone'): only 2 unique clip(s) instead of 3",
-  "chart-1908-01 ('sea surface aerial'): only 0 unique clip(s) instead of 3",
-  "chart-1908-03 ('sea waves aerial'): only 0 unique clip(s) instead of 3",
-  "chart-1908-06 ('ocean drone overhead'): only 0 unique clip(s) instead of 3",
-  "existence-doubtful-02 ('ocean waves slow motion'): only 1 unique clip(s) instead of 3",
-  "existence-doubtful-03 ('deep sea surface'): only 0 unique clip(s) instead of 3",
-  "timeline-removed-01 ('ocean sunset aerial'): only 0 unique clip(s) instead of 3",
-  "timeline-removed-03 ('sea horizon dusk'): only 0 unique clip(s) instead of 3",
-  "timeline-removed-05 ('sea aerial drone'): only 0 unique clip(s) instead of 3",
-  "digital-02 ('sea waves morning'): only 1 unique clip(s) instead of 3",
-  "digital-03 ('storm waves aerial'): only 1 unique clip(s) instead of 3",
-  "digital-04 ('ocean swell'): only 0 unique clip(s) instead of 3",
-  "digital-05 ('open sea sunrise'): only 0 unique clip(s) instead of 3",
-  "digital-06 ('deep ocean aerial'): only 0 unique clip(s) instead of 3",
-  "voyage-01 ('sea waves horizon'): only 0 unique clip(s) instead of 3",
-  "voyage-02 ('ocean blue sunlight'): only 1 unique clip(s) instead of 3",
-  "voyage-03 ('ocean waves aerial'): only 0 unique clip(s) instead of 3",
-  "voyage-04 ('deep ocean blue water'): only 0 unique clip(s) instead of 3",
-  "voyage-05 ('sea horizon wide'): only 0 unique clip(s) instead of 3",
-  "depth-profile-02 ('rough ocean waves'): only 0 unique clip(s) instead of 3",
-  "depth-profile-03 ('deep ocean waves'): only 0 unique clip(s) instead of 3",
-  "news-01 ('blue sea drone'): only 0 unique clip(s) instead of 3",
-  "news-02 ('ocean waves close up'): only 0 unique clip(s) instead of 3",
-  "news-03 ('stormy sea aerial'): only 0 unique clip(s) instead of 3",
-  "news-04 ('open ocean horizon'): only 0 unique clip(s) instead of 3",
-  "polygon-gone-01 ('sea waves sunset'): only 0 unique clip(s) instead of 3",
-  "polygon-gone-02 ('deep blue water aerial'): only 0 unique clip(s) instead of 3",
-  "agloe-02 ('calm sea horizon'): only 0 unique clip(s) instead of 3",
-  "agloe-03 ('dark ocean waves'): only 0 unique clip(s) instead of 3",
-  "agloe-04 ('blue sea aerial'): only 0 unique clip(s) instead of 3",
-  "agloe-06 ('sea storm waves'): only 1 unique clip(s) instead of 3",
-  "bermeja-02 ('ocean waves drone'): only 0 unique clip(s) instead of 3",
-  "bermeja-03 ('sea surface aerial'): only 0 unique clip(s) instead of 3",
-  "bermeja-04 ('gulf sea waves'): only 2 unique clip(s) instead of 3",
-  "navigation-01 ('ocean horizon clouds'): only 0 unique clip(s) instead of 3",
-  "navigation-04 ('ocean drone overhead'): only 0 unique clip(s) instead of 3",
-  "navigation-05 ('sea foam waves'): only 2 unique clip(s) instead of 3",
-  "navigation-06 ('ocean waves slow motion'): only 0 unique clip(s) instead of 3",
-  "navigation-07 ('deep sea surface'): only 0 unique clip(s) instead of 3",
-  "navigation-08 ('ocean sunset aerial'): only 0 unique clip(s) instead of 3",
-  "pumice-01 ('ocean wave spray'): only 1 unique clip(s) instead of 3",
-  "pumice-02 ('sea horizon dusk'): only 0 unique clip(s) instead of 3",
-  "pumice-03 ('ocean surface waves'): only 1 unique clip(s) instead of 3",
-  "pumice-scale-02 ('open sea aerial'): only 0 unique clip(s) instead of 3",
-  "pumice-scale-03 ('ocean water closeup'): only 0 unique clip(s) instead of 3",
-  "pumice-scale-04 ('sea waves morning'): only 0 unique clip(s) instead of 3",
-  "pumice-scale-05 ('storm waves aerial'): only 0 unique clip(s) instead of 3",
-  "finale-01 ('ocean evening waves'): only 0 unique clip(s) instead of 3",
-  "finale-02 ('open sea sunrise'): only 0 unique clip(s) instead of 3",
-  "finale-03 ('deep ocean aerial'): only 0 unique clip(s) instead of 3",
-  "finale-05 ('sunset sea waves'): only 0 unique clip(s) instead of 3",
-  "finale-06 ('ocean sunset horizon'): only 1 unique clip(s) instead of 3"
- ]
+ "shortage": []
 }
