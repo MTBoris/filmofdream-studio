@@ -22,3 +22,8 @@ def test_host_whitelist():
     assert assets.host_ok("https://eoimages.gsfc.nasa.gov/images/x.jpg")
     assert not assets.host_ok("https://evil.example.com/x.jpg")
     assert not assets.host_ok("http://eoimages.gsfc.nasa.gov/x.jpg")
+
+
+def test_find_large_image_new_science_nasa_gov_page():
+    html = '<meta property="og:image" content="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/78000/78863/havre_amo_2012219.jpg?w=1920"><img src="https://science.nasa.gov/logo.png">'
+    assert assets.find_large_image(html, "https://earthobservatory.nasa.gov/images/78863").endswith("havre_amo_2012219.jpg")

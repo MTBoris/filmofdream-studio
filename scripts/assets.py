@@ -21,7 +21,8 @@ import sb2  # noqa: E402
 UA = {"User-Agent": "Mozilla/5.0 (filmofdream-studio)"}
 MIN_WIDTH = 1280
 EXTS = ("png", "jpg", "jpeg", "webp")
-ALLOWED_HOSTS = ("earthobservatory.nasa.gov", "eoimages.gsfc.nasa.gov", "images.nasa.gov", "images-assets.nasa.gov")
+ALLOWED_HOSTS = ("earthobservatory.nasa.gov", "eoimages.gsfc.nasa.gov", "images.nasa.gov", "images-assets.nasa.gov",
+                 "science.nasa.gov", "assets.science.nasa.gov", "www.nasa.gov")
 
 
 def host_ok(url):
@@ -37,6 +38,11 @@ def find_large_image(html, page_url):
     if m:
         urls = [u for u in urls if f"/{m.group(1)}/" in u] or urls
     urls = [u for u in dict.fromkeys(urls) if not re.search(r"_(tmb|th|thumb)\b|_th\.", u, flags=re.I)]
+    if not urls:   # the Earth Observatory moved to science.nasa.gov: og:image / any NASA image, no thumbnails or logos
+        urls = re.findall(r"""(?:href|src|content)=["']((?:https?:)?//(?:assets\.science|science|www)\.nasa\.gov/[^"']+?\.(?:jpg|jpeg|png))(?:\?[^"']*)?["']""", html, flags=re.I)
+        urls = [("https:" + u) if u.startswith("//") else u for u in urls]
+        urls = [u for u in dict.fromkeys(urls) if not re.search(r"logo|icon|favicon|sprite|thumb|_tmb|\d{2,3}x\d{2,3}\.", u, flags=re.I)]
+        print("fallback image candidates:", urls)
     if not urls:
         return None
     return sorted(urls, key=lambda u: (0 if "_lrg" in u else 1 if "_web" not in u else 2, -len(u)))[0]
