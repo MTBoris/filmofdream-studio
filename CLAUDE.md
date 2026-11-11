@@ -8,22 +8,23 @@ Read this first, then `docs/HANDOFF.md` (current state, decisions, next steps).
 - This repo is **public** (free GitHub Actions). Never commit secrets. Scripts become public — fine.
 - **Separate project.** Never mix code, keys, accounts, names or data with GiftMorrow (mtirallc/giftmorrow) or RESTHE (MTBoris/resthe).
 
-## Roles
+## Roles (Boris's decision 2026-11-11)
 | Who | Does |
 |---|---|
-| Claude (coordinator, claude.ai project "Film of Dream") | topics, scripts, fact-checking, narration text and stress marks, YouTube upload, final check before Boris |
-| ChatGPT (ChatGPT project "Film of Dream") | everything visual: storyboard, choosing stock clips, own images/maps/titles, thumbnails, visual review of frame sheets |
-| Claude Code (session on this repo) | engineering of the pipeline: scripts, QA tooling, tests, CI |
-| Boris | approves topics, plans and publishing; watches the finished video as a viewer |
+| Claude (coordinator, claude.ai project "Film of Dream") | topics, script and narration text, stress marks, fact-checking against sources, `meta.json` |
+| Claude Code (session on this repo) | storyboard, automatic stock selection (filters + stock profile), maps/overlays/thumbnail by code, build, QA with frame-sheet review, **unlisted** upload, pipeline engineering (scripts, tests, CI) |
+| ChatGPT | **only on request** (e.g. a reconstruction image or a second opinion on visuals); not in the default loop |
+| Boris | approves topics; watches the unlisted video; **sets the public status himself** |
 
 ## Workflow
-- Plan → Boris says "да" → small PR → green CI → merge. Discussion is not approval.
-- Videos are uploaded **unlisted** first. Public only after Boris's explicit "да". Deleting a video only after Boris's "да".
-- Before sending a link to Boris: frame-sheet review (frame every 2 s) and the homograph guard must pass.
+- Claude writes `narration.txt` / `script.md` / `meta.json` → Claude Code: small PR → green CI → merge (Claude Code merges its own PRs after green CI).
+- Claude Code makes `storyboard.json` from `script.md`, picks stock automatically, builds, reviews the frame sheets, uploads **unlisted** and writes the link to `build/youtube_url.txt` and `docs/HANDOFF.md`.
+- Public status: only Boris, by hand. Deleting a video only after Boris's "да".
+- Before a link goes to Boris: frame-sheet review (frame every 2 s) and the homograph guard must pass.
 
 ## Money
 - $0 by default: Azure Speech F0 (free 0.5M chars/month, no billing on F0), Pixabay (free), GitHub Actions (public repo).
-- Only paid item: OpenAI images for ChatGPT's visuals — **max $10/month**. Anything else that costs money needs Boris's "да".
+- OpenAI images are not needed by default (visuals are stock + code). If ChatGPT images are requested: **max $10/month**. Anything else that costs money needs Boris's "да".
 
 ## Content rules
 - Russian, 8+ minutes, hook in first 10 s, answer at the end, moods rotate (amazing / funny / mysterious / touching / eerie).

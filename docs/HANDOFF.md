@@ -1,4 +1,12 @@
-# HANDOFF — Film of Dream (state on 2026-11-09, plan approved)
+# HANDOFF — Film of Dream (state on 2026-11-11)
+
+## Roles from 2026-11-11 (Boris's decision — overrides older notes below)
+- **Claude** writes the text (narration, script.md with the fact table, meta.json) and checks facts.
+- **Claude Code** makes the storyboard, picks stock automatically (filters + stock profile + its own frame-sheet review),
+  draws maps/overlays/thumbnail by code, builds, runs QA and uploads **unlisted**.
+- **ChatGPT** only on request. OpenAI images are not needed by default.
+- **Boris** watches the unlisted video and sets the public status himself.
+- Older lines below that say "ChatGPT owns visuals / chooses picks" are history.
 
 ## Channel status (checked 2026-11-07)
 - Monetization was removed earlier (≈700 audiobooks without rights; deleted). Earn page: terms accepted, AdSense not linked, review not started.
