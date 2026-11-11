@@ -1,10 +1,10 @@
 {
  "hook-map-01": {
   "query": "ocean waves aerial",
-  "pixabay_id": 2944,
-  "page": "https://pixabay.com/videos/id-2944/",
-  "duration": 30,
-  "tags": "sea, sunrise, sunset, sun, ocean, aerial video, landscape, waves, romantic",
+  "pixabay_id": 248156,
+  "page": "https://pixabay.com/videos/id-248156/",
+  "duration": 17,
+  "tags": "waves, aerial view, drone view, sea, ocean, splash, spray, breaking waves, surf, foam, scenery, tide, wave action, dark water, gloomy, nature",
   "rendition": "large"
  },
  "hook-map-02": {
@@ -97,10 +97,10 @@
  },
  "black-polygon-02": {
   "query": "dark sea waves",
-  "pixabay_id": 248156,
-  "page": "https://pixabay.com/videos/id-248156/",
-  "duration": 17,
-  "tags": "waves, aerial view, drone view, sea, ocean, splash, spray, breaking waves, surf, foam, scenery, tide, wave action, dark water, gloomy, nature",
+  "pixabay_id": 374783,
+  "page": "https://pixabay.com/videos/id-374783/",
+  "duration": 19,
+  "tags": "sea, wave, swirling, ocean, dark sea, drone photography, drone video, aerial view, breaking waves, nature, surf, spray, foam, energy, splash, motion, power, smashing, scenic, crashing, seascape",
   "rendition": "large"
  },
  "black-polygon-03": {
@@ -129,10 +129,10 @@
  },
  "whaler-02": {
   "query": "ocean sunset clouds",
-  "pixabay_id": 51237,
-  "page": "https://pixabay.com/videos/id-51237/",
-  "duration": 8,
-  "tags": "sunrise, dead sea, love, romantic, couple, ocean, clouds, sunset, sea, travel, sky, landscape",
+  "pixabay_id": 250805,
+  "page": "https://pixabay.com/videos/id-250805/",
+  "duration": 41,
+  "tags": "sea, ocean, sunset, clouds, nature, water",
   "rendition": "large"
  },
  "whaler-04": {
@@ -145,10 +145,10 @@
  },
  "whaler-05": {
   "query": "ocean waves drone",
-  "pixabay_id": 374783,
-  "page": "https://pixabay.com/videos/id-374783/",
-  "duration": 19,
-  "tags": "sea, wave, swirling, ocean, dark sea, drone photography, drone video, aerial view, breaking waves, nature, surf, spray, foam, energy, splash, motion, power, smashing, scenic, crashing, seascape",
+  "pixabay_id": 186362,
+  "page": "https://pixabay.com/videos/id-186362/",
+  "duration": 17,
+  "tags": "waves, ocean, sea, seascape, splash, storm, hurricane, cyclone, aerial view, marine, drone, ecology",
   "rendition": "large"
  },
  "chart-1908-01": {
@@ -177,10 +177,10 @@
  },
  "chart-1908-05": {
   "query": "blue ocean ripples",
-  "pixabay_id": 308349,
-  "page": "https://pixabay.com/videos/id-308349/",
-  "duration": 20,
-  "tags": "the sea, the water, waves, light breeze, nature, ocean, landscape, fall, blue, reflections, luminous, to flow, colors, humid, wet, ripples, movement, bird, swan, wings, beak, plumage, fauna, white, majestic",
+  "pixabay_id": 375341,
+  "page": "https://pixabay.com/videos/id-375341/",
+  "duration": 17,
+  "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, mousse, foam, side, blue, dark, power, energy, depth",
   "rendition": "large"
  },
  "chart-1908-06": {
@@ -209,34 +209,34 @@
  },
  "existence-doubtful-03": {
   "query": "deep sea surface",
-  "pixabay_id": 30902,
-  "page": "https://pixabay.com/videos/id-30902/",
-  "duration": 24,
-  "tags": "hang, glucophone, musical instrument, musician, sea, sound, glucopon, the sound of the sea, waves, water",
-  "rendition": "large"
- },
- "timeline-removed-01": {
-  "query": "ocean sunset aerial",
   "pixabay_id": 7337,
   "page": "https://pixabay.com/videos/id-7337/",
   "duration": 30,
   "tags": "light, light waves, wave, sea",
   "rendition": "large"
  },
+ "timeline-removed-01": {
+  "query": "ocean sunset aerial",
+  "pixabay_id": 219191,
+  "page": "https://pixabay.com/videos/id-219191/",
+  "duration": 22,
+  "tags": "waves, ocean, sea, water, motion, surface, liquid, blue sea, background",
+  "rendition": "large"
+ },
  "timeline-removed-02": {
   "query": "ocean wave spray",
-  "pixabay_id": 205011,
-  "page": "https://pixabay.com/videos/id-205011/",
-  "duration": 48,
-  "tags": "ocean, sea, waves, storm, spray, rain, nature",
+  "pixabay_id": 65504,
+  "page": "https://pixabay.com/videos/id-65504/",
+  "duration": 60,
+  "tags": "waterfall, wave, ocean, wind, bounce, foam, spray, marine, kennedy, nature, travel, water, tourism, tropical, relaxation, background, landscape",
   "rendition": "large"
  },
  "timeline-removed-03": {
   "query": "sea horizon dusk",
-  "pixabay_id": 103485,
-  "page": "https://pixabay.com/videos/id-103485/",
-  "duration": 72,
-  "tags": "daisy, flower, sea, ocean, waves, clouds, blue, peace, peaceful, calm, relax, relaxing, meditation, zen, daisies",
+  "pixabay_id": 91773,
+  "page": "https://pixabay.com/videos/id-91773/",
+  "duration": 19,
+  "tags": "ocean, sea, blue water, mediterranean, water, pattern, background",
   "rendition": "large"
  },
  "timeline-removed-04": {
@@ -249,10 +249,10 @@
  },
  "timeline-removed-05": {
   "query": "sea aerial drone",
-  "pixabay_id": 13857,
-  "page": "https://pixabay.com/videos/id-13857/",
-  "duration": 14,
-  "tags": "crimea, yalta, swallow's nest, sightseeing, russia, ukraine, black sea, drone flight, aerial photography",
+  "pixabay_id": 211748,
+  "page": "https://pixabay.com/videos/id-211748/",
+  "duration": 20,
+  "tags": "ocean, sea, waves, water, blue, splashing, spray, dangerous, powerful, splash, flow, surface",
   "rendition": "large"
  },
  "digital-01": {
@@ -265,42 +265,42 @@
  },
  "digital-02": {
   "query": "sea waves morning",
-  "pixabay_id": 250618,
-  "page": "https://pixabay.com/videos/id-250618/",
-  "duration": 11,
-  "tags": "swan, bird, sea, waves, light breeze, morning, the water, wings, beak, promenade, relaxation, contemplate, maritime, nature, light, sun, sunny, gracious, elegant, majestic, transparent, blue, reflections, luminous, plumage",
+  "pixabay_id": 240014,
+  "page": "https://pixabay.com/videos/id-240014/",
+  "duration": 18,
+  "tags": "swans, birds, sea, waves, light breeze, morning, water, wings, beak, reflections, promenade, relaxation, contemplate, maritime, nature",
   "rendition": "large"
  },
  "digital-03": {
   "query": "storm waves aerial",
-  "pixabay_id": 186362,
-  "page": "https://pixabay.com/videos/id-186362/",
-  "duration": 17,
-  "tags": "waves, ocean, sea, seascape, splash, storm, hurricane, cyclone, aerial view, marine, drone, ecology",
+  "pixabay_id": 43452,
+  "page": "https://pixabay.com/videos/id-43452/",
+  "duration": 55,
+  "tags": "water, waves, sea, blue, ocean, nature, wet, liquid, move, background, mood, quiet, relaxation, meditation",
   "rendition": "large"
  },
  "digital-04": {
   "query": "ocean swell",
-  "pixabay_id": 253445,
-  "page": "https://pixabay.com/videos/id-253445/",
-  "duration": 54,
-  "tags": "nature, sea, ocean, water, blue, sky",
+  "pixabay_id": 153976,
+  "page": "https://pixabay.com/videos/id-153976/",
+  "duration": 21,
+  "tags": "sunset, sea, sun, evening atmosphere, nature, landscape",
   "rendition": "large"
  },
  "digital-05": {
   "query": "open sea sunrise",
-  "pixabay_id": 219191,
-  "page": "https://pixabay.com/videos/id-219191/",
-  "duration": 22,
-  "tags": "waves, ocean, sea, water, motion, surface, liquid, blue sea, background",
+  "pixabay_id": 238507,
+  "page": "https://pixabay.com/videos/id-238507/",
+  "duration": 24,
+  "tags": "ocean, sea, seascape, water, sun, sunlight, horizon, sunset, surface, glow, calm",
   "rendition": "large"
  },
  "digital-06": {
   "query": "deep ocean aerial",
-  "pixabay_id": 91773,
-  "page": "https://pixabay.com/videos/id-91773/",
-  "duration": 19,
-  "tags": "ocean, sea, blue water, mediterranean, water, pattern, background",
+  "pixabay_id": 42001,
+  "page": "https://pixabay.com/videos/id-42001/",
+  "duration": 15,
+  "tags": "sea, horizon, shipping, ocean, water, heaven, sunset, vacations, relaxation",
   "rendition": "large"
  },
  "voyage-01": {
@@ -321,34 +321,34 @@
  },
  "voyage-03": {
   "query": "ocean waves aerial",
-  "pixabay_id": 138961,
-  "page": "https://pixabay.com/videos/id-138961/",
-  "duration": 13,
-  "tags": "waves, crashing, rolling, ocean, nature, aerial, drone footage, earth day",
+  "pixabay_id": 92563,
+  "page": "https://pixabay.com/videos/id-92563/",
+  "duration": 38,
+  "tags": "ocean, sea, waves, foam, calm, spiritual, sky, clouds, tranquil, peaceful, meditation, horizon",
   "rendition": "large"
  },
  "voyage-04": {
   "query": "deep ocean blue water",
-  "pixabay_id": 223691,
-  "page": "https://pixabay.com/videos/id-223691/",
-  "duration": 20,
-  "tags": "ocean, sea, waves, blue, turquoise, texture, summer, water, nature",
+  "pixabay_id": 41646,
+  "page": "https://pixabay.com/videos/id-41646/",
+  "duration": 22,
+  "tags": "clouds, sea, darling, landscape, storm, colors, costa, horizon, blue",
   "rendition": "large"
  },
  "voyage-05": {
   "query": "sea horizon wide",
-  "pixabay_id": 211748,
-  "page": "https://pixabay.com/videos/id-211748/",
-  "duration": 20,
-  "tags": "ocean, sea, waves, water, blue, splashing, spray, dangerous, powerful, splash, flow, surface",
+  "pixabay_id": 89614,
+  "page": "https://pixabay.com/videos/id-89614/",
+  "duration": 18,
+  "tags": "sunset, sea, ocean, waves, anture, outdoors",
   "rendition": "large"
  },
  "depth-profile-01": {
   "query": "ocean surface sunlight",
-  "pixabay_id": 238507,
-  "page": "https://pixabay.com/videos/id-238507/",
-  "duration": 24,
-  "tags": "ocean, sea, seascape, water, sun, sunlight, horizon, sunset, surface, glow, calm",
+  "pixabay_id": 221871,
+  "page": "https://pixabay.com/videos/id-221871/",
+  "duration": 15,
+  "tags": "ocean, sea, sunset, water, sunlight, motion, reflection, sunrise, golden, surface, seascape, glow, water surface, shine, sundown, peaceful",
   "rendition": "large"
  },
  "depth-profile-02": {
@@ -361,58 +361,58 @@
  },
  "depth-profile-03": {
   "query": "deep ocean waves",
-  "pixabay_id": 43452,
-  "page": "https://pixabay.com/videos/id-43452/",
-  "duration": 55,
-  "tags": "water, waves, sea, blue, ocean, nature, wet, liquid, move, background, mood, quiet, relaxation, meditation",
+  "pixabay_id": 264968,
+  "page": "https://pixabay.com/videos/id-264968/",
+  "duration": 26,
+  "tags": "sunset, nature, sea, ocean, dawn",
   "rendition": "large"
  },
  "news-01": {
   "query": "blue sea drone",
-  "pixabay_id": 12023,
-  "page": "https://pixabay.com/videos/id-12023/",
-  "duration": 21,
-  "tags": "flushing, oosterschelde, landscape, water, sea, netherlands, sun, blue, drone",
+  "pixabay_id": 258202,
+  "page": "https://pixabay.com/videos/id-258202/",
+  "duration": 37,
+  "tags": "evening view, 4k drone footage, 4k drone shot, aerial, above sea, blue ocean",
   "rendition": "large"
  },
  "news-02": {
   "query": "ocean waves close up",
-  "pixabay_id": 13704,
-  "page": "https://pixabay.com/videos/id-13704/",
-  "duration": 12,
-  "tags": "sea, ocean, animal, wild, wildlife, nature, dramatic",
+  "pixabay_id": 261051,
+  "page": "https://pixabay.com/videos/id-261051/",
+  "duration": 5,
+  "tags": "pelicans, flying, sunset, sun, ocean",
   "rendition": "large"
  },
  "news-03": {
   "query": "stormy sea aerial",
-  "pixabay_id": 153976,
-  "page": "https://pixabay.com/videos/id-153976/",
-  "duration": 21,
-  "tags": "sunset, sea, sun, evening atmosphere, nature, landscape",
+  "pixabay_id": 3325,
+  "page": "https://pixabay.com/videos/id-3325/",
+  "duration": 16,
+  "tags": "sea, waves, water, spray, storm, wind, blue",
   "rendition": "large"
  },
  "news-04": {
   "query": "open ocean horizon",
-  "pixabay_id": 204172,
-  "page": "https://pixabay.com/videos/id-204172/",
-  "duration": 32,
-  "tags": "sunset, sky, sea, ocean, light, horizon, drone",
+  "pixabay_id": 22713,
+  "page": "https://pixabay.com/videos/id-22713/",
+  "duration": 59,
+  "tags": "sunrise, calm sea, darling, landscape, beauty",
   "rendition": "large"
  },
  "polygon-gone-01": {
   "query": "sea waves sunset",
-  "pixabay_id": 89614,
-  "page": "https://pixabay.com/videos/id-89614/",
-  "duration": 18,
-  "tags": "sunset, sea, ocean, waves, anture, outdoors",
+  "pixabay_id": 74637,
+  "page": "https://pixabay.com/videos/id-74637/",
+  "duration": 15,
+  "tags": "ocean, sea, sky, calm, meditation, tranquil, water, reflection, limitless, nature, japan",
   "rendition": "large"
  },
  "polygon-gone-02": {
   "query": "deep blue water aerial",
-  "pixabay_id": 42001,
-  "page": "https://pixabay.com/videos/id-42001/",
-  "duration": 15,
-  "tags": "sea, horizon, shipping, ocean, water, heaven, sunset, vacations, relaxation",
+  "pixabay_id": 224809,
+  "page": "https://pixabay.com/videos/id-224809/",
+  "duration": 30,
+  "tags": "ocean, sea, water, horizon, surface, calm, seascape, tranquil scene, water surface, liquid, tranquil, clean, calming, mediterranean, serene, nature",
   "rendition": "large"
  },
  "polygon-gone-03": {
@@ -425,66 +425,66 @@
  },
  "agloe-02": {
   "query": "calm sea horizon",
-  "pixabay_id": 92563,
-  "page": "https://pixabay.com/videos/id-92563/",
-  "duration": 38,
-  "tags": "ocean, sea, waves, foam, calm, spiritual, sky, clouds, tranquil, peaceful, meditation, horizon",
+  "pixabay_id": 228088,
+  "page": "https://pixabay.com/videos/id-228088/",
+  "duration": 70,
+  "tags": "ocean, sea, waves, water, sunset, surface, seascape, sunlight, water surface, calm, flowing, paradise, horizon over water, summer, tranquility",
   "rendition": "large"
  },
  "agloe-03": {
   "query": "dark ocean waves",
-  "pixabay_id": 230029,
-  "page": "https://pixabay.com/videos/id-230029/",
-  "duration": 19,
-  "tags": "ocean, sea, waves, water, liquid, seascape, flowing, motion, dark, surface, water surface, tranquility, tranquil, pattern, calm, moving, background",
+  "pixabay_id": 284518,
+  "page": "https://pixabay.com/videos/id-284518/",
+  "duration": 28,
+  "tags": "background, sunset, water, sea, dark, seascape, water surface, reflection, surface, ocean, liquid, copy space, smooth, gold colored, dawn, sunrise, gold, waves, golden",
   "rendition": "large"
  },
  "agloe-04": {
   "query": "blue sea aerial",
-  "pixabay_id": 41646,
-  "page": "https://pixabay.com/videos/id-41646/",
-  "duration": 22,
-  "tags": "clouds, sea, darling, landscape, storm, colors, costa, horizon, blue",
+  "pixabay_id": 212057,
+  "page": "https://pixabay.com/videos/id-212057/",
+  "duration": 30,
+  "tags": "sea, moonlight, night, water, reflection, seascape, surface, ocean, liquid, shiny, glittering, sparkling, close-up, water surface, darkness, mysterious, shine, sparkle, moonrise, moonshine, night light",
   "rendition": "large"
  },
  "agloe-05": {
   "query": "ocean sunset clouds",
-  "pixabay_id": 250805,
-  "page": "https://pixabay.com/videos/id-250805/",
-  "duration": 41,
-  "tags": "sea, ocean, sunset, clouds, nature, water",
+  "pixabay_id": 134824,
+  "page": "https://pixabay.com/videos/id-134824/",
+  "duration": 21,
+  "tags": "sunset, sun, sea, ocean, greece, mediterranean, clouds, sunbeams",
   "rendition": "large"
  },
  "agloe-06": {
   "query": "sea storm waves",
-  "pixabay_id": 216733,
-  "page": "https://pixabay.com/videos/id-216733/",
-  "duration": 28,
-  "tags": "sea, waves, stones, storm, wind, sky, architecture, vietnam, nature",
+  "pixabay_id": 228697,
+  "page": "https://pixabay.com/videos/id-228697/",
+  "duration": 43,
+  "tags": "ocean, sea, waves, surface, tropical, reflection, nature",
   "rendition": "large"
  },
  "bermeja-02": {
   "query": "ocean waves drone",
-  "pixabay_id": 248574,
-  "page": "https://pixabay.com/videos/id-248574/",
-  "duration": 19,
-  "tags": "sea, ocean, drone, waves, nature, vietnam, asia",
+  "pixabay_id": 277109,
+  "page": "https://pixabay.com/videos/id-277109/",
+  "duration": 51,
+  "tags": "sea, seascape, reflection, water surface, tranquil scene, sunlight, motion, liquid, surface, tranquility, ocean, sunrise, smooth, light",
   "rendition": "large"
  },
  "bermeja-03": {
   "query": "sea surface aerial",
-  "pixabay_id": 264968,
-  "page": "https://pixabay.com/videos/id-264968/",
-  "duration": 26,
-  "tags": "sunset, nature, sea, ocean, dawn",
+  "pixabay_id": 364250,
+  "page": "https://pixabay.com/videos/id-364250/",
+  "duration": 39,
+  "tags": "sunrise, mallorca, menorca, sea, nature, sun, light, daybreak, sunbeams, water surface, bug",
   "rendition": "large"
  },
  "bermeja-04": {
   "query": "gulf sea waves",
-  "pixabay_id": 343595,
-  "page": "https://pixabay.com/videos/id-343595/",
-  "duration": 53,
-  "tags": "rough sea, waves, adriatic sea, italy, gulf, promontory, turbid waves, abruzzo, water, sea, punta ferruccio",
+  "pixabay_id": 230029,
+  "page": "https://pixabay.com/videos/id-230029/",
+  "duration": 19,
+  "tags": "ocean, sea, waves, water, liquid, seascape, flowing, motion, dark, surface, water surface, tranquility, tranquil, pattern, calm, moving, background",
   "rendition": "large"
  },
  "navigation-01": {
@@ -497,90 +497,90 @@
  },
  "navigation-03": {
   "query": "blue ocean ripples",
-  "pixabay_id": 375341,
-  "page": "https://pixabay.com/videos/id-375341/",
+  "pixabay_id": 375342,
+  "page": "https://pixabay.com/videos/id-375342/",
   "duration": 17,
-  "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, mousse, foam, side, blue, dark, power, energy, depth",
+  "tags": "sea, ocean, nature, waves, landscape, the water, to flow, ripples, liquid, drop, splash, wind, mousse, foam, side, blue, dark, power, energy, depth, turquoise, good looking, color",
   "rendition": "large"
  },
  "navigation-04": {
   "query": "ocean drone overhead",
-  "pixabay_id": 261051,
-  "page": "https://pixabay.com/videos/id-261051/",
-  "duration": 5,
-  "tags": "pelicans, flying, sunset, sun, ocean",
+  "pixabay_id": 221863,
+  "page": "https://pixabay.com/videos/id-221863/",
+  "duration": 14,
+  "tags": "ocean, sea, sunset, water, sunlight, reflection, sun, shiny, sunrise, seascape, surface, water surface, golden, sunshine, sundown, smooth, background",
   "rendition": "large"
  },
  "navigation-05": {
   "query": "sea foam waves",
-  "pixabay_id": 184866,
-  "page": "https://pixabay.com/videos/id-184866/",
-  "duration": 21,
-  "tags": "ocean, waves, sea, foam, nature",
+  "pixabay_id": 207679,
+  "page": "https://pixabay.com/videos/id-207679/",
+  "duration": 11,
+  "tags": "ocean, sea, waves, foam, water",
   "rendition": "large"
  },
  "navigation-06": {
   "query": "ocean waves slow motion",
-  "pixabay_id": 284906,
-  "page": "https://pixabay.com/videos/id-284906/",
-  "duration": 8,
-  "tags": "swan, water, animal, waves, wind, feathers, storm, plumage, neck",
+  "pixabay_id": 135763,
+  "page": "https://pixabay.com/videos/id-135763/",
+  "duration": 20,
+  "tags": "water snails, reflection, water surface, water, sea water, sea, sun stars",
   "rendition": "large"
  },
  "navigation-07": {
   "query": "deep sea surface",
-  "pixabay_id": 3325,
-  "page": "https://pixabay.com/videos/id-3325/",
-  "duration": 16,
-  "tags": "sea, waves, water, spray, storm, wind, blue",
+  "pixabay_id": 84949,
+  "page": "https://pixabay.com/videos/id-84949/",
+  "duration": 18,
+  "tags": "surface, sea, ripples, waves, water, wind, wet, liquid, pool, reflection, texture",
   "rendition": "large"
  },
  "navigation-08": {
   "query": "ocean sunset aerial",
-  "pixabay_id": 22713,
-  "page": "https://pixabay.com/videos/id-22713/",
-  "duration": 59,
-  "tags": "sunrise, calm sea, darling, landscape, beauty",
+  "pixabay_id": 226534,
+  "page": "https://pixabay.com/videos/id-226534/",
+  "duration": 29,
+  "tags": "ocean, sea, sunset, sun, water, sunlight, reflection, yellow, water surface, seascape, wave, vibrant color, sunrise, dawn, flowing, glowing, horizon",
   "rendition": "large"
  },
  "pumice-01": {
   "query": "ocean wave spray",
-  "pixabay_id": 229410,
-  "page": "https://pixabay.com/videos/id-229410/",
-  "duration": 24,
-  "tags": "ocean, sea, waves, surf, seascape, spray, nature",
+  "pixabay_id": 94166,
+  "page": "https://pixabay.com/videos/id-94166/",
+  "duration": 22,
+  "tags": "water, sea, ocean, blue, surface, wave, waving, abstract, background, drop, backdrop",
   "rendition": "large"
  },
  "pumice-02": {
   "query": "sea horizon dusk",
-  "pixabay_id": 137126,
-  "page": "https://pixabay.com/videos/id-137126/",
-  "duration": 60,
-  "tags": "ocean, waves, relaxing, relax, calm, playa de piticabo, sea sounds",
+  "pixabay_id": 204607,
+  "page": "https://pixabay.com/videos/id-204607/",
+  "duration": 30,
+  "tags": "wave, sunset, sea, ocean, water, seascape, sunlight, surface, reflection, liquid, light, sunny, sunrise, calm, ripple, sunshine, glow, tranquil, sundown, glowing, flowing",
   "rendition": "large"
  },
  "pumice-03": {
   "query": "ocean surface waves",
-  "pixabay_id": 228697,
-  "page": "https://pixabay.com/videos/id-228697/",
-  "duration": 43,
-  "tags": "ocean, sea, waves, surface, tropical, reflection, nature",
+  "pixabay_id": 20452,
+  "page": "https://pixabay.com/videos/id-20452/",
+  "duration": 14,
+  "tags": "ocean, waves, blue, surface, sea, surf, seascape, motion, travel, romantic, magical, relaxation, mediation, summer, tourism, nature, outdoor, exotic, peace",
   "rendition": "large"
  },
  "pumice-scale-01": {
   "query": "ocean aerial",
-  "pixabay_id": 213733,
-  "page": "https://pixabay.com/videos/id-213733/",
-  "duration": 29,
-  "tags": "sunset, ocean, sea, sky, drone, dji, stone, evening, nature",
+  "pixabay_id": 126908,
+  "page": "https://pixabay.com/videos/id-126908/",
+  "duration": 11,
+  "tags": "ocean, sea, drone, side, concarneau, sky, 4k",
   "rendition": "large"
  },
  "pumice-scale-02": {
   "query": "open sea aerial",
-  "pixabay_id": 135898,
-  "page": "https://pixabay.com/videos/id-135898/",
-  "duration": 16,
-  "tags": "book, reading, literature, education, poetry, sea, sunset, nature, calm, wind, backround",
+  "pixabay_id": 217836,
+  "page": "https://pixabay.com/videos/id-217836/",
+  "duration": 29,
+  "tags": "ocean, shiny, sunlight, abstract, sea, water, bright, blur, defocused, surface, light, blurry, blurred, pattern, liquid, reflection, shine, sparkle, sparkling, background",
   "rendition": "large"
  },
  "pumice-scale-03": {
@@ -593,18 +593,18 @@
  },
  "pumice-scale-04": {
   "query": "sea waves morning",
-  "pixabay_id": 379948,
-  "page": "https://pixabay.com/videos/id-379948/",
-  "duration": 22,
-  "tags": "sunrise, adriatic sea, waves, water, reflection, morning, italy",
+  "pixabay_id": 294101,
+  "page": "https://pixabay.com/videos/id-294101/",
+  "duration": 23,
+  "tags": "sunlight, sunset, water, sea, background, wave, seascape, reflection, gold, ocean, gold colored, light, calm, tranquil scene, glittering, liquid, surface, glitter, shiny, fluid, glowing, glow",
   "rendition": "large"
  },
  "pumice-scale-05": {
   "query": "storm waves aerial",
-  "pixabay_id": 74637,
-  "page": "https://pixabay.com/videos/id-74637/",
-  "duration": 15,
-  "tags": "ocean, sea, sky, calm, meditation, tranquil, water, reflection, limitless, nature, japan",
+  "pixabay_id": 284520,
+  "page": "https://pixabay.com/videos/id-284520/",
+  "duration": 65,
+  "tags": "blue, sea, water, horizon, seascape, wave, day, horizon over water, water surface, ocean, surface, storm, foam, motion, rough, atlantic ocean, breaking wave, waves",
   "rendition": "large"
  },
  "finale-01": {
@@ -617,18 +617,18 @@
  },
  "finale-02": {
   "query": "open sea sunrise",
-  "pixabay_id": 224809,
-  "page": "https://pixabay.com/videos/id-224809/",
-  "duration": 30,
-  "tags": "ocean, sea, water, horizon, surface, calm, seascape, tranquil scene, water surface, liquid, tranquil, clean, calming, mediterranean, serene, nature",
+  "pixabay_id": 277116,
+  "page": "https://pixabay.com/videos/id-277116/",
+  "duration": 55,
+  "tags": "wave, sunset, water, sea, seascape, ocean, sun, sunlight, reflection, sunrise, gold, breaking wave, horizon over water, orange, sunny, red, water surface, sunshine, reflecting, colourful, breaking, shiny, shine, splash",
   "rendition": "large"
  },
  "finale-03": {
   "query": "deep ocean aerial",
-  "pixabay_id": 212850,
-  "page": "https://pixabay.com/videos/id-212850/",
-  "duration": 29,
-  "tags": "ocean, sea, water, waves, sculpture, art, frame, window, movement, peace, reveal, calm, nature",
+  "pixabay_id": 349452,
+  "page": "https://pixabay.com/videos/id-349452/",
+  "duration": 59,
+  "tags": "wave, water, ocean, sea, dark, motion, seascape, dramatic, storm, ripple, stormy, power, liquid, deep, powerful, oceanic, depth, cinematic, crest, offshore, fluid, wild",
   "rendition": "large"
  },
  "finale-04": {
@@ -641,18 +641,18 @@
  },
  "finale-05": {
   "query": "sunset sea waves",
-  "pixabay_id": 212057,
-  "page": "https://pixabay.com/videos/id-212057/",
-  "duration": 30,
-  "tags": "sea, moonlight, night, water, reflection, seascape, surface, ocean, liquid, shiny, glittering, sparkling, close-up, water surface, darkness, mysterious, shine, sparkle, moonrise, moonshine, night light",
+  "pixabay_id": 287634,
+  "page": "https://pixabay.com/videos/id-287634/",
+  "duration": 28,
+  "tags": "background, sunset, water, sea, dark, seascape, water surface, reflection, wave, surface, ocean, liquid, copy space, smooth, gold colored, dawn, sunrise, looping, orange, gold, waves, golden",
   "rendition": "large"
  },
  "finale-06": {
   "query": "ocean sunset horizon",
-  "pixabay_id": 226534,
-  "page": "https://pixabay.com/videos/id-226534/",
-  "duration": 29,
-  "tags": "ocean, sea, sunset, sun, water, sunlight, reflection, yellow, water surface, seascape, wave, vibrant color, sunrise, dawn, flowing, glowing, horizon",
+  "pixabay_id": 212825,
+  "page": "https://pixabay.com/videos/id-212825/",
+  "duration": 26,
+  "tags": "ocean, sea, sunset, seascape, sunlight, horizon, water, sun, light, peaceful, reflection, golden, sunshine, shine, copy space, water surface, drops, droplets",
   "rendition": "large"
  }
 }

@@ -76,7 +76,7 @@
        }
       }
      },
-     "pick": "pix:2944"
+     "pick": "pix:248156"
     },
     {
      "id": "hook-map-02",
@@ -503,7 +503,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:248156"
+     "pick": "pix:374783"
     },
     {
      "id": "black-polygon-03",
@@ -631,7 +631,7 @@
        ]
       }
      },
-     "pick": "pix:51237"
+     "pick": "pix:250805"
     },
     {
      "id": "whaler-03",
@@ -692,7 +692,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:374783"
+     "pick": "pix:186362"
     }
    ]
   },
@@ -861,7 +861,7 @@
        ]
       }
      },
-     "pick": "pix:308349"
+     "pick": "pix:375341"
     },
     {
      "id": "chart-1908-06",
@@ -1016,7 +1016,7 @@
        }
       }
      },
-     "pick": "pix:30902"
+     "pick": "pix:7337"
     }
    ]
   },
@@ -1057,7 +1057,7 @@
        ]
       }
      },
-     "pick": "pix:7337"
+     "pick": "pix:219191"
     },
     {
      "id": "timeline-removed-02",
@@ -1092,7 +1092,7 @@
        ]
       }
      },
-     "pick": "pix:205011"
+     "pick": "pix:65504"
     },
     {
      "id": "timeline-removed-03",
@@ -1128,7 +1128,7 @@
        "suffix": "+"
       }
      },
-     "pick": "pix:103485"
+     "pick": "pix:91773"
     },
     {
      "id": "timeline-removed-04",
@@ -1187,7 +1187,7 @@
        ]
       }
      },
-     "pick": "pix:13857"
+     "pick": "pix:211748"
     }
    ]
   },
@@ -1281,7 +1281,7 @@
        "note": "Американская цифровая база береговых линий"
       }
      },
-     "pick": "pix:250618"
+     "pick": "pix:240014"
     },
     {
      "id": "digital-03",
@@ -1305,7 +1305,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:186362"
+     "pick": "pix:43452"
     },
     {
      "id": "digital-04",
@@ -1329,7 +1329,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:253445"
+     "pick": "pix:153976"
     },
     {
      "id": "digital-05",
@@ -1360,7 +1360,7 @@
        "label": "в цифровой базе данных"
       }
      },
-     "pick": "pix:219191"
+     "pick": "pix:238507"
     },
     {
      "id": "digital-06",
@@ -1384,7 +1384,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:91773"
+     "pick": "pix:42001"
     }
    ]
   },
@@ -1480,7 +1480,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:138961"
+     "pick": "pix:92563"
     },
     {
      "id": "voyage-04",
@@ -1504,7 +1504,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:223691"
+     "pick": "pix:41646"
     },
     {
      "id": "voyage-05",
@@ -1535,7 +1535,7 @@
        "label": "курс через предполагаемый остров"
       }
      },
-     "pick": "pix:211748"
+     "pick": "pix:89614"
     }
    ]
   },
@@ -1573,7 +1573,7 @@
        "label": "глубина по эхолоту"
       }
      },
-     "pick": "pix:238507"
+     "pick": "pix:221871"
     },
     {
      "id": "depth-profile-02",
@@ -1621,7 +1621,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:43452"
+     "pick": "pix:264968"
     }
    ]
   },
@@ -1662,7 +1662,7 @@
        ]
       }
      },
-     "pick": "pix:12023"
+     "pick": "pix:258202"
     },
     {
      "id": "news-02",
@@ -1693,7 +1693,7 @@
        "label": "на самом деле отсутствует"
       }
      },
-     "pick": "pix:13704"
+     "pick": "pix:261051"
     },
     {
      "id": "news-03",
@@ -1728,7 +1728,7 @@
        ]
       }
      },
-     "pick": "pix:153976"
+     "pick": "pix:3325"
     },
     {
      "id": "news-04",
@@ -1763,7 +1763,7 @@
        ]
       }
      },
-     "pick": "pix:204172"
+     "pick": "pix:22713"
     }
    ]
   },
@@ -1793,7 +1793,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:89614"
+     "pick": "pix:74637"
     },
     {
      "id": "polygon-gone-02",
@@ -1828,7 +1828,7 @@
        ]
       }
      },
-     "pick": "pix:42001"
+     "pick": "pix:224809"
     },
     {
      "id": "polygon-gone-03",
@@ -1907,7 +1907,7 @@
        ]
       }
      },
-     "pick": "pix:92563"
+     "pick": "pix:228088"
     },
     {
      "id": "agloe-03",
@@ -1938,7 +1938,7 @@
        "label": "выдуманный городок — ловушка для копирования"
       }
      },
-     "pick": "pix:230029"
+     "pick": "pix:284518"
     },
     {
      "id": "agloe-04",
@@ -1962,7 +1962,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:41646"
+     "pick": "pix:212057"
     },
     {
      "id": "agloe-05",
@@ -1986,7 +1986,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:250805"
+     "pick": "pix:134824"
     },
     {
      "id": "agloe-06",
@@ -2017,7 +2017,7 @@
        "label": "повлияла на реальность"
       }
      },
-     "pick": "pix:216733"
+     "pick": "pix:228697"
     }
    ]
   },
@@ -2078,7 +2078,7 @@
        }
       }
      },
-     "pick": "pix:248574"
+     "pick": "pix:277109"
     },
     {
      "id": "bermeja-03",
@@ -2113,7 +2113,7 @@
        ]
       }
      },
-     "pick": "pix:264968"
+     "pick": "pix:364250"
     },
     {
      "id": "bermeja-04",
@@ -2144,7 +2144,7 @@
        "label": "почему остров имел значение"
       }
      },
-     "pick": "pix:343595"
+     "pick": "pix:230029"
     }
    ]
   },
@@ -2221,7 +2221,7 @@
        "label": "ошибки корабельных часов"
       }
      },
-     "pick": "pix:375341"
+     "pick": "pix:375342"
     },
     {
      "id": "navigation-04",
@@ -2253,7 +2253,7 @@
        "label": "смещение по долготе при ошибке часов в 1 минуту"
       }
      },
-     "pick": "pix:261051"
+     "pick": "pix:221863"
     },
     {
      "id": "navigation-05",
@@ -2277,7 +2277,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:184866"
+     "pick": "pix:207679"
     },
     {
      "id": "navigation-06",
@@ -2318,7 +2318,7 @@
        "note": "возможное место наблюдения"
       }
      },
-     "pick": "pix:284906"
+     "pick": "pix:135763"
     },
     {
      "id": "navigation-07",
@@ -2342,7 +2342,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:3325"
+     "pick": "pix:84949"
     },
     {
      "id": "navigation-08",
@@ -2377,7 +2377,7 @@
        ]
       }
      },
-     "pick": "pix:22713"
+     "pick": "pix:226534"
     }
    ]
   },
@@ -2414,7 +2414,7 @@
        "label": "пористый вулканический камень"
       }
      },
-     "pick": "pix:229410"
+     "pick": "pix:94166"
     },
     {
      "id": "pumice-02",
@@ -2438,7 +2438,7 @@
       "sea surface",
       "ocean drone"
      ],
-     "pick": "pix:137126"
+     "pick": "pix:204607"
     },
     {
      "id": "pumice-03",
@@ -2469,7 +2469,7 @@
        "label": "издалека похоже на отмель"
       }
      },
-     "pick": "pix:228697"
+     "pick": "pix:20452"
     }
    ]
   },
@@ -2489,7 +2489,7 @@
       "ocean drone"
      ],
      "note": "PLACEHOLDER: NASA image 78863 (Gavre pumice raft) cannot be fetched - the old Earth Observatory page is gone. Restore type external-image + asset nasa_havre_2012 once a real URL/file exists.",
-     "pick": "pix:213733"
+     "pick": "pix:126908"
     },
     {
      "id": "pumice-scale-02",
@@ -2529,7 +2529,7 @@
        "unit": "км"
       }
      },
-     "pick": "pix:135898"
+     "pick": "pix:217836"
     },
     {
      "id": "pumice-scale-03",
@@ -2599,7 +2599,7 @@
        ]
       }
      },
-     "pick": "pix:379948"
+     "pick": "pix:294101"
     },
     {
      "id": "pumice-scale-05",
@@ -2631,7 +2631,7 @@
        "label": "от сообщённого места Сэнди"
       }
      },
-     "pick": "pix:74637"
+     "pick": "pix:284520"
     }
    ]
   },
@@ -2703,7 +2703,7 @@
        ]
       }
      },
-     "pick": "pix:224809"
+     "pick": "pix:277116"
     },
     {
      "id": "finale-03",
@@ -2734,7 +2734,7 @@
        "label": "мест на картах не существует?"
       }
      },
-     "pick": "pix:212850"
+     "pick": "pix:349452"
     },
     {
      "id": "finale-04",
@@ -2789,7 +2789,7 @@
        "note": "Щелочная вода и соляная корка"
       }
      },
-     "pick": "pix:212057"
+     "pick": "pix:287634"
     },
     {
      "id": "finale-06",
@@ -2820,7 +2820,7 @@
        "subtitle": "Следующая история — озеро Натрон"
       }
      },
-     "pick": "pix:226534"
+     "pick": "pix:212825"
     }
    ]
   }
