@@ -1,0 +1,24 @@
+name: NASA image finder (diagnostic)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Look for the Gavre pumice raft image 78863
+        run: |
+          set +e
+          echo "--- page"; curl -sL -m 60 -A "Mozilla/5.0" -o p.html -w "%{http_code} %{url_effective}\n" https://earthobservatory.nasa.gov/images/78863
+          grep -o '<title>[^<]*' p.html; grep -o 'https\?://[^"'"'"' )<>]*78863[^"'"'"' )<>]*' p.html | sort -u | head -20
+          echo "--- NASA image API"; curl -sL -m 60 "https://images-api.nasa.gov/search?q=havre%20pumice%20raft&media_type=image" | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          for i in d['collection']['items'][:15]: print(i['data'][0]['nasa_id'],'|',i['data'][0]['title'],'|',i['data'][0].get('date_created'),'|',i['links'][0]['href'] if i.get('links') else '')"
+          echo "--- guesses"; for u in \
+            https://eoimages.gsfc.nasa.gov/images/imagerecords/78000/78863/havre_amo_2012219_lrg.jpg \
+            https://eoimages.gsfc.nasa.gov/images/imagerecords/78000/78863/pumice_amo_2012219_lrg.jpg \
+            https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/78000/78863/havre_amo_2012219_lrg.jpg ; do
+            echo "$u -> $(curl -sIL -m 30 -o /dev/null -w '%{http_code} %{content_type}' $u)"; done

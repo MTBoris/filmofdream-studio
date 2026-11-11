@@ -34,6 +34,7 @@ LAND_WORDS = {"land", "rock", "rocks", "rocky", "cliff", "cliffs", "coast", "coa
               "beaches", "island", "islands", "isle", "bay", "harbor", "harbour", "port", "pier", "dock", "jetty", "lighthouse",
               "mountain", "mountains", "hill", "hills", "forest", "tree", "trees", "palm", "sand", "dune", "village", "town",
               "city", "building", "buildings", "house", "bridge", "resort", "cape", "peninsula", "lagoon", "seaside",
+              "winter", "snow", "ice", "river", "lake", "fog", "alps", "castle", "aquarium", "fish", "jellyfish", "jelly fish", "underwater", "coral", "reef",
               "jungle", "palms", "palm tree", "rainforest", "rain-forest", "rain forest", "coconut", "tropical forest", "woods"}
 VESSEL_WORDS = {"boat", "boats", "ship", "ships", "yacht", "yachts", "sailboat", "sailboats", "sailing", "motorboat", "speedboat",
                 "ferry", "cruise", "kayak", "canoe", "fishing", "vessel", "cargo", "tanker", "liner", "catamaran", "surfing",
@@ -163,7 +164,7 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None, relaxe
                 continue   # relaxed fill only guarantees ONE clip per shot, so the 231-clip pool is not used up by early shots
             allow = vessels_allowed(s)
             words = set(query_words(s["query"]))
-            ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, [])
+            ranked = sorted((h for h in everything.values() if h["id"] not in used and h["id"] not in blocked and good(h, []) and ({"sea", "ocean"} & tag_words(h))
                              and rendition(h) and open_water(h, allow) and (accept is None or accept(h))),
                             key=lambda h: -sum(1 for w in words if w in h.get("tags", "").lower()))
             for h in ranked[:1]:

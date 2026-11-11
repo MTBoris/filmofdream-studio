@@ -42,6 +42,7 @@ def find_large_image(html, page_url):
         urls = re.findall(r"""(?:href|src|content)=["']((?:https?:)?//(?:assets\.science|science|www)\.nasa\.gov/[^"']+?\.(?:jpg|jpeg|png))(?:\?[^"']*)?["']""", html, flags=re.I)
         urls = [("https:" + u) if u.startswith("//") else u for u in urls]
         urls = [u for u in dict.fromkeys(urls) if not re.search(r"logo|icon|favicon|sprite|thumb|_tmb|\d{2,3}x\d{2,3}\.", u, flags=re.I)]
+        urls = [u for u in urls if m and f"/{m.group(1)}/" in u]   # ONLY a file of this very image record - never "some NASA picture"
         print("fallback image candidates:", urls)
     if not urls:
         return None
