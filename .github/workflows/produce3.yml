@@ -26,6 +26,8 @@ jobs:
       - name: Validate storyboard
         run: python scripts/sb2.py check "$EP/storyboard.json"
       - name: Stock candidates (open water only, 16:9, no black bars, blocklist)
+        env:
+          STOCK_RELAXED: ${{ inputs.autopick == 'yes' && '1' || '' }}
         run: python scripts/stock2.py candidates "$EP/storyboard.json" cands | tee candidates.log | tail -30
       - name: Auto-pick (pilot only) or use the picks from the storyboard
         run: |

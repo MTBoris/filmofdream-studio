@@ -120,3 +120,13 @@ def test_black_bars_are_detected_on_pixels(tmp_path):
     assert stock2.black_bars(plain) is False
     assert stock2.black_bars(barred) is True
     assert stock2.black_bars(pillar) is True
+
+
+def test_relaxed_fills_shots_that_strict_matching_leaves_empty():
+    pool = {"ocean waves": [hit(i, tags="ocean, waves, sea") for i in range(1, 7)]}
+    shots = [{"id": "a", "query": "ocean waves"}, {"id": "b", "query": "stormy horizon"}]
+    strict, short = stock2.assign_candidates(shots, pool)
+    assert strict["b"] == [] and short
+    out, short = stock2.assign_candidates(shots, pool, relaxed=True)
+    ids = [h["id"] for h in out["a"]] + [h["id"] for h in out["b"]]
+    assert len(out["b"]) == 1 and len(ids) == len(set(ids)) and not short
