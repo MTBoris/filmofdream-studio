@@ -452,7 +452,7 @@
   {
    "id": "black-polygon-01",
    "type": "stock",
-   "dur": 6.033,
+   "dur": 6.036,
    "query": "deep blue water aerial",
    "queries": [
     "ocean waves",
@@ -499,18 +499,18 @@
      }
     },
     "start": 58.4,
-    "end": 64.033
+    "end": 64.036
    },
    "pick": 16160,
    "scene": "black_polygon",
    "n": 0,
    "start": 58.0,
-   "end": 64.033
+   "end": 64.036
   },
   {
    "id": "black-polygon-02",
    "type": "stock",
-   "dur": 5.028,
+   "dur": 5.03,
    "query": "dark sea waves",
    "queries": [
     "ocean waves",
@@ -532,13 +532,13 @@
    "pick": 374783,
    "scene": "black_polygon",
    "n": 1,
-   "start": 64.033,
-   "end": 69.061
+   "start": 64.036,
+   "end": 69.065
   },
   {
    "id": "black-polygon-03",
    "type": "stock",
-   "dur": 6.033,
+   "dur": 6.036,
    "query": "calm sea horizon",
    "queries": [
     "ocean waves",
@@ -560,13 +560,13 @@
    "pick": 306155,
    "scene": "black_polygon",
    "n": 2,
-   "start": 69.061,
-   "end": 75.094
+   "start": 69.065,
+   "end": 75.101
   },
   {
    "id": "black-polygon-04",
    "type": "stock",
-   "dur": 5.028,
+   "dur": 5.03,
    "query": "dark ocean waves",
    "queries": [
     "ocean waves",
@@ -593,19 +593,19 @@
      "label": "чёрное пятно на цифровой карте",
      "group": false
     },
-    "start": 75.494,
-    "end": 80.122
+    "start": 75.501,
+    "end": 80.13
    },
    "pick": 21174,
    "scene": "black_polygon",
    "n": 3,
-   "start": 75.094,
-   "end": 80.122
+   "start": 75.101,
+   "end": 80.13
   },
   {
    "id": "black-polygon-05",
    "type": "stock",
-   "dur": 5.028,
+   "dur": 5.03,
    "query": "ocean aerial view",
    "queries": [
     "ocean waves",
@@ -627,23 +627,23 @@
    "pick": 13864,
    "scene": "black_polygon",
    "n": 4,
-   "start": 80.122,
-   "end": 85.15
+   "start": 80.13,
+   "end": 85.16
   },
   {
    "id": "whaler-01",
    "type": "image",
-   "dur": 6.064,
+   "dur": 6.062,
    "asset_id": "whaler_1876",
    "scene": "whaler",
    "n": 0,
-   "start": 85.15,
-   "end": 91.214
+   "start": 85.16,
+   "end": 91.222
   },
   {
    "id": "whaler-02",
    "type": "stock",
-   "dur": 6.064,
+   "dur": 6.062,
    "query": "ocean sunset clouds",
    "queries": [
     "ocean waves",
@@ -672,29 +672,29 @@
       }
      ]
     },
-    "start": 91.614,
-    "end": 97.278
+    "start": 91.622,
+    "end": 97.284
    },
    "pick": 250805,
    "scene": "whaler",
    "n": 1,
-   "start": 91.214,
-   "end": 97.278
+   "start": 91.222,
+   "end": 97.284
   },
   {
    "id": "whaler-03",
    "type": "image",
-   "dur": 6.064,
+   "dur": 6.062,
    "asset_id": "ship_log_1876",
    "scene": "whaler",
    "n": 2,
-   "start": 97.278,
-   "end": 103.342
+   "start": 97.284,
+   "end": 103.346
   },
   {
    "id": "whaler-04",
    "type": "stock",
-   "dur": 6.064,
+   "dur": 6.062,
    "query": "sea storm waves",
    "queries": [
     "ocean waves",
@@ -719,19 +719,19 @@
      "value": "Песчаные островки",
      "label": "и буруны · запись моряков"
     },
-    "start": 103.742,
-    "end": 109.407
+    "start": 103.746,
+    "end": 109.408
    },
    "pick": 71122,
    "scene": "whaler",
    "n": 3,
-   "start": 103.342,
-   "end": 109.407
+   "start": 103.346,
+   "end": 109.408
   },
   {
    "id": "whaler-05",
    "type": "stock",
-   "dur": 5.053,
+   "dur": 5.052,
    "query": "ocean waves drone",
    "queries": [
     "ocean waves",
@@ -753,13 +753,13 @@
    "pick": 186362,
    "scene": "whaler",
    "n": 4,
-   "start": 109.407,
+   "start": 109.408,
    "end": 114.46
   },
   {
    "id": "chart-1908-01",
    "type": "stock",
-   "dur": 6.024,
+   "dur": 6.025,
    "query": "sea surface aerial",
    "queries": [
     "ocean waves",
@@ -789,28 +789,28 @@
      ]
     },
     "start": 114.86,
-    "end": 120.484
+    "end": 120.485
    },
    "pick": 220593,
    "scene": "chart_1908",
    "n": 0,
    "start": 114.46,
-   "end": 120.484
+   "end": 120.485
   },
   {
    "id": "chart-1908-02",
    "type": "image",
-   "dur": 6.024,
+   "dur": 6.025,
    "asset_id": "chart_1908",
    "scene": "chart_1908",
    "n": 1,
-   "start": 120.484,
-   "end": 126.507
+   "start": 120.485,
+   "end": 126.511
   },
   {
    "id": "chart-1908-03",
    "type": "stock",
-   "dur": 6.024,
+   "dur": 6.025,
    "query": "sea waves aerial",
    "queries": [
     "ocean waves",
@@ -839,19 +839,19 @@
       }
      ]
     },
-    "start": 126.907,
-    "end": 132.531
+    "start": 126.911,
+    "end": 132.536
    },
    "pick": 374784,
    "scene": "chart_1908",
    "n": 2,
-   "start": 126.507,
-   "end": 132.531
+   "start": 126.511,
+   "end": 132.536
   },
   {
    "id": "chart-1908-04",
    "type": "stock",
-   "dur": 5.02,
+   "dur": 5.021,
    "query": "ocean horizon clouds",
    "queries": [
     "ocean waves",
@@ -897,19 +897,19 @@
       "label": "Сэнди"
      }
     },
-    "start": 132.931,
-    "end": 137.551
+    "start": 132.936,
+    "end": 137.558
    },
    "pick": 25665,
    "scene": "chart_1908",
    "n": 3,
-   "start": 132.531,
-   "end": 137.551
+   "start": 132.536,
+   "end": 137.558
   },
   {
    "id": "chart-1908-05",
    "type": "stock",
-   "dur": 5.02,
+   "dur": 5.021,
    "query": "blue ocean ripples",
    "queries": [
     "ocean waves",
@@ -938,19 +938,19 @@
       }
      ]
     },
-    "start": 137.951,
-    "end": 142.57
+    "start": 137.958,
+    "end": 142.579
    },
    "pick": 375341,
    "scene": "chart_1908",
    "n": 4,
-   "start": 137.551,
-   "end": 142.57
+   "start": 137.558,
+   "end": 142.579
   },
   {
    "id": "chart-1908-06",
    "type": "stock",
-   "dur": 5.02,
+   "dur": 5.021,
    "query": "ocean drone overhead",
    "queries": [
     "ocean waves",
@@ -979,19 +979,19 @@
       }
      ]
     },
-    "start": 142.97,
-    "end": 147.59
+    "start": 142.979,
+    "end": 147.6
    },
    "pick": 215484,
    "scene": "chart_1908",
    "n": 5,
-   "start": 142.57,
-   "end": 147.59
+   "start": 142.579,
+   "end": 147.6
   },
   {
    "id": "existence-doubtful-01",
    "type": "stock",
-   "dur": 4.918,
+   "dur": 4.914,
    "query": "sea foam waves",
    "queries": [
     "ocean waves",
@@ -1016,19 +1016,19 @@
      "value": "E.D.",
      "label": "Existence Doubtful"
     },
-    "start": 147.99,
-    "end": 152.508
+    "start": 148.0,
+    "end": 152.514
    },
    "pick": 92578,
    "scene": "existence_doubtful",
    "n": 0,
-   "start": 147.59,
-   "end": 152.508
+   "start": 147.6,
+   "end": 152.514
   },
   {
    "id": "existence-doubtful-02",
    "type": "stock",
-   "dur": 4.918,
+   "dur": 4.914,
    "query": "ocean waves slow motion",
    "queries": [
     "ocean waves",
@@ -1053,19 +1053,19 @@
      "value": "СУЩЕСТВОВАНИЕ",
      "label": "СОМНИТЕЛЬНО"
     },
-    "start": 152.908,
-    "end": 157.426
+    "start": 152.914,
+    "end": 157.429
    },
    "pick": 261473,
    "scene": "existence_doubtful",
    "n": 1,
-   "start": 152.508,
-   "end": 157.426
+   "start": 152.514,
+   "end": 157.429
   },
   {
    "id": "existence-doubtful-03",
    "type": "stock",
-   "dur": 3.934,
+   "dur": 3.931,
    "query": "deep sea surface",
    "queries": [
     "ocean waves",
@@ -1111,13 +1111,13 @@
       "label": "Сэнди"
      }
     },
-    "start": 157.826,
+    "start": 157.829,
     "end": 161.36
    },
    "pick": 7337,
    "scene": "existence_doubtful",
    "n": 2,
-   "start": 157.426,
+   "start": 157.429,
    "end": 161.36
   },
   {
@@ -1316,7 +1316,7 @@
   {
    "id": "digital-01",
    "type": "stock",
-   "dur": 5.968,
+   "dur": 5.97,
    "query": "ocean water closeup",
    "queries": [
     "ocean waves",
@@ -1346,18 +1346,18 @@
      ]
     },
     "start": 191.46,
-    "end": 197.028
+    "end": 197.03
    },
    "pick": 356593,
    "scene": "digital",
    "n": 0,
    "start": 191.06,
-   "end": 197.028
+   "end": 197.03
   },
   {
    "id": "digital-02",
    "type": "stock",
-   "dur": 5.968,
+   "dur": 5.97,
    "query": "sea waves morning",
    "queries": [
     "ocean waves",
@@ -1404,19 +1404,19 @@
      },
      "note": "Американская цифровая база береговых линий"
     },
-    "start": 197.428,
-    "end": 202.996
+    "start": 197.43,
+    "end": 203.0
    },
    "pick": 240014,
    "scene": "digital",
    "n": 1,
-   "start": 197.028,
-   "end": 202.996
+   "start": 197.03,
+   "end": 203.0
   },
   {
    "id": "digital-03",
    "type": "stock",
-   "dur": 5.968,
+   "dur": 5.97,
    "query": "storm waves aerial",
    "queries": [
     "ocean waves",
@@ -1438,13 +1438,13 @@
    "pick": 43452,
    "scene": "digital",
    "n": 2,
-   "start": 202.996,
-   "end": 208.965
+   "start": 203.0,
+   "end": 208.97
   },
   {
    "id": "digital-04",
    "type": "stock",
-   "dur": 5.968,
+   "dur": 5.97,
    "query": "ocean swell",
    "queries": [
     "ocean waves",
@@ -1466,13 +1466,13 @@
    "pick": 153976,
    "scene": "digital",
    "n": 3,
-   "start": 208.965,
-   "end": 214.933
+   "start": 208.97,
+   "end": 214.94
   },
   {
    "id": "digital-05",
    "type": "stock",
-   "dur": 4.974,
+   "dur": 4.975,
    "query": "open sea sunrise",
    "queries": [
     "ocean waves",
@@ -1497,19 +1497,19 @@
      "value": "СУША",
      "label": "в цифровой базе данных"
     },
-    "start": 215.333,
-    "end": 219.906
+    "start": 215.34,
+    "end": 219.915
    },
    "pick": 238507,
    "scene": "digital",
    "n": 4,
-   "start": 214.933,
-   "end": 219.906
+   "start": 214.94,
+   "end": 219.915
   },
   {
    "id": "digital-06",
    "type": "stock",
-   "dur": 4.974,
+   "dur": 4.975,
    "query": "deep ocean aerial",
    "queries": [
     "ocean waves",
@@ -1531,8 +1531,8 @@
    "pick": 42001,
    "scene": "digital",
    "n": 5,
-   "start": 219.906,
-   "end": 224.88
+   "start": 219.915,
+   "end": 224.89
   },
   {
    "id": "voyage-01",
@@ -1566,14 +1566,14 @@
       }
      ]
     },
-    "start": 225.28,
-    "end": 230.814
+    "start": 225.29,
+    "end": 230.824
    },
    "pick": 87211,
    "scene": "voyage",
    "n": 0,
-   "start": 224.88,
-   "end": 230.814
+   "start": 224.89,
+   "end": 230.824
   },
   {
    "id": "voyage-02",
@@ -1603,14 +1603,14 @@
      "text": "Мария Сетон",
      "sub": "Геофизик · Сиднейский университет"
     },
-    "start": 231.214,
-    "end": 236.748
+    "start": 231.224,
+    "end": 236.758
    },
    "pick": 353265,
    "scene": "voyage",
    "n": 1,
-   "start": 230.814,
-   "end": 236.748
+   "start": 230.824,
+   "end": 236.758
   },
   {
    "id": "voyage-03",
@@ -1637,8 +1637,8 @@
    "pick": 92563,
    "scene": "voyage",
    "n": 2,
-   "start": 236.748,
-   "end": 242.681
+   "start": 236.758,
+   "end": 242.691
   },
   {
    "id": "voyage-04",
@@ -1665,8 +1665,8 @@
    "pick": 41646,
    "scene": "voyage",
    "n": 3,
-   "start": 242.681,
-   "end": 248.615
+   "start": 242.691,
+   "end": 248.625
   },
   {
    "id": "voyage-05",
@@ -1696,19 +1696,19 @@
      "value": "ПРОВЕРКА",
      "label": "курс через предполагаемый остров"
     },
-    "start": 249.015,
-    "end": 253.56
+    "start": 249.025,
+    "end": 253.57
    },
    "pick": 89614,
    "scene": "voyage",
    "n": 4,
-   "start": 248.615,
-   "end": 253.56
+   "start": 248.625,
+   "end": 253.57
   },
   {
    "id": "depth-profile-01",
    "type": "stock",
-   "dur": 5.812,
+   "dur": 5.809,
    "query": "ocean surface sunlight",
    "queries": [
     "ocean waves",
@@ -1734,19 +1734,19 @@
      "unit": "м",
      "label": "глубина по эхолоту"
     },
-    "start": 253.96,
-    "end": 259.373
+    "start": 253.97,
+    "end": 259.379
    },
    "pick": 221871,
    "scene": "depth_profile",
    "n": 0,
-   "start": 253.56,
-   "end": 259.373
+   "start": 253.57,
+   "end": 259.379
   },
   {
    "id": "depth-profile-02",
    "type": "stock",
-   "dur": 4.844,
+   "dur": 4.841,
    "query": "rough ocean waves",
    "queries": [
     "ocean waves",
@@ -1768,13 +1768,13 @@
    "pick": 267503,
    "scene": "depth_profile",
    "n": 1,
-   "start": 259.373,
-   "end": 264.216
+   "start": 259.379,
+   "end": 264.219
   },
   {
    "id": "depth-profile-03",
    "type": "stock",
-   "dur": 4.844,
+   "dur": 4.841,
    "query": "deep ocean waves",
    "queries": [
     "ocean waves",
@@ -1796,7 +1796,7 @@
    "pick": 264968,
    "scene": "depth_profile",
    "n": 2,
-   "start": 264.216,
+   "start": 264.219,
    "end": 269.06
   },
   {
@@ -2250,7 +2250,7 @@
   {
    "id": "bermeja-01",
    "type": "image",
-   "dur": 4.875,
+   "dur": 4.877,
    "asset_id": "bermeja_chart",
    "motion": "none",
    "overlay": {
@@ -2261,17 +2261,17 @@
      "text": "Бермеха — на картах веками, в 2009 году не найдена"
     },
     "start": 335.94,
-    "end": 340.415
+    "end": 340.418
    },
    "scene": "bermeja",
    "n": 0,
    "start": 335.54,
-   "end": 340.415
+   "end": 340.418
   },
   {
    "id": "bermeja-02",
    "type": "stock",
-   "dur": 4.875,
+   "dur": 4.877,
    "query": "ocean waves drone",
    "queries": [
     "ocean waves",
@@ -2305,19 +2305,19 @@
       "label": "Бермеха"
      }
     },
-    "start": 340.815,
-    "end": 345.29
+    "start": 340.818,
+    "end": 345.295
    },
    "pick": 277109,
    "scene": "bermeja",
    "n": 1,
-   "start": 340.415,
-   "end": 345.29
+   "start": 340.418,
+   "end": 345.295
   },
   {
    "id": "bermeja-03",
    "type": "stock",
-   "dur": 4.875,
+   "dur": 4.877,
    "query": "sea surface aerial",
    "queries": [
     "ocean waves",
@@ -2346,19 +2346,19 @@
       }
      ]
     },
-    "start": 345.69,
-    "end": 350.165
+    "start": 345.695,
+    "end": 350.173
    },
    "pick": 364250,
    "scene": "bermeja",
    "n": 2,
-   "start": 345.29,
-   "end": 350.165
+   "start": 345.295,
+   "end": 350.173
   },
   {
    "id": "bermeja-04",
    "type": "stock",
-   "dur": 4.875,
+   "dur": 4.877,
    "query": "gulf sea waves",
    "queries": [
     "ocean waves",
@@ -2383,14 +2383,14 @@
      "value": "ГРАНИЦЫ И НЕФТЬ",
      "label": "почему остров имел значение"
     },
-    "start": 350.565,
-    "end": 355.04
+    "start": 350.573,
+    "end": 355.05
    },
    "pick": 230029,
    "scene": "bermeja",
    "n": 3,
-   "start": 350.165,
-   "end": 355.04
+   "start": 350.173,
+   "end": 355.05
   },
   {
    "id": "navigation-01",
@@ -2422,14 +2422,14 @@
      "label": "Как моряки определяли положение?",
      "group": false
     },
-    "start": 355.44,
-    "end": 362.125
+    "start": 355.45,
+    "end": 362.135
    },
    "pick": 159363,
    "scene": "navigation",
    "n": 0,
-   "start": 355.04,
-   "end": 362.125
+   "start": 355.05,
+   "end": 362.135
   },
   {
    "id": "navigation-02",
@@ -2438,8 +2438,8 @@
    "asset_id": "sextant_chronometer",
    "scene": "navigation",
    "n": 1,
-   "start": 362.125,
-   "end": 369.21
+   "start": 362.135,
+   "end": 369.22
   },
   {
    "id": "navigation-03",
@@ -2470,14 +2470,14 @@
      "unit": "минута",
      "label": "ошибки корабельных часов"
     },
-    "start": 369.61,
-    "end": 376.295
+    "start": 369.62,
+    "end": 376.305
    },
    "pick": 375342,
    "scene": "navigation",
    "n": 2,
-   "start": 369.21,
-   "end": 376.295
+   "start": 369.22,
+   "end": 376.305
   },
   {
    "id": "navigation-04",
@@ -2508,14 +2508,14 @@
      "unit": "км",
      "label": "смещение по долготе при ошибке часов в 1 минуту"
     },
-    "start": 376.695,
-    "end": 383.38
+    "start": 376.705,
+    "end": 383.39
    },
    "pick": 221863,
    "scene": "navigation",
    "n": 3,
-   "start": 376.295,
-   "end": 383.38
+   "start": 376.305,
+   "end": 383.39
   },
   {
    "id": "navigation-05",
@@ -2542,8 +2542,8 @@
    "pick": 207679,
    "scene": "navigation",
    "n": 4,
-   "start": 383.38,
-   "end": 390.465
+   "start": 383.39,
+   "end": 390.475
   },
   {
    "id": "navigation-06",
@@ -2583,14 +2583,14 @@
      },
      "note": "возможное место наблюдения"
     },
-    "start": 390.865,
-    "end": 396.538
+    "start": 390.875,
+    "end": 396.548
    },
    "pick": 135763,
    "scene": "navigation",
    "n": 5,
-   "start": 390.465,
-   "end": 396.538
+   "start": 390.475,
+   "end": 396.548
   },
   {
    "id": "navigation-07",
@@ -2617,8 +2617,8 @@
    "pick": 84949,
    "scene": "navigation",
    "n": 6,
-   "start": 396.538,
-   "end": 401.599
+   "start": 396.548,
+   "end": 401.609
   },
   {
    "id": "navigation-08",
@@ -2652,19 +2652,19 @@
       }
      ]
     },
-    "start": 401.999,
-    "end": 406.66
+    "start": 402.009,
+    "end": 406.67
    },
    "pick": 226534,
    "scene": "navigation",
    "n": 7,
-   "start": 401.599,
-   "end": 406.66
+   "start": 401.609,
+   "end": 406.67
   },
   {
    "id": "pumice-01",
    "type": "stock",
-   "dur": 5.977,
+   "dur": 5.973,
    "query": "ocean wave spray",
    "queries": [
     "ocean waves",
@@ -2689,19 +2689,19 @@
      "value": "ПЕМЗА",
      "label": "пористый вулканический камень"
     },
-    "start": 407.06,
-    "end": 412.637
+    "start": 407.07,
+    "end": 412.643
    },
    "pick": 94166,
    "scene": "pumice",
    "n": 0,
-   "start": 406.66,
-   "end": 412.637
+   "start": 406.67,
+   "end": 412.643
   },
   {
    "id": "pumice-02",
    "type": "stock",
-   "dur": 5.977,
+   "dur": 5.973,
    "query": "sea horizon dusk",
    "queries": [
     "ocean waves",
@@ -2723,13 +2723,13 @@
    "pick": 204607,
    "scene": "pumice",
    "n": 1,
-   "start": 412.637,
-   "end": 418.613
+   "start": 412.643,
+   "end": 418.617
   },
   {
    "id": "pumice-03",
    "type": "stock",
-   "dur": 5.977,
+   "dur": 5.973,
    "query": "ocean surface waves",
    "queries": [
     "ocean waves",
@@ -2754,13 +2754,13 @@
      "value": "ПЛАВУЧЕЕ ПОЛЕ",
      "label": "издалека похоже на отмель"
     },
-    "start": 419.013,
+    "start": 419.017,
     "end": 424.59
    },
    "pick": 20452,
    "scene": "pumice",
    "n": 2,
-   "start": 418.613,
+   "start": 418.617,
    "end": 424.59
   },
   {
@@ -3074,7 +3074,7 @@
     "ocean sunset horizon",
     "sea sunset"
    ],
-   "pick": 263209,
+   "pick": 167889,
    "scene": "finale",
    "n": 3,
    "start": 480.259,
