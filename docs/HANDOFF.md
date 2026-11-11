@@ -8,6 +8,23 @@
 - **Boris** watches the unlisted video and sets the public status himself.
 - Older lines below that say "ChatGPT owns visuals / chooses picks" are history.
 
+## Episode 002 «Озеро Натрон» — uploaded UNLISTED (2026-11-11)
+- **Link: https://youtu.be/fqda4gTNJa0** (unlisted; also in `episodes/002-lake-natron/build/youtube_url.txt`). Public status — only Boris.
+- 8:38, 82 Pixabay shots (all different), 24 overlays (facts only from the table in `script.md`), 2 code maps
+  (Tanzania/Kenya with the lake, rift line, borders; Ol Doinyo Lengai next to the lake), chapters and sources in the description.
+  No clip is labelled as Natron or Ol Doinyo Lengai; no Nick Brandt photos; no dead animals; no glowing red lava (Lengai lava is black).
+- How it was made (all by Claude Code): `narrate-timeline.yml` → `storyboard.plan.json` → `scripts/sb_plan.py` → `storyboard.json`;
+  `stock-candidates.yml` (profile `nature-lake`) → candidate sheets reviewed by Claude Code → `picks` in the plan;
+  `produce3.yml` (upload=no) → frame sheets every 2 s reviewed (2 clips replaced: bird-feeder wire, zoo steps) → `produce3.yml` (upload=yes).
+  Frame sheets: `episodes/002-lake-natron/build/qa/`. Thumbnail by code: `scripts/thumbnail.py` + `thumbnail.json`.
+- Known issues / for Boris to check while watching:
+  - Stress of the place names (Натрон, Ол Доиньо Ленгаи, Эвасо-Нгиро) was not listened to by a human; homograph guard passed.
+  - Several flamingo shots are from parks/zoos (no people or fences visible); the red-water scene uses salt lakes of other
+    countries (no caption names them). Fish scene has no tilapia footage (pond/shallow water instead).
+  - «2+ млн» overlay stays only ~2 s (it is spoken at the very end of the scene).
+  - CI: on 2026-11-11 the Ubuntu apt mirror was unreachable from GitHub runners; `scripts/install_ffmpeg.sh` now falls back to
+    ffmpeg from the PyPI package `imageio-ffmpeg` + `scripts/ffprobe_shim.py`.
+
 ## Channel status (checked 2026-11-07)
 - Monetization was removed earlier (≈700 audiobooks without rights; deleted). Earn page: terms accepted, AdSense not linked, review not started.
 - Channel cleaned (spam/affiliate videos, duplicates, videos with others' music hidden; card number removed from descriptions).
