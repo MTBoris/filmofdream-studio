@@ -159,3 +159,21 @@ def test_event_cue_outside_overlay_is_an_error():
                                               "data": {"events": [{"date": "1", "label": "a", "cue": "тысяча", "nth": 1}]}, "dur": 0.5}
     with pytest.raises(sb2.StoryboardError, match="outside the overlay"):
         sb2.resolve(b, TL)
+
+
+def pin_board(**over):
+    shot = {"id": "b1", "type": "image", "asset_id": "bermeja_chart", "dur": "rest", "motion": "none",
+            "overlay": {"template": "image-pin", "data": {"x": 920, "y": 540, "text": "Бермеха"}}}
+    shot.update(over)
+    return {"version": 2, "scenes": [{"scene": "a", "shots": [shot]}]}
+
+
+def test_image_pin_rules():
+    assert sb2.validate_structure(pin_board())[0] == []
+    errs = sb2.validate_structure(pin_board(motion="push-in"))[0]
+    assert any('"motion": "none"' in e for e in errs)
+    errs = sb2.validate_structure(pin_board(type="stock", query="x", asset_id=None, motion="none"))[0]
+    assert any("only on image" in e for e in errs)
+    b = pin_board()
+    b["scenes"][0]["shots"][0]["overlay"]["data"] = {"x": 2500, "y": 540}
+    assert any("data.x" in e for e in sb2.validate_structure(b)[0])

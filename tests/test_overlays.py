@@ -175,8 +175,8 @@ def test_lower_third_and_title_card():
     assert bright_pixels(tc) > 8000 and opaque_pixels(ov.title_card(0.0, 6, {"title": "x"}, {})) == 0
 
 
-def test_all_seven_templates_registered():
-    assert set(ov.TEMPLATES) == {"ocean-fact", "ocean-coords", "ocean-timeline", "ocean-map", "ocean-compare", "lower-third", "title-card"}
+def test_all_templates_registered():
+    assert set(ov.TEMPLATES) == {"image-pin", "ocean-fact", "ocean-coords", "ocean-timeline", "ocean-map", "ocean-compare", "lower-third", "title-card"}
 
 
 def test_map_labels_do_not_overlap_each_other():
@@ -197,3 +197,23 @@ def test_map_with_three_labelled_points_renders(monkeypatch):
     ctx = {}
     assert bright_pixels(ov.ocean_map(3.0, 8, data, ctx)) > 1500
     assert len(next(iter(ctx["_label_offsets"].values()))) == 3
+
+
+def test_image_pin_marks_exact_pixel_and_places_caption_inside_margins():
+    data = {"x": 920, "y": 540, "text": "Бермеха — на картах веками, в 2009 году не найдена"}
+    img = ov.image_pin(3.0, 8, data, {})
+    a = np.asarray(img).astype(int)
+    gold = (abs(a[..., 0] - 211) < 4) & (abs(a[..., 1] - 163) < 4) & (abs(a[..., 2] - 91) < 4) & (a[..., 3] > 240)
+    ys, xs = np.where(gold)
+    assert abs(xs.mean() - 920) < 3 and abs(ys.mean() - 540) < 40       # the dot sits on the given pixel
+    assert bright_pixels(img) > 3000
+    bright = np.where((a[..., 3] > 200) & (a[..., :3].sum(axis=2) > 450))
+    assert bright[1].max() <= ov.W - ov.MX + 6 and bright[1].min() >= ov.MX - 6
+    assert opaque_pixels(ov.image_pin(0.0, 8, data, {})) == 0
+
+
+def test_image_pin_near_the_right_edge_puts_the_caption_on_the_left():
+    data = {"x": 1800, "y": 500, "text": "Метка у правого края"}
+    a = np.asarray(ov.image_pin(3.0, 8, data, {})).astype(int)
+    xs = np.where((a[..., 3] > 200) & (a[..., :3].sum(axis=2) > 450))[1]
+    assert xs.max() <= ov.W - ov.MX + 6 and xs.min() < 1700

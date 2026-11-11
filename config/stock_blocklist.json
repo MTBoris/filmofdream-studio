@@ -1,0 +1,6 @@
+{
+ "_comment": "Pixabay clips that must never be used (they passed the tag filter but are visibly wrong). Key = Pixabay id, value = why.",
+ "ids": {
+  "136684": "preview 2026-11-10, shot tl-3 'stormy sea': coast with palm trees and black bars top/bottom"
+ }
+}
