@@ -281,10 +281,10 @@
  },
  "shoreline-05": {
   "query": "birds branch",
-  "pixabay_id": 75334,
-  "page": "https://pixabay.com/videos/id-75334/",
-  "duration": 20,
-  "tags": "birds, food, branch, tree, avian, ornithology, nature",
+  "pixabay_id": 158386,
+  "page": "https://pixabay.com/videos/id-158386/",
+  "duration": 11,
+  "tags": "bird, sperling, field sparrow, plumage, branches, branch, shrub, nature, wildlife",
   "rendition": "large"
  },
  "not_stone-01": {
@@ -465,10 +465,10 @@
  },
  "flamingo_food-01": {
   "query": "flamingo feeding",
-  "pixabay_id": 172625,
-  "page": "https://pixabay.com/videos/id-172625/",
+  "pixabay_id": 236396,
+  "page": "https://pixabay.com/videos/id-236396/",
   "duration": 24,
-  "tags": "flamingos, birds, beak, herd, wings, legs, feathers, animals, nature, pink, tropical",
+  "tags": "birds, flamingos, animal, wildlife, plumage, ornithology, fauna, pink, species, avian, beak, exotic, water, feathers, wild, neck, nature",
   "rendition": "large"
  },
  "flamingo_food-02": {
