@@ -8,7 +8,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -40,7 +52,7 @@
     "start": 0.4,
     "end": 4.13
    },
-   "pick": 169443,
+   "pick": 2944,
    "scene": "hook_map",
    "n": 0,
    "start": 0.0,
@@ -54,7 +66,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -80,7 +104,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -106,7 +142,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "title-card",
@@ -131,7 +179,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "lower-third",
@@ -156,7 +216,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -171,7 +243,7 @@
     "start": 22.952,
     "end": 29.59
    },
-   "pick": 13645,
+   "pick": 114962,
    "scene": "coral_sea",
    "n": 1,
    "start": 22.552,
@@ -185,7 +257,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "pick": 33194,
    "scene": "coral_sea",
@@ -201,7 +285,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -213,7 +309,7 @@
     "start": 37.028,
     "end": 42.66
    },
-   "pick": 220593,
+   "pick": 112722,
    "scene": "coral_sea",
    "n": 3,
    "start": 36.628,
@@ -227,7 +323,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -259,7 +367,7 @@
     "start": 43.06,
     "end": 47.77
    },
-   "pick": 16185,
+   "pick": 21175,
    "scene": "locator",
    "n": 0,
    "start": 42.66,
@@ -273,7 +381,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-coords",
@@ -285,7 +405,7 @@
     "start": 48.17,
     "end": 52.88
    },
-   "pick": 226534,
+   "pick": 286278,
    "scene": "locator",
    "n": 1,
    "start": 47.77,
@@ -299,7 +419,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -325,7 +457,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -357,7 +501,7 @@
     "start": 58.39,
     "end": 64.026
    },
-   "pick": 14963,
+   "pick": 16160,
    "scene": "black_polygon",
    "n": 0,
    "start": 57.99,
@@ -371,9 +515,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 248158,
+   "pick": 248156,
    "scene": "black_polygon",
    "n": 1,
    "start": 64.026,
@@ -387,7 +543,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "pick": 306155,
    "scene": "black_polygon",
@@ -403,7 +571,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -430,7 +610,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "pick": 13864,
    "scene": "black_polygon",
@@ -456,7 +648,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -471,7 +675,7 @@
     "start": 91.614,
     "end": 97.278
    },
-   "pick": 175955,
+   "pick": 51237,
    "scene": "whaler",
    "n": 1,
    "start": 91.214,
@@ -495,7 +699,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -520,9 +736,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 248574,
+   "pick": 374783,
    "scene": "whaler",
    "n": 4,
    "start": 109.407,
@@ -536,7 +764,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -551,7 +791,7 @@
     "start": 114.86,
     "end": 120.484
    },
-   "pick": 204607,
+   "pick": 220593,
    "scene": "chart_1908",
    "n": 0,
    "start": 114.46,
@@ -575,7 +815,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -590,7 +842,7 @@
     "start": 126.907,
     "end": 132.531
    },
-   "pick": 199083,
+   "pick": 374784,
    "scene": "chart_1908",
    "n": 2,
    "start": 126.507,
@@ -604,7 +856,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -650,7 +914,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -665,7 +941,7 @@
     "start": 137.951,
     "end": 142.57
    },
-   "pick": 26007,
+   "pick": 308349,
    "scene": "chart_1908",
    "n": 4,
    "start": 137.551,
@@ -679,7 +955,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -694,7 +982,7 @@
     "start": 142.97,
     "end": 147.59
    },
-   "pick": 217836,
+   "pick": 215484,
    "scene": "chart_1908",
    "n": 5,
    "start": 142.57,
@@ -708,7 +996,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -733,7 +1033,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -758,7 +1070,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -790,7 +1114,7 @@
     "start": 157.826,
     "end": 161.36
    },
-   "pick": 294101,
+   "pick": 30902,
    "scene": "existence_doubtful",
    "n": 2,
    "start": 157.426,
@@ -799,12 +1123,24 @@
   {
    "id": "timeline-removed-01",
    "type": "stock",
-   "dur": 5.938,
+   "dur": 5.94,
    "query": "ocean sunset aerial",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -817,23 +1153,35 @@
      ]
     },
     "start": 161.76,
-    "end": 167.298
+    "end": 167.3
    },
-   "pick": 277116,
+   "pick": 7337,
    "scene": "timeline_removed",
    "n": 0,
    "start": 161.36,
-   "end": 167.298
+   "end": 167.3
   },
   {
    "id": "timeline-removed-02",
    "type": "stock",
-   "dur": 5.938,
+   "dur": 5.94,
    "query": "ocean wave spray",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -845,24 +1193,36 @@
       }
      ]
     },
-    "start": 167.698,
-    "end": 173.236
+    "start": 167.7,
+    "end": 173.24
    },
-   "pick": 205009,
+   "pick": 205011,
    "scene": "timeline_removed",
    "n": 1,
-   "start": 167.298,
-   "end": 173.236
+   "start": 167.3,
+   "end": 173.24
   },
   {
    "id": "timeline-removed-03",
    "type": "stock",
-   "dur": 5.938,
+   "dur": 5.94,
    "query": "sea horizon dusk",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -875,40 +1235,64 @@
      "label": "глубины в районе",
      "suffix": "+"
     },
-    "start": 173.636,
-    "end": 179.174
+    "start": 173.64,
+    "end": 179.18
    },
-   "pick": 246391,
+   "pick": 103485,
    "scene": "timeline_removed",
    "n": 2,
-   "start": 173.236,
-   "end": 179.174
+   "start": 173.24,
+   "end": 179.18
   },
   {
    "id": "timeline-removed-04",
    "type": "stock",
-   "dur": 5.938,
+   "dur": 5.94,
    "query": "ocean water surface",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "pick": 233867,
    "scene": "timeline_removed",
    "n": 3,
-   "start": 179.174,
-   "end": 185.112
+   "start": 179.18,
+   "end": 185.12
   },
   {
    "id": "timeline-removed-05",
    "type": "stock",
-   "dur": 5.938,
+   "dur": 5.94,
    "query": "sea aerial drone",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -920,24 +1304,36 @@
       }
      ]
     },
-    "start": 185.512,
-    "end": 191.05
+    "start": 185.52,
+    "end": 191.06
    },
-   "pick": 128015,
+   "pick": 13857,
    "scene": "timeline_removed",
    "n": 4,
-   "start": 185.112,
-   "end": 191.05
+   "start": 185.12,
+   "end": 191.06
   },
   {
    "id": "digital-01",
    "type": "stock",
-   "dur": 5.972,
+   "dur": 5.97,
    "query": "ocean water closeup",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -949,24 +1345,36 @@
       }
      ]
     },
-    "start": 191.45,
-    "end": 197.022
+    "start": 191.46,
+    "end": 197.03
    },
-   "pick": 188040,
+   "pick": 356593,
    "scene": "digital",
    "n": 0,
-   "start": 191.05,
-   "end": 197.022
+   "start": 191.06,
+   "end": 197.03
   },
   {
    "id": "digital-02",
    "type": "stock",
-   "dur": 5.972,
+   "dur": 5.97,
    "query": "sea waves morning",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -996,56 +1404,92 @@
      },
      "note": "Американская цифровая база береговых линий"
     },
-    "start": 197.422,
-    "end": 202.994
+    "start": 197.43,
+    "end": 203.0
    },
-   "pick": 200677,
+   "pick": 250618,
    "scene": "digital",
    "n": 1,
-   "start": 197.022,
-   "end": 202.994
+   "start": 197.03,
+   "end": 203.0
   },
   {
    "id": "digital-03",
    "type": "stock",
-   "dur": 5.972,
+   "dur": 5.97,
    "query": "storm waves aerial",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 198955,
+   "pick": 186362,
    "scene": "digital",
    "n": 2,
-   "start": 202.994,
-   "end": 208.965
+   "start": 203.0,
+   "end": 208.97
   },
   {
    "id": "digital-04",
    "type": "stock",
-   "dur": 5.972,
+   "dur": 5.97,
    "query": "ocean swell",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 212825,
+   "pick": 253445,
    "scene": "digital",
    "n": 3,
-   "start": 208.965,
-   "end": 214.937
+   "start": 208.97,
+   "end": 214.94
   },
   {
    "id": "digital-05",
    "type": "stock",
-   "dur": 4.976,
+   "dur": 4.975,
    "query": "open sea sunrise",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1053,29 +1497,41 @@
      "value": "СУША",
      "label": "в цифровой базе данных"
     },
-    "start": 215.337,
-    "end": 219.914
+    "start": 215.34,
+    "end": 219.915
    },
-   "pick": 364088,
+   "pick": 219191,
    "scene": "digital",
    "n": 4,
-   "start": 214.937,
-   "end": 219.914
+   "start": 214.94,
+   "end": 219.915
   },
   {
    "id": "digital-06",
    "type": "stock",
-   "dur": 4.976,
+   "dur": 4.975,
    "query": "deep ocean aerial",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 1841,
+   "pick": 91773,
    "scene": "digital",
    "n": 5,
-   "start": 219.914,
+   "start": 219.915,
    "end": 224.89
   },
   {
@@ -1086,7 +1542,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1101,7 +1569,7 @@
     "start": 225.29,
     "end": 230.824
    },
-   "pick": 349414,
+   "pick": 87211,
    "scene": "voyage",
    "n": 0,
    "start": 224.89,
@@ -1115,7 +1583,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "lower-third",
@@ -1126,7 +1606,7 @@
     "start": 231.224,
     "end": 236.758
    },
-   "pick": 353266,
+   "pick": 353265,
    "scene": "voyage",
    "n": 1,
    "start": 230.824,
@@ -1140,9 +1620,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 191000,
+   "pick": 138961,
    "scene": "voyage",
    "n": 2,
    "start": 236.758,
@@ -1156,9 +1648,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 94166,
+   "pick": 223691,
    "scene": "voyage",
    "n": 3,
    "start": 242.691,
@@ -1172,7 +1676,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1183,7 +1699,7 @@
     "start": 249.025,
     "end": 253.57
    },
-   "pick": 253486,
+   "pick": 211748,
    "scene": "voyage",
    "n": 4,
    "start": 248.625,
@@ -1192,12 +1708,24 @@
   {
    "id": "depth-profile-01",
    "type": "stock",
-   "dur": 5.809,
+   "dur": 5.812,
    "query": "ocean surface sunlight",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1207,55 +1735,91 @@
      "label": "глубина по эхолоту"
     },
     "start": 253.97,
-    "end": 259.379
+    "end": 259.382
    },
-   "pick": 277109,
+   "pick": 238507,
    "scene": "depth_profile",
    "n": 0,
    "start": 253.57,
-   "end": 259.379
+   "end": 259.382
   },
   {
    "id": "depth-profile-02",
    "type": "stock",
-   "dur": 4.841,
+   "dur": 4.844,
    "query": "rough ocean waves",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 265052,
+   "pick": 267503,
    "scene": "depth_profile",
    "n": 1,
-   "start": 259.379,
-   "end": 264.219
+   "start": 259.382,
+   "end": 264.226
   },
   {
    "id": "depth-profile-03",
    "type": "stock",
-   "dur": 4.841,
+   "dur": 4.844,
    "query": "deep ocean waves",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 65148,
+   "pick": 43452,
    "scene": "depth_profile",
    "n": 2,
-   "start": 264.219,
-   "end": 269.06
+   "start": 264.226,
+   "end": 269.07
   },
   {
    "id": "news-01",
    "type": "stock",
-   "dur": 4.115,
+   "dur": 4.112,
    "query": "blue sea drone",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1267,24 +1831,36 @@
       }
      ]
     },
-    "start": 269.46,
-    "end": 273.175
+    "start": 269.47,
+    "end": 273.183
    },
-   "pick": 14966,
+   "pick": 12023,
    "scene": "news",
    "n": 0,
-   "start": 269.06,
-   "end": 273.175
+   "start": 269.07,
+   "end": 273.183
   },
   {
    "id": "news-02",
    "type": "stock",
-   "dur": 4.115,
+   "dur": 4.112,
    "query": "ocean waves close up",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1292,24 +1868,36 @@
      "value": "«ОСТРОВ»",
      "label": "на самом деле отсутствует"
     },
-    "start": 273.575,
-    "end": 277.29
+    "start": 273.583,
+    "end": 277.295
    },
-   "pick": 306502,
+   "pick": 13704,
    "scene": "news",
    "n": 1,
-   "start": 273.175,
-   "end": 277.29
+   "start": 273.183,
+   "end": 277.295
   },
   {
    "id": "news-03",
    "type": "stock",
-   "dur": 4.115,
+   "dur": 4.112,
    "query": "stormy sea aerial",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1321,24 +1909,36 @@
       }
      ]
     },
-    "start": 277.69,
-    "end": 281.405
+    "start": 277.695,
+    "end": 281.408
    },
-   "pick": 217848,
+   "pick": 153976,
    "scene": "news",
    "n": 2,
-   "start": 277.29,
-   "end": 281.405
+   "start": 277.295,
+   "end": 281.408
   },
   {
    "id": "news-04",
    "type": "stock",
-   "dur": 4.115,
+   "dur": 4.112,
    "query": "open ocean horizon",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1350,13 +1950,13 @@
       }
      ]
     },
-    "start": 281.805,
+    "start": 281.808,
     "end": 285.52
    },
-   "pick": 341694,
+   "pick": 204172,
    "scene": "news",
    "n": 3,
-   "start": 281.405,
+   "start": 281.408,
    "end": 285.52
   },
   {
@@ -1367,9 +1967,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 28852,
+   "pick": 89614,
    "scene": "polygon_gone",
    "n": 0,
    "start": 285.52,
@@ -1383,7 +1995,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1398,7 +2022,7 @@
     "start": 291.064,
     "end": 295.808
    },
-   "pick": 85674,
+   "pick": 42001,
    "scene": "polygon_gone",
    "n": 1,
    "start": 290.664,
@@ -1412,7 +2036,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1424,7 +2060,7 @@
     "start": 296.208,
     "end": 301.98
    },
-   "pick": 74637,
+   "pick": 238505,
    "scene": "polygon_gone",
    "n": 2,
    "start": 295.808,
@@ -1448,7 +2084,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1463,7 +2111,7 @@
     "start": 308.302,
     "end": 313.825
    },
-   "pick": 279189,
+   "pick": 92563,
    "scene": "agloe",
    "n": 1,
    "start": 307.902,
@@ -1477,7 +2125,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1488,7 +2148,7 @@
     "start": 314.225,
     "end": 319.747
    },
-   "pick": 284518,
+   "pick": 230029,
    "scene": "agloe",
    "n": 2,
    "start": 313.825,
@@ -1502,9 +2162,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 120784,
+   "pick": 41646,
    "scene": "agloe",
    "n": 3,
    "start": 319.747,
@@ -1518,9 +2190,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 214391,
+   "pick": 250805,
    "scene": "agloe",
    "n": 4,
    "start": 325.669,
@@ -1534,7 +2218,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1545,7 +2241,7 @@
     "start": 331.005,
     "end": 335.54
    },
-   "pick": 3325,
+   "pick": 216733,
    "scene": "agloe",
    "n": 5,
    "start": 330.605,
@@ -1580,7 +2276,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -1600,7 +2308,7 @@
     "start": 340.818,
     "end": 345.295
    },
-   "pick": 43292,
+   "pick": 248574,
    "scene": "bermeja",
    "n": 1,
    "start": 340.418,
@@ -1614,7 +2322,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1629,7 +2349,7 @@
     "start": 345.695,
     "end": 350.173
    },
-   "pick": 133547,
+   "pick": 264968,
    "scene": "bermeja",
    "n": 2,
    "start": 345.295,
@@ -1643,7 +2363,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1654,7 +2386,7 @@
     "start": 350.573,
     "end": 355.05
    },
-   "pick": 343597,
+   "pick": 343595,
    "scene": "bermeja",
    "n": 3,
    "start": 350.173,
@@ -1668,7 +2400,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1681,7 +2425,7 @@
     "start": 355.45,
     "end": 362.135
    },
-   "pick": 134826,
+   "pick": 159363,
    "scene": "navigation",
    "n": 0,
    "start": 355.05,
@@ -1705,7 +2449,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1717,7 +2473,7 @@
     "start": 369.62,
     "end": 376.305
    },
-   "pick": 375342,
+   "pick": 375341,
    "scene": "navigation",
    "n": 2,
    "start": 369.22,
@@ -1731,7 +2487,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1743,7 +2511,7 @@
     "start": 376.705,
     "end": 383.39
    },
-   "pick": 134825,
+   "pick": 261051,
    "scene": "navigation",
    "n": 3,
    "start": 376.305,
@@ -1757,9 +2525,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 163782,
+   "pick": 184866,
    "scene": "navigation",
    "n": 4,
    "start": 383.39,
@@ -1773,7 +2553,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -1794,7 +2586,7 @@
     "start": 390.875,
     "end": 396.548
    },
-   "pick": 279522,
+   "pick": 284906,
    "scene": "navigation",
    "n": 5,
    "start": 390.475,
@@ -1808,9 +2600,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 133548,
+   "pick": 3325,
    "scene": "navigation",
    "n": 6,
    "start": 396.548,
@@ -1824,7 +2628,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1839,7 +2655,7 @@
     "start": 402.009,
     "end": 406.67
    },
-   "pick": 218910,
+   "pick": 22713,
    "scene": "navigation",
    "n": 7,
    "start": 401.609,
@@ -1853,7 +2669,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1864,7 +2692,7 @@
     "start": 407.07,
     "end": 412.643
    },
-   "pick": 211748,
+   "pick": 229410,
    "scene": "pumice",
    "n": 0,
    "start": 406.67,
@@ -1878,9 +2706,21 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
-   "pick": 28975,
+   "pick": 137126,
    "scene": "pumice",
    "n": 1,
    "start": 412.643,
@@ -1894,7 +2734,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -1913,17 +2765,17 @@
   },
   {
    "id": "pumice-scale-01",
-   "type": "external-image",
+   "type": "stock",
    "dur": 6.944,
-   "asset_id": "nasa_havre_2012",
-   "overlay": {
-    "template": "lower-third",
-    "data": {
-     "text": "Плот пемзы вулкана Гавр · NASA · 2012"
-    },
-    "start": 424.99,
-    "end": 431.534
-   },
+   "query": "ocean aerial",
+   "queries": [
+    "ocean",
+    "sea",
+    "open sea",
+    "ocean drone"
+   ],
+   "note": "PLACEHOLDER: NASA image 78863 (Gavre pumice raft) cannot be fetched - the old Earth Observatory page is gone. Restore type external-image + asset nasa_havre_2012 once a real URL/file exists.",
+   "pick": 213733,
    "scene": "pumice_scale",
    "n": 0,
    "start": 424.59,
@@ -1937,7 +2789,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-compare",
@@ -1957,7 +2821,7 @@
     "start": 431.934,
     "end": 438.478
    },
-   "pick": 182190,
+   "pick": 135898,
    "scene": "pumice_scale",
    "n": 1,
    "start": 431.534,
@@ -1971,7 +2835,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -1986,7 +2862,7 @@
     "start": 438.878,
     "end": 445.422
    },
-   "pick": 133217,
+   "pick": 309411,
    "scene": "pumice_scale",
    "n": 2,
    "start": 438.478,
@@ -2000,7 +2876,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -2015,7 +2903,7 @@
     "start": 445.822,
     "end": 452.366
    },
-   "pick": 22443,
+   "pick": 379948,
    "scene": "pumice_scale",
    "n": 3,
    "start": 445.422,
@@ -2029,7 +2917,19 @@
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -2041,7 +2941,7 @@
     "start": 452.766,
     "end": 459.31
    },
-   "pick": 199856,
+   "pick": 74637,
    "scene": "pumice_scale",
    "n": 4,
    "start": 452.366,
@@ -2050,12 +2950,24 @@
   {
    "id": "finale-01",
    "type": "stock",
-   "dur": 6.983,
+   "dur": 6.985,
    "query": "ocean evening waves",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -2064,23 +2976,35 @@
      "label": "это рассказ о мире, а не сам мир"
     },
     "start": 459.71,
-    "end": 466.293
+    "end": 466.295
    },
-   "pick": 133219,
+   "pick": 79086,
    "scene": "finale",
    "n": 0,
    "start": 459.31,
-   "end": 466.293
+   "end": 466.295
   },
   {
    "id": "finale-02",
    "type": "stock",
-   "dur": 6.983,
+   "dur": 6.985,
    "query": "open sea sunrise",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-timeline",
@@ -2092,24 +3016,36 @@
       }
      ]
     },
-    "start": 466.693,
-    "end": 473.276
+    "start": 466.695,
+    "end": 473.28
    },
-   "pick": 328740,
+   "pick": 224809,
    "scene": "finale",
    "n": 1,
-   "start": 466.293,
-   "end": 473.276
+   "start": 466.295,
+   "end": 473.28
   },
   {
    "id": "finale-03",
    "type": "stock",
-   "dur": 6.983,
+   "dur": 6.985,
    "query": "deep ocean aerial",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-fact",
@@ -2117,40 +3053,54 @@
      "value": "СКОЛЬКО ЕЩЁ?",
      "label": "мест на картах не существует?"
     },
-    "start": 473.676,
-    "end": 480.259
+    "start": 473.68,
+    "end": 480.265
    },
-   "pick": 349452,
+   "pick": 212850,
    "scene": "finale",
    "n": 2,
-   "start": 473.276,
-   "end": 480.259
+   "start": 473.28,
+   "end": 480.265
   },
   {
    "id": "finale-04",
    "type": "stock",
-   "dur": 5.986,
+   "dur": 5.987,
    "query": "ocean sunset",
    "queries": [
     "sunset sea",
     "sunset waves",
-    "ocean sunset horizon"
+    "ocean sunset horizon",
+    "ocean sunset horizon",
+    "sea sunset"
    ],
-   "pick": 153976,
+   "pick": 263209,
    "scene": "finale",
    "n": 3,
-   "start": 480.259,
-   "end": 486.245
+   "start": 480.265,
+   "end": 486.252
   },
   {
    "id": "finale-05",
    "type": "stock",
-   "dur": 4.988,
+   "dur": 4.989,
    "query": "sunset sea waves",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "ocean-map",
@@ -2168,24 +3118,36 @@
      },
      "note": "Щелочная вода и соляная корка"
     },
-    "start": 486.645,
-    "end": 491.233
+    "start": 486.652,
+    "end": 491.242
    },
-   "pick": 113164,
+   "pick": 212057,
    "scene": "finale",
    "n": 4,
-   "start": 486.245,
-   "end": 491.233
+   "start": 486.252,
+   "end": 491.242
   },
   {
    "id": "finale-06",
    "type": "stock",
-   "dur": 5.387,
+   "dur": 5.388,
    "query": "ocean sunset horizon",
    "queries": [
     "ocean waves",
     "sea waves",
-    "blue ocean"
+    "blue ocean",
+    "ocean",
+    "sea",
+    "ocean aerial",
+    "sea horizon",
+    "ocean sunset",
+    "open sea",
+    "storm waves",
+    "calm sea",
+    "deep blue sea",
+    "ocean swell",
+    "sea surface",
+    "ocean drone"
    ],
    "overlay": {
     "template": "title-card",
@@ -2193,14 +3155,14 @@
      "title": "FILM OF DREAM",
      "subtitle": "Следующая история — озеро Натрон"
     },
-    "start": 491.633,
-    "end": 496.62
+    "start": 491.642,
+    "end": 496.63
    },
-   "pick": 42001,
+   "pick": 226534,
    "scene": "finale",
    "n": 5,
-   "start": 491.233,
-   "end": 496.62
+   "start": 491.242,
+   "end": 496.63
   }
  ],
  "assets": {
@@ -2221,10 +3183,6 @@
   },
   "bermeja_chart": {
    "label": "РЕКОНСТРУКЦИЯ"
-  },
-  "nasa_havre_2012": {
-   "page": "https://earthobservatory.nasa.gov/images/78863",
-   "credit": "NASA image courtesy Jeff Schmaltz, LANCE/EOSDIS MODIS Rapid Response Team, GSFC"
   }
  }
 }
