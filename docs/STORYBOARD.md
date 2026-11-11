@@ -29,6 +29,14 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. Since 2026-11-11
 }
 ```
 
+## Writing the storyboard with code (Claude Code, since 2026-11-11)
+1. Run **Narration timeline** (`narrate-timeline.yml`) → `build/timeline.json` (real scene lengths and word times).
+2. Write `storyboard.plan.json` (per scene: stock queries + overlays with cues, facts only from the table in `script.md`).
+3. `python scripts/sb_plan.py PLAN build/timeline.json storyboard.json` splits every scene into shots ≤ `max_shot` s
+   (last one `"rest"`), puts each overlay on the shot where its cue is spoken and keeps it on screen ≥ 3 s when possible.
+4. `python scripts/sb2.py check storyboard.json build/timeline.json` must say `storyboard OK`.
+5. Thumbnail: `thumbnail.json` (`shot`, `t`, `text`, `bird`) → `scripts/thumbnail.py` draws it in the produce workflow.
+
 ## Fields
 - `scene` – must match an `@scene` name in `narration.txt`. Every narration scene needs an entry and vice versa.
 - `duration` (scene) – ChatGPT's estimate, informational only; the real scene length comes from the narration.
@@ -55,6 +63,7 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. Since 2026-11-11
 | `ocean-coords` | `lat`, `lon` (text, typed in), `label`, `note` | coords, label, note |
 | `ocean-map` | `center [lat, lon]`, `span_km`, `title`, `marker {lat, lon, label}`, `points [...]` (points outside the card are skipped), `scale_km`, `note` | title, label, note |
 | `ocean-timeline` | `events [{date, label, cue?}]` – each event appears on its own `cue`; event text is never smaller than 34 px and sits on a local dark panel | date, event |
+| `ocean-map` (inland) | optional: `borders: true` (country borders, dashed), `lakes: true` (Natural Earth lakes), `areas [{lat, lon, label}]` (country names, no dot), `lines [{points [[lat, lon], …], label, label_at [lat, lon]}]` (e.g. a rift valley) | |
 | `ocean-compare` | `a {label, w, h}`, `b {...}`, `unit`, `note`, `max_px` – both shapes to the same scale | label, dims, note |
 | `lower-third` | `text`, `sub` (caption / source) | text, sub |
 | `title-card` | `title`, `subtitle` (chapter or final title) | card, subtitle |

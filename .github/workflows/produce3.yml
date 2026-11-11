@@ -39,6 +39,12 @@ jobs:
       - run: python scripts/sb2.py resolve picked.json out/timeline.json shots.json
       - run: python scripts/assets.py "$EP" picked.json assets
       - run: python scripts/stock2.py fetch picked.json stock
+      - name: Thumbnail by code (if the episode has thumbnail.json)
+        run: |
+          if [ -f "$EP/thumbnail.json" ]; then
+            shot=$(python -c "import json,sys; print(json.load(open(sys.argv[1]))['shot'])" "$EP/thumbnail.json")
+            python scripts/thumbnail.py "$EP/thumbnail.json" "stock/$shot.mp4" "$EP/thumbnail.jpg"
+          fi
       - run: python scripts/render3.py shots.json stock assets out/narration.wav out/timeline.json video.mp4
       - name: QA (no clip twice; frame sheets every 2 s)
         run: python scripts/qa_video.py video.mp4 shots.json stock qa --timeline out/timeline.json
@@ -61,4 +67,5 @@ jobs:
           cp out/timeline.json out/ssml_log.txt stock/stock.json meta.final.json shots.json picked.json candidates.log $d/ 2>/dev/null || true
           [ -f upload.log ] && grep VIDEO_URL upload.log | cut -d' ' -f2 > $d/youtube_url.txt
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          [ -f "$EP/thumbnail.json" ] && git add "$EP/thumbnail.jpg"
           git pull -q; git add $d && git commit -m "Build $EP (v3)" && git push
