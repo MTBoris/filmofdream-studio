@@ -138,6 +138,14 @@ def validate_structure(sb):
             if ov is not None:
                 if not ov.get("template"):
                     errs.append(f"{where}: overlay needs 'template'")
+                if ov.get("template") == "image-pin":
+                    d = ov.get("data") or {}
+                    if t not in ("image", "external-image"):
+                        errs.append(f"{where}: image-pin works only on image / external-image shots")
+                    elif s.get("motion") != "none":
+                        errs.append(f"{where}: image-pin needs \"motion\": \"none\" (the pin is placed by pixels and must not move with the picture)")
+                    if not (isinstance(d.get("x"), (int, float)) and isinstance(d.get("y"), (int, float)) and 0 <= d["x"] <= 1920 and 0 <= d["y"] <= 1080):
+                        errs.append(f"{where}: image-pin needs data.x (0-1920) and data.y (0-1080) in pixels of the 1920x1080 picture")
                 if "data" in ov and not isinstance(ov["data"], dict):
                     errs.append(f"{where}: overlay.data must be an object")
     picks = {}

@@ -2,7 +2,7 @@
 
     python scripts/overlays.py preview TEMPLATE DATA.json OUT_DIR [SECONDS]    # frames for a quick look
 
-Templates: ocean-fact, ocean-coords, ocean-map, ocean-timeline, ocean-compare, lower-third, title-card.
+Templates: ocean-fact, ocean-coords, ocean-map, ocean-timeline, ocean-compare, lower-third, title-card, image-pin.
 Style (exact palette, fonts, margins) comes from design/tokens.json.
 Each template is a function draw(t, D, data, ctx) -> RGBA Image (1920x1080); t = seconds since the overlay started,
 D = overlay length. A dark scrim under the text, a smooth fade/rise in and fade out, number counters.
@@ -10,7 +10,7 @@ D = overlay length. A dark scrim under the text, a smooth fade/rise in and fade 
 Text sizes: data["size"] overrides the token sizes - either an object {"value": 100, "label": 80, "note": 100}
 or a list in the template's field order:
   ocean-fact: value, label, note | ocean-coords: coords, label, note | ocean-timeline: date, event (event >= 34 px)
-  ocean-map: title, label, note | ocean-compare: label, dims, note | lower-third: text, sub | title-card: card, subtitle
+  ocean-map: title, label, note | ocean-compare: label, dims, note | lower-third: text, sub | title-card: card, subtitle | image-pin: text, sub
 """
 import json
 import math
@@ -616,7 +616,44 @@ def title_card(t, D, data, ctx):
     return img
 
 
-TEMPLATES = {"ocean-fact": fact, "ocean-coords": coords, "ocean-timeline": timeline, "ocean-map": ocean_map,
+# ---------- image-pin ----------
+def image_pin(t, D, data, ctx):
+    """A marker at exact pixel (x, y) of a 1920x1080 still image (shot must have motion "none") with a caption beside it."""
+    sz = sizes(data, ("text", "sub"))
+    env = envelope(t, D)
+    img = blank()
+    x, y = float(data["x"]), float(data["y"])
+    a = appear(t, 0.4) * env
+    text = data.get("text") or data.get("label") or ""
+    lines = wrap(text, "sans_bold", sz["text"], 640)[:3]
+    sub = data.get("sub")
+    bw = max([text_w(ln, "sans_bold", sz["text"]) for ln in lines] + ([text_w(sub, "sans", sz["sub"])] if sub else [0])) + 56
+    bh = sz["text"] * 1.25 * len(lines) + (sz["sub"] * 1.5 if sub else 0) + 34
+    gap = 58
+    # right of the pin, else left, else above, else below - the first that fits inside the safe margins
+    spots = [(x + gap, y - bh / 2), (x - gap - bw, y - bh / 2), (x - bw / 2, y - gap - bh), (x - bw / 2, y + gap)]
+    bx, by = next(((sx, sy) for sx, sy in spots if sx >= MX and sx + bw <= W - MX and sy >= MY and sy + bh <= H - MY), spots[0])
+    pulse = (t * 0.9) % 1.0
+    layer = blank()
+    ld = ImageDraw.Draw(layer)
+    rr = 14 + 44 * pulse
+    ld.ellipse([x - rr, y - rr, x + rr, y + rr], outline=(*C["deep"], int(230 * (1 - pulse) * a)), width=5)   # dark ring: readable on light maps
+    ld.ellipse([x - 16, y - 16, x + 16, y + 16], fill=(*C["deep"], int(255 * a)))
+    ld.ellipse([x - 12, y - 12, x + 12, y + 12], fill=(*C["accent"], int(255 * a)), outline=(*C["text"], int(255 * a)), width=3)
+    if by <= y <= by + bh:  # caption beside the pin: a short leader line from the dot to the caption
+        side = 1 if bx > x else -1
+        ld.line([(x + side * 16, y), (bx if side > 0 else bx + bw, y)], fill=(*C["deep"], int(235 * a)), width=4)
+    comp(img, layer, 0, 0)
+    soft_panel(img, (bx, by, bx + bw, by + bh), a)
+    tx = bx + 28
+    for k, ln in enumerate(lines):
+        put_text(img, (tx, by + 20 + sz["text"] * 1.12 * (k + 1) + k * sz["text"] * 0.13), ln, "sans_bold", sz["text"], C["text"], a, shadow=False)
+    if sub:
+        put_text(img, (tx, by + bh - 20), sub, "sans", sz["sub"], C["muted"], appear(t, 0.7) * env, shadow=False)
+    return img
+
+
+TEMPLATES = {"image-pin": image_pin, "ocean-fact": fact, "ocean-coords": coords, "ocean-timeline": timeline, "ocean-map": ocean_map,
              "ocean-compare": compare, "lower-third": lower_third, "title-card": title_card}
 
 

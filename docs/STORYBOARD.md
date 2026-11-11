@@ -58,12 +58,16 @@ One JSON file per episode: `episodes/NNN-name/storyboard.json`. ChatGPT writes i
 | `ocean-compare` | `a {label, w, h}`, `b {...}`, `unit`, `note`, `max_px` – both shapes to the same scale | label, dims, note |
 | `lower-third` | `text`, `sub` (caption / source) | text, sub |
 | `title-card` | `title`, `subtitle` (chapter or final title) | card, subtitle |
+| `image-pin` | `x`, `y` (pixels of the 1920×1080 picture), `text` (caption), `sub` – a marker placed by hand on a still image. The shot **must** have `"motion": "none"` (the validator enforces it), so the pin stays on its pixel | text, sub |
 
 `size` is an object (`{"value": 100, "label": 80}`) or a list in the order above (e.g. `[100, 80, 100]`).
 Characters missing in the font (e.g. the minute sign ′ in PT Serif) are replaced by the nearest available one.
 
 ## Stock rule: open water only
-Candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar words) are dropped. The only exception is a
+Candidates tagged with land, rocks, coast, beach, islands, jungle, palm, tree, forest, rain-forest, boats/ships (and similar words) are dropped.
+Also dropped: clips that are **not 16:9**, clips whose **picture has black bars** (detected on the pixels of the preview, and again on the full
+clip when it is downloaded – the build stops if a picked clip has bars), and clips on `config/stock_blocklist.json` (visibly wrong
+clips that the tags cannot catch). The only exception is a
 **research ship** shot: `query` contains "research ship", or the shot has `"vessels": true` (land is still excluded). Every row of the
 candidate sheet says which rule applies (`open water only` / `research ship: boats allowed`); `candidates.json` records the rule too.
 The filter works on Pixabay tags, so ChatGPT still has to look at the frames on the sheet.

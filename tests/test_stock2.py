@@ -1,3 +1,4 @@
+import pytest
 import stock2
 
 
@@ -65,3 +66,57 @@ def test_assign_uses_vessel_rule_per_shot():
     pool = {"research ship": [hit(i, tags="research, ship") for i in range(1, 4)], "ocean waves": [hit(i, tags="ocean, waves, boat") for i in range(10, 13)]}
     out, short = stock2.assign_candidates([{"id": "a", "query": "research ship"}, {"id": "b", "query": "ocean waves"}], pool)
     assert len(out["a"]) == 3 and out["b"] == [] and len(short) == 1
+
+
+def test_jungle_palm_forest_beach_coast_tags_are_dropped():
+    bad = ["jungle", "palm", "palms", "tree", "forest", "beach", "coast", "rain-forest", "rainforest", "palm tree", "rain forest"]
+    pool = [hit(i, tags=f"ocean, waves, {t}") for i, t in enumerate(bad, start=100)] + [hit(1)]
+    assert [h["id"] for h in stock2.filter_hits(pool, "ocean waves")] == [1]
+
+
+def test_blocklisted_clip_is_never_a_candidate():
+    assert 136684 in stock2.blocklist()
+    pool = [hit(136684, tags="ocean, rain, seaview, philippines, stormy weather, rainy days, nature"), hit(2, tags="ocean, rain, stormy weather")]
+    assert [h["id"] for h in stock2.filter_hits(pool, "ocean rain")] == [2]
+
+
+def test_only_16_9_files_are_used():
+    ok = hit(1)
+    wide = hit(2)
+    wide["videos"]["large"] = {"url": "u", "width": 1920, "height": 800}            # 2.4:1 - comes with bars / needs a crop
+    wide["videos"]["medium"] = {"url": "m", "width": 1280, "height": 534}
+    square = hit(3)
+    square["videos"]["large"] = {"url": "u", "width": 1920, "height": 1440}
+    square["videos"]["medium"] = {"url": "m", "width": 1280, "height": 960}
+    vertical = hit(4)
+    vertical["videos"]["large"] = {"url": "u", "width": 1920, "height": 3414}
+    vertical["videos"]["medium"] = {"url": "m", "width": 1280, "height": 2276}
+    assert [h["id"] for h in stock2.filter_hits([ok, wide, square, vertical], "ocean waves")] == [1]
+    assert stock2.aspect_ok({"width": 1920, "height": 1080}) and stock2.aspect_ok({"width": 1280, "height": 720})
+    assert not stock2.aspect_ok({"width": 1920, "height": 1000}) and not stock2.aspect_ok({})
+
+
+def test_assign_candidates_accept_callback_skips_and_refills():
+    pool = {"ocean": [hit(i) for i in range(1, 7)]}
+    out, short = stock2.assign_candidates([{"id": "s", "query": "ocean"}], pool, accept=lambda h: h["id"] not in (1, 2))
+    assert [h["id"] for h in out["s"]] == [3, 4, 5] and not short
+
+
+import shutil  # noqa: E402
+import subprocess  # noqa: E402
+
+
+@pytest.mark.skipif(shutil.which("ffmpeg") is None, reason="ffmpeg not installed")
+def test_black_bars_are_detected_on_pixels(tmp_path):
+    plain = str(tmp_path / "plain.mp4")
+    barred = str(tmp_path / "barred.mp4")
+    pillar = str(tmp_path / "pillar.mp4")
+    src = "testsrc2=size=1920x1080:rate=10:duration=3"
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i", src, "-pix_fmt", "yuv420p", plain], check=True)
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i", src, "-vf", "scale=1920:800,pad=1920:1080:0:140:black",
+                    "-pix_fmt", "yuv420p", barred], check=True)                    # 16:9 file with letterboxed picture inside
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i", src, "-vf", "scale=1200:1080,pad=1920:1080:360:0:black",
+                    "-pix_fmt", "yuv420p", pillar], check=True)
+    assert stock2.black_bars(plain) is False
+    assert stock2.black_bars(barred) is True
+    assert stock2.black_bars(pillar) is True

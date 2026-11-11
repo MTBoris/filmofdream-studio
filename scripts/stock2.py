@@ -3,6 +3,8 @@
     python scripts/stock2.py candidates STORYBOARD.json OUTDIR   # candidates.json, pool.json, sheet-NN.jpg
     python scripts/stock2.py fetch STORYBOARD.json STOCKDIR      # downloads the picked clips + stock.json (sources)
 
+Also dropped: clips on config/stock_blocklist.json, clips that are not 16:9, and clips whose picture has black bars
+(checked on the pixels of the preview video, and again on the full clip when it is downloaded).
 OPEN WATER ONLY: candidates tagged with land, rocks, coast, beach, islands, boats/ships (and similar) are dropped,
 except in "research ship" shots (query contains "research ship", or "vessels": true). The sheet says which rule applies.
 A clip is never used twice in an episode: candidates are unique across all shots, picks must be unique
@@ -12,6 +14,7 @@ Pixabay content: free for commercial use, no attribution required.
 """
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -30,11 +33,24 @@ STOP = ("old", "the", "and", "with")
 LAND_WORDS = {"land", "rock", "rocks", "rocky", "cliff", "cliffs", "coast", "coastal", "coastline", "shore", "shoreline", "beach",
               "beaches", "island", "islands", "isle", "bay", "harbor", "harbour", "port", "pier", "dock", "jetty", "lighthouse",
               "mountain", "mountains", "hill", "hills", "forest", "tree", "trees", "palm", "sand", "dune", "village", "town",
-              "city", "building", "buildings", "house", "bridge", "resort", "cape", "peninsula", "lagoon", "seaside"}
+              "city", "building", "buildings", "house", "bridge", "resort", "cape", "peninsula", "lagoon", "seaside",
+              "jungle", "palms", "palm tree", "rainforest", "rain-forest", "rain forest", "coconut", "tropical forest", "woods"}
 VESSEL_WORDS = {"boat", "boats", "ship", "ships", "yacht", "yachts", "sailboat", "sailboats", "sailing", "motorboat", "speedboat",
                 "ferry", "cruise", "kayak", "canoe", "fishing", "vessel", "cargo", "tanker", "liner", "catamaran", "surfing",
                 "surfer", "swimmer", "swimming", "diver", "diving"}
-OPEN_WATER_NOTE = "Only open water: no land, rocks, coast, islands, boats (except 'research ship' shots)"
+BLOCKLIST_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "stock_blocklist.json")
+ASPECT = 16 / 9
+ASPECT_TOL = 0.03   # clips that are not 16:9 (within 3 %) are dropped: they come with bars or need a heavy crop
+
+
+def blocklist():
+    try:
+        return {int(k): v for k, v in json.load(open(BLOCKLIST_PATH, encoding="utf-8")).get("ids", {}).items()}
+    except (OSError, ValueError):
+        return {}
+
+
+OPEN_WATER_NOTE = "Only open water: no land, rocks, coast, islands, boats (except 'research ship' shots); 16:9 only, no black bars"
 
 
 def key():
@@ -71,7 +87,9 @@ def good(h, words):
 
 
 def tag_words(h):
-    return {w for t in h.get("tags", "").lower().replace(",", " ").split() for w in (t,)}
+    """Single words and whole comma-separated tags ("palm tree", "rain-forest")."""
+    tags = [t.strip() for t in h.get("tags", "").lower().split(",") if t.strip()]
+    return set(tags) | {w for t in tags for w in t.split()}
 
 
 def vessels_allowed(shot):
@@ -88,23 +106,29 @@ def query_words(q):
     return [w[:5] for w in q.lower().split() if len(w) > 2 and w not in STOP]
 
 
+def aspect_ok(v):
+    w, h = v.get("width") or 0, v.get("height") or 0
+    return bool(w and h) and abs(w / h - ASPECT) <= ASPECT * ASPECT_TOL
+
+
 def rendition(h):
-    """Best usable file: 'large' if >=1920 wide, else 'medium' if >=1280, else None."""
+    """Best usable 16:9 file: 'large' if >=1920 wide, else 'medium' if >=1280, else None."""
     v = h["videos"].get("large") or {}
-    if v.get("url") and (v.get("width") or 0) >= 1920:
+    if v.get("url") and (v.get("width") or 0) >= 1920 and aspect_ok(v):
         return "large", v
     v = h["videos"].get("medium") or {}
-    if v.get("url") and (v.get("width") or 0) >= 1280:
+    if v.get("url") and (v.get("width") or 0) >= 1280 and aspect_ok(v):
         return "medium", v
     return None
 
 
 def filter_hits(hits, query, allow_vessels=False):
     words = query_words(query)
-    return [h for h in hits if good(h, words) and rendition(h) and open_water(h, allow_vessels)]
+    blocked = blocklist()
+    return [h for h in hits if h["id"] not in blocked and good(h, words) and rendition(h) and open_water(h, allow_vessels)]
 
 
-def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES):
+def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES, accept=None):
     """shots: [{"id", "query", "queries"?}]. pool: {query: [hits]}. Returns ({shot_id: [hits]}, [shortage messages]).
     No clip is a candidate for two shots (so the picks can never collide), and `taken` ids (already picked) are skipped."""
     used = set(taken)
@@ -114,7 +138,7 @@ def assign_candidates(shots, pool, taken=(), n=N_CANDIDATES):
         allow = vessels_allowed(s)
         for q in [s["query"]] + list(s.get("queries") or []):
             for h in filter_hits(pool.get(q, []), q, allow):
-                if h["id"] not in used and h["id"] not in {g["id"] for g in got}:
+                if h["id"] not in used and h["id"] not in {g["id"] for g in got} and (accept is None or accept(h)):
                     got.append(h)
                     if len(got) == n:
                         break
@@ -147,14 +171,33 @@ def font(size):
         return ImageFont.load_default()
 
 
-def preview_frames(h, cache_dir):
-    """3 frames (15%, 50%, 85%) from the smallest rendition; returns PNG paths."""
-    from PIL import Image  # noqa: F401
+def black_bars(mp4, seconds=8, limit=18):
+    """True if the picture itself has black bars (letterbox / pillarbox), even when the file is 16:9.
+    ffmpeg cropdetect keeps the largest non-black area seen over the first seconds; bars = it is clearly smaller than the frame."""
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-t", str(seconds), "-i", mp4, "-vf", f"cropdetect=limit={limit}:round=2:reset=0", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    full = re.search(r"Stream #0.*?Video:.*?, (\d{2,5})x(\d{2,5})", r.stderr)
+    crops = re.findall(r"crop=(\d+):(\d+):(\d+):(\d+)", r.stderr)
+    if not full or not crops:
+        return False
+    fw, fh = int(full.group(1)), int(full.group(2))
+    cw, ch = int(crops[-1][0]), int(crops[-1][1])
+    return cw < fw * 0.96 or ch < fh * 0.96
+
+
+def preview_mp4(h, cache_dir):
     v = h["videos"].get("tiny") or h["videos"].get("small") or h["videos"].get("medium") or {}
     mp4 = os.path.join(cache_dir, f"{h['id']}.mp4")
     if not os.path.exists(mp4):
         with urllib.request.urlopen(urllib.request.Request(v["url"], headers=UA), timeout=90) as r:
             open(mp4, "wb").write(r.read())
+    return mp4
+
+
+def preview_frames(h, cache_dir):
+    """3 frames (15%, 50%, 85%) from the smallest rendition; returns PNG paths."""
+    from PIL import Image  # noqa: F401
+    mp4 = preview_mp4(h, cache_dir)
     paths = []
     for i, f in enumerate((0.15, 0.5, 0.85)):
         p = os.path.join(cache_dir, f"{h['id']}_{i}.png")
@@ -211,7 +254,19 @@ def cmd_candidates(sb_path, outdir):
                 print(f"searched {q!r}: {len(pool[q])} hits", flush=True)
     json.dump(pool, open(pool_path, "w", encoding="utf-8"), ensure_ascii=False)
     todo = [s for s in shots if not sb2.pick_id(s.get("pick"))]
-    cands, short = assign_candidates(todo, pool, taken=picked)
+    bars_path = os.path.join(outdir, "bars.json")
+    bars = json.load(open(bars_path, encoding="utf-8")) if os.path.exists(bars_path) else {}
+
+    def no_bars(h):  # looks at the real pixels of the preview video (cached per clip)
+        k = str(h["id"])
+        if k not in bars:
+            bars[k] = black_bars(preview_mp4(h, cache_dir))
+            if bars[k]:
+                print(f"dropped pix:{h['id']}: black bars", flush=True)
+        return not bars[k]
+
+    cands, short = assign_candidates(todo, pool, taken=picked, accept=no_bars)
+    json.dump(bars, open(bars_path, "w"))
     rows = [(s, cands[s["id"]]) for s in todo]
     sheets = make_sheets(rows, outdir, cache_dir)
     summary = {sid: [{"pick": f"pix:{h['id']}", "page": h["page"], "duration": h["duration"], "tags": h["tags"]} for h in hs]
@@ -241,6 +296,8 @@ def cmd_fetch(sb_path, stockdir):
         if not hits:
             sys.exit(f"{s['id']}: Pixabay has no clip {pid}")
         h = hits[0]
+        if pid in blocklist():
+            sys.exit(f"{s['id']}: pix:{pid} is on the blocklist ({blocklist()[pid]}) - pick another clip")
         r = rendition(h)
         if not r:
             sys.exit(f"{s['id']}: pix:{pid} has no 1280+ wide rendition")
@@ -251,6 +308,8 @@ def cmd_fetch(sb_path, stockdir):
             open(path, "wb").write(resp.read())
         sources[s["id"]] = {"query": s["query"], "pixabay_id": pid, "page": h["page"], "duration": h["duration"], "tags": h["tags"],
                             "rendition": r[0]}
+        if black_bars(path):
+            sys.exit(f"{s['id']}: pix:{pid} has black bars (letterbox) - pick another clip")
         print(s["id"], "->", h["page"], flush=True)
         time.sleep(0.5)
     json.dump(sources, open(os.path.join(stockdir, "stock.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
