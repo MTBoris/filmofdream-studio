@@ -2,6 +2,18 @@ searched 'ocean waves aerial': 50 hits
 searched 'ocean waves': 50 hits
 searched 'sea waves': 50 hits
 searched 'blue ocean': 50 hits
+searched 'ocean': 50 hits
+searched 'sea': 50 hits
+searched 'ocean aerial': 50 hits
+searched 'sea horizon': 50 hits
+searched 'ocean sunset': 50 hits
+searched 'open sea': 50 hits
+searched 'storm waves': 50 hits
+searched 'calm sea': 50 hits
+searched 'deep blue sea': 50 hits
+searched 'ocean swell': 50 hits
+searched 'sea surface': 50 hits
+searched 'ocean drone': 50 hits
 searched 'deep ocean blue water': 50 hits
 searched 'sea horizon wide': 50 hits
 searched 'ocean surface sunlight': 50 hits
@@ -36,7 +48,6 @@ searched 'sea aerial drone': 50 hits
 searched 'ocean water closeup': 50 hits
 searched 'sea waves morning': 50 hits
 searched 'storm waves aerial': 50 hits
-searched 'ocean swell': 50 hits
 searched 'open sea sunrise': 50 hits
 searched 'deep ocean aerial': 50 hits
 searched 'sea waves horizon': 50 hits
@@ -48,12 +59,43 @@ searched 'gulf sea waves': 50 hits
 searched 'ocean surface waves': 50 hits
 searched 'open sea aerial': 50 hits
 searched 'ocean evening waves': 50 hits
-searched 'ocean sunset': 50 hits
 searched 'sunset sea': 50 hits
 searched 'sunset waves': 50 hits
 searched 'ocean sunset horizon': 50 hits
+searched 'sea sunset': 50 hits
 searched 'sunset sea waves': 50 hits
-dropped pix:102731: black bars
-dropped pix:27595: black bars
-dropped pix:28460: black bars
-81 shots need a pick; sheets: cands/sheet-01.jpg, cands/sheet-02.jpg, cands/sheet-03.jpg, cands/sheet-04.jpg, cands/sheet-05.jpg, cands/sheet-06.jpg, cands/sheet-07.jpg, cands/sheet-08.jpg, cands/sheet-09.jpg, cands/sheet-10.jpg, cands/sheet-11.jpg, cands/sheet-12.jpg, cands/sheet-13.jpg, cands/sheet-14.jpg, cands/sheet-15.jpg, cands/sheet-16.jpg, cands/sheet-17.jpg
+82 shots need a pick; sheets: cands/sheet-01.jpg, cands/sheet-02.jpg, cands/sheet-03.jpg, cands/sheet-04.jpg, cands/sheet-05.jpg, cands/sheet-06.jpg, cands/sheet-07.jpg, cands/sheet-08.jpg, cands/sheet-09.jpg, cands/sheet-10.jpg, cands/sheet-11.jpg, cands/sheet-12.jpg, cands/sheet-13.jpg, cands/sheet-14.jpg, cands/sheet-15.jpg, cands/sheet-16.jpg, cands/sheet-17.jpg
+NOT ENOUGH UNIQUE CLIPS (nothing was repeated; add 'queries' alternatives or change the query):
+  - voyage-05 ('sea horizon wide'): no clip at all
+  - depth-profile-02 ('rough ocean waves'): no clip at all
+  - depth-profile-03 ('deep ocean waves'): no clip at all
+  - news-01 ('blue sea drone'): no clip at all
+  - news-02 ('ocean waves close up'): no clip at all
+  - news-03 ('stormy sea aerial'): no clip at all
+  - news-04 ('open ocean horizon'): no clip at all
+  - polygon-gone-01 ('sea waves sunset'): no clip at all
+  - polygon-gone-02 ('deep blue water aerial'): no clip at all
+  - agloe-02 ('calm sea horizon'): no clip at all
+  - agloe-03 ('dark ocean waves'): no clip at all
+  - agloe-04 ('blue sea aerial'): no clip at all
+  - agloe-06 ('sea storm waves'): no clip at all
+  - bermeja-02 ('ocean waves drone'): no clip at all
+  - bermeja-03 ('sea surface aerial'): no clip at all
+  - navigation-01 ('ocean horizon clouds'): no clip at all
+  - navigation-04 ('ocean drone overhead'): no clip at all
+  - navigation-06 ('ocean waves slow motion'): no clip at all
+  - navigation-07 ('deep sea surface'): no clip at all
+  - navigation-08 ('ocean sunset aerial'): no clip at all
+  - pumice-01 ('ocean wave spray'): no clip at all
+  - pumice-02 ('sea horizon dusk'): no clip at all
+  - pumice-03 ('ocean surface waves'): no clip at all
+  - pumice-scale-01 ('ocean aerial'): no clip at all
+  - pumice-scale-02 ('open sea aerial'): no clip at all
+  - pumice-scale-03 ('ocean water closeup'): no clip at all
+  - pumice-scale-04 ('sea waves morning'): no clip at all
+  - pumice-scale-05 ('storm waves aerial'): no clip at all
+  - finale-01 ('ocean evening waves'): no clip at all
+  - finale-02 ('open sea sunrise'): no clip at all
+  - finale-03 ('deep ocean aerial'): no clip at all
+  - finale-05 ('sunset sea waves'): no clip at all
+  - finale-06 ('ocean sunset horizon'): no clip at all
