@@ -1,5 +1,5 @@
 {
- "_comment": "Scene plan for scripts/sb_plan.py (Claude Code). Overlays only with facts from the table in script.md. No clip is labelled as Natron or Ol Doinyo Lengai: places are shown on maps.",
+ "_comment": "Scene plan for scripts/sb_plan.py (Claude Code). Overlays only with facts from the table in script.md. No clip is labelled as Natron or Ol Doinyo Lengai: places are shown on maps. Review 2026-11-21: hook muted and cold (grade); volcano scene shows only neutral steam / dark rock — no cone or crater, the Lengai captions sit on the map and on neutral shots; off-topic (non-African) clips re-picked with per-shot queries ('shots') and blocklisted.",
  "stock_profile": "nature-lake",
  "max_shot": 7.5,
  "fallback": [
@@ -19,7 +19,11 @@
     "bird silhouette",
     "bird tree",
     "dry tree"
-   ]
+   ],
+   "grade": {
+    "saturation": 0.35,
+    "cool": 0.06
+   }
   },
   "hook_question": {
    "queries": [
@@ -314,11 +318,10 @@
   },
   "volcano": {
    "queries": [
-    "volcano",
-    "volcano crater",
-    "lava",
-    "volcano aerial",
-    "volcanic"
+    "geothermal steam",
+    "volcanic steam",
+    "lava rock",
+    "volcanic ash"
    ],
    "overlays": [
     {
@@ -517,14 +520,11 @@
   }
  },
  "picks": {
-  "hook-01": "pix:65801",
   "hook-02": "pix:290740",
-  "hook-03": "pix:190097",
   "hook_question-01": "pix:120394",
   "hook_question-02": "pix:239675",
   "hook_question-03": "pix:153367",
   "locator-01": "pix:260654",
-  "locator-02": "pix:302163",
   "shallow-01": "pix:352978",
   "shallow-02": "pix:206379",
   "shallow-03": "pix:381413",
@@ -537,7 +537,6 @@
   "chemistry-05": "pix:79896",
   "chemistry-06": "pix:311478",
   "heat-01": "pix:113622",
-  "heat-02": "pix:43293",
   "heat-03": "pix:206376",
   "red_water-01": "pix:371741",
   "red_water-02": "pix:381987",
@@ -554,20 +553,12 @@
   "shoreline-04": "pix:198837",
   "shoreline-05": "pix:158386",
   "not_stone-01": "pix:79894",
-  "not_stone-02": "pix:281970",
   "not_stone-03": "pix:82325",
   "egypt-01": "pix:26085",
-  "egypt-02": "pix:222163",
   "egypt-03": "pix:16139",
   "egypt-04": "pix:92837",
-  "how_they_die-01": "pix:188595",
-  "how_they_die-02": "pix:4225",
   "how_they_die-03": "pix:119242",
   "how_they_die-04": "pix:15319",
-  "volcano-01": "pix:237116",
-  "volcano-02": "pix:150622",
-  "volcano-03": "pix:50782",
-  "volcano-04": "pix:351831",
   "flamingo_arrive-01": "pix:214630",
   "flamingo_arrive-02": "pix:367097",
   "flamingo_arrive-03": "pix:304021",
@@ -588,16 +579,169 @@
   "fragile-04": "pix:128924",
   "threat-01": "pix:234016",
   "threat-02": "pix:216060",
-  "threat-03": "pix:120998",
-  "threat-04": "pix:174860",
   "threat-05": "pix:290531",
-  "finale-01": "pix:21488",
   "finale-02": "pix:63736",
   "finale-03": "pix:13456",
   "finale-04": "pix:140111",
   "finale-05": "pix:217540",
   "finale-06": "pix:83096",
   "finale-07": "pix:292151",
-  "finale-08": "pix:83098"
+  "finale-08": "pix:83098",
+  "hook-01": "pix:35667",
+  "hook-03": "pix:21944",
+  "heat-02": "pix:171879",
+  "not_stone-02": "pix:140469",
+  "egypt-02": "pix:128663",
+  "how_they_die-01": "pix:275593",
+  "how_they_die-02": "pix:314358",
+  "volcano-01": "pix:4432",
+  "volcano-02": "pix:2153",
+  "volcano-04": "pix:2154",
+  "threat-03": "pix:252824",
+  "finale-01": "pix:361058",
+  "locator-02": "pix:6447",
+  "volcano-03": "pix:4751",
+  "threat-04": "pix:137616"
+ },
+ "shots": {
+  "hook-01": {
+   "query": "cormorant tree",
+   "queries": [
+    "crow silhouette",
+    "crows trees",
+    "bird silhouette",
+    "dead tree birds"
+   ]
+  },
+  "hook-03": {
+   "query": "crow silhouette",
+   "queries": [
+    "crows trees",
+    "cormorant tree",
+    "bird silhouette",
+    "bare tree"
+   ]
+  },
+  "locator-02": {
+   "query": "africa grassland",
+   "queries": [
+    "serengeti",
+    "savanna sunset",
+    "acacia tree",
+    "kenya savanna",
+    "tanzania"
+   ]
+  },
+  "heat-02": {
+   "query": "dry grass",
+   "queries": [
+    "drought",
+    "savanna dry",
+    "dust",
+    "mirage"
+   ]
+  },
+  "not_stone-02": {
+   "query": "salt crust",
+   "queries": [
+    "white salt",
+    "salt flat",
+    "dry lake",
+    "salt texture"
+   ]
+  },
+  "egypt-02": {
+   "query": "sand dunes",
+   "queries": [
+    "desert",
+    "sahara",
+    "desert sand",
+    "dunes"
+   ]
+  },
+  "how_they_die-01": {
+   "query": "salt lake reflection",
+   "queries": [
+    "salt flat reflection",
+    "salt lake",
+    "sky reflection",
+    "water mirror"
+   ]
+  },
+  "how_they_die-02": {
+   "query": "salt flat reflection",
+   "queries": [
+    "salt lake",
+    "sky reflection",
+    "lake sky",
+    "pink lake"
+   ]
+  },
+  "volcano-01": {
+   "query": "geothermal steam",
+   "queries": [
+    "steam",
+    "fumarole",
+    "volcanic steam",
+    "sulfur"
+   ]
+  },
+  "volcano-02": {
+   "query": "volcanic steam",
+   "queries": [
+    "steam",
+    "geothermal",
+    "fumarole",
+    "solfatara"
+   ]
+  },
+  "volcano-03": {
+   "query": "black lava",
+   "queries": [
+    "lava field",
+    "basalt",
+    "volcanic stone",
+    "pumice",
+    "black stone",
+    "rock texture"
+   ]
+  },
+  "volcano-04": {
+   "query": "volcanic ash",
+   "queries": [
+    "black sand",
+    "lava rock",
+    "volcanic rock",
+    "black stone"
+   ]
+  },
+  "threat-03": {
+   "query": "savanna river",
+   "queries": [
+    "africa river",
+    "dry riverbed",
+    "acacia",
+    "savanna"
+   ]
+  },
+  "threat-04": {
+   "query": "kenya",
+   "queries": [
+    "tanzania",
+    "africa river",
+    "savanna drought",
+    "acacia tree",
+    "maasai mara"
+   ]
+  },
+  "finale-01": {
+   "query": "africa sunset",
+   "queries": [
+    "acacia sunset",
+    "savanna sunset",
+    "sunset africa",
+    "flamingos sunset"
+   ]
+  }
  }
 }

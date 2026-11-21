@@ -3,6 +3,67 @@
  "profile": [
   "nature-lake"
  ],
- "candidates": {},
+ "candidates": {
+  "locator-02": [
+   {
+    "pick": "pix:6447",
+    "page": "https://pixabay.com/videos/id-6447/",
+    "duration": 15,
+    "tags": "elephant, pachyderm, tanzania, serengeti, africa, animals, savannah, nature, environment"
+   },
+   {
+    "pick": "pix:230118",
+    "page": "https://pixabay.com/videos/id-230118/",
+    "duration": 5,
+    "tags": "ostrich, sunset, safari, south africa, durban, bush, plains, green, blue sky, grass, savannah, africa, grazing, graminivore, indian ocean, water, evening, savanna, prairie, trees, zebras, wild, wild animals, animals"
+   },
+   {
+    "pick": "pix:28095",
+    "page": "https://pixabay.com/videos/id-28095/",
+    "duration": 54,
+    "tags": "flower of the acacia, tree, flower, acacia, spring, nature, branch, flowering, foliage, white, petal, flora, beautiful, flowers"
+   }
+  ],
+  "volcano-03": [
+   {
+    "pick": "pix:1624",
+    "page": "https://pixabay.com/videos/id-1624/",
+    "duration": 14,
+    "tags": "basalt stele, balance, stones, staple, stele, river, flow, water, yoga, meditation, meditative, rocks, tower, stream"
+   },
+   {
+    "pick": "pix:71481",
+    "page": "https://pixabay.com/videos/id-71481/",
+    "duration": 31,
+    "tags": "volcano, field, volcanic, sun, ardeche, france, basalt, pierre, tourism, nature, alps, landscape"
+   },
+   {
+    "pick": "pix:345531",
+    "page": "https://pixabay.com/videos/id-345531/",
+    "duration": 12,
+    "tags": "flight, roman roads, tourism, italy, basalt roads, etruscans, tuscia"
+   }
+  ],
+  "threat-04": [
+   {
+    "pick": "pix:256964",
+    "page": "https://pixabay.com/videos/id-256964/",
+    "duration": 57,
+    "tags": "wildlife, national park, kenya, nairobi, africa, east africa, nature, giraffe, mammal"
+   },
+   {
+    "pick": "pix:137616",
+    "page": "https://pixabay.com/videos/id-137616/",
+    "duration": 12,
+    "tags": "africa, kenya, tanzania, safari, animal, nature, view, trip, holiday"
+   },
+   {
+    "pick": "pix:132828",
+    "page": "https://pixabay.com/videos/id-132828/",
+    "duration": 10,
+    "tags": "migration, africa, animal, safari, nature, view, forest, wild, kenya, tanzania, habitat"
+   }
+  ]
+ },
  "shortage": []
 }

@@ -54,7 +54,9 @@ NATURE_FORBID = {"building", "buildings", "street", "road", "car", "cars", "vehi
                  "jetty", "harbor", "harbour", "port", "resort", "hotel", "zoo", "cage", "aquarium", "fence", "farm", "castle",
                  "church", "lighthouse", "swimmer", "swimming", "fishing", "fisherman", "surfing", "surfer", "diver", "diving",
                  "underwater", "snow", "ice", "winter", "christmas", "dam", "pylon", "power line", "electricity", "tap",
-                 "fountain", "aquaculture", "koi", "lava lamp", "pyramid", "pyramids", "gazebo", "torii"}
+                 "fountain", "aquaculture", "koi", "lava lamp", "pyramid", "pyramids", "gazebo", "torii",
+                 # other volcanoes' craters / crater lakes would pass for Ol Doinyo Lengai (episode 002 review 2026-11-21)
+                 "crater", "crater lake", "caldera", "laguna", "quilotoa"}
 NATURE_ANY = {"lake", "flamingo", "flamingos", "bird", "birds", "savanna", "savannah", "africa", "volcano", "salt", "branch",
               "tree", "water", "nature", "wildlife", "landscape", "desert"}
 PROFILES = {

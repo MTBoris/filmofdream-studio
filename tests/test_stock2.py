@@ -143,7 +143,7 @@ def test_people_smoke_and_settlements_are_dropped_in_every_profile():
 
 def test_nature_lake_allows_lake_world_but_not_boats_or_buildings():
     allowed = ["lake, flamingo, birds", "salt lake, aerial, red water", "savanna, africa, tree", "dry branch, bird, silhouette",
-               "volcano, crater, mountain", "salt, crust, desert", "pink lake, water, nature", "lake, shore, rocks"]
+               "volcano, mountain, ash", "salt, crust, desert", "pink lake, water, nature", "lake, shore, rocks"]
     pool = [hit(i, tags=t) for i, t in enumerate(allowed, 1)]
     assert len(stock2.filter_hits(pool, "", profile="nature-lake")) == len(allowed)
     assert {1, 2, 3, 5, 8}.isdisjoint(h["id"] for h in stock2.filter_hits(pool, ""))  # open-water still rejects lake/tree/mountain/rocks
@@ -166,3 +166,10 @@ def test_unknown_profile_is_a_storyboard_error():
     sb = {"stock_profile": "city", "scenes": [{"scene": "a", "shots": [{"type": "stock", "query": "x", "dur": "rest"}]}]}
     errs, _ = sb2.validate_structure(sb)
     assert any("stock_profile" in e for e in errs)
+
+
+def test_nature_lake_drops_crater_lakes_and_calderas():
+    """Episode 002 review: other volcanoes' turquoise crater lakes passed for Ol Doinyo Lengai."""
+    banned = ["volcano, crater, lake, water", "quilotoa, ecuador, laguna, lake", "volcano, caldera, island", "crater lake, mountain"]
+    assert stock2.filter_hits([hit(i, tags=t) for i, t in enumerate(banned, 1)], "", profile="nature-lake") == []
+    assert len(stock2.filter_hits([hit(9, tags="geothermal, steam, volcanic, rock")], "", profile="nature-lake")) == 1
