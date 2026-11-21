@@ -21,7 +21,8 @@
      "grade": {
       "saturation": 0.35,
       "cool": 0.06
-     }
+     },
+     "pick": "pix:35667"
     },
     {
      "id": "hook-02",
@@ -61,7 +62,8 @@
      "grade": {
       "saturation": 0.35,
       "cool": 0.06
-     }
+     },
+     "pick": "pix:21944"
     }
    ]
   },
@@ -224,12 +226,13 @@
     {
      "id": "locator-02",
      "type": "stock",
-     "query": "acacia savanna",
+     "query": "africa grassland",
      "queries": [
-      "savanna",
-      "dry grass",
-      "africa landscape",
-      "serengeti"
+      "serengeti",
+      "savanna sunset",
+      "acacia tree",
+      "kenya savanna",
+      "tanzania"
      ],
      "dur": "rest"
     }
@@ -555,7 +558,8 @@
        "unit": "°C",
        "label": "вода на мелководье"
       }
-     }
+     },
+     "pick": "pix:171879"
     },
     {
      "id": "heat-03",
@@ -950,7 +954,8 @@
       "dry lake",
       "salt texture"
      ],
-     "dur": 7.13
+     "dur": 7.13,
+     "pick": "pix:140469"
     },
     {
      "id": "not_stone-03",
@@ -1016,7 +1021,8 @@
       "desert sand",
       "dunes"
      ],
-     "dur": 4.78
+     "dur": 4.78,
+     "pick": "pix:128663"
     },
     {
      "id": "egypt-03",
@@ -1082,7 +1088,8 @@
       "sky reflection",
       "water mirror"
      ],
-     "dur": 5.9
+     "dur": 5.9,
+     "pick": "pix:275593"
     },
     {
      "id": "how_they_die-02",
@@ -1094,7 +1101,8 @@
       "lake sky",
       "pink lake"
      ],
-     "dur": 5.9
+     "dur": 5.9,
+     "pick": "pix:314358"
     },
     {
      "id": "how_they_die-03",
@@ -1188,7 +1196,8 @@
         }
        ]
       }
-     }
+     },
+     "pick": "pix:4432"
     },
     {
      "id": "volcano-02",
@@ -1208,17 +1217,20 @@
        "text": "Единственный действующий карбонатитовый вулкан",
        "sub": "на Земле"
       }
-     }
+     },
+     "pick": "pix:2153"
     },
     {
      "id": "volcano-03",
      "type": "stock",
-     "query": "lava rock",
+     "query": "black lava",
      "queries": [
-      "volcanic rock",
+      "lava field",
       "basalt",
-      "black rock",
-      "black sand"
+      "volcanic stone",
+      "pumice",
+      "black stone",
+      "rock texture"
      ],
      "dur": 6.9,
      "overlay": {
@@ -1244,7 +1256,8 @@
       "volcanic rock",
       "black stone"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:2154"
     }
    ]
   },
@@ -1756,17 +1769,19 @@
       "acacia",
       "savanna"
      ],
-     "dur": 7.02
+     "dur": 7.02,
+     "pick": "pix:252824"
     },
     {
      "id": "threat-04",
      "type": "stock",
-     "query": "dry riverbed",
+     "query": "kenya",
      "queries": [
-      "river africa",
-      "dry river",
+      "tanzania",
+      "africa river",
+      "savanna drought",
       "acacia tree",
-      "savanna"
+      "maasai mara"
      ],
      "dur": 7.02
     },
@@ -1807,7 +1822,8 @@
       "sunset africa",
       "flamingos sunset"
      ],
-     "dur": 7.04
+     "dur": 7.04,
+     "pick": "pix:361058"
     },
     {
      "id": "finale-02",

@@ -586,7 +586,19 @@
   "finale-05": "pix:217540",
   "finale-06": "pix:83096",
   "finale-07": "pix:292151",
-  "finale-08": "pix:83098"
+  "finale-08": "pix:83098",
+  "hook-01": "pix:35667",
+  "hook-03": "pix:21944",
+  "heat-02": "pix:171879",
+  "not_stone-02": "pix:140469",
+  "egypt-02": "pix:128663",
+  "how_they_die-01": "pix:275593",
+  "how_they_die-02": "pix:314358",
+  "volcano-01": "pix:4432",
+  "volcano-02": "pix:2153",
+  "volcano-04": "pix:2154",
+  "threat-03": "pix:252824",
+  "finale-01": "pix:361058"
  },
  "shots": {
   "hook-01": {
@@ -608,12 +620,13 @@
    ]
   },
   "locator-02": {
-   "query": "acacia savanna",
+   "query": "africa grassland",
    "queries": [
-    "savanna",
-    "dry grass",
-    "africa landscape",
-    "serengeti"
+    "serengeti",
+    "savanna sunset",
+    "acacia tree",
+    "kenya savanna",
+    "tanzania"
    ]
   },
   "heat-02": {
@@ -680,12 +693,14 @@
    ]
   },
   "volcano-03": {
-   "query": "lava rock",
+   "query": "black lava",
    "queries": [
-    "volcanic rock",
+    "lava field",
     "basalt",
-    "black rock",
-    "black sand"
+    "volcanic stone",
+    "pumice",
+    "black stone",
+    "rock texture"
    ]
   },
   "volcano-04": {
@@ -707,12 +722,13 @@
    ]
   },
   "threat-04": {
-   "query": "dry riverbed",
+   "query": "kenya",
    "queries": [
-    "river africa",
-    "dry river",
+    "tanzania",
+    "africa river",
+    "savanna drought",
     "acacia tree",
-    "savanna"
+    "maasai mara"
    ]
   },
   "finale-01": {
