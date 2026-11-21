@@ -234,7 +234,8 @@
       "kenya savanna",
       "tanzania"
      ],
-     "dur": "rest"
+     "dur": "rest",
+     "pick": "pix:6447"
     }
    ]
   },
@@ -1244,7 +1245,8 @@
        "unit": "°C",
        "label": "температура лавы"
       }
-     }
+     },
+     "pick": "pix:4751"
     },
     {
      "id": "volcano-04",
@@ -1783,7 +1785,8 @@
       "acacia tree",
       "maasai mara"
      ],
-     "dur": 7.02
+     "dur": 7.02,
+     "pick": "pix:137616"
     },
     {
      "id": "threat-05",
