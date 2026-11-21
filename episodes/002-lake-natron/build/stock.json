@@ -1,10 +1,10 @@
 {
  "hook-01": {
-  "query": "bird branch",
-  "pixabay_id": 65801,
-  "page": "https://pixabay.com/videos/id-65801/",
-  "duration": 8,
-  "tags": "robin, bird, perched, branch, red throat, cute, petit, beak, feathers, animal, nature",
+  "query": "cormorant tree",
+  "pixabay_id": 35667,
+  "page": "https://pixabay.com/videos/id-35667/",
+  "duration": 26,
+  "tags": "cormorant, bird, tree, wildlife, branch, water bird sanctuary, nature, lake, silhouette, black, avian flu, forest, animal, place to sleep, heaven, sitting, natural, landscape, seabirds, beak, water",
   "rendition": "large"
  },
  "hook-02": {
@@ -16,11 +16,11 @@
   "rendition": "large"
  },
  "hook-03": {
-  "query": "bird tree",
-  "pixabay_id": 190097,
-  "page": "https://pixabay.com/videos/id-190097/",
-  "duration": 32,
-  "tags": "bird, tree, forest, nature",
+  "query": "crow silhouette",
+  "pixabay_id": 21944,
+  "page": "https://pixabay.com/videos/id-21944/",
+  "duration": 23,
+  "tags": "crows, trees, silhouettes, black, birds, flying",
   "rendition": "large"
  },
  "hook_question-01": {
@@ -56,11 +56,11 @@
   "rendition": "large"
  },
  "locator-02": {
-  "query": "africa landscape",
-  "pixabay_id": 302163,
-  "page": "https://pixabay.com/videos/id-302163/",
-  "duration": 31,
-  "tags": "africa, south africa, nature, drone, landscape, flight, mountains, sky, travel, field",
+  "query": "africa grassland",
+  "pixabay_id": 6447,
+  "page": "https://pixabay.com/videos/id-6447/",
+  "duration": 15,
+  "tags": "elephant, pachyderm, tanzania, serengeti, africa, animals, savannah, nature, environment",
   "rendition": "large"
  },
  "shallow-01": {
@@ -160,11 +160,11 @@
   "rendition": "large"
  },
  "heat-02": {
-  "query": "desert heat",
-  "pixabay_id": 43293,
-  "page": "https://pixabay.com/videos/id-43293/",
-  "duration": 20,
-  "tags": "antelope, pronghorn, mammal, wildlife, nature, outdoors, wilderness, horns, animal, wild, scenic, stag, environment, utah, alone, running, heat, desert, arid, dry, majestic, american, sand, summer",
+  "query": "dry grass",
+  "pixabay_id": 171879,
+  "page": "https://pixabay.com/videos/id-171879/",
+  "duration": 25,
+  "tags": "grass, dry grass, plants, sunset, lighting mood, wind, nature",
   "rendition": "large"
  },
  "heat-03": {
@@ -296,11 +296,11 @@
   "rendition": "large"
  },
  "not_stone-02": {
-  "query": "white salt",
-  "pixabay_id": 281970,
-  "page": "https://pixabay.com/videos/id-281970/",
-  "duration": 11,
-  "tags": "lake, landscape, dry, tree, calm, water, finland",
+  "query": "salt crust",
+  "pixabay_id": 140469,
+  "page": "https://pixabay.com/videos/id-140469/",
+  "duration": 20,
+  "tags": "salt flats, adventure, utah, water, scenic, sky, landscape, nature",
   "rendition": "large"
  },
  "not_stone-03": {
@@ -320,11 +320,11 @@
   "rendition": "large"
  },
  "egypt-02": {
-  "query": "desert",
-  "pixabay_id": 222163,
-  "page": "https://pixabay.com/videos/id-222163/",
-  "duration": 25,
-  "tags": "desert, sunset, sky, clouds, nature, arizona, landscape, sedona",
+  "query": "sand dunes",
+  "pixabay_id": 128663,
+  "page": "https://pixabay.com/videos/id-128663/",
+  "duration": 8,
+  "tags": "desert, sand, dunes, nature",
   "rendition": "large"
  },
  "egypt-03": {
@@ -344,19 +344,19 @@
   "rendition": "large"
  },
  "how_they_die-01": {
-  "query": "lake reflection",
-  "pixabay_id": 188595,
-  "page": "https://pixabay.com/videos/id-188595/",
-  "duration": 21,
-  "tags": "mountains, lake, autumn, autumnal leaves, reflection, water surface, morning light, tranquility, majestic, mt togakushi, japan, landscape, timelapse",
+  "query": "salt lake reflection",
+  "pixabay_id": 275593,
+  "page": "https://pixabay.com/videos/id-275593/",
+  "duration": 12,
+  "tags": "aerial view, salt lake, shoreline, nature, landscape, dry, salt, bushland, australia, dirt track",
   "rendition": "large"
  },
  "how_they_die-02": {
-  "query": "sky reflection",
-  "pixabay_id": 4225,
-  "page": "https://pixabay.com/videos/id-4225/",
-  "duration": 13,
-  "tags": "lake, clouds, summer, nature, sky, water, mirror reflection, pond, lake view, day, reflection in water, forest, blue sky, colorful sky",
+  "query": "salt flat reflection",
+  "pixabay_id": 314358,
+  "page": "https://pixabay.com/videos/id-314358/",
+  "duration": 37,
+  "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, salty, asia, cappadocia, sun, drone, 4k",
   "rendition": "large"
  },
  "how_they_die-03": {
@@ -376,35 +376,35 @@
   "rendition": "large"
  },
  "volcano-01": {
-  "query": "volcano",
-  "pixabay_id": 237116,
-  "page": "https://pixabay.com/videos/id-237116/",
-  "duration": 19,
-  "tags": "valley, volcano, crater, etna, aerial view, eruption, journey, cloudscape, drone, landmark, italy, sicily, scenery, majestic, aerial, geology, sky, lava",
+  "query": "geothermal steam",
+  "pixabay_id": 4432,
+  "page": "https://pixabay.com/videos/id-4432/",
+  "duration": 16,
+  "tags": "solfatars, iceland, hot gases, stones, hydrogen sulfide, carbon dioxide, hydrogen, námaskarð, hverir, active volcanism, volcanic landscape, volcanic, mivatn, steam, nature, landscape, sightseeing, volcano area",
   "rendition": "large"
  },
  "volcano-02": {
-  "query": "volcano crater",
-  "pixabay_id": 150622,
-  "page": "https://pixabay.com/videos/id-150622/",
-  "duration": 11,
-  "tags": "volcano, mountain, crater, lake, water, yugama",
+  "query": "volcanic steam",
+  "pixabay_id": 2153,
+  "page": "https://pixabay.com/videos/id-2153/",
+  "duration": 12,
+  "tags": "steaming rocks, sulfur, geothermal, iceland, icelandic, gaseous, gas, toxic, poisonous",
   "rendition": "large"
  },
  "volcano-03": {
-  "query": "lava",
-  "pixabay_id": 50782,
-  "page": "https://pixabay.com/videos/id-50782/",
-  "duration": 37,
-  "tags": "mountains, volcano, crater, nature, landscape, france",
+  "query": "black lava",
+  "pixabay_id": 4751,
+  "page": "https://pixabay.com/videos/id-4751/",
+  "duration": 25,
+  "tags": "thermal water, source, hot, volcanic, thermal, nature, steam, spring, rock, warm, mineral",
   "rendition": "large"
  },
  "volcano-04": {
-  "query": "volcano aerial",
-  "pixabay_id": 351831,
-  "page": "https://pixabay.com/videos/id-351831/",
-  "duration": 40,
-  "tags": "quilotoa, ecuador, nature, laguna, lake, landscape, crater, lagoon, andes, volcano, mountain, water",
+  "query": "volcanic ash",
+  "pixabay_id": 2154,
+  "page": "https://pixabay.com/videos/id-2154/",
+  "duration": 8,
+  "tags": "boiling mud, icelandic, mud, geothermal, hot, thermal, boil, boiling, volcanic, iceland, steam, minerals, bubble, gas",
   "rendition": "large"
  },
  "flamingo_arrive-01": {
@@ -569,18 +569,18 @@
  },
  "threat-03": {
   "query": "savanna river",
-  "pixabay_id": 120998,
-  "page": "https://pixabay.com/videos/id-120998/",
-  "duration": 59,
-  "tags": "giraffe, wetland, drone, wildlife, africa, river",
+  "pixabay_id": 252824,
+  "page": "https://pixabay.com/videos/id-252824/",
+  "duration": 41,
+  "tags": "waterfall, river, africa, uganda, nature",
   "rendition": "large"
  },
  "threat-04": {
-  "query": "river",
-  "pixabay_id": 174860,
-  "page": "https://pixabay.com/videos/id-174860/",
-  "duration": 28,
-  "tags": "river, stream, waterfall, trees, forest, mountain river, landscape, nature",
+  "query": "kenya",
+  "pixabay_id": 137616,
+  "page": "https://pixabay.com/videos/id-137616/",
+  "duration": 12,
+  "tags": "africa, kenya, tanzania, safari, animal, nature, view, trip, holiday",
   "rendition": "large"
  },
  "threat-05": {
@@ -592,11 +592,11 @@
   "rendition": "large"
  },
  "finale-01": {
-  "query": "lake sunset",
-  "pixabay_id": 21488,
-  "page": "https://pixabay.com/videos/id-21488/",
-  "duration": 26,
-  "tags": "water, lake, sunset, landscape",
+  "query": "africa sunset",
+  "pixabay_id": 361058,
+  "page": "https://pixabay.com/videos/id-361058/",
+  "duration": 14,
+  "tags": "branches, sunset, trees, forest, nature, woods, leaves, africa",
   "rendition": "large"
  },
  "finale-02": {
