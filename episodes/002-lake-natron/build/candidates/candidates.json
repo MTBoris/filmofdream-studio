@@ -4,304 +4,64 @@
   "nature-lake"
  ],
  "candidates": {
-  "hook-01": [
-   {
-    "pick": "pix:286556",
-    "page": "https://pixabay.com/videos/id-286556/",
-    "duration": 49,
-    "tags": "cormorant, animal, bird, wildlife, ornithology, avian, beak, species, plumage, birdwatching, river, landscape, waterfall, water, tree, reflection, green, scenic, forest, autumn, nature"
-   },
-   {
-    "pick": "pix:35667",
-    "page": "https://pixabay.com/videos/id-35667/",
-    "duration": 26,
-    "tags": "cormorant, bird, tree, wildlife, branch, water bird sanctuary, nature, lake, silhouette, black, avian flu, forest, animal, place to sleep, heaven, sitting, natural, landscape, seabirds, beak, water"
-   },
-   {
-    "pick": "pix:35668",
-    "page": "https://pixabay.com/videos/id-35668/",
-    "duration": 13,
-    "tags": "cormorant, bird, tree, wildlife, branch, water bird sanctuary, nature, lake, silhouette, black, avian flu, forest, animal, place to sleep, heaven, sitting, natural, landscape, seabirds, beak, water"
-   }
-  ],
-  "hook-03": [
-   {
-    "pick": "pix:21944",
-    "page": "https://pixabay.com/videos/id-21944/",
-    "duration": 23,
-    "tags": "crows, trees, silhouettes, black, birds, flying"
-   },
-   {
-    "pick": "pix:72582",
-    "page": "https://pixabay.com/videos/id-72582/",
-    "duration": 42,
-    "tags": "bird, crow, raven, black, animal, silhouette"
-   },
-   {
-    "pick": "pix:17328",
-    "page": "https://pixabay.com/videos/id-17328/",
-    "duration": 20,
-    "tags": "okanagan, landscape, canada, spruce, natural, crows, kelowna, forest, trees"
-   }
-  ],
   "locator-02": [
    {
-    "pick": "pix:258883",
-    "page": "https://pixabay.com/videos/id-258883/",
-    "duration": 24,
-    "tags": "zebra, animal, wildlife, mammal, safari, striped, equine, wild, stripes, fauna, wilderness, species, savanna, head, black-and-white, nature"
-   },
-   {
-    "pick": "pix:70861",
-    "page": "https://pixabay.com/videos/id-70861/",
-    "duration": 11,
-    "tags": "giraffe, herbivore, mammal, camelopardalis, safari, african, conservation, ecology, savanna, wilderness, habitat, wildlife"
+    "pick": "pix:6447",
+    "page": "https://pixabay.com/videos/id-6447/",
+    "duration": 15,
+    "tags": "elephant, pachyderm, tanzania, serengeti, africa, animals, savannah, nature, environment"
    },
    {
     "pick": "pix:230118",
     "page": "https://pixabay.com/videos/id-230118/",
     "duration": 5,
     "tags": "ostrich, sunset, safari, south africa, durban, bush, plains, green, blue sky, grass, savannah, africa, grazing, graminivore, indian ocean, water, evening, savanna, prairie, trees, zebras, wild, wild animals, animals"
-   }
-  ],
-  "heat-02": [
-   {
-    "pick": "pix:197946",
-    "page": "https://pixabay.com/videos/id-197946/",
-    "duration": 55,
-    "tags": "grass, plant, dry, park, garden, botanical, spring, summer, leaves, wind, close up, green, forest, nature"
    },
    {
-    "pick": "pix:98395",
-    "page": "https://pixabay.com/videos/id-98395/",
-    "duration": 20,
-    "tags": "grass, dry, plant, dry grass, forest, wind, ornamental grass, nature"
-   },
-   {
-    "pick": "pix:171879",
-    "page": "https://pixabay.com/videos/id-171879/",
-    "duration": 25,
-    "tags": "grass, dry grass, plants, sunset, lighting mood, wind, nature"
-   }
-  ],
-  "not_stone-02": [
-   {
-    "pick": "pix:11642",
-    "page": "https://pixabay.com/videos/id-11642/",
+    "pick": "pix:28095",
+    "page": "https://pixabay.com/videos/id-28095/",
     "duration": 54,
-    "tags": "chop, herbs, food, meat, meal, fresh, cooking, dinner, ingredient, pepper, raw, red, gourmet, board, wooden, green, cuisine, preparation, eating, beef, cut, salt, steak, healthy, uncooked, spice, white, grill, grilled, rosemary, organic, kitchen"
-   },
-   {
-    "pick": "pix:140469",
-    "page": "https://pixabay.com/videos/id-140469/",
-    "duration": 20,
-    "tags": "salt flats, adventure, utah, water, scenic, sky, landscape, nature"
-   },
-   {
-    "pick": "pix:140470",
-    "page": "https://pixabay.com/videos/id-140470/",
-    "duration": 20,
-    "tags": "adventure, utah, salt flats, water, scenic, sky, landscape, nature"
-   }
-  ],
-  "egypt-02": [
-   {
-    "pick": "pix:92840",
-    "page": "https://pixabay.com/videos/id-92840/",
-    "duration": 6,
-    "tags": "sea, sand, desert, sand dune, sky, dunes, travel, summer, hill, clouds, nature, sahara, landscape"
-   },
-   {
-    "pick": "pix:284577",
-    "page": "https://pixabay.com/videos/id-284577/",
-    "duration": 27,
-    "tags": "namibia, nature, africa, drone, desert, sand, dunes"
-   },
-   {
-    "pick": "pix:128663",
-    "page": "https://pixabay.com/videos/id-128663/",
-    "duration": 8,
-    "tags": "desert, sand, dunes, nature"
-   }
-  ],
-  "how_they_die-01": [
-   {
-    "pick": "pix:275593",
-    "page": "https://pixabay.com/videos/id-275593/",
-    "duration": 12,
-    "tags": "aerial view, salt lake, shoreline, nature, landscape, dry, salt, bushland, australia, dirt track"
-   },
-   {
-    "pick": "pix:276152",
-    "page": "https://pixabay.com/videos/id-276152/",
-    "duration": 29,
-    "tags": "dirt track, aerial view, lake shore, summer, nature, shore, bush track, australia, sand, salt lake shore, salt, bushland"
-   },
-   {
-    "pick": "pix:208207",
-    "page": "https://pixabay.com/videos/id-208207/",
-    "duration": 20,
-    "tags": "lake, qinghai lake, qinghai, gansu, scenery, salt lake"
-   }
-  ],
-  "how_they_die-02": [
-   {
-    "pick": "pix:208208",
-    "page": "https://pixabay.com/videos/id-208208/",
-    "duration": 57,
-    "tags": "lake, qinghai lake, qinghai china, xining, scenery, blue sky, qinghai-tibet plateau, chaka salt lake"
-   },
-   {
-    "pick": "pix:314358",
-    "page": "https://pixabay.com/videos/id-314358/",
-    "duration": 37,
-    "tags": "turkey, nature, landscape, travel, wildlife, wilderness, salt, lake, water, salty, asia, cappadocia, sun, drone, 4k"
-   },
-   {
-    "pick": "pix:140471",
-    "page": "https://pixabay.com/videos/id-140471/",
-    "duration": 10,
-    "tags": "rock, lake, adventure, utah, salt flats, water, scenic, sky, landscape, nature"
-   }
-  ],
-  "volcano-01": [
-   {
-    "pick": "pix:168670",
-    "page": "https://pixabay.com/videos/id-168670/",
-    "duration": 19,
-    "tags": "geyser, hot spring, water, steam, geothermal, iceland, landscape, nature, tourism, travel, colorful, energy"
-   },
-   {
-    "pick": "pix:2154",
-    "page": "https://pixabay.com/videos/id-2154/",
-    "duration": 8,
-    "tags": "boiling mud, icelandic, mud, geothermal, hot, thermal, boil, boiling, volcanic, iceland, steam, minerals, bubble, gas"
-   },
-   {
-    "pick": "pix:2153",
-    "page": "https://pixabay.com/videos/id-2153/",
-    "duration": 12,
-    "tags": "steaming rocks, sulfur, geothermal, iceland, icelandic, gaseous, gas, toxic, poisonous"
-   }
-  ],
-  "volcano-02": [
-   {
-    "pick": "pix:4432",
-    "page": "https://pixabay.com/videos/id-4432/",
-    "duration": 16,
-    "tags": "solfatars, iceland, hot gases, stones, hydrogen sulfide, carbon dioxide, hydrogen, námaskarð, hverir, active volcanism, volcanic landscape, volcanic, mivatn, steam, nature, landscape, sightseeing, volcano area"
-   },
-   {
-    "pick": "pix:4751",
-    "page": "https://pixabay.com/videos/id-4751/",
-    "duration": 25,
-    "tags": "thermal water, source, hot, volcanic, thermal, nature, steam, spring, rock, warm, mineral"
-   },
-   {
-    "pick": "pix:227991",
-    "page": "https://pixabay.com/videos/id-227991/",
-    "duration": 12,
-    "tags": "mist, steam, volcanic, pool, hydrothermal, yellowstone"
+    "tags": "flower of the acacia, tree, flower, acacia, spring, nature, branch, flowering, foliage, white, petal, flora, beautiful, flowers"
    }
   ],
   "volcano-03": [
    {
-    "pick": "pix:190532",
-    "page": "https://pixabay.com/videos/id-190532/",
-    "duration": 16,
-    "tags": "sea, rocks, water, lava, stone, volcanic, nature"
-   },
-   {
-    "pick": "pix:191784",
-    "page": "https://pixabay.com/videos/id-191784/",
-    "duration": 23,
-    "tags": "sea, coast, rocks, lava, waves, water, landscape, nature"
-   },
-   {
-    "pick": "pix:387139",
-    "page": "https://pixabay.com/videos/id-387139/",
-    "duration": 8,
-    "tags": "glowing magma, active volcano, molten rock, volcanic eruption, geology science, nature disaster, thermal heat, earth science, glowing embers, close up shot, high temperature, wild nature, lava flow"
-   }
-  ],
-  "volcano-04": [
-   {
-    "pick": "pix:92265",
-    "page": "https://pixabay.com/videos/id-92265/",
+    "pick": "pix:1624",
+    "page": "https://pixabay.com/videos/id-1624/",
     "duration": 14,
-    "tags": "volcano, eruption, lava, la palma, ash, magma, canary islands"
+    "tags": "basalt stele, balance, stones, staple, stele, river, flow, water, yoga, meditation, meditative, rocks, tower, stream"
    },
    {
-    "pick": "pix:92285",
-    "page": "https://pixabay.com/videos/id-92285/",
-    "duration": 26,
-    "tags": "volcano, eruption, lava, la palma, ash, magma, canary islands"
+    "pick": "pix:71481",
+    "page": "https://pixabay.com/videos/id-71481/",
+    "duration": 31,
+    "tags": "volcano, field, volcanic, sun, ardeche, france, basalt, pierre, tourism, nature, alps, landscape"
    },
    {
-    "pick": "pix:403",
-    "page": "https://pixabay.com/videos/id-403/",
-    "duration": 110,
-    "tags": "salton sea mud volcanos, volcanism, volcanoes, mud, bubbles, splashing, squirting, liquid, heat, hot, nature, geothermal mud volcanoes, mud pods, glibbery"
-   }
-  ],
-  "threat-03": [
-   {
-    "pick": "pix:234670",
-    "page": "https://pixabay.com/videos/id-234670/",
-    "duration": 8,
-    "tags": "mountains, domed hills, three rondawels, blyde river canyon, green canyon, canyon, nature, valley, scenic, geology, outdoors, rocks, tourism, natural landmark, adventure, cliff, clouds, blue sky, mpumalanga, south africa, landscape"
-   },
-   {
-    "pick": "pix:134772",
-    "page": "https://pixabay.com/videos/id-134772/",
-    "duration": 27,
-    "tags": "river, sunset, nature, zimbabwe, africa, water"
-   },
-   {
-    "pick": "pix:252824",
-    "page": "https://pixabay.com/videos/id-252824/",
-    "duration": 41,
-    "tags": "waterfall, river, africa, uganda, nature"
+    "pick": "pix:345531",
+    "page": "https://pixabay.com/videos/id-345531/",
+    "duration": 12,
+    "tags": "flight, roman roads, tourism, italy, basalt roads, etruscans, tuscia"
    }
   ],
   "threat-04": [
    {
-    "pick": "pix:323990",
-    "page": "https://pixabay.com/videos/id-323990/",
-    "duration": 15,
-    "tags": "nature, river, water, flowing, flow, rock, stone, wall, bank, grass, landscape, dry, riverbed, sunny, summer, season, weather, climate, view, scene, scenery, calm, horizontal"
+    "pick": "pix:256964",
+    "page": "https://pixabay.com/videos/id-256964/",
+    "duration": 57,
+    "tags": "wildlife, national park, kenya, nairobi, africa, east africa, nature, giraffe, mammal"
    },
    {
-    "pick": "pix:95105",
-    "page": "https://pixabay.com/videos/id-95105/",
+    "pick": "pix:137616",
+    "page": "https://pixabay.com/videos/id-137616/",
+    "duration": 12,
+    "tags": "africa, kenya, tanzania, safari, animal, nature, view, trip, holiday"
+   },
+   {
+    "pick": "pix:132828",
+    "page": "https://pixabay.com/videos/id-132828/",
     "duration": 10,
-    "tags": "the needle, mountain, hills, forest, rescue, leaves, autumn, color, orange, dry, green, nature, river"
-   },
-   {
-    "pick": "pix:168983",
-    "page": "https://pixabay.com/videos/id-168983/",
-    "duration": 10,
-    "tags": "drought, dry river, florence, ponte vecchio, natural disaster, dystropia, future, monument, italy, disaster, unesco, vfx"
-   }
-  ],
-  "finale-01": [
-   {
-    "pick": "pix:361058",
-    "page": "https://pixabay.com/videos/id-361058/",
-    "duration": 14,
-    "tags": "branches, sunset, trees, forest, nature, woods, leaves, africa"
-   },
-   {
-    "pick": "pix:202173",
-    "page": "https://pixabay.com/videos/id-202173/",
-    "duration": 28,
-    "tags": "sea, atlantic, sunset, nature, africa, morocco"
-   },
-   {
-    "pick": "pix:226331",
-    "page": "https://pixabay.com/videos/id-226331/",
-    "duration": 47,
-    "tags": "ocean, water, shore, coast, waves, splash, crash, cliffs, sunset, sea, africa, namibia, lüderitz"
+    "tags": "migration, africa, animal, safari, nature, view, forest, wild, kenya, tanzania, habitat"
    }
   ]
  },
