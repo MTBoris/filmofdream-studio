@@ -51,6 +51,19 @@ def kenburns_filter(motion, nf):
     return base + f"zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={nf}:s=1920x1080:fps={FPS},format=yuv420p"
 
 
+def grade_filter(grade=None):
+    """eq (+ colorbalance) for a stock shot. Default: the house look (saturation 0.92, contrast 1.04).
+    grade {"saturation", "cool", "brightness"} (validated in sb2) e.g. a muted cold hook."""
+    g = grade or {}
+    f = f"eq=saturation={float(g.get('saturation', 0.92)):.3f}:contrast=1.04"
+    if g.get("brightness"):
+        f += f":brightness={float(g['brightness']):.3f}"
+    c = float(g.get("cool", 0) or 0)
+    if c:
+        f += f",colorbalance=rs={-c:.3f}:bs={c:.3f}:rm={-c / 2:.3f}:bm={c / 2:.3f}"
+    return f
+
+
 def shot_clip(s, k, nshots, stock_dir, assets_dir, assets, clips_dir):
     d = s["dur"] + (XF if k < nshots - 1 else 0)
     nf = int(round(d * FPS))
@@ -62,7 +75,7 @@ def shot_clip(s, k, nshots, stock_dir, assets_dir, assets, clips_dir):
             raise SystemExit(f"missing stock clip for shot {s['id']}: {src}")
         cmd += ["-stream_loop", "-1", "-i", src]
         chain.append("[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30,"
-                     "eq=saturation=0.92:contrast=1.04,format=yuv420p[v0]")
+                     f"{grade_filter(s.get('grade'))},format=yuv420p[v0]")
     else:
         png = os.path.join(assets_dir, s["asset_id"] + ".png")
         if not os.path.exists(png):

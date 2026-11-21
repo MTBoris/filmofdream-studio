@@ -45,3 +45,25 @@ def test_v2_pipeline_smoke(tmp_path, monkeypatch):
     diff = ImageChops.difference(Image.open("a.png").convert("L").crop((90, 780, 700, 1015)),
                                  Image.open("b.png").convert("L").crop((90, 780, 700, 1015)))
     assert diff.getbbox() is not None
+
+
+def test_grade_filter_default_and_muted_cool():
+    assert render3.grade_filter() == "eq=saturation=0.920:contrast=1.04"
+    f = render3.grade_filter({"saturation": 0.35, "cool": 0.06})
+    assert "saturation=0.350" in f and "colorbalance=rs=-0.060:bs=0.060" in f
+
+
+@pytest.mark.skipif(subprocess.run(["which", "ffmpeg"], capture_output=True).returncode != 0, reason="ffmpeg not installed")
+def test_grade_really_mutes_colour(tmp_path):
+    """A saturated green frame becomes grey-ish and a bit blue with the hook grade."""
+    from PIL import Image
+    src = tmp_path / "g.png"
+    Image.new("RGB", (64, 36), (40, 200, 40)).save(src)
+    out = {}
+    for name, g in (("plain", None), ("hook", {"saturation": 0.3, "cool": 0.08})):
+        dst = tmp_path / f"{name}.png"
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(src), "-vf", render3.grade_filter(g), str(dst)], check=True)
+        out[name] = Image.open(dst).convert("RGB").getpixel((32, 18))
+    r, g_, b = out["hook"]
+    assert g_ - r < (out["plain"][1] - out["plain"][0]) * 0.5
+    assert b > out["plain"][2]

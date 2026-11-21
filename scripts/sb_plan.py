@@ -3,11 +3,15 @@
     python scripts/sb_plan.py PLAN.json TIMELINE.json OUT_STORYBOARD.json
 
 PLAN: {"stock_profile": "...", "max_shot": 8, "fallback": [queries...], "picks": {shot_id: "pix:123"},
-       "scenes": {name: {"queries": [q1, q2, ...], "overlays": [{"template", "data", "cue", "nth"?}, ...]}}}
+       "scenes": {name: {"queries": [q1, q2, ...], "overlays": [{"template", "data", "cue", "nth"?}, ...], "grade"?: {...}}},
+       "shots"?: {shot_id: {"query": q, "queries": [...]}}}
 For every narration scene the real length is split into n = ceil(len / max_shot) shots of equal length (the last one "rest").
 Each overlay is put on the shot that contains the moment its cue is spoken; if two overlays land in one shot, the
 scene gets one more shot until every shot has at most one overlay. Shot k uses query k (cycling); the other scene
 queries and the plan's fallback queries become its alternatives.
+"shots" overrides the query of one shot (its "queries" then REPLACE the alternatives, no fallback): used when a single clip
+is re-picked and the generic fallback (e.g. "lake") would bring off-topic clips. A scene "grade" (e.g. {"saturation": 0.35,
+"cool": 0.06}) is copied to every shot of the scene; render3 applies it (see sb2.GRADE_KEYS).
 """
 import json
 import math
@@ -41,7 +45,7 @@ MIN_VISIBLE = 3.0   # an overlay must stay on screen at least this long before i
 MIN_SHOT = 2.5
 
 
-def scene_shots(name, w0, w1, spec, words, max_shot, fallback):
+def scene_shots(name, w0, w1, spec, words, max_shot, fallback, overrides=None):
     ovs = spec.get("overlays") or []
     times = [sb2.find_cue(words, name, o["cue"], int(o.get("nth", 1))) for o in ovs]
     ends = []   # when the overlay must still be visible (last event cue of a timeline + 1.2 s, else cue + MIN_VISIBLE)
@@ -82,7 +86,13 @@ def scene_shots(name, w0, w1, spec, words, max_shot, fallback):
         q = qs[k % len(qs)]
         alts = [x for x in qs if x != q] + [x for x in fallback if x not in qs]
         d = round(bounds[k + 1] - bounds[k], 2)
-        shot = {"id": f"{name}-{k + 1:02d}", "type": "stock", "query": q, "queries": alts, "dur": d if k < n - 1 else "rest"}
+        sid = f"{name}-{k + 1:02d}"
+        o = (overrides or {}).get(sid)
+        if o:
+            q, alts = o["query"], [x for x in o.get("queries", []) if x != o["query"]]
+        shot = {"id": sid, "type": "stock", "query": q, "queries": alts, "dur": d if k < n - 1 else "rest"}
+        if spec.get("grade"):
+            shot["grade"] = dict(spec["grade"])
         for o, kk in zip(ovs, ks):
             if kk == k:
                 shot["overlay"] = {key: v for key, v in o.items()}
@@ -96,10 +106,14 @@ def main(plan_path, tl_path, out_path):
     win = sb2.scene_windows(tl)
     words = tl.get("words") or []
     max_shot = float(plan.get("max_shot", 8))
+    known = {f"{name}-{k:02d}" for name in win for k in range(1, 100)}
+    bad = sorted(set(plan.get("shots") or {}) - known)
+    if bad:
+        sys.exit(f"plan 'shots' names unknown shot ids: {', '.join(bad)}")
     scenes = []
     for name, (w0, w1) in win.items():
         spec = plan["scenes"][name]
-        shots = scene_shots(name, w0, w1, spec, words, max_shot, plan.get("fallback", []))
+        shots = scene_shots(name, w0, w1, spec, words, max_shot, plan.get("fallback", []), plan.get("shots"))
         for sh in shots:   # clips chosen after looking at the candidate sheets
             if sh["id"] in (plan.get("picks") or {}):
                 sh["pick"] = plan["picks"][sh["id"]]

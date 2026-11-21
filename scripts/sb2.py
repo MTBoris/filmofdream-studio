@@ -24,6 +24,9 @@ OVERLAY_DELAY = 0.4  # overlay without cue/at appears this long after its shot s
 TYPES = ("stock", "image", "external-image")
 STOCK_PROFILES = ("open-water", "nature-lake")  # stock filter profiles, see scripts/stock2.py
 MOTIONS = ("push-in", "pull-out", "pan-left", "pan-right", "none")
+# optional colour grade of a shot: saturation 0-1.5 (render default 0.92), cool 0-0.3 (shifts mids/shadows to blue),
+# brightness -0.3-0.3
+GRADE_KEYS = {"saturation": (0.0, 1.5), "cool": (0.0, 0.3), "brightness": (-0.3, 0.3)}
 
 
 class StoryboardError(Exception):
@@ -139,6 +142,17 @@ def validate_structure(sb):
                         errs.append(f"{where}: external-image asset {aid!r} must be declared in 'assets' with url/page and credit")
                 if s.get("motion", "push-in") not in MOTIONS:
                     errs.append(f"{where}: motion must be one of {MOTIONS}")
+            g = s.get("grade")
+            if g is not None:
+                if not isinstance(g, dict) or not g:
+                    errs.append(f"{where}: grade must be an object like {{\"saturation\": 0.4}}")
+                else:
+                    for gk, gv in g.items():
+                        lo_hi = GRADE_KEYS.get(gk)
+                        if not lo_hi:
+                            errs.append(f"{where}: unknown grade key {gk!r} (known: {', '.join(GRADE_KEYS)})")
+                        elif not isinstance(gv, (int, float)) or not lo_hi[0] <= gv <= lo_hi[1]:
+                            errs.append(f"{where}: grade {gk} must be a number {lo_hi[0]}..{lo_hi[1]}")
             ov = s.get("overlay")
             if ov is not None:
                 if not ov.get("template"):
