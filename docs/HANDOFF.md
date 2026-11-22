@@ -1,4 +1,4 @@
-# HANDOFF — Film of Dream (state on 2026-11-11)
+# HANDOFF — Film of Dream (state on 2026-11-22)
 
 ## Roles from 2026-11-11 (Boris's decision — overrides older notes below)
 - **Claude** writes the text (narration, script.md with the fact table, meta.json) and checks facts.
@@ -8,8 +8,22 @@
 - **Boris** watches the unlisted video and sets the public status himself.
 - Older lines below that say "ChatGPT owns visuals / chooses picks" are history.
 
-## Episode 002 «Озеро Натрон» — uploaded UNLISTED (2026-11-11)
-- **Link: https://youtu.be/fqda4gTNJa0** (unlisted; also in `episodes/002-lake-natron/build/youtube_url.txt`). Public status — only Boris.
+## Episode 002 «Озеро Натрон» — NEW version uploaded UNLISTED (2026-11-22)
+- **Current link: https://youtu.be/jEnvVmabWZk** (unlisted; also in `episodes/002-lake-natron/build/youtube_url.txt`). Public status — only Boris.
+- **https://youtu.be/fqda4gTNJa0 is the REPLACED version** (2026-11-11), still unlisted, not changed. Delete it only after Boris's «да» (`yt-delete.yml`).
+- Review 2 (Claude's frame-sheet review, fix approved by Boris; PR #22):
+  - Hook 0:00–0:21: cormorants on dry branches, a seagull silhouette at sunset, crow silhouettes on bare branches; the whole hook
+    is graded muted and cold (`grade` in the plan: saturation 0.35, cool 0.06; new feature in `sb_plan.py` / `sb2.py` / `render3.py`).
+  - Volcano 4:55–5:22: no cone, crater or crater lake any more. The volcano is marked only on the map. «Единственный действующий
+    карбонатитовый вулкан» is on steaming rocks, «500–600 °C» on dark stones with steam, then grey boiling mud. Crater lakes, other volcanoes
+    and red magma are blocklisted; the nature-lake profile now also drops the tags crater / crater lake / caldera.
+  - Non-African clips replaced and blocklisted: green fields (0:46 → elephant), pronghorn (2:10 → dry grass), conifer lake (3:58 → salt flat),
+    red canyon (4:18 → dunes), autumn and European lakes (4:32–4:42 → salt lakes from the air), green hills and mossy stream
+    (7:22–7:34 → waterfall in Uganda, dry savanna of Kenya/Tanzania), birch lake (7:42 → branches against the sunset).
+  - New plan feature: `"shots": {shot_id: {"query", "queries"}}` in `storyboard.plan.json` re-searches ONE shot without the generic
+    fallback queries (those had brought the forest lakes).
+  - Still worth a look (not changed, not in the review): several flamingo shots from parks; 7:10–7:20 (green gorge and a river in clouds);
+    4:50 (dark lake shore); fish scene (grass/lily pads, waves).
 - 8:38, 82 Pixabay shots (all different), 24 overlays (facts only from the table in `script.md`), 2 code maps
   (Tanzania/Kenya with the lake, rift line, borders; Ol Doinyo Lengai next to the lake), chapters and sources in the description.
   No clip is labelled as Natron or Ol Doinyo Lengai; no Nick Brandt photos; no dead animals; no glowing red lava (Lengai lava is black).
